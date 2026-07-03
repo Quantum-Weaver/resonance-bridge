@@ -1,0 +1,39 @@
+{
+  "project": "resonance-mcp",
+  "analyzed_at": "2026-06-30T22:04:48.169632+00:00",
+  "standards_compliance": {
+    "readme": true,
+    "license": true,
+    "philosophy": true,
+    "claude_md": true,
+    "gitignore": true
+  },
+  "vulnerabilities": [
+    {
+      "severity": "medium",
+      "issue": ".gitignore is missing recommended patterns: node_modules/, target/, .env, *.keystore, __pycache__/"
+    }
+  ],
+  "gaps": [
+    "No CI/CD configuration found"
+  ],
+  "test_readiness": "No test infrastructure found. Primary source language is unknown. Recommend starting with unit tests for the core data/query functions before expanding coverage.",
+  "recommendations": [
+    {
+      "priority": 1,
+      "action": "Address: .gitignore is missing recommended patterns: node_modules/, target/, .env, *.keystore, __pycache__/"
+    },
+    {
+      "priority": 2,
+      "action": "No CI/CD configuration found"
+    },
+    {
+      "priority": 3,
+      "action": "Establish a test suite"
+    },
+    {
+      "priority": 4,
+      "action": "Add CI/CD configuration"
+    }
+  ]
+}
