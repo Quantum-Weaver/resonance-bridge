@@ -1,0 +1,52 @@
+# ─── SOVEREIGNTY — NEVER COMMIT ───────────────────────────
+*.keystore
+*.jks
+*.apk*
+*.aab
+.env
+.env.*
+!.env.example
+*credentials*.json
+*service-account*.json
+*.pem
+*.key
+secrets.yaml
+secrets.yml
+*.db
+*.sqlite
+
+# ─── BUILD OUTPUT ──────────────────────────────────────────
+src-tauri/gen/
+target/
+dist/
+build/
+node_modules/
+.svelte-kit/
+/package
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ─── PYTHON ────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ─── RUST ──────────────────────────────────────────────────
+/target/*
+
+# ─── OS ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── IDE ───────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.suo
+*.sln
+*.vcxproj
+
+# ─── SANCTUARY-SPECIFIC ────────────────────────────────────
+helper.md
+generate_blueprint.py
