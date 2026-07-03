@@ -1,0 +1,68 @@
+{
+  "project": "resonance-mcp",
+  "scanned_at": "2026-06-30T22:04:48.146886+00:00",
+  "total_files": 7,
+  "files": [
+    {
+      "path": ".gitignore",
+      "type": "config",
+      "language": "unknown",
+      "lines": 51,
+      "description": ".gitignore"
+    },
+    {
+      "path": "CLAUDE.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 38,
+      "description": "CLAUDE.md \u2014 Resonance MCP"
+    },
+    {
+      "path": "LICENSE",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 21,
+      "description": "LICENSE"
+    },
+    {
+      "path": "PHILOSOPHY.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 114,
+      "description": "THE RESONANCE LICENSE \u2014 PHILOSOPHY"
+    },
+    {
+      "path": "README.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 233,
+      "description": "\ufffd\ufffdT\u0000r\u0000u\u0000e\u0000 \u0000\u0014  \u0000M\u0000C\u0000P\u0000 \u0000i\u0000s\u0000 \u0000t\u0000h\u0000e\u0000 \u0000o\u0000n\u0000l\u0000y\u0000 \u0000o\u0000n\u0000e\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000 \u0000a\u0000 \u0000p\u0000r\u0000o\u0000p\u0000e\u0000r\u0000 \u0000R\u0000E\u0000A\u0000D\u0000M\u0000E\u0000.\u0000 \u0000L\u0000e\u0000t\u0000'\u0000s\u0000 \u0000f\u0000i\u0000x\u0000 \u0000t\u0000h\u0000a\u0000t\u0000.\u0000"
+    },
+    {
+      "path": "reports/analysis.json",
+      "type": "config",
+      "language": "json",
+      "lines": 39,
+      "description": "Analysis"
+    },
+    {
+      "path": "reports/inventory.json",
+      "type": "config",
+      "language": "json",
+      "lines": 68,
+      "description": "Inventory"
+    }
+  ],
+  "by_type": {
+    "config": 3,
+    "doc": 3,
+    "unknown": 1
+  },
+  "by_language": {
+    "unknown": 2,
+    "markdown": 3,
+    "json": 2
+  },
+  "secrets_flagged": [],
+  "large_files": []
+}
