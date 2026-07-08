@@ -10,7 +10,7 @@ const db = new Database(
   { readonly: true }
 );
 
-const server = new McpServer({ name: "prometheus", version: "0.1.0" });
+const server = new McpServer({ name: "resonance-bridge", version: "0.1.0" });
 
 server.tool(
   "query_atom",

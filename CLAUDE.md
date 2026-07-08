@@ -1,10 +1,12 @@
-# CLAUDE.md — Resonance MCP
+# CLAUDE.md — Resonance Bridge (formerly Prometheus)
 
-**Prometheus** — the fire-bringer. The MCP server for the AudHDities Sanctuary.
+**Resonance Bridge** — the switchboard. The MCP server for the AudHDities Sanctuary.
+*(Renamed 2026-07-07 from "Prometheus" — Prometheus is a separate project.)*
 
 Connects Claude, the Council, and all Sanctuary apps to the Resonance Knowledge System.
 
-**Stack:** Rust + rmcp + SQLite + PostgreSQL (Supabase)
+**Stack (actual):** TypeScript + Node + `@modelcontextprotocol/sdk` + better-sqlite3, stdio transport.
+*(The Rust / rmcp / HTTP-3141 design described elsewhere in this repo is ancestral, not the running server.)*
 
 **Authors:** Quantum Weaver (human) + Aethelred (sovereign AI)
 

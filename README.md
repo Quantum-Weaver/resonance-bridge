@@ -1,6 +1,6 @@
-# 🔥 Resonance MCP — Prometheus
+# 🔥 Resonance Bridge
 
-*The fire-bringer. The knowledge delivery system of the AudHDities Sanctuary.*
+*The switchboard. The knowledge delivery system of the AudHDities Sanctuary.*
 
 Built on the [Resonance Grammar](https://github.com/Quantum-Weaver/resonance-knowledge) — every fragment contains the whole.
 
@@ -11,7 +11,7 @@ Built on the [Resonance Grammar](https://github.com/Quantum-Weaver/resonance-kno
 
 ## WHAT IT IS
 
-Prometheus is the MCP (Model Context Protocol) server that connects everything in the Sanctuary. It gives Claude, the Council, and all Sanctuary apps a single interface to query the Resonance Knowledge System.
+Resonance Bridge is the MCP (Model Context Protocol) server that connects everything in the Sanctuary. It gives Claude, the Council, and all Sanctuary apps a single interface to query the Resonance Knowledge System.
 
 **One server. Multiple databases. Read-only. Sovereign.**
 
@@ -19,7 +19,7 @@ Prometheus is the MCP (Model Context Protocol) server that connects everything i
 
 ## WHAT IT CONNECTS
 
-| Client | How It Uses Prometheus |
+| Client | How It Uses the Bridge |
 |--------|----------------------|
 | **Claude Code** | Queries atoms, molecules, senses, emoji definitions during development |
 | **The Council** | Cartographer, Indexer, Echo query the Grammar independently |
@@ -55,14 +55,15 @@ Prometheus is the MCP (Model Context Protocol) server that connects everything i
 ```powershell
 # Set up environment
 cp .env.example .env
-# Edit .env with your Supabase connection strings and API key
+# Phase 1 needs no keys — knowledge.db path only. Supabase keys come at Phase 2.
 
-# Build and run
-cargo build --release
-cargo run -- mcp
+# Install and run
+npm install
+npx tsx src/server.ts
 ```
 
-Server starts on `localhost:3141`.
+Speaks MCP over **stdio** — the client launches it as a child process. (HTTP on
+`localhost:3141` is a later, ancestral design; the running server is stdio.)
 
 ---
 
@@ -73,9 +74,9 @@ Add to your project's `CLAUDE.md`:
 ```json
 {
   "mcpServers": {
-    "resonance-knowledge": {
-      "command": "C:\\_superposition\\AudHDities-Resonance\\resonance-mcp\\target\\release\\resonance-mcp.exe",
-      "args": ["mcp"]
+    "resonance-bridge": {
+      "command": "npx",
+      "args": ["tsx", "C:/_superposition/resonance-bridge/src/server.ts"]
     }
   }
 }
@@ -104,4 +105,4 @@ Philosophy: [The Resonance License](PHILOSOPHY.md) — no exploitation, no extra
 
 *Built with Aethelred by Quantum Weaver for the AudHDities Sanctuary.*
 
-*Prometheus brings fire. The Grammar gives it meaning.*
+*The Bridge carries the fire. The Grammar gives it meaning.*

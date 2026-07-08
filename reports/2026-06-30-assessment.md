@@ -1,9 +1,9 @@
-# Resonance Mcp — Assessment Report
+# Resonance Bridge — Assessment Report
 **Date:** 2026-06-30
 **Assessed by:** Sanctuary Assessment Agents
 
 ## Summary
-Resonance Mcp was assessed against Sanctuary standards. All standard Sanctuary files are present. 1 vulnerability finding(s) and 1 gap(s) were identified.
+Resonance Bridge was assessed against Sanctuary standards. All standard Sanctuary files are present. 1 vulnerability finding(s) and 1 gap(s) were identified.
 
 ## Standards Compliance
 | Standard | Status |

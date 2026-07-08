@@ -1,5 +1,5 @@
 {
-  "project": "resonance-mcp",
+  "project": "resonance-bridge",
   "scanned_at": "2026-06-30T22:04:48.146886+00:00",
   "total_files": 7,
   "files": [
@@ -15,7 +15,7 @@
       "type": "doc",
       "language": "markdown",
       "lines": 38,
-      "description": "CLAUDE.md \u2014 Resonance MCP"
+      "description": "CLAUDE.md \u2014 Resonance Bridge"
     },
     {
       "path": "LICENSE",

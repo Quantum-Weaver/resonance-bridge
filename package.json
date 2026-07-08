@@ -1,7 +1,7 @@
 {
-  "name": "resonance-mcp",
+  "name": "resonance-bridge",
   "version": "1.0.0",
-  "description": "*The fire-bringer. The knowledge delivery system of the AudHDities Sanctuary.*",
+  "description": "The switchboard. The knowledge delivery system of the AudHDities Sanctuary.",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -11,16 +11,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Quantum-Weaver/resonance-mcp.git"
+    "url": "git+https://github.com/Quantum-Weaver/resonance-bridge.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/Quantum-Weaver/resonance-mcp/issues"
+    "url": "https://github.com/Quantum-Weaver/resonance-bridge/issues"
   },
-  "homepage": "https://github.com/Quantum-Weaver/resonance-mcp#readme",
+  "homepage": "https://github.com/Quantum-Weaver/resonance-bridge#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
     "better-sqlite3": "^12.11.1",
