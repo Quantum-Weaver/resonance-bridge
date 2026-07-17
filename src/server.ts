@@ -2,6 +2,14 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 import Database from "better-sqlite3";
+import { fileURLToPath } from "node:url";
+import { registerAirtable } from "./airtable.js";
+
+// Load the repo-root .env by absolute path — the client launches us from ITS
+// working directory, not ours (build guide, gotcha #2). Missing .env is fine.
+try {
+  process.loadEnvFile(fileURLToPath(new URL("../.env", import.meta.url)));
+} catch {}
 
 // Read-only, sovereign: this connection cannot write. The ward is code.
 const db = new Database(
@@ -33,6 +41,8 @@ server.tool(
     };
   }
 );
+
+registerAirtable(server); // the Airtable line — KP's prior organizations of the chaos
 
 const transport = new StdioServerTransport();
 await server.connect(transport); // and now it waits, listening

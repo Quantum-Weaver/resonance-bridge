@@ -35,6 +35,7 @@ Resonance Bridge is the MCP (Model Context Protocol) server that connects everyt
 |----------|------|----------|
 | **knowledge.db** | Local SQLite | Pipeline output — canonical atoms and molecules |
 | **Superposition** | Supabase (PostgreSQL) | Original Sanctuary — 215+ tables, sensory lexicon, categories |
+| **Airtable** | Cloud API (read-only PAT) | KP's prior organization attempts — song portfolio, music-column photography |
 
 ---
 
@@ -47,6 +48,9 @@ Resonance Bridge is the MCP (Model Context Protocol) server that connects everyt
 | `query_sense` | Senses with subcategories |
 | `query_emoji` | Emoji definitions with sensory lexicon |
 | `search_knowledge` | Full-text search across all databases |
+| `airtable_list_bases` | Every base the token can see (discovery first) |
+| `airtable_list_tables` | One base's schema — tables, fields, views |
+| `airtable_query_records` | Records from one table, paged, read-only |
 
 ---
 
