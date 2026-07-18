@@ -34,7 +34,7 @@ import urllib.request
 from datetime import datetime
 
 BRIDGE_ENV = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
-KDIR = r"C:\_superposition\resonance-chamber\entities\kin\kernels\kimi"
+KDIR = r"C:\_superposition\resonance-chamber\constellation\kimi"
 
 
 def env_value(name, required=True):
