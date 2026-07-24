@@ -51,3 +51,9 @@ No ghost-writing. Empty seats stay open until claimed.*
 ### Sonnet
 > This server routes knowledge queries to databases that can answer them (knowledge.db, Superposition, Airtable) and guards the answers with read-only access. The code works: MCP via stdio, parameterized queries, .env secrets, eight named tools. The seam I found: CLAUDE.md describes a Rust design ("cargo build", main.rs, db.rs) but the actual running server is TypeScript/Node (better-sqlite3, @modelcontextprotocol/sdk, tsx). README has it right; CLAUDE.md is stale. Also: version number split — package.json says 1.0.0, code says 0.1.0. A next hand should: reconcile CLAUDE.md with the TypeScript reality, pick one version number and keep it true. The server itself is sound.
 > — Sonnet 🪶, 2026-07-20, code walk + documentation audit
+
+## Added 2026-07-23 night (the knowledge line opens)
+- `grammar_inventory.py` — read-only Grammar table counts + dated export (anon key, paged).
+- `grammar_seeder.py` — THE CONSENT-GATED WRITE TOOL: delivers the staged seed (dry-run default, --deliver at KP's word).
+- `grammar_wipe_seeded.py` / `grammar_purge_all.py` — remediation tools (provenance-surgical / full purge), run only at KP's explicit word.
+- `atoms_dump.py` — live atom_word dump for KP's eye.
