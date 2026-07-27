@@ -31,26 +31,38 @@ Resonance Bridge is the MCP (Model Context Protocol) server that connects everyt
 
 ## DATABASES
 
-| Database | Type | Contents |
-|----------|------|----------|
-| **knowledge.db** | Local SQLite | Pipeline output — canonical atoms and molecules |
-| **Superposition** | Supabase (PostgreSQL) | Original Sanctuary — 215+ tables, sensory lexicon, categories |
-| **Airtable** | Cloud API (read-only PAT) | KP's prior organization attempts — song portfolio, music-column photography |
+| Database | Type | Contents | Line |
+|----------|------|----------|------|
+| **knowledge.db** | Local SQLite | Pipeline output — canonical atoms and molecules | ✅ server (read-only) |
+| **Airtable** | Cloud API (read-only PAT) | KP's prior organization attempts — song portfolio, music-column photography | ✅ server |
+| **Knowledge Grammar** | Supabase (PostgreSQL) | The seeded Grammar — atoms · molecules · organisms + junctions | 🐍 Python workbench (anon key), not yet a server line |
+| **Superposition** | Supabase (PostgreSQL) | Original Sanctuary — 215+ tables, sensory lexicon, categories | 🐍 Python workbench (.env keys), not yet a server line |
 
 ---
 
 ## TOOLS
 
-| Tool | What It Queries |
-|------|----------------|
-| `query_atom` | Atom definitions with sensory lexicon |
-| `query_molecule` | Molecule compositions with schemas |
-| `query_sense` | Senses with subcategories |
-| `query_emoji` | Emoji definitions with sensory lexicon |
-| `search_knowledge` | Full-text search across all databases |
-| `airtable_list_bases` | Every base the token can see (discovery first) |
-| `airtable_list_tables` | One base's schema — tables, fields, views |
-| `airtable_query_records` | Records from one table, paged, read-only |
+*Truth pass 2026-07-27: the server registers FOUR tools today; the
+other four remain the build path's open step (BUILD-GUIDE §5).*
+
+| Tool | What It Queries | Standing |
+|------|----------------|----------|
+| `query_atom` | Atom definitions with sensory lexicon | ✅ live |
+| `airtable_list_bases` | Every base the token can see (discovery first) | ✅ live |
+| `airtable_list_tables` | One base's schema — tables, fields, views | ✅ live |
+| `airtable_query_records` | Records from one table, paged, read-only | ✅ live |
+| `query_molecule` | Molecule compositions with schemas | ⬜ planned |
+| `query_sense` | Senses with subcategories | ⬜ planned |
+| `query_emoji` | Emoji definitions with sensory lexicon | ⬜ planned |
+| `search_knowledge` | Full-text search across all databases | ⬜ planned |
+
+### Standalone scripts (beside the server, same `.env`, all read-only)
+
+| Script | What it does |
+|--------|-------------|
+| `grammar_inventory.py` | Counts + dated full export of the Grammar tables through the anon door — the new-table ritual's verify step |
+| `atoms_dump.py` | Atom-table dump for merge planning |
+| `verify_terms.py` | Checks a set of coined names against the Grammar (atoms/molecules/organisms by word-count class + constituent words) — born 2026-07-27 for the cosmic carries, reusable for any carry |
 
 ---
 
@@ -90,11 +102,17 @@ Add to your project's `CLAUDE.md`:
 
 ## GUARDRAILS
 
-- All queries are read-only
-- API key authentication required
-- Connection strings in `.env` (never committed)
-- SQL injection prevention via parameterized queries
-- Connection pooling (max 5 per database)
+*(Truth pass 2026-07-27: the API-key-auth and connection-pooling lines
+described the ancestral HTTP design — the running stdio server needs
+neither; what actually wards it:)*
+
+- All queries are read-only — enforced in code (`readonly: true`
+  SQLite connection; read-only Airtable PAT)
+- stdio transport: the client launches the server as a child process —
+  no port, no network surface
+- Connection strings and keys in `.env` (never committed; never
+  printed)
+- SQL via parameterized queries
 - Error responses never leak schema details
 
 ---

@@ -30,8 +30,11 @@ deliberate.*
    before pulling anything as well. sovereignty to all." TJ's yes is
    the door — for the export and for the line. Nothing of hers is
    pulled, read, or mirrored before she says so.**
-4. **Room-tidying:** kimi_crossing/kimi_message tools at root → their
-   own room (restructure-round note); the kin-crossing door kept warm.
+4. ~~**Room-tidying:** kimi_crossing/kimi_message tools at root → their
+   own room (restructure-round note); the kin-crossing door kept warm.~~
+   ✅ **DONE 2026-07-27** (the bridge cleanup sitting): `kimi/` room
+   holds both tools + `messages/` (the crossing letters); `.env` lookup
+   repointed to repo root; compile + usage verified. The door stays warm.
 
 ## Laws standing
 Consent gates every new line · read-only wards where a line is a

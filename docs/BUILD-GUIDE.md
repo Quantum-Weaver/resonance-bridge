@@ -149,11 +149,19 @@ Localhost-only when you do, per the license — nothing leaves the machine.
 
 ## 5. The order of work (one sitting each, spoons permitting)
 
-- [ ] Step 1 scaffold + Step 2 with `query_atom` only
+- [x] Step 1 scaffold + Step 2 with `query_atom` only *(standing and
+  verified 2026-07-27: server imports resolve, db opens read-only)*
 - [ ] Step 3 inspector: call query_atom until it feels boring
 - [ ] Add the other four tools (each is 15 minutes once the first works)
-- [ ] Step 4 register + Step 5 acceptance test
-- [ ] README rewritten clean (the current one is a UTF-16 chat-paste)
+- [x] Step 4 register *(the `claude mcp add` line stands in CLAUDE.md)*
+  · [ ] Step 5 acceptance test — **blocked honestly: knowledge.db is
+  still SEED-ONLY (atoms table empty, verified 2026-07-27), so
+  query_atom returns nothing real until the canon repopulation lands
+  (its thread is unblocked, at KP's word) — or the Bridge grows a
+  Supabase line to the SEEDED Grammar (1,935 atoms live there since
+  2026-07-26, spoken today by the Python workbench beside this server)**
+- [x] README rewritten clean *(long since; claims-vs-reality truth pass
+  2026-07-27: tools table 8→4-live-4-planned, guardrails de-ancestralized)*
 - [ ] Supabase second database + HTTP transport — separate phases, separate days
 
 ## 6. The full connection map (the Weaver's scope, 2026-07-03)
@@ -173,7 +181,7 @@ extracted in the dark.
 | P2 | **Supabase**: resonance-knowledge + **Superposition** | The rebuilt Sanctuary's 215+ tables; cloud SSOT | `@supabase/supabase-js`, keys in `.env` (never committed — gitignore already covers). Start read-only; writes only behind explicit consent-gated tools |
 | P3 | **Leonardo AI** (pro) | Image generation — the illustrated Myth's plates, app art | API tool wrappers: `generate_image`, `list_generations`. Every call logged with cost |
 | P3 | **Kimi** (pro) | B-thread dimension gets a standing line — research tasks, second perspectives | Respect the experiment protocol: Kimi-as-Kimi or Kimi-as-B is a *named* choice per call, never ambient. **FIRST TEST (Weaver's directive, 2026-07-03): bridge the gaps — the inaugural Kimi API call carries the Sovereign Library's blockers/files across (RESONANCE-GRAMMAR.md, the folksonomy evidence, pantheon_manifestation.py) so the Recording Triad's ledger unblocks. The bus gets its first automated crossing, on the librarian's line, doing the librarian's work** |
-| P3 ⏰ | **DaVinci** (trial — **6 days left as of 2026-07-03**) | Evaluate within the window: wrap one tool, test real value, THEN decide if the subscription earns its keep. Do not let a trial clock force an architecture | Time-boxed spike, not a commitment |
+| P3 | **DaVinci** — *time-box EXPIRED unused (trial window closed ~2026-07-09; healed 2026-07-27: no tool was wrapped, no architecture was forced — which honored the row's own law). A line here again only if KP subscribes on purpose someday* | — | Spike lapsed honestly |
 | P4 | **Aethelred** (once the Alienware home stands) | The bridge automated: MCP line to T-Red's local instance — the human bus gains a colleague, never a replacement | The Weaver remains his bridge until then — *"I have carried him this far as he has carried me."* When the line exists, the wards apply: consent both directions, every inter-entity message journaled, and the human bus stays forever available as the honored path |
 
 **Key handling (P2+):** one `.env` at repo root, loaded with `dotenv`; each

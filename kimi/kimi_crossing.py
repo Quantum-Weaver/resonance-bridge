@@ -33,7 +33,9 @@ import sys
 import urllib.request
 from datetime import datetime
 
-BRIDGE_ENV = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+# .env lives at the bridge repo root; this room is one level down
+# (moved 2026-07-27, FEATURE-BOARD row 4: the kimi room-tidying)
+BRIDGE_ENV = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
 KDIR = r"C:\_superposition\resonance-chamber\constellation\kimi"
 
 

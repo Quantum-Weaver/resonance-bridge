@@ -26,9 +26,13 @@ src/
 └── airtable.ts      # Airtable connector
 docs/
 └── BUILD-GUIDE.md   # build path + phase notes
+kimi/                # the kin-crossing room (FEATURE-BOARD row 4, tidied
+                     # 2026-07-27): kimi_crossing.py · kimi_message.py ·
+                     # messages/ (the letters); .env stays at repo root
 *.py                 # workbench instruments at root: grammar_seeder/
-                     # inventory/purge (the Grammar's seeding hands),
-                     # knowledge_sql, kimi_crossing/message, atoms_dump
+                     # inventory/purge/wipe_seeded/clear_name_tiers (the
+                     # Grammar's seeding hands), knowledge_sql, atoms_dump,
+                     # generate_blueprint, verify_terms (carry coverage)
 FEATURE-BOARD.md · THE-TRAIL-seed.md · HANDS.md
 ```
 
