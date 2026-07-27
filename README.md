@@ -70,7 +70,9 @@ other four remain the build path's open step (BUILD-GUIDE §5).*
 
 ```powershell
 # Set up environment
-cp .env.example .env
+# .env is written by KP's own hands from the provider dashboards
+# (the old .env.example kept reading as a false negative — archived
+#  2026-07-27 to docs/archived-env-example-2026-07-27.txt)
 # Phase 1 needs no keys — knowledge.db path only. Supabase keys come at Phase 2.
 
 # Install and run

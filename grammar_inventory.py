@@ -36,7 +36,7 @@ def load_env() -> dict:
     env = {}
     env_path = HERE / ".env"
     if not env_path.is_file():
-        sys.exit("no .env beside this script — copy .env.example and fill by hand")
+        sys.exit("no .env beside this script — the keys enter by KP's own hands from the dashboard")
     for line in env_path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if line and not line.startswith("#") and "=" in line:
