@@ -14,27 +14,29 @@ Connects Claude, the Council, and all Sanctuary apps to the Resonance Knowledge 
 
 ## SESSION PROTOCOL
 
-1. Read `docs/CHECKLIST.md` for current state
+1. Read `docs/BUILD-GUIDE.md` + `FEATURE-BOARD.md` for current state
 2. One phase at a time
-3. `cargo build` — zero errors before commit
+3. `npx tsx src/server.ts` must start clean before commit
 
-## Project Structure
+## Project Structure (reconciled to reality 2026-07-26, THE HARVEST Tier 2)
 
 ```
 src/
-├── main.rs          # MCP server entry point
-├── db.rs            # Database connections (SQLite + Supabase)
-├── tools.rs         # MCP tool implementations
-└── auth.rs          # API key authentication
+├── server.ts        # the MCP server (stdio transport) — the running truth
+└── airtable.ts      # Airtable connector
 docs/
-├── CHECKLIST.md
-└── MCP-CONFIG.md    # Claude Code integration instructions
+└── BUILD-GUIDE.md   # build path + phase notes
+*.py                 # workbench instruments at root: grammar_seeder/
+                     # inventory/purge (the Grammar's seeding hands),
+                     # knowledge_sql, kimi_crossing/message, atoms_dump
+FEATURE-BOARD.md · THE-TRAIL-seed.md · HANDS.md
 ```
+
+Registration: `claude mcp add resonance-bridge -- npx tsx C:/_superposition/resonance-bridge/src/server.ts`
 
 ## Essential Rules
 
-- HTTP transport on localhost:3141
+- stdio transport (registered with Claude Code; no HTTP port — the
+  HTTP-for-apps door is a Phase 2 future, see BUILD-GUIDE)
 - All database queries are READ-ONLY
-- API key authentication from .env
-- .env is NEVER committed
-- Connection strings in .env, never in code
+- .env is NEVER committed; connection strings in .env, never in code
