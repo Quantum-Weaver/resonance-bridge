@@ -28,6 +28,7 @@ HERE = Path(__file__).resolve().parent
 GRAMMAR_TABLES = [
     "categories", "atoms", "etymology", "sensory_lexicon",
     "molecules", "molecule_atoms", "organisms", "organism_molecules",
+    "organism_atoms",
 ]
 
 

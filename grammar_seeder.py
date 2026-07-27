@@ -24,6 +24,10 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 SHELF = Path(r"C:\_superposition\resonance-excavator\lighthouse")
 KNOWLEDGE = SHELF / "knowledge"
+# --stage <dir> points at an alternate staging folder carrying the same five
+# file names (added 2026-07-26 for the defined-atoms seed; default unchanged)
+if "--stage" in sys.argv:
+    KNOWLEDGE = Path(sys.argv[sys.argv.index("--stage") + 1])
 BATCH = 500
 
 
@@ -83,7 +87,8 @@ def main() -> None:
                 env["SUPABASE_SECRET_KEY_KNOWLEDGE"])
     mode = "DELIVERY" if write else "DRY RUN (pass --deliver at KP's word)"
     print(f"mode: {mode}\n")
-    manifest = {"date": date.today().isoformat(), "mode": mode, "stages": {}}
+    manifest = {"date": date.today().isoformat(), "mode": mode,
+                "stage_dir": str(KNOWLEDGE), "stages": {}}
 
     # ── live-state maps (skip-existing is the sacredness guarantee) ──
     cats = {c["name"]: c["id"] for c in base.fetch_all("categories", "id,name")}
@@ -166,6 +171,27 @@ def main() -> None:
         n = base.insert("organism_molecules", om_rows, write)
         print(f"organism_molecules: {n} bonds")
         manifest["stages"]["organism_molecules"] = n
+
+        # ── 5. organism_atoms — the direct atom bonds (KP's ruling
+        # 2026-07-26: "all 3 present as atoms"); stage runs only when
+        # the staging file exists and the table stands (KP's DDL) ──
+        oa_stage = KNOWLEDGE / "6-organism_atoms.seed.jsonl"
+        if oa_stage.is_file():
+            have_oa = {(r["organism_id"], r["atom_id"], r["position"]) for r in
+                       base.fetch_all("organism_atoms",
+                                      "organism_id,atom_id,position")}
+            oa_rows = []
+            for j in read_stage("6-organism_atoms.seed.jsonl"):
+                oid = have_orgs.get((j["organism_name"], j["organism_type"]))
+                aid = have_atoms.get(j["atom_word"].lower())
+                if oid and aid and (oid, aid, j["position"]) not in have_oa:
+                    have_oa.add((oid, aid, j["position"]))
+                    oa_rows.append({"organism_id": oid, "atom_id": aid,
+                                    "position": j["position"], "role": j["role"],
+                                    "bond_strength": j["bond_strength"]})
+            n = base.insert("organism_atoms", oa_rows, write)
+            print(f"organism_atoms:     {n} bonds")
+            manifest["stages"]["organism_atoms"] = n
     else:
         print("molecule_atoms:     (junctions resolve at delivery — ids "
               "exist only after the tiers land)")
