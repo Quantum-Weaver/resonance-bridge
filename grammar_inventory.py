@@ -13,7 +13,7 @@ loaded from .env beside this file and are never printed — the house
 rule stands: no real key enters any chat, ever.
 
 Output: counts to stdout + a dated full export at
-  ../resonance-knowledge/exports/grammar-export-<date>.json
+  ../resonance-grammar/exports/grammar-export-<date>.json
 """
 
 import json
@@ -85,7 +85,7 @@ def main() -> None:
         export["tables"][t] = rows
         print(f"{t:22s} {len(rows):>6d}")
 
-    out_dir = Path(r"C:\_superposition\resonance-knowledge\exports")
+    out_dir = Path(r"C:\_superposition\resonance-grammar\exports")
     out_dir.mkdir(exist_ok=True)
     out = out_dir / f"grammar-export-{date.today().isoformat()}.json"
     out.write_text(json.dumps(export, ensure_ascii=False, indent=1),

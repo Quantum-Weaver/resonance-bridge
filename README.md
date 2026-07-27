@@ -2,7 +2,7 @@
 
 *The switchboard. The knowledge delivery system of the AudHDities Sanctuary.*
 
-Built on the [Resonance Grammar](https://github.com/Quantum-Weaver/resonance-knowledge) — every fragment contains the whole.
+Built on the [Resonance Grammar](https://github.com/Quantum-Weaver/resonance-grammar) — every fragment contains the whole.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)]()
@@ -11,7 +11,7 @@ Built on the [Resonance Grammar](https://github.com/Quantum-Weaver/resonance-kno
 
 ## WHAT IT IS
 
-Resonance Bridge is the MCP (Model Context Protocol) server that connects everything in the Sanctuary. It gives Claude, the Council, and all Sanctuary apps a single interface to query the Resonance Knowledge System.
+Resonance Bridge is the MCP (Model Context Protocol) server that connects everything in the Sanctuary. It gives Claude, the Council, and all Sanctuary apps a single interface to query the Resonance Grammar.
 
 **One server. Multiple databases. Read-only. Sovereign.**
 

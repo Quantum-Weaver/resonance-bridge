@@ -14,7 +14,7 @@ try {
 // Read-only, sovereign: this connection cannot write. The ward is code.
 const db = new Database(
   process.env.KNOWLEDGE_DB_PATH ??
-    "C:/_superposition/resonance-knowledge/knowledge.db",
+    "C:/_superposition/resonance-grammar/knowledge.db",
   { readonly: true }
 );
 
