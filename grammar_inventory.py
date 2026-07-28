@@ -24,11 +24,23 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 
-# gaia_config intentionally absent — slated for removal (KP, 2026-07-23)
+# gaia_config REBORN in this base 2026-07-27 (007-gaia-config.sql) as the
+# base's own registry — the 2026-07-23 removal note is superseded. The
+# five lattice tables (006-the-lattice.sql) joined the same night; their
+# anon reads show ONLY status='published' rows by design, so zero here
+# means "nothing published yet", never "dark".
 GRAMMAR_TABLES = [
+    "gaia_config",
     "categories", "atoms", "etymology", "sensory_lexicon",
     "molecules", "molecule_atoms", "organisms", "organism_molecules",
     "organism_atoms",
+    "schemes", "scheme_memberships", "concept_relations",
+    "classification_paths", "classification_path_steps",
+    # the self-aware layer (009, born 2026-07-27 night): registry
+    # class — plain public read, steward-synced against pg_catalog
+    "templates", "policies", "functions", "triggers",
+    "indexes", "enums", "composite_types",
+    "scripts", "columns",  # 010/011 — the MDL reborn
 ]
 
 
