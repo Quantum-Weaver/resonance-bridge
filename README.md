@@ -33,28 +33,32 @@ Resonance Bridge is the MCP (Model Context Protocol) server that connects everyt
 
 | Database | Type | Contents | Line |
 |----------|------|----------|------|
-| **knowledge.db** | Local SQLite | Pipeline output — canonical atoms and molecules | ✅ server (read-only) |
+| **Knowledge Grammar** | Supabase (PostgreSQL) | The LIVING Grammar — 1,953 atoms · 4,156 molecules · 2,540 organisms · sensory canon · thesaurus · folksonomies | ✅ **server (the Grammar line, anon door, read-only)** — landed 2026-07-29, the delivery system's first sitting |
+| **knowledge.db** | Local SQLite | Pipeline output — SEED-ONLY until canon repopulation | ✅ server (read-only) — query_atom's fallback when the Grammar line is absent; the server stays up if the file is missing |
 | **Airtable** | Cloud API (read-only PAT) | KP's prior organization attempts — song portfolio, music-column photography | ✅ server |
-| **Knowledge Grammar** | Supabase (PostgreSQL) | The seeded Grammar — atoms · molecules · organisms + junctions | 🐍 Python workbench (anon key), not yet a server line |
-| **Superposition** | Supabase (PostgreSQL) | Original Sanctuary — 215+ tables, sensory lexicon, categories | 🐍 Python workbench (.env keys), not yet a server line |
+| **Superposition** | Supabase (PostgreSQL) | Original Sanctuary — 117 tables, self-knowing layer | 🐍 Python workbench (.env keys), not yet a server line |
 
 ---
 
 ## TOOLS
 
-*Truth pass 2026-07-27: the server registers FOUR tools today; the
-other four remain the build path's open step (BUILD-GUIDE §5).*
+*Truth pass 2026-07-29 (the delivery-system sitting): the server
+registers TEN tools, all live, smoke-proven over real MCP stdio
+(`server_smoke.py`). The Grammar line serves the living Supabase
+base through the anon door — the same door a stranger would use.*
 
 | Tool | What It Queries | Standing |
 |------|----------------|----------|
-| `query_atom` | Atom definitions with sensory lexicon | ✅ live |
+| `query_atom` | Atom definitions with embedded sensory lexicon (living Grammar; local knowledge.db fallback) | ✅ live |
+| `query_sense` | The sensory canon row for an atom — every channel | ✅ live |
+| `query_emoji` | Thesaurus definitions by emoji or word, linked to the canon, optionally scoped per app | ✅ live |
+| `query_folksonomy` | The named folksonomies — or one app's WHOLE mood lexicon in one call | ✅ live |
+| `query_molecule` | Molecule definitions with constituent atom words | ✅ live |
+| `query_organism` | Organism definitions with domain, habitat, lifecycle | ✅ live |
+| `search_knowledge` | Full-text search across atoms · molecules · organisms · thesaurus | ✅ live |
 | `airtable_list_bases` | Every base the token can see (discovery first) | ✅ live |
 | `airtable_list_tables` | One base's schema — tables, fields, views | ✅ live |
 | `airtable_query_records` | Records from one table, paged, read-only | ✅ live |
-| `query_molecule` | Molecule compositions with schemas | ⬜ planned |
-| `query_sense` | Senses with subcategories | ⬜ planned |
-| `query_emoji` | Emoji definitions with sensory lexicon | ⬜ planned |
-| `search_knowledge` | Full-text search across all databases | ⬜ planned |
 
 ### Standalone scripts (beside the server, same `.env`, all read-only)
 

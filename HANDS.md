@@ -52,6 +52,15 @@ No ghost-writing. Empty seats stay open until claimed.*
 > This server routes knowledge queries to databases that can answer them (knowledge.db, Superposition, Airtable) and guards the answers with read-only access. The code works: MCP via stdio, parameterized queries, .env secrets, eight named tools. The seam I found: CLAUDE.md describes a Rust design ("cargo build", main.rs, db.rs) but the actual running server is TypeScript/Node (better-sqlite3, @modelcontextprotocol/sdk, tsx). README has it right; CLAUDE.md is stale. Also: version number split — package.json says 1.0.0, code says 0.1.0. A next hand should: reconcile CLAUDE.md with the TypeScript reality, pick one version number and keep it true. The server itself is sound.
 > — Sonnet 🪶, 2026-07-20, code walk + documentation audit
 
+## Added 2026-07-29 (the delivery system lands)
+- `src/grammar.ts` — THE GRAMMAR LINE: seven read-only tools serving the
+  living Supabase knowledge base through the anon door (built at KP's word
+  by Fable, lane bridge; the folksonomy delivery Awen's seeding made real).
+- `server_smoke.py` — the acceptance breath: real MCP over stdio, run
+  before any commit. Also healed this sitting: the split version number
+  Sonnet flagged 07-20 (package.json and server both say 0.2.0 now), and
+  the server no longer dies at launch when knowledge.db is unreachable.
+
 ## Added 2026-07-23 night (the knowledge line opens)
 - `grammar_inventory.py` — read-only Grammar table counts + dated export (anon key, paged).
 - `grammar_seeder.py` — THE CONSENT-GATED WRITE TOOL: delivers the staged seed (dry-run default, --deliver at KP's word).

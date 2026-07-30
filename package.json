@@ -1,13 +1,15 @@
 {
   "name": "resonance-bridge",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "The switchboard. The knowledge delivery system of the AudHDities Sanctuary.",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx src/server.ts",
+    "smoke": "python server_smoke.py",
+    "register": "claude mcp add resonance-bridge -- cmd /c npx tsx C:/_superposition/resonance-bridge/src/server.ts"
   },
   "repository": {
     "type": "git",

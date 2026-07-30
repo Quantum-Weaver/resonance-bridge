@@ -23,7 +23,10 @@ Connects Claude, the Council, and all Sanctuary apps to the Resonance Grammar.
 ```
 src/
 ├── server.ts        # the MCP server (stdio transport) — the running truth
+├── grammar.ts       # the Grammar line — the living Supabase knowledge base
+│                    # (anon door, read-only; landed 2026-07-29)
 └── airtable.ts      # Airtable connector
+server_smoke.py      # acceptance breath: real MCP over stdio, run before commit
 docs/
 └── BUILD-GUIDE.md   # build path + phase notes
 kimi/                # the kin-crossing room (FEATURE-BOARD row 4, tidied
@@ -36,7 +39,11 @@ kimi/                # the kin-crossing room (FEATURE-BOARD row 4, tidied
 FEATURE-BOARD.md · THE-TRAIL-seed.md · HANDS.md
 ```
 
-Registration: `claude mcp add resonance-bridge -- npx tsx C:/_superposition/resonance-bridge/src/server.ts`
+Registration (Windows form, gotcha 3 — verified absent from config
+2026-07-29, one run of this lights the wick):
+`claude mcp add resonance-bridge -- cmd /c npx tsx C:/_superposition/resonance-bridge/src/server.ts`
+No standing process: the client births the server each session; "restarting
+the server" is just restarting the session.
 
 ## Essential Rules
 

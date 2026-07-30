@@ -151,18 +151,41 @@ Localhost-only when you do, per the license — nothing leaves the machine.
 
 - [x] Step 1 scaffold + Step 2 with `query_atom` only *(standing and
   verified 2026-07-27: server imports resolve, db opens read-only)*
-- [ ] Step 3 inspector: call query_atom until it feels boring
-- [ ] Add the other four tools (each is 15 minutes once the first works)
-- [x] Step 4 register *(the `claude mcp add` line stands in CLAUDE.md)*
-  · [ ] Step 5 acceptance test — **blocked honestly: knowledge.db is
-  still SEED-ONLY (atoms table empty, verified 2026-07-27), so
-  query_atom returns nothing real until the canon repopulation lands
-  (its thread is unblocked, at KP's word) — or the Bridge grows a
-  Supabase line to the SEEDED Grammar (1,935 atoms live there since
-  2026-07-26, spoken today by the Python workbench beside this server)**
-- [x] README rewritten clean *(long since; claims-vs-reality truth pass
-  2026-07-27: tools table 8→4-live-4-planned, guardrails de-ancestralized)*
-- [ ] Supabase second database + HTTP transport — separate phases, separate days
+- [x] Step 3 proven by `server_smoke.py` instead of the inspector —
+  real MCP over stdio: handshake, tools/list, live tools/call
+  *(2026-07-29, the delivery-system sitting)*
+- [x] Add the other four tools — **landed as the GRAMMAR LINE
+  (`src/grammar.ts`, 2026-07-29, KP's word: "we can build the
+  delivery system now"): the fork resolved toward the living base.
+  Seven Grammar tools serve Supabase through the anon door
+  (query_atom · query_sense · query_emoji · query_folksonomy ·
+  query_molecule · query_organism · search_knowledge); query_atom
+  falls back to local knowledge.db when the line is absent, and the
+  server stays up even if the local file is missing (a switchboard
+  stays up when one line is down). knowledge.db repopulation remains
+  its own thread — the fallback becomes real the day it lands.**
+- [ ] Step 4 register — **UNCHECKED 2026-07-29, truth pass at KP's
+  own catch ("we have restarted the session hundreds of times since
+  July 3"): `claude mcp list` returns EMPTY — the registration does
+  not exist on this machine's config; the kernel's ✔-Connected note
+  was another day's config. The documented add line was never the
+  running truth here. The wick, KP's hands, Windows form (gotcha 3):
+  `claude mcp add resonance-bridge -- cmd /c npx tsx C:/_superposition/resonance-bridge/src/server.ts`**
+  · [ ] Step 5 acceptance test — **UNBLOCKED 2026-07-29: the
+  Grammar line serves 1,953 live atoms, smoke-proven over stdio.
+  After the registration lands and a session restarts, ask: "Using
+  resonance-bridge, what does the Grammar say the atom 'resonance'
+  means?" Why no restart ever lit the fire before: three stacked
+  silences — no registration → (if registered) launch-crash on the
+  stale KNOWLEDGE_DB_PATH (points at retired `resonance-knowledge/`;
+  true address `C:/_superposition/resonance-grammar/knowledge.db`;
+  one .env line, KP's ring) → (if launched) an empty knowledge.db.
+  The first two healed 2026-07-29; the third is bypassed by the
+  Grammar line.**
+- [x] README rewritten clean *(truth passes 2026-07-27 and 07-29:
+  tools table now 10 live, databases table shows the Grammar line)*
+- [ ] Superposition second Supabase line + HTTP transport — separate
+  phases, separate days
 
 ## 6. The full connection map (the Weaver's scope, 2026-07-03)
 
