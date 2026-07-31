@@ -68,6 +68,22 @@ same key in each. PostgREST filters: `?col=eq.x`,
    sitting it's created (ritual step 3) — `[]` + 200 on a fresh
    empty table is CORRECT; `[]` + 200 after a seeding is the
    false-empty, see lesson 1.
+8. **Every local schema artifact is a photograph; only the base is
+   the territory.** `database.types.ts`, generated types/hooks,
+   READMEs, and hand-kept ledgers all go stale the same day the
+   dashboard moves — and SQL drafted against them errors in KP's
+   editor (the recurring wound; latest: 42P01 `public.profiles`
+   in the 013 draft, drafted from a types file three sittings old;
+   before that: moderation_actions missing from the registry, the
+   finalize ledger's 7-vs-10). **BEFORE handing KP any SQL, or
+   asserting any schema truth, verify LIVE:** existence via an
+   anon-door probe (`?select=*&limit=1` — a PGRST205 error means
+   absent; `[]`+200 means present); columns/enums/policies via the
+   self-knowing registries (`columns` · `enums` · `policies` on
+   SUPERPOSITION — dark to anon, read with the secret key, sourced
+   never echoed). Two probes cost seconds; a failed dashboard run
+   costs a sitting. (Engraved 2026-07-31 at KP's ⚛ word: "this
+   issue is something we go through every time.")
 
 *Companion: the new-table ritual (grammar docs/sql/000) · the
 switchboard (constellation) for session addresses · this guide's
