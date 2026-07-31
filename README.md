@@ -35,7 +35,13 @@ Resonance Bridge is the MCP (Model Context Protocol) server that connects everyt
 |----------|------|----------|------|
 | **Knowledge Grammar** | Supabase (PostgreSQL) | The LIVING Grammar — 1,953 atoms · 4,156 molecules · 2,540 organisms · sensory canon · thesaurus · folksonomies | ✅ **server (the Grammar line, anon door, read-only)** — landed 2026-07-29, the delivery system's first sitting |
 | **knowledge.db** | Local SQLite | Pipeline output — SEED-ONLY until canon repopulation | ✅ server (read-only) — query_atom's fallback when the Grammar line is absent; the server stays up if the file is missing |
-| **Airtable** | Cloud API (read-only PAT) | KP's prior organization attempts — song portfolio, music-column photography | ✅ server |
+| **Airtable** | Cloud API (read-only PAT) | KP's prior organization attempts — song portfolio, music-column photography | ⏸ line retired at KP's word 2026-07-31 (key off the ring; tools answer their reconnection guidance until a key returns) |
+| **Vercel** | Cloud API (account token) | The hosting — projects, deployments, domains, env-var NAMES (values stripped in code, never returned) | ✅ **server (the Vercel line, read-only window)** — landed 2026-07-29 |
+| **Resend** | Cloud API (full-access admin key) | The email house — domains, key names, audiences, broadcasts. NO send tool, deliberately: a send is a consent gate | ✅ **server (the Resend line, reads only)** — landed 2026-07-31 at the resend-expert's commission |
+| **Stripe** | Cloud API (live restricted key, "prometheus-stripe") | The merchant account — profile, balance, products, prices, links, webhooks, sessions, events, charges, customers (privacy stripe: ids+dates only) | ✅ **server (the Stripe line, ten windows, GETs forever)** — landed 2026-07-31 at the stripe-expert's commission |
+| **GitHub** | Cloud API (fine-grained PAT, `HOUSE_GITHUB_PAT` — F8 rename executed) | The repos — token health with expiry (the F7 watch), repo census, Actions/secrets names, webhooks (URLs redacted), releases with download counts, traffic | ✅ **server (the GitHub line, seven windows)** — landed 2026-07-31 at the github-expert's commission |
+| **Discord** | Cloud API (bot token, "Resonance Bridge") | The server — identity, overview with counts, channels, roles, webhooks by true name (token/url stripped in code), emoji census, verbatim channel reads. NO send tool: a post is outward speech | ✅ **server (the Discord line, seven windows)** — landed 2026-07-31 at the discord-expert's commission; bot minted, invited, and guild-addressed by KP's hands the same hour — all seven windows answering live |
+| **Supabase management** | Management API (`SUPABASE_ACCESS_TOKEN` — account-wide; the most warded line on the board) | The dashboard itself — project shelf with pause-watch, auth config through an allowlist (smtp_pass → set:true/false), SELECT-only live SQL, the false-empty detector, advisors, function and bucket censuses | ✅ **server (the Supabase line, seven windows)** — landed 2026-07-31 at the supabase-expert's commission; zero new keys |
 | **Superposition** | Supabase (PostgreSQL) | Original Sanctuary — 117 tables, self-knowing layer | 🐍 Python workbench (.env keys), not yet a server line |
 
 ---
@@ -56,9 +62,43 @@ base through the anon door — the same door a stranger would use.*
 | `query_molecule` | Molecule definitions with constituent atom words | ✅ live |
 | `query_organism` | Organism definitions with domain, habitat, lifecycle | ✅ live |
 | `search_knowledge` | Full-text search across atoms · molecules · organisms · thesaurus | ✅ live |
-| `airtable_list_bases` | Every base the token can see (discovery first) | ✅ live |
-| `airtable_list_tables` | One base's schema — tables, fields, views | ✅ live |
-| `airtable_query_records` | Records from one table, paged, read-only | ✅ live |
+| `airtable_list_bases` | Every base the token can see (discovery first) | ⏸ key retired 2026-07-31 |
+| `airtable_list_tables` | One base's schema — tables, fields, views | ⏸ key retired 2026-07-31 |
+| `airtable_query_records` | Records from one table, paged, read-only | ⏸ key retired 2026-07-31 |
+| `vercel_list_projects` | Every Vercel project — framework, latest production state | ✅ live |
+| `vercel_list_deployments` | Recent deploys — state, target, branch, commit | ✅ live |
+| `vercel_list_domains` | One project's domains and verification state | ✅ live |
+| `vercel_list_env_names` | Env-var NAMES + targets + types — values stripped in code | ✅ live |
+| `resend_list_domains` | Sending domains and verification status | ✅ live |
+| `resend_list_api_keys` | Resend key NAMES and dates (values never exist in transit) | ✅ live |
+| `resend_list_audiences` | Audiences — the consent-side inventory | ✅ live |
+| `resend_list_broadcasts` | Broadcasts — what the house ever said, as inventory | ✅ live |
+| `stripe_account` | The merchant profile — where the account stands, by machine | ✅ live |
+| `stripe_list_webhook_endpoints` | H1's registration state made visible (the F2 watch) | ✅ live |
+| `stripe_list_products` · `stripe_list_prices` | The shelves and the solidarity-pricing surface | ✅ live |
+| `stripe_list_payment_links` | The no-code rails | ✅ live |
+| `stripe_list_checkout_sessions` · `stripe_list_events` | The rail's crossings and the audit trail | ✅ live |
+| `stripe_balance` · `stripe_list_charges` | The money's story, once it moves | ✅ live |
+| `stripe_list_customers` | Counts, ids, dates ONLY — names/emails stripped in code | ✅ live |
+| `github_token_status` | Token login, EXPIRY date, rate limit — the F7 health check | ✅ live |
+| `github_list_repos` | The public/private census across every owned repo | ✅ live |
+| `github_repo_status` | One repo deep — release, Pages, branch protection | ✅ live |
+| `github_list_actions` | Workflow + Actions-secret NAMES (the ring-5 audit) | ✅ live |
+| `github_list_webhooks` | Repo webhooks — URLs redacted to scheme+host in code | ✅ live |
+| `github_list_releases` | Releases with per-asset download counts | ✅ live |
+| `github_repo_traffic` | Two-week views/clones — degrades if scope ungranted | ✅ live |
+| `discord_whoami` | The bot's identity and servers — the line test | ✅ live |
+| `discord_server_overview` | Name, owner, counts, boosts — the ownership answer | ✅ live (awaits guild id) |
+| `discord_list_channels` · `discord_list_roles` | The server's street map and its roles | ✅ live (awaits guild id) |
+| `discord_list_webhooks` | Webhooks by true name — token/url STRIPPED in code | ✅ live (awaits guild id) |
+| `discord_emoji_sticker_census` | Emoji/sticker names vs the free caps | ✅ live (awaits guild id) |
+| `discord_read_channel` | Verbatim channel reads — the carrier law rides it | ✅ live |
+| `supabase_list_projects` | The project shelf with status — the pause-watch | ✅ live |
+| `supabase_get_auth_config` | Auth config through the allowlist — the SMTP answer | ✅ live |
+| `supabase_select` | ONE SELECT/WITH statement, guard in code, 200-row cap | ✅ live |
+| `supabase_list_tables` | RLS + policy count per table — the false-empty detector | ✅ live |
+| `supabase_get_advisors` | Security/performance lamps, degrading gracefully | ✅ live |
+| `supabase_list_functions` · `supabase_list_buckets` | Edge-function and storage censuses — emptiness verified, not presumed | ✅ live |
 
 ### Standalone scripts (beside the server, same `.env`, all read-only)
 

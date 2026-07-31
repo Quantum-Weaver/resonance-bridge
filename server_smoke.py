@@ -80,6 +80,13 @@ checks = [
     ("query_folksonomy", {"app": "Echoes"}),
     ("query_emoji", {"word": "Focused"}),
     ("search_knowledge", {"query": "bridge", "limit": 2}),
+    ("vercel_list_projects", {}),
+    ("resend_list_domains", {}),
+    ("stripe_account", {}),
+    ("stripe_list_webhook_endpoints", {}),
+    ("github_token_status", {}),
+    ("discord_whoami", {}),
+    ("supabase_list_projects", {}),
 ]
 for tool, args in checks:
     out = call(tool, args)

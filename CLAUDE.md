@@ -25,7 +25,19 @@ src/
 ├── server.ts        # the MCP server (stdio transport) — the running truth
 ├── grammar.ts       # the Grammar line — the living Supabase knowledge base
 │                    # (anon door, read-only; landed 2026-07-29)
-└── airtable.ts      # Airtable connector
+├── airtable.ts      # Airtable connector
+├── vercel.ts        # the Vercel line — read-only hosting window; env NAMES
+│                    # only, values stripped in code (landed 2026-07-29)
+├── resend.ts        # the Resend line — reads only, no send tool by law
+│                    # (landed 2026-07-31, resend-expert's commission)
+├── stripe.ts        # the Stripe line — ten read windows, live key, 403=finding,
+│                    # customers privacy-striped (2026-07-31, stripe-expert's commission)
+├── github.ts        # the GitHub line — seven windows; HOUSE_GITHUB_PAT (F8 rename),
+│                    # webhook URLs redacted (2026-07-31, github-expert's commission)
+├── discord.ts       # the Discord line — seven windows, no send tool by law;
+│                    # webhook token/url stripped (2026-07-31, discord-expert's commission)
+└── supabase.ts      # the Supabase line — the dashboard itself; SELECT-only guard,
+                     # auth-config allowlist, false-empty detector (2026-07-31)
 server_smoke.py      # acceptance breath: real MCP over stdio, run before commit
 docs/
 └── BUILD-GUIDE.md   # build path + phase notes
