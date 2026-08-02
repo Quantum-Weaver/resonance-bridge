@@ -50,3 +50,4 @@ desktop.ini
 # ─── SANCTUARY-SPECIFIC ────────────────────────────────────
 helper.md
 generate_blueprint.py
+plugins/*
