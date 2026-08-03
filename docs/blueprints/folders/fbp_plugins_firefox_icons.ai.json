@@ -1,0 +1,122 @@
+{
+  "folder_name": "icons",
+  "folder_path": "plugins/firefox/icons",
+  "description": "27 files, 0 subfolders",
+  "scan_timestamp": "2026-08-03T16:41:06.177711 | in sovereign time",
+  "files": [
+    {
+      "path": "plugins/firefox/icons/shuttle-128.png",
+      "description": "file, 670 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-16.png",
+      "description": "file, 121 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-48.png",
+      "description": "file, 247 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-blue-128.png",
+      "description": "file, 664 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-blue-16.png",
+      "description": "file, 121 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-blue-48.png",
+      "description": "file, 250 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-deep-128.png",
+      "description": "file, 663 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-deep-16.png",
+      "description": "file, 121 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-deep-48.png",
+      "description": "file, 250 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-dust-128.png",
+      "description": "file, 657 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-dust-16.png",
+      "description": "file, 119 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-dust-48.png",
+      "description": "file, 254 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-fire-128.png",
+      "description": "file, 670 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-fire-16.png",
+      "description": "file, 120 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-fire-48.png",
+      "description": "file, 251 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-gold-128.png",
+      "description": "file, 674 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-gold-16.png",
+      "description": "file, 122 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-gold-48.png",
+      "description": "file, 247 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-green-128.png",
+      "description": "file, 662 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-green-16.png",
+      "description": "file, 121 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-green-48.png",
+      "description": "file, 246 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-purple-128.png",
+      "description": "file, 666 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-purple-16.png",
+      "description": "file, 121 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-purple-48.png",
+      "description": "file, 252 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-surface-128.png",
+      "description": "file, 663 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-surface-16.png",
+      "description": "file, 121 bytes"
+    },
+    {
+      "path": "plugins/firefox/icons/shuttle-surface-48.png",
+      "description": "file, 249 bytes"
+    }
+  ],
+  "file_count": 27,
+  "subdirectories": [],
+  "code_analysis": {},
+  "package_folders_excluded": [],
+  "maintaining_agent": "FolderAgent",
+  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+}

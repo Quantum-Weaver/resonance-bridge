@@ -1,0 +1,51 @@
+{
+  "report": "declared versus present",
+  "law": "Findings are REPORTED, never repaired. No secret VALUE is ever recorded, including by the check that looks for secrets.",
+  "checked_against": [
+    "CLAUDE.md Essential Rules",
+    "CLAUDE.md Project Structure block",
+    "git's own index"
+  ],
+  "total_findings": 4,
+  "by_kind": {
+    "env-present-and-ignored": 1,
+    "declared-file-absent": 1,
+    "directory-untracked": 2
+  },
+  "findings": [
+    {
+      "kind": "env-present-and-ignored",
+      "what": "the keyring's own file",
+      "declared": "present, ignored, untracked",
+      "present": "present, ignored, untracked  [OK]",
+      "address": ".env",
+      "note": "Stated rather than silent: a verified-good safety property should be visible, not merely absent from the findings."
+    },
+    {
+      "kind": "declared-file-absent",
+      "what": "CLAUDE.md's Project Structure block names files that are not there",
+      "declared": "18 named",
+      "present": "1 absent",
+      "address": "CLAUDE.md",
+      "note": "Absent: tools/BLUEPRINT-FORGE.md \u2014 a voiced file: reported, never auto-written."
+    },
+    {
+      "kind": "directory-untracked",
+      "what": "'plugins/' holds files that git does not track",
+      "declared": "tracked or ignored, deliberately",
+      "present": "33 files, 0 tracked",
+      "address": "plugins",
+      "note": "Neither committed nor ignored is the one state that loses work silently. Whether it should be tracked or ignored is a hand's call."
+    },
+    {
+      "kind": "directory-untracked",
+      "what": "'tools/' holds files that git does not track",
+      "declared": "tracked or ignored, deliberately",
+      "present": "1 files, 0 tracked",
+      "address": "tools",
+      "note": "Neither committed nor ignored is the one state that loses work silently. Whether it should be tracked or ignored is a hand's call."
+    }
+  ],
+  "note": "Zero findings is a real result, not an empty section.",
+  "scan_timestamp": "2026-08-03T16:41:06.709678 | in sovereign time"
+}

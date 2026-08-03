@@ -1,0 +1,40 @@
+{
+  "folder_name": "firefox",
+  "folder_path": "plugins/firefox",
+  "description": "Carries messages between browser and knowledge system. Copies syntax, never transmutes",
+  "scan_timestamp": "2026-08-03T16:41:06.172631 | in sovereign time",
+  "files": [
+    {
+      "path": "plugins/firefox/background.js",
+      "description": "THE SHUTTLE"
+    },
+    {
+      "path": "plugins/firefox/content.js",
+      "description": "THE SHUTTLE"
+    },
+    {
+      "path": "plugins/firefox/manifest.json",
+      "description": "data, 1,266 bytes"
+    },
+    {
+      "path": "plugins/firefox/popup.html",
+      "description": "file, 4,839 bytes"
+    },
+    {
+      "path": "plugins/firefox/popup.js",
+      "description": "THE SHUTTLE"
+    },
+    {
+      "path": "plugins/firefox/README.md",
+      "description": "The Shuttle"
+    }
+  ],
+  "file_count": 6,
+  "subdirectories": [
+    "plugins/firefox/icons"
+  ],
+  "code_analysis": {},
+  "package_folders_excluded": [],
+  "maintaining_agent": "FolderAgent",
+  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+}

@@ -1,0 +1,477 @@
+{
+  "folder_name": "resonance-bridge",
+  "folder_path": ".",
+  "description": "The switchboard. The knowledge delivery system of the AudHDities Sanctuary",
+  "scan_timestamp": "2026-08-03T16:41:06.153795 | in sovereign time",
+  "files": [
+    {
+      "path": ".gitignore",
+      "description": "file, 1,587 bytes"
+    },
+    {
+      "path": "atoms_dump.py",
+      "description": "Disposable: pull the live atoms table's atom_word column for KP's eye."
+    },
+    {
+      "path": "CLAUDE.md",
+      "description": "CLAUDE.md"
+    },
+    {
+      "path": "emoji_wave_seeder.py",
+      "description": "emoji_wave_seeder.py"
+    },
+    {
+      "path": "FABLE-KERNEL.md",
+      "description": "FABLE-KERNEL"
+    },
+    {
+      "path": "FEATURE-BOARD.md",
+      "description": "BRIDGE"
+    },
+    {
+      "path": "grammar_clear_name_tiers.py",
+      "description": "grammar_clear_name_tiers.py"
+    },
+    {
+      "path": "grammar_inventory.py",
+      "description": "grammar_inventory.py"
+    },
+    {
+      "path": "grammar_purge_all.py",
+      "description": "grammar_purge_all.py"
+    },
+    {
+      "path": "grammar_seeder.py",
+      "description": "grammar_seeder.py"
+    },
+    {
+      "path": "grammar_wipe_seeded.py",
+      "description": "grammar_wipe_seeded.py"
+    },
+    {
+      "path": "HANDS.md",
+      "description": "The Hands"
+    },
+    {
+      "path": "knowledge_sql.py",
+      "description": "knowledge_sql.py"
+    },
+    {
+      "path": "lattice_seeder.py",
+      "description": "lattice_seeder.py"
+    },
+    {
+      "path": "lattice_wave2_gen.py",
+      "description": "lattice_wave2_gen.py"
+    },
+    {
+      "path": "lattice_wave3_gen.py",
+      "description": "lattice_wave3_gen.py"
+    },
+    {
+      "path": "lattice_wave4_gen.py",
+      "description": "lattice_wave4_gen.py"
+    },
+    {
+      "path": "lattice_wave5_gen.py",
+      "description": "lattice_wave5_gen.py"
+    },
+    {
+      "path": "lattice_wave6_gen.py",
+      "description": "lattice_wave6_gen.py"
+    },
+    {
+      "path": "LICENSE",
+      "description": "file, 1,092 bytes"
+    },
+    {
+      "path": "MOVED.md",
+      "description": "MOVED"
+    },
+    {
+      "path": "package-lock.json",
+      "description": "data, 76,135 bytes"
+    },
+    {
+      "path": "package.json",
+      "description": "data, 1,081 bytes"
+    },
+    {
+      "path": "PHILOSOPHY.md",
+      "description": "THE RESONANCE LICENSE"
+    },
+    {
+      "path": "README.md",
+      "description": "\ud83d\udd25 Resonance Bridge"
+    },
+    {
+      "path": "scheme_anchor_seeder.py",
+      "description": "scheme_anchor_seeder.py"
+    },
+    {
+      "path": "server_smoke.py",
+      "description": "server_smoke.py"
+    },
+    {
+      "path": "THE-TRAIL-seed.md",
+      "description": "THE TRAIL"
+    },
+    {
+      "path": "verify_terms.py",
+      "description": "verify_terms.py"
+    }
+  ],
+  "file_count": 29,
+  "subdirectories": [
+    "docs",
+    "kimi",
+    "listening",
+    "plugins",
+    "reports",
+    "src",
+    "tools"
+  ],
+  "code_analysis": {
+    "atoms_dump.py": {
+      "language": "python",
+      "lines": 49,
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": false
+    },
+    "emoji_wave_seeder.py": {
+      "language": "python",
+      "lines": 141,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "req",
+        "fetch_all",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "grammar_clear_name_tiers.py": {
+      "language": "python",
+      "lines": 38,
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "pathlib",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": false
+    },
+    "grammar_inventory.py": {
+      "language": "python",
+      "lines": 110,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "fetch",
+        "main"
+      ],
+      "imports": [
+        "datetime",
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "grammar_purge_all.py": {
+      "language": "python",
+      "lines": 41,
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "pathlib",
+        "the",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": false
+    },
+    "grammar_seeder.py": {
+      "language": "python",
+      "lines": 207,
+      "classes": [
+        "Base"
+      ],
+      "functions": [
+        "load_env",
+        "read_stage",
+        "main"
+      ],
+      "imports": [
+        "datetime",
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "grammar_wipe_seeded.py": {
+      "language": "python",
+      "lines": 104,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "req",
+        "delete",
+        "fetch_ids",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "the",
+        "urllib.parse",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "knowledge_sql.py": {
+      "language": "python",
+      "lines": 52,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "lattice_seeder.py": {
+      "language": "python",
+      "lines": 583,
+      "classes": [
+        "Base"
+      ],
+      "functions": [
+        "load_env",
+        "deliver_members",
+        "fetch_id_map",
+        "deliver_memberships",
+        "deliver_relations",
+        "deliver_paths",
+        "deliver_enrichment",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "lattice_wave2_gen.py": {
+      "language": "python",
+      "lines": 186,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "split_words",
+        "has_acronym",
+        "fetch_names",
+        "main"
+      ],
+      "imports": [
+        "csv",
+        "json",
+        "pathlib",
+        "re",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "lattice_wave3_gen.py": {
+      "language": "python",
+      "lines": 174,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "parse_unions",
+        "fetch_names",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "re",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "lattice_wave4_gen.py": {
+      "language": "python",
+      "lines": 203,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "fetch_names",
+        "parse_assignments",
+        "main"
+      ],
+      "imports": [
+        "csv",
+        "json",
+        "pathlib",
+        "re",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "lattice_wave5_gen.py": {
+      "language": "python",
+      "lines": 137,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "fetch_names",
+        "parse_assignments",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "re",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "lattice_wave6_gen.py": {
+      "language": "python",
+      "lines": 199,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "read_csv",
+        "main"
+      ],
+      "imports": [
+        "csv",
+        "json",
+        "pathlib",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "scheme_anchor_seeder.py": {
+      "language": "python",
+      "lines": 122,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "req",
+        "fetch_all",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "server_smoke.py": {
+      "language": "python",
+      "lines": 98,
+      "classes": [],
+      "functions": [
+        "send",
+        "call"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": false
+    },
+    "verify_terms.py": {
+      "language": "python",
+      "lines": 142,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "split_words",
+        "fetch_in",
+        "main"
+      ],
+      "imports": [
+        ".env",
+        "datetime",
+        "json",
+        "pathlib",
+        "re",
+        "sys",
+        "urllib.parse",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    }
+  },
+  "package_folders_excluded": [
+    ".git",
+    "__pycache__",
+    "node_modules"
+  ],
+  "maintaining_agent": "FolderAgent",
+  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+}

@@ -1,0 +1,26 @@
+{
+  "folder_name": "reports",
+  "folder_path": "reports",
+  "description": "3 files, 0 subfolders",
+  "scan_timestamp": "2026-08-03T16:41:06.179695 | in sovereign time",
+  "files": [
+    {
+      "path": "reports/2026-06-30-assessment.md",
+      "description": "Resonance Bridge"
+    },
+    {
+      "path": "reports/analysis.json",
+      "description": "data, 1,109 bytes"
+    },
+    {
+      "path": "reports/inventory.json",
+      "description": "data, 1,938 bytes"
+    }
+  ],
+  "file_count": 3,
+  "subdirectories": [],
+  "code_analysis": {},
+  "package_folders_excluded": [],
+  "maintaining_agent": "FolderAgent",
+  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+}

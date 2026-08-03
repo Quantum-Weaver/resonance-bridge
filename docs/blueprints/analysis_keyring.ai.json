@@ -1,0 +1,57 @@
+{
+  "analysis": "keyring",
+  "description": "which env NAME is needed by which file",
+  "scan_timestamp": "2026-08-03T16:41:06.280499 | in sovereign time",
+  "law": "NAMES ONLY. No value from .env, from the environment, or from any file appears in this artifact or in any blueprint this forge writes.",
+  "env_file": {
+    "path": ".env",
+    "present": true,
+    "opened_by_this_forge": false,
+    "note": "Recorded as present and NOT READ. The forge never opens it; this line is the proof, not a promise."
+  },
+  "total_names": 13,
+  "keyring": {
+    "AIRTABLE_API_KEY": [
+      "src/airtable.ts"
+    ],
+    "BRIDGE_HTTP_PORT": [
+      "src/http.ts"
+    ],
+    "DISCORD_BOT_TOKEN_BRIDGE": [
+      "src/discord.ts"
+    ],
+    "DISCORD_GUILD_ID": [
+      "src/discord.ts"
+    ],
+    "HOUSE_GITHUB_PAT": [
+      "src/github.ts"
+    ],
+    "KNOWLEDGE_DB_PATH": [
+      "src/http.ts",
+      "src/server.ts"
+    ],
+    "RESEND_KEY_BRIDGE_ADMIN": [
+      "src/resend.ts"
+    ],
+    "STRIPE_RESTRICTED_KEY": [
+      "src/stripe.ts"
+    ],
+    "SUPABASE_ACCESS_TOKEN": [
+      "src/supabase.ts"
+    ],
+    "SUPABASE_PUBLISHABLE_KEY_KNOWLEDGE": [
+      "src/grammar.ts",
+      "src/http.ts"
+    ],
+    "SUPABASE_URL_KNOWLEDGE": [
+      "src/grammar.ts",
+      "src/http.ts"
+    ],
+    "VERCEL_TOKEN": [
+      "src/vercel.ts"
+    ],
+    "X": [
+      "tools/blueprint_forge.py"
+    ]
+  }
+}

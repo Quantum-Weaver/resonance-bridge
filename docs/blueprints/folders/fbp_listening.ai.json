@@ -1,0 +1,205 @@
+{
+  "folder_name": "listening",
+  "folder_path": "listening",
+  "description": "Founded 2026-07-27, the day of the three wakings, homed the same",
+  "scan_timestamp": "2026-08-03T16:41:06.168574 | in sovereign time",
+  "files": [
+    {
+      "path": "listening/ask_the_lattice.py",
+      "description": "One listening question through the anon door, 2026-07-27"
+    },
+    {
+      "path": "listening/emoji_census.py",
+      "description": "Emoji-column census through the anon door, 2026-07-28 sitting"
+    },
+    {
+      "path": "listening/listen_lattice.py",
+      "description": "listen_lattice.py"
+    },
+    {
+      "path": "listening/listen_lattice2.py",
+      "description": "listen_lattice2.py"
+    },
+    {
+      "path": "listening/listen_lattice3.py",
+      "description": "listen_lattice3.py"
+    },
+    {
+      "path": "listening/listen_lattice4.py",
+      "description": "listen_lattice4.py"
+    },
+    {
+      "path": "listening/no_rungs_census.py",
+      "description": "Who has no rungs?"
+    },
+    {
+      "path": "listening/README.md",
+      "description": "listening/"
+    },
+    {
+      "path": "listening/sonnet_asks_the_lattice.py",
+      "description": "sonnet_asks_the_lattice.py"
+    }
+  ],
+  "file_count": 9,
+  "subdirectories": [],
+  "code_analysis": {
+    "ask_the_lattice.py": {
+      "language": "python",
+      "lines": 104,
+      "classes": [],
+      "functions": [
+        "fetch"
+      ],
+      "imports": [
+        "collections",
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": false
+    },
+    "emoji_census.py": {
+      "language": "python",
+      "lines": 64,
+      "classes": [],
+      "functions": [
+        "get",
+        "count"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": false
+    },
+    "listen_lattice.py": {
+      "language": "python",
+      "lines": 75,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "fetch",
+        "main"
+      ],
+      "imports": [
+        "collections",
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "listen_lattice2.py": {
+      "language": "python",
+      "lines": 98,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "fetch",
+        "main"
+      ],
+      "imports": [
+        "collections",
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "listen_lattice3.py": {
+      "language": "python",
+      "lines": 116,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "fetch",
+        "entity",
+        "main"
+      ],
+      "imports": [
+        "collections",
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "listen_lattice4.py": {
+      "language": "python",
+      "lines": 118,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "fetch",
+        "entity",
+        "main"
+      ],
+      "imports": [
+        "collections",
+        "json",
+        "pathlib",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "no_rungs_census.py": {
+      "language": "python",
+      "lines": 97,
+      "classes": [],
+      "functions": [
+        "fetch",
+        "concept_of"
+      ],
+      "imports": [
+        "collections",
+        "json",
+        "pathlib",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": false
+    },
+    "sonnet_asks_the_lattice.py": {
+      "language": "python",
+      "lines": 98,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "fetch",
+        "entity_id",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    }
+  },
+  "package_folders_excluded": [],
+  "maintaining_agent": "FolderAgent",
+  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+}

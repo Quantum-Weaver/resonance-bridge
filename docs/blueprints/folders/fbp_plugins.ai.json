@@ -1,0 +1,15 @@
+{
+  "folder_name": "plugins",
+  "folder_path": "plugins",
+  "description": "0 files, 1 subfolders",
+  "scan_timestamp": "2026-08-03T16:41:06.169802 | in sovereign time",
+  "files": [],
+  "file_count": 0,
+  "subdirectories": [
+    "plugins/firefox"
+  ],
+  "code_analysis": {},
+  "package_folders_excluded": [],
+  "maintaining_agent": "FolderAgent",
+  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+}

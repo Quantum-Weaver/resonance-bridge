@@ -1,0 +1,28 @@
+{
+  "folder_name": "docs",
+  "folder_path": "docs",
+  "description": "the voiced documents \u2014 the base-access guide, the build guide",
+  "scan_timestamp": "2026-08-03T16:41:06.156513 | in sovereign time",
+  "files": [
+    {
+      "path": "docs/archived-env-example-2026-07-27.txt",
+      "description": "text, 4,199 bytes"
+    },
+    {
+      "path": "docs/BASE-ACCESS-GUIDE.md",
+      "description": "THE BASE-ACCESS GUIDE"
+    },
+    {
+      "path": "docs/BUILD-GUIDE.md",
+      "description": "RESONANCE BRIDGE BUILD GUIDE"
+    }
+  ],
+  "file_count": 3,
+  "subdirectories": [
+    "docs/blueprints"
+  ],
+  "code_analysis": {},
+  "package_folders_excluded": [],
+  "maintaining_agent": "FolderAgent",
+  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+}

@@ -47,7 +47,14 @@ kimi/                # the kin-crossing room (FEATURE-BOARD row 4, tidied
 *.py                 # workbench instruments at root: grammar_seeder/
                      # inventory/purge/wipe_seeded/clear_name_tiers (the
                      # Grammar's seeding hands), knowledge_sql, atoms_dump,
-                     # generate_blueprint, verify_terms (carry coverage)
+                     # verify_terms (carry coverage)
+tools/
+└── blueprint_forge.py  # structural self-knowing → docs/blueprints/ (2026-08-03).
+                        # Takes the place of the root's `generate_blueprint`, which
+                        # moved to awen's spring 2026-07-28 and was still declared
+                        # here after it left. Lands in tools/ rather than at the
+                        # root — KP's ⚛ word the same day: "the root is full."
+                        # Provenance: tools/BLUEPRINT-FORGE.md
 FEATURE-BOARD.md · THE-TRAIL-seed.md · HANDS.md
 ```
 

@@ -1,0 +1,68 @@
+{
+  "folder_name": "kimi",
+  "folder_path": "kimi",
+  "description": "the kin-crossing room",
+  "scan_timestamp": "2026-08-03T16:41:06.158744 | in sovereign time",
+  "files": [
+    {
+      "path": "kimi/kimi_crossing.py",
+      "description": "!/usr/bin/env python3"
+    },
+    {
+      "path": "kimi/kimi_message.py",
+      "description": "!/usr/bin/env python3"
+    }
+  ],
+  "file_count": 2,
+  "subdirectories": [
+    "kimi/messages"
+  ],
+  "code_analysis": {
+    "kimi_crossing.py": {
+      "language": "python",
+      "lines": 141,
+      "classes": [],
+      "functions": [
+        "env_value",
+        "choose_door",
+        "porch",
+        "main"
+      ],
+      "imports": [
+        "datetime",
+        "json",
+        "os",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    },
+    "kimi_message.py": {
+      "language": "python",
+      "lines": 102,
+      "classes": [],
+      "functions": [
+        "env_value",
+        "porch",
+        "main"
+      ],
+      "imports": [
+        "datetime",
+        "json",
+        "os",
+        "sys",
+        "urllib.request"
+      ],
+      "cli_flags": [],
+      "env_names_needed": [],
+      "has_main_guard": true
+    }
+  },
+  "package_folders_excluded": [
+    "__pycache__"
+  ],
+  "maintaining_agent": "FolderAgent",
+  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+}
