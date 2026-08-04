@@ -2,7 +2,7 @@
   "folder_name": "listening",
   "folder_path": "listening",
   "description": "Founded 2026-07-27, the day of the three wakings, homed the same",
-  "scan_timestamp": "2026-08-03T16:41:06.168574 | in sovereign time",
+  "scan_timestamp": "2026-08-04T11:09:36.297007 | in sovereign time",
   "files": [
     {
       "path": "listening/ask_the_lattice.py",
@@ -58,8 +58,13 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BRIDGE",
+        "KEY",
+        "REL_KEYS",
+        "URL"
+      ],
+      "env_names_read": [],
       "has_main_guard": false
     },
     "emoji_census.py": {
@@ -76,8 +81,12 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BRIDGE",
+        "KEY",
+        "URL"
+      ],
+      "env_names_read": [],
       "has_main_guard": false
     },
     "listen_lattice.py": {
@@ -96,8 +105,10 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BRIDGE"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "listen_lattice2.py": {
@@ -116,8 +127,10 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BRIDGE"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "listen_lattice3.py": {
@@ -137,8 +150,10 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BRIDGE"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "listen_lattice4.py": {
@@ -157,8 +172,10 @@
         "pathlib",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BRIDGE"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "no_rungs_census.py": {
@@ -175,9 +192,34 @@
         "pathlib",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BRIDGE",
+        "KEY",
+        "URL"
+      ],
+      "env_names_read": [],
       "has_main_guard": false
+    },
+    "README.md": {
+      "language": "markdown",
+      "lines": 35,
+      "words": 281,
+      "heading_count": 2,
+      "headings": [
+        "listening/ \u2014 one-off questions asked of the lattice through the anon door",
+        "The scripts, with provenance"
+      ],
+      "links_external": 0,
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
     },
     "sonnet_asks_the_lattice.py": {
       "language": "python",
@@ -194,12 +236,14 @@
         "pathlib",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BRIDGE"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     }
   },
-  "package_folders_excluded": [],
   "maintaining_agent": "FolderAgent",
-  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+  "folders_not_walked": [],
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

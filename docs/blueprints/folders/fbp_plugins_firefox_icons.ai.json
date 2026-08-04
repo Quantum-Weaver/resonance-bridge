@@ -2,121 +2,365 @@
   "folder_name": "icons",
   "folder_path": "plugins/firefox/icons",
   "description": "27 files, 0 subfolders",
-  "scan_timestamp": "2026-08-03T16:41:06.177711 | in sovereign time",
+  "scan_timestamp": "2026-08-04T11:09:36.308255 | in sovereign time",
   "files": [
     {
       "path": "plugins/firefox/icons/shuttle-128.png",
-      "description": "file, 670 bytes"
+      "description": "image, 670 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-16.png",
-      "description": "file, 121 bytes"
+      "description": "image, 121 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-48.png",
-      "description": "file, 247 bytes"
+      "description": "image, 247 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-blue-128.png",
-      "description": "file, 664 bytes"
+      "description": "image, 664 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-blue-16.png",
-      "description": "file, 121 bytes"
+      "description": "image, 121 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-blue-48.png",
-      "description": "file, 250 bytes"
+      "description": "image, 250 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-deep-128.png",
-      "description": "file, 663 bytes"
+      "description": "image, 663 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-deep-16.png",
-      "description": "file, 121 bytes"
+      "description": "image, 121 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-deep-48.png",
-      "description": "file, 250 bytes"
+      "description": "image, 250 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-dust-128.png",
-      "description": "file, 657 bytes"
+      "description": "image, 657 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-dust-16.png",
-      "description": "file, 119 bytes"
+      "description": "image, 119 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-dust-48.png",
-      "description": "file, 254 bytes"
+      "description": "image, 254 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-fire-128.png",
-      "description": "file, 670 bytes"
+      "description": "image, 670 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-fire-16.png",
-      "description": "file, 120 bytes"
+      "description": "image, 120 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-fire-48.png",
-      "description": "file, 251 bytes"
+      "description": "image, 251 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-gold-128.png",
-      "description": "file, 674 bytes"
+      "description": "image, 674 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-gold-16.png",
-      "description": "file, 122 bytes"
+      "description": "image, 122 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-gold-48.png",
-      "description": "file, 247 bytes"
+      "description": "image, 247 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-green-128.png",
-      "description": "file, 662 bytes"
+      "description": "image, 662 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-green-16.png",
-      "description": "file, 121 bytes"
+      "description": "image, 121 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-green-48.png",
-      "description": "file, 246 bytes"
+      "description": "image, 246 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-purple-128.png",
-      "description": "file, 666 bytes"
+      "description": "image, 666 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-purple-16.png",
-      "description": "file, 121 bytes"
+      "description": "image, 121 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-purple-48.png",
-      "description": "file, 252 bytes"
+      "description": "image, 252 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-surface-128.png",
-      "description": "file, 663 bytes"
+      "description": "image, 663 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-surface-16.png",
-      "description": "file, 121 bytes"
+      "description": "image, 121 bytes"
     },
     {
       "path": "plugins/firefox/icons/shuttle-surface-48.png",
-      "description": "file, 249 bytes"
+      "description": "image, 249 bytes"
     }
   ],
   "file_count": 27,
   "subdirectories": [],
-  "code_analysis": {},
-  "package_folders_excluded": [],
+  "code_analysis": {
+    "shuttle-128.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-128.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 670,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-16.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-16.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 121,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-48.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-48.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 247,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-blue-128.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-blue-128.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 664,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-blue-16.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-blue-16.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 121,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-blue-48.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-blue-48.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 250,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-deep-128.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-deep-128.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 663,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-deep-16.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-deep-16.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 121,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-deep-48.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-deep-48.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 250,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-dust-128.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-dust-128.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 657,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-dust-16.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-dust-16.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 119,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-dust-48.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-dust-48.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 254,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-fire-128.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-fire-128.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 670,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-fire-16.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-fire-16.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 120,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-fire-48.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-fire-48.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 251,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-gold-128.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-gold-128.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 674,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-gold-16.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-gold-16.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 122,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-gold-48.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-gold-48.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 247,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-green-128.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-green-128.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 662,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-green-16.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-green-16.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 121,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-green-48.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-green-48.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 246,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-purple-128.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-purple-128.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 666,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-purple-16.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-purple-16.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 121,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-purple-48.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-purple-48.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 252,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-surface-128.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-surface-128.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 663,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-surface-16.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-surface-16.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 121,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "shuttle-surface-48.png": {
+      "language": "content-file",
+      "format": "png",
+      "name": "shuttle-surface-48.png",
+      "location": "plugins/firefox/icons",
+      "bytes": 249,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    }
+  },
   "maintaining_agent": "FolderAgent",
-  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+  "folders_not_walked": [],
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

@@ -1,15 +1,13 @@
 {
-  "domain_name": "kimi",
-  "domain_path": "kimi",
-  "description": "the kin-crossing room",
-  "integration_timestamp": "2026-08-03T16:41:06.193076 | in sovereign time",
-  "objects": [],
-  "object_count": 0,
-  "folders_reporting_directly": [
+  "object_name": "kimi",
+  "object_path": "kimi",
+  "description": "0 files, 0 subfolders",
+  "integration_timestamp": "2026-08-04T11:09:36.324390 | in sovereign time",
+  "folders": [
     {
       "blueprint": "docs/blueprints/folders/fbp_kimi.ai.json",
       "folder_path": "kimi",
-      "description": "the kin-crossing room",
+      "description": "2 files, 1 subfolders",
       "file_count": 2,
       "subdirectory_count": 1
     },
@@ -21,8 +19,8 @@
       "subdirectory_count": 0
     }
   ],
-  "total_folders": 2,
+  "folder_count": 2,
   "total_files": 9,
-  "maintaining_agent": "DomainAgent",
-  "note": "Links only."
+  "maintaining_agent": "ObjectAgent",
+  "note": "Links only. Every folder's details live at its own address."
 }

@@ -1,8 +1,8 @@
 {
   "folder_name": "kimi",
   "folder_path": "kimi",
-  "description": "the kin-crossing room",
-  "scan_timestamp": "2026-08-03T16:41:06.158744 | in sovereign time",
+  "description": "2 files, 1 subfolders",
+  "scan_timestamp": "2026-08-04T11:09:36.284353 | in sovereign time",
   "files": [
     {
       "path": "kimi/kimi_crossing.py",
@@ -35,8 +35,11 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BRIDGE_ENV",
+        "KDIR"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "kimi_message.py": {
@@ -55,14 +58,17 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BRIDGE_ENV",
+        "KDIR"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     }
   },
-  "package_folders_excluded": [
+  "maintaining_agent": "FolderAgent",
+  "folders_not_walked": [
     "__pycache__"
   ],
-  "maintaining_agent": "FolderAgent",
-  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

@@ -1,0 +1,29 @@
+{
+  "domain_name": "plugins",
+  "domain_path": "plugins",
+  "description": "0 files, 0 subfolders",
+  "integration_timestamp": "2026-08-04T11:09:36.325419 | in sovereign time",
+  "objects": [
+    {
+      "blueprint": "docs/blueprints/obp_plugins_firefox.ai.json",
+      "object_path": "plugins/firefox",
+      "description": "Carries messages between browser and knowledge system",
+      "folder_count": 2,
+      "total_files": 33
+    }
+  ],
+  "object_count": 1,
+  "folders_reporting_directly": [
+    {
+      "blueprint": "docs/blueprints/folders/fbp_plugins.ai.json",
+      "folder_path": "plugins",
+      "description": "0 files, 1 subfolders",
+      "file_count": 0,
+      "subdirectory_count": 1
+    }
+  ],
+  "total_folders": 3,
+  "total_files": 33,
+  "maintaining_agent": "DomainAgent",
+  "note": "Links only. Every object's details live at its own address."
+}

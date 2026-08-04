@@ -1,12 +1,12 @@
 {
   "folder_name": "docs",
   "folder_path": "docs",
-  "description": "the voiced documents \u2014 the base-access guide, the build guide",
-  "scan_timestamp": "2026-08-03T16:41:06.156513 | in sovereign time",
+  "description": "3 files, 0 subfolders",
+  "scan_timestamp": "2026-08-04T11:09:36.281435 | in sovereign time",
   "files": [
     {
       "path": "docs/archived-env-example-2026-07-27.txt",
-      "description": "text, 4,199 bytes"
+      "description": "file, 4,199 bytes"
     },
     {
       "path": "docs/BASE-ACCESS-GUIDE.md",
@@ -18,11 +18,76 @@
     }
   ],
   "file_count": 3,
-  "subdirectories": [
-    "docs/blueprints"
-  ],
-  "code_analysis": {},
-  "package_folders_excluded": [],
+  "subdirectories": [],
+  "code_analysis": {
+    "archived-env-example-2026-07-27.txt": {
+      "language": "text",
+      "lines": 79,
+      "words": 535,
+      "first_line": "# RESONANCE BRIDGE \u2014 environment template",
+      "blank_line_ratio": 0.15
+    },
+    "BASE-ACCESS-GUIDE.md": {
+      "language": "markdown",
+      "lines": 92,
+      "words": 702,
+      "heading_count": 4,
+      "headings": [
+        "THE BASE-ACCESS GUIDE \u2014 how any hand opens the Supabase doors",
+        "The keyring",
+        "The read pattern (proven, Git Bash \u2014 NOT PowerShell)",
+        "The lessons (each one cost a sitting; don't pay twice)"
+      ],
+      "links_external": 0,
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "code_fences": 1,
+      "table_rows": 5,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "BUILD-GUIDE.md": {
+      "language": "markdown",
+      "lines": 256,
+      "words": 2018,
+      "heading_count": 15,
+      "headings": [
+        "RESONANCE BRIDGE BUILD GUIDE \u2014 Your First MCP Server, Every Step Understood",
+        "0. What MCP actually is (two minutes, no magic)",
+        "1. Why you're closer than you think",
+        "2. Language decision (and why)",
+        "3. The steps",
+        "Step 1 \u2014 Scaffold (understand: a normal Node project, nothing exotic)",
+        "Step 2 \u2014 The server skeleton (`src/server.ts`)",
+        "Step 3 \u2014 Test with the Inspector (before any client)",
+        "Step 4 \u2014 Register with Claude Code (understand: you're adding a launch recipe)",
+        "Step 5 \u2014 Prove the fire (the acceptance test)",
+        "Step 6 \u2014 Phase 2, later: HTTP on :3141 for the apps",
+        "4. Gotchas I can spare you (each one is an hour of your life)",
+        "5. The order of work (one sitting each, spoons permitting)",
+        "6. The full connection map (the Weaver's scope, 2026-07-03)",
+        "7. Ancestry (discovered 2026-07-03, at the Weaver's invitation)"
+      ],
+      "links_external": 0,
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "code_fences": 5,
+      "table_rows": 23,
+      "checkboxes": {
+        "open": 2,
+        "done": 4
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    }
+  },
   "maintaining_agent": "FolderAgent",
-  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+  "folders_not_walked": [
+    "blueprints"
+  ],
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

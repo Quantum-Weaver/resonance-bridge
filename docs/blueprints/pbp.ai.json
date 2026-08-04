@@ -1,70 +1,50 @@
 {
   "project_name": "resonance-bridge",
-  "project_path": ".",
-  "description": "the switchboard - the MCP server for the AudHDities Sanctuary",
-  "generated": "2026-08-03T16:41:06.711421 | in sovereign time",
+  "project_path": "C:\\_superposition\\resonance-bridge",
+  "description": "The switchboard",
+  "generated": "2026-08-04T11:09:36.348929 | in sovereign time",
   "tier_ladder": "file -> folder (fbp) -> object (obp) -> domain (dbp) -> project (pbp)",
-  "law": "Each tier links to where the details live. Nothing above the folder tier duplicates a body. Env NAMES only, never a value; .env never opened.",
+  "law": "Each tier links to where the details live. Nothing above the folder tier duplicates a body.",
   "domains": [
     {
-      "blueprint": "docs/blueprints/dbp_src.ai.json",
-      "domain_path": "src",
-      "description": "the connections \u2014 the MCP server and one line per service",
-      "object_count": 0,
-      "total_files": 10,
-      "total_folders": 1
-    },
-    {
-      "blueprint": "docs/blueprints/dbp_kimi.ai.json",
-      "domain_path": "kimi",
-      "description": "the kin-crossing room",
-      "object_count": 0,
-      "total_files": 9,
-      "total_folders": 2
+      "blueprint": "docs/blueprints/dbp_plugins.ai.json",
+      "domain_path": "plugins",
+      "description": "0 files, 0 subfolders",
+      "object_count": 1,
+      "total_folders": 3,
+      "total_files": 33
     }
   ],
-  "domain_count": 2,
+  "domain_count": 1,
+  "objects_reporting_directly": [
+    {
+      "blueprint": "docs/blueprints/obp_kimi.ai.json",
+      "object_path": "kimi",
+      "description": "0 files, 0 subfolders",
+      "folder_count": 2,
+      "total_files": 9
+    }
+  ],
   "folders_reporting_directly": [
     {
       "blueprint": "docs/blueprints/folders/fbp_root.ai.json",
       "folder_path": ".",
-      "description": "The switchboard. The knowledge delivery system of the AudHDities Sanctuary",
-      "file_count": 29,
-      "subdirectory_count": 7
+      "description": "The switchboard",
+      "file_count": 30,
+      "subdirectory_count": 6
     },
     {
       "blueprint": "docs/blueprints/folders/fbp_docs.ai.json",
       "folder_path": "docs",
-      "description": "the voiced documents \u2014 the base-access guide, the build guide",
+      "description": "3 files, 0 subfolders",
       "file_count": 3,
-      "subdirectory_count": 1
+      "subdirectory_count": 0
     },
     {
       "blueprint": "docs/blueprints/folders/fbp_listening.ai.json",
       "folder_path": "listening",
       "description": "Founded 2026-07-27, the day of the three wakings, homed the same",
       "file_count": 9,
-      "subdirectory_count": 0
-    },
-    {
-      "blueprint": "docs/blueprints/folders/fbp_plugins.ai.json",
-      "folder_path": "plugins",
-      "description": "0 files, 1 subfolders",
-      "file_count": 0,
-      "subdirectory_count": 1
-    },
-    {
-      "blueprint": "docs/blueprints/folders/fbp_plugins_firefox.ai.json",
-      "folder_path": "plugins/firefox",
-      "description": "Carries messages between browser and knowledge system. Copies syntax, never transmutes",
-      "file_count": 6,
-      "subdirectory_count": 1
-    },
-    {
-      "blueprint": "docs/blueprints/folders/fbp_plugins_firefox_icons.ai.json",
-      "folder_path": "plugins/firefox/icons",
-      "description": "27 files, 0 subfolders",
-      "file_count": 27,
       "subdirectory_count": 0
     },
     {
@@ -75,38 +55,56 @@
       "subdirectory_count": 0
     },
     {
-      "blueprint": "docs/blueprints/folders/fbp_tools.ai.json",
-      "folder_path": "tools",
-      "description": "1 files, 0 subfolders",
-      "file_count": 1,
+      "blueprint": "docs/blueprints/folders/fbp_src.ai.json",
+      "folder_path": "src",
+      "description": "10 files, 0 subfolders",
+      "file_count": 10,
       "subdirectory_count": 0
     }
   ],
   "analysis": [
     {
-      "blueprint": "docs/blueprints/analysis_lines.ai.json",
-      "description": "the connections \u2014 service lines and the MCP tools they register"
+      "blueprint": "analysis_sovereignty.ai.json",
+      "description": "the sovereignty law \u2014 HELD"
     },
     {
-      "blueprint": "docs/blueprints/analysis_keyring.ai.json",
-      "description": "which env NAME is needed by which file"
-    },
-    {
-      "blueprint": "docs/blueprints/reconciliation.ai.json",
-      "description": "declared versus present - 4 findings"
+      "blueprint": "reconciliation.ai.json",
+      "description": "declared versus present \u2014 0 findings"
     }
   ],
-  "the_connections": {
-    "service_lines": 10,
-    "mcp_tools": 49
-  },
-  "root_composition": {
-    "files_at_root": 29,
-    "note": "DESCRIPTIVE. KP's observation 2026-08-03 was 'the root is full'; this is the count, not a verdict. No rule in this repo declares a root file limit, so it is never a finding."
-  },
   "totals": {
-    "folders_blueprinted": 11,
+    "folders_blueprinted": 10,
     "files_described": 97
+  },
+  "not_walked": {
+    "reason": "package-class trees, this repo's own gitignored trees, reparse points, and this tool's own output",
+    "package_dirs": [
+      ".cache",
+      ".dart_tool",
+      ".git",
+      ".gradle",
+      ".mypy_cache",
+      ".next",
+      ".nuxt",
+      ".pytest_cache",
+      ".svelte-kit",
+      ".turbo",
+      ".venv",
+      "Pods",
+      "__pycache__",
+      "build",
+      "dist",
+      "env",
+      "gen",
+      "node_modules",
+      "out",
+      "target",
+      "venv"
+    ],
+    "gitignored_trees": {},
+    "reparse_points_not_followed": [],
+    "reparse_note": "Junctions and symlinks are named, never entered. Following one would pull an external ground into this repo's count, or loop on a self-junction.",
+    "own_output": "C:\\_superposition\\resonance-bridge\\docs\\blueprints"
   },
   "maintaining_agent": "ProjectAgent"
 }

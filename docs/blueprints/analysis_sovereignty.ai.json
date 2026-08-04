@@ -1,0 +1,18 @@
+{
+  "analysis": "sovereignty",
+  "scan_timestamp": "2026-08-04T11:09:36.346365 | in sovereign time",
+  "law": "Trees this repo's .gitignore declares uncommittable must not be tracked.",
+  "git_available": true,
+  "ignored_trees": {},
+  "secret_files": [
+    {
+      "address": ".env",
+      "present": true,
+      "tracked": false,
+      "opened": false
+    }
+  ],
+  "secret_files_found": 1,
+  "note": "Existence reported, contents never read. NEVER A VALUE.",
+  "verdict": "HELD"
+}

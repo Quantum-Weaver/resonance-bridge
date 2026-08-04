@@ -1,8 +1,8 @@
 {
   "folder_name": "firefox",
   "folder_path": "plugins/firefox",
-  "description": "Carries messages between browser and knowledge system. Copies syntax, never transmutes",
-  "scan_timestamp": "2026-08-03T16:41:06.172631 | in sovereign time",
+  "description": "Carries messages between browser and knowledge system",
+  "scan_timestamp": "2026-08-04T11:09:36.302243 | in sovereign time",
   "files": [
     {
       "path": "plugins/firefox/background.js",
@@ -18,7 +18,7 @@
     },
     {
       "path": "plugins/firefox/popup.html",
-      "description": "file, 4,839 bytes"
+      "description": "markup, 4,839 bytes"
     },
     {
       "path": "plugins/firefox/popup.js",
@@ -33,8 +33,109 @@
   "subdirectories": [
     "plugins/firefox/icons"
   ],
-  "code_analysis": {},
-  "package_folders_excluded": [],
+  "code_analysis": {
+    "background.js": {
+      "language": "node",
+      "lines": 247,
+      "functions": [
+        "appendToJournal",
+        "checkBridge",
+        "fetchKinMessage",
+        "init",
+        "postToBus",
+        "queryBridge",
+        "readFile"
+      ],
+      "commands": [
+        "conversation_update",
+        "fetch_kin",
+        "get_status",
+        "journal",
+        "list_journals",
+        "pause",
+        "post_to_bus",
+        "query_atom",
+        "query_molecule",
+        "read_bus",
+        "read_file",
+        "resume",
+        "search_knowledge"
+      ]
+    },
+    "content.js": {
+      "language": "node",
+      "lines": 121,
+      "functions": [
+        "detectTopic",
+        "extractMessages",
+        "notifyBackground",
+        "startObserving"
+      ],
+      "commands": [
+        "get_messages",
+        "get_topic",
+        "ping"
+      ]
+    },
+    "manifest.json": {
+      "language": "json",
+      "lines": 53,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "action",
+        "author",
+        "background",
+        "browser_specific_settings",
+        "content_scripts",
+        "description",
+        "homepage_url",
+        "host_permissions",
+        "icons",
+        "manifest_version",
+        "name",
+        "permissions",
+        "version"
+      ],
+      "key_count": 13
+    },
+    "popup.js": {
+      "language": "node",
+      "lines": 169,
+      "functions": [
+        "updateStatus"
+      ],
+      "commands": []
+    },
+    "README.md": {
+      "language": "markdown",
+      "lines": 49,
+      "words": 313,
+      "heading_count": 8,
+      "headings": [
+        "The Shuttle \u2014 Firefox Plugin for Resonance Bridge",
+        "WHAT IT IS",
+        "WHAT IT DOES",
+        "WHAT IT NEVER DOES",
+        "INSTALLATION",
+        "REQUIREMENTS",
+        "THE NAME",
+        "LICENSE"
+      ],
+      "links_external": 0,
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    }
+  },
   "maintaining_agent": "FolderAgent",
-  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+  "folders_not_walked": [],
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

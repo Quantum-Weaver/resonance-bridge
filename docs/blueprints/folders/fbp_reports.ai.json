@@ -2,7 +2,7 @@
   "folder_name": "reports",
   "folder_path": "reports",
   "description": "3 files, 0 subfolders",
-  "scan_timestamp": "2026-08-03T16:41:06.179695 | in sovereign time",
+  "scan_timestamp": "2026-08-04T11:09:36.310132 | in sovereign time",
   "files": [
     {
       "path": "reports/2026-06-30-assessment.md",
@@ -19,8 +19,68 @@
   ],
   "file_count": 3,
   "subdirectories": [],
-  "code_analysis": {},
-  "package_folders_excluded": [],
+  "code_analysis": {
+    "2026-06-30-assessment.md": {
+      "language": "markdown",
+      "lines": 31,
+      "words": 157,
+      "heading_count": 7,
+      "headings": [
+        "Resonance Bridge \u2014 Assessment Report",
+        "Summary",
+        "Standards Compliance",
+        "Vulnerabilities",
+        "Gaps",
+        "Test Readiness",
+        "Recommendations"
+      ],
+      "links_external": 0,
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "code_fences": 0,
+      "table_rows": 7,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "analysis.json": {
+      "language": "json",
+      "lines": 39,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "analyzed_at",
+        "gaps",
+        "project",
+        "recommendations",
+        "standards_compliance",
+        "test_readiness",
+        "vulnerabilities"
+      ],
+      "key_count": 7
+    },
+    "inventory.json": {
+      "language": "json",
+      "lines": 68,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "by_language",
+        "by_type",
+        "files",
+        "large_files",
+        "project",
+        "scanned_at",
+        "secrets_flagged",
+        "total_files"
+      ],
+      "key_count": 8
+    }
+  },
   "maintaining_agent": "FolderAgent",
-  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+  "folders_not_walked": [],
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

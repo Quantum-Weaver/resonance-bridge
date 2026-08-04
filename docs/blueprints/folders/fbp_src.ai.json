@@ -1,8 +1,8 @@
 {
   "folder_name": "src",
   "folder_path": "src",
-  "description": "the connections \u2014 the MCP server and one line per service",
-  "scan_timestamp": "2026-08-03T16:41:06.187240 | in sovereign time",
+  "description": "10 files, 0 subfolders",
+  "scan_timestamp": "2026-08-04T11:09:36.317787 | in sovereign time",
   "files": [
     {
       "path": "src/airtable.ts",
@@ -54,28 +54,15 @@
       "exported_functions": [
         "registerAirtable"
       ],
+      "exported_consts": [],
       "interfaces": [],
-      "mcp_tools": [
-        {
-          "name": "airtable_list_bases",
-          "summary": "List every Airtable base the Bridge's token can see \u2014 id, name, permission level. Start here to discover KP's prior organization attempts."
-        },
-        {
-          "name": "airtable_list_tables",
-          "summary": "List a base's tables with their fields and views \u2014 the schema of one organization attempt. Call airtable_list_bases first for base ids."
-        },
-        {
-          "name": "airtable_query_records",
-          "summary": "Read records from one table (read-only). Returns a page plus an offset token for the next page. Supports Airtable filterByFormula and named views."
-        }
-      ],
-      "mcp_tool_count": 3,
-      "env_names_needed": [
-        "AIRTABLE_API_KEY"
-      ],
-      "imports": [
-        "@modelcontextprotocol/sdk/server/mcp.js",
-        "zod"
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
+        "AIRTABLE_API_KEY",
+        "example"
       ]
     },
     "discord.ts": {
@@ -84,45 +71,15 @@
       "exported_functions": [
         "registerDiscord"
       ],
+      "exported_consts": [],
       "interfaces": [],
-      "mcp_tools": [
-        {
-          "name": "discord_whoami",
-          "summary": "The bot's own identity and which servers it stands in. The line test \u2014 run this first."
-        },
-        {
-          "name": "discord_server_overview",
-          "summary": "The server's profile \u2014 name, description, owner id, member and presence counts, boost tier and count, features. Answers the map's ownership question from ground"
-        },
-        {
-          "name": "discord_list_channels",
-          "summary": "The server's street map \u2014 every channel with its type in human words (text, voice, category, announcement, stage, forum), topic, parent category, position."
-        },
-        {
-          "name": "discord_list_roles",
-          "summary": "The server's roles \u2014 id, name, position, hoisted, mentionable, managed."
-        },
-        {
-          "name": "discord_list_webhooks",
-          "summary": "The server's webhooks by their true names \u2014 id, name, channel, type, owning application. The `token` and `url` fields Discord returns ARE the secret and are STR"
-        },
-        {
-          "name": "discord_emoji_sticker_census",
-          "summary": "Custom emoji and sticker names with counts against the free caps (50 static + 50 animated emoji, 5 stickers)."
-        },
-        {
-          "name": "discord_read_channel",
-          "summary": "Recent messages from one channel \u2014 author display name, timestamp, content VERBATIM (the carrier law rides this tool: quote, never silently summarize), attachme"
-        }
-      ],
-      "mcp_tool_count": 7,
-      "env_names_needed": [
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
         "DISCORD_BOT_TOKEN_BRIDGE",
         "DISCORD_GUILD_ID"
-      ],
-      "imports": [
-        "@modelcontextprotocol/sdk/server/mcp.js",
-        "zod"
       ]
     },
     "github.ts": {
@@ -131,44 +88,14 @@
       "exported_functions": [
         "registerGitHub"
       ],
+      "exported_consts": [],
       "interfaces": [],
-      "mcp_tools": [
-        {
-          "name": "github_token_status",
-          "summary": "The token's own health \u2014 which login it belongs to, its EXPIRY DATE (the F7 watch: a fine-grained PAT dies silently at 90 days), and rate-limit remaining. Run t"
-        },
-        {
-          "name": "github_list_repos",
-          "summary": "Every repo the token's login owns \u2014 name, VISIBILITY (the public/private census, the Free-plan question made visible), default branch, archived, fork, last push"
-        },
-        {
-          "name": "github_repo_status",
-          "summary": "One repo, deep \u2014 its profile, latest release, Pages state, and default-branch protection. Sub-reads the token can't see degrade to a plain sentence instead of f"
-        },
-        {
-          "name": "github_list_actions",
-          "summary": "One repo's Actions surface \u2014 workflow names and Actions-secret NAMES (values never exist in the API's answers). The ring-5 audit: today every repo should answer"
-        },
-        {
-          "name": "github_list_webhooks",
-          "summary": "One repo's webhooks \u2014 events, active state, last-delivery status. URLs are REDACTED to scheme + host in code: a webhook URL can itself be a bearer secret."
-        },
-        {
-          "name": "github_list_releases",
-          "summary": "One repo's releases \u2014 tag, name, date, draft/prerelease, and each asset's name with its DOWNLOAD COUNT. The give-it-away shelf's window: who is receiving the gi"
-        },
-        {
-          "name": "github_repo_traffic",
-          "summary": "One repo's two-week traffic \u2014 views and clones with unique counts. Needs Administration read on the token; degrades to a plain sentence if ungranted."
-        }
-      ],
-      "mcp_tool_count": 7,
-      "env_names_needed": [
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
         "HOUSE_GITHUB_PAT"
-      ],
-      "imports": [
-        "@modelcontextprotocol/sdk/server/mcp.js",
-        "zod"
       ]
     },
     "grammar.ts": {
@@ -177,78 +104,32 @@
       "exported_functions": [
         "registerGrammar"
       ],
+      "exported_consts": [],
       "interfaces": [],
-      "mcp_tools": [
-        {
-          "name": "query_atom",
-          "summary": "Look up a Resonance Grammar atom by its word \u2014 definition, type, weight, state, and the full sensory lexicon (emoji, color, sound, texture, temperature). Served"
-        },
-        {
-          "name": "query_sense",
-          "summary": "Look up the sensory canon row for an atom word \u2014 every sensory channel the Grammar holds for it: emoji, color, sound (description/tone/pitch/frequency/timbre), "
-        },
-        {
-          "name": "query_emoji",
-          "summary": "Look up thesaurus definitions by emoji or word \u2014 an emotion's emoji, word, definition, colors, sensory profile, and its link into the sensory canon. Optionally "
-        },
-        {
-          "name": "query_folksonomy",
-          "summary": "With no arguments: list the named folksonomies (name, purpose, status). With an app name: deliver that app's WHOLE mood lexicon in one call \u2014 the set intended a"
-        },
-        {
-          "name": "query_molecule",
-          "summary": "Look up a Resonance Grammar molecule by name \u2014 definition, type, constituent atom words, bond type, functional group, domain, and weight. Case-insensitive."
-        },
-        {
-          "name": "query_organism",
-          "summary": "Look up a Resonance Grammar organism by name \u2014 definition, type, domain, habitat, and lifecycle. Case-insensitive."
-        },
-        {
-          "name": "search_knowledge",
-          "summary": "Full-text search across the living Grammar \u2014 atoms, molecules, organisms, and the thesaurus \u2014 matching words/names and definitions. Returns per-table matches, l"
-        }
-      ],
-      "mcp_tool_count": 7,
-      "env_names_needed": [
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
         "SUPABASE_PUBLISHABLE_KEY_KNOWLEDGE",
         "SUPABASE_URL_KNOWLEDGE"
-      ],
-      "imports": [
-        "@modelcontextprotocol/sdk/server/mcp.js",
-        "zod"
       ]
     },
     "http.ts": {
       "language": "typescript",
       "lines": 365,
       "exported_functions": [],
+      "exported_consts": [],
       "interfaces": [],
-      "mcp_tools": [],
-      "mcp_tool_count": 0,
-      "env_names_needed": [
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
         "BRIDGE_HTTP_PORT",
         "KNOWLEDGE_DB_PATH",
         "SUPABASE_PUBLISHABLE_KEY_KNOWLEDGE",
         "SUPABASE_URL_KNOWLEDGE"
-      ],
-      "imports": [
-        "./airtable.js",
-        "./discord.js",
-        "./github.js",
-        "./grammar.js",
-        "./resend.js",
-        "./stripe.js",
-        "./supabase.js",
-        "./vercel.js",
-        "@modelcontextprotocol/sdk/client/index.js",
-        "@modelcontextprotocol/sdk/inMemory.js",
-        "@modelcontextprotocol/sdk/server/mcp.js",
-        "better-sqlite3",
-        "node:fs/promises",
-        "node:http",
-        "node:os",
-        "node:path",
-        "node:url"
       ]
     },
     "resend.ts": {
@@ -257,57 +138,28 @@
       "exported_functions": [
         "registerResend"
       ],
+      "exported_consts": [],
       "interfaces": [],
-      "mcp_tools": [
-        {
-          "name": "resend_list_domains",
-          "summary": "List the Resend sending domains \u2014 name, verification status, region, created date. The email house's ground truth: an unverified domain means no send can truly "
-        },
-        {
-          "name": "resend_list_api_keys",
-          "summary": "List the Resend API keys by NAME and creation date only \u2014 the API never returns key values, and this tool keeps it that way in its output too. The key census fo"
-        },
-        {
-          "name": "resend_list_audiences",
-          "summary": "List the Resend audiences \u2014 id, name, created date. The consent-side inventory: who has said yes to hearing from the house."
-        },
-        {
-          "name": "resend_list_broadcasts",
-          "summary": "List the Resend broadcasts \u2014 id, name, audience, status, created/sent dates. What the house has ever said to its audiences, as inventory."
-        }
-      ],
-      "mcp_tool_count": 4,
-      "env_names_needed": [
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
         "RESEND_KEY_BRIDGE_ADMIN"
-      ],
-      "imports": [
-        "@modelcontextprotocol/sdk/server/mcp.js",
-        "zod"
       ]
     },
     "server.ts": {
       "language": "typescript",
       "lines": 59,
       "exported_functions": [],
+      "exported_consts": [],
       "interfaces": [],
-      "mcp_tools": [],
-      "mcp_tool_count": 0,
-      "env_names_needed": [
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
         "KNOWLEDGE_DB_PATH"
-      ],
-      "imports": [
-        "./airtable.js",
-        "./discord.js",
-        "./github.js",
-        "./grammar.js",
-        "./resend.js",
-        "./stripe.js",
-        "./supabase.js",
-        "./vercel.js",
-        "@modelcontextprotocol/sdk/server/mcp.js",
-        "@modelcontextprotocol/sdk/server/stdio.js",
-        "better-sqlite3",
-        "node:url"
       ]
     },
     "stripe.ts": {
@@ -316,56 +168,14 @@
       "exported_functions": [
         "registerStripe"
       ],
+      "exported_consts": [],
       "interfaces": [],
-      "mcp_tools": [
-        {
-          "name": "stripe_account",
-          "summary": "The merchant account's own profile \u2014 business name, type and structure, charges/payouts enabled, country, currency, and which mode the key serves. Answers 'wher"
-        },
-        {
-          "name": "stripe_list_webhook_endpoints",
-          "summary": "Webhook endpoints registered with Stripe \u2014 url, status, enabled events. H1's registration state made visible; Stripe never returns signing secrets here, the key"
-        },
-        {
-          "name": "stripe_list_products",
-          "summary": "The shop's shelves \u2014 products with id, name, active state, description, default price id."
-        },
-        {
-          "name": "stripe_list_prices",
-          "summary": "Prices \u2014 amount, currency, one-time vs recurring, parent product, active state. Products and prices together are the solidarity-pricing surface."
-        },
-        {
-          "name": "stripe_list_payment_links",
-          "summary": "Payment links \u2014 the no-code sellable URLs, with active state."
-        },
-        {
-          "name": "stripe_list_checkout_sessions",
-          "summary": "Checkout sessions \u2014 status, payment status, mode, amount, created time. The sandbox rehearsal becomes visible here."
-        },
-        {
-          "name": "stripe_list_events",
-          "summary": "The account's own audit trail \u2014 event type and time, newest first, including webhook delivery attempts. The single best debugging window. Optionally filtered by"
-        },
-        {
-          "name": "stripe_balance",
-          "summary": "The account balance \u2014 available vs pending by currency. The payout story once money moves."
-        },
-        {
-          "name": "stripe_list_charges",
-          "summary": "Charges \u2014 amount, status, paid, created. Empty today; becomes the reconciliation window later."
-        },
-        {
-          "name": "stripe_list_customers",
-          "summary": "Customers \u2014 COUNT, ids, and created dates ONLY. The privacy stripe is code: names and emails are stripped before anything reaches a reply (commission law 2)."
-        }
-      ],
-      "mcp_tool_count": 10,
-      "env_names_needed": [
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
         "STRIPE_RESTRICTED_KEY"
-      ],
-      "imports": [
-        "@modelcontextprotocol/sdk/server/mcp.js",
-        "zod"
       ]
     },
     "supabase.ts": {
@@ -374,44 +184,14 @@
       "exported_functions": [
         "registerSupabase"
       ],
+      "exported_consts": [],
       "interfaces": [],
-      "mcp_tools": [
-        {
-          "name": "supabase_list_projects",
-          "summary": "Every Supabase project the account holds \u2014 name, ref, region, STATUS (the free-tier pause-watch: ACTIVE_HEALTHY vs PAUSED), created date. The project shelf; run"
-        },
-        {
-          "name": "supabase_get_auth_config",
-          "summary": "One project's auth configuration through an ALLOWLIST \u2014 SMTP host/port/user/sender (password reduced to set:true/false), site URL, autoconfirm flags, password m"
-        },
-        {
-          "name": "supabase_select",
-          "summary": "Run ONE read-only SQL statement against a project's live database \u2014 SELECT/WITH only, enforced in code (data-modifying keywords refused, single statement, resul"
-        },
-        {
-          "name": "supabase_list_tables",
-          "summary": "Every table in a project's public-facing schemas with its RLS flag and policy count \u2014 THE FALSE-EMPTY DETECTOR: rls_enabled with zero policies is the []-that-li"
-        },
-        {
-          "name": "supabase_get_advisors",
-          "summary": "The project's advisor lamps \u2014 security and performance lints by name and level. (House context rides along: the leaked-password-protection amber is ruled upsell"
-        },
-        {
-          "name": "supabase_list_functions",
-          "summary": "The project's edge-function census \u2014 expected empty today; the map wants the emptiness VERIFIED, not presumed."
-        },
-        {
-          "name": "supabase_list_buckets",
-          "summary": "One base's storage-bucket census (expected empty; verified, not presumed) \u2014 name, public flag, created. Walks the base's own storage door with its secret key, b"
-        }
-      ],
-      "mcp_tool_count": 7,
-      "env_names_needed": [
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
         "SUPABASE_ACCESS_TOKEN"
-      ],
-      "imports": [
-        "@modelcontextprotocol/sdk/server/mcp.js",
-        "zod"
       ]
     },
     "vercel.ts": {
@@ -420,36 +200,18 @@
       "exported_functions": [
         "registerVercel"
       ],
+      "exported_consts": [],
       "interfaces": [],
-      "mcp_tools": [
-        {
-          "name": "vercel_list_projects",
-          "summary": "List every Vercel project the token can see \u2014 name, id, framework, node version, latest production deployment state and URL. Start here to discover the hosting."
-        },
-        {
-          "name": "vercel_list_deployments",
-          "summary": "List recent deployments \u2014 state (READY/ERROR/BUILDING/CANCELED), target (production/preview), URL, branch and commit message, created time. Optionally scoped to"
-        },
-        {
-          "name": "vercel_list_domains",
-          "summary": "List the domains Vercel knows for one project \u2014 name, verification state, redirect target if any. The DNS ground truth from the hosting's side."
-        },
-        {
-          "name": "vercel_list_env_names",
-          "summary": "List a project's environment-variable NAMES with their targets (production/preview/development) and types \u2014 VALUES ARE STRIPPED IN CODE AND NEVER RETURNED. This"
-        }
-      ],
-      "mcp_tool_count": 4,
-      "env_names_needed": [
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
         "VERCEL_TOKEN"
-      ],
-      "imports": [
-        "@modelcontextprotocol/sdk/server/mcp.js",
-        "zod"
       ]
     }
   },
-  "package_folders_excluded": [],
   "maintaining_agent": "FolderAgent",
-  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+  "folders_not_walked": [],
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

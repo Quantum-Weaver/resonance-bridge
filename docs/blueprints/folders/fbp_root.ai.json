@@ -1,16 +1,20 @@
 {
   "folder_name": "resonance-bridge",
   "folder_path": ".",
-  "description": "The switchboard. The knowledge delivery system of the AudHDities Sanctuary",
-  "scan_timestamp": "2026-08-03T16:41:06.153795 | in sovereign time",
+  "description": "The switchboard",
+  "scan_timestamp": "2026-08-04T11:09:36.277725 | in sovereign time",
   "files": [
     {
+      "path": ".env",
+      "description": "file, 3,717 bytes"
+    },
+    {
       "path": ".gitignore",
-      "description": "file, 1,587 bytes"
+      "description": "ignore rules, 1,595 bytes"
     },
     {
       "path": "atoms_dump.py",
-      "description": "Disposable: pull the live atoms table's atom_word column for KP's eye."
+      "description": "Disposable: pull the live atoms table's atom_word column for KP's eye"
     },
     {
       "path": "CLAUDE.md",
@@ -121,15 +125,14 @@
       "description": "verify_terms.py"
     }
   ],
-  "file_count": 29,
+  "file_count": 30,
   "subdirectories": [
     "docs",
     "kimi",
     "listening",
     "plugins",
     "reports",
-    "src",
-    "tools"
+    "src"
   ],
   "code_analysis": {
     "atoms_dump.py": {
@@ -142,9 +145,32 @@
         "pathlib",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [],
+      "env_names_read": [],
       "has_main_guard": false
+    },
+    "CLAUDE.md": {
+      "language": "markdown",
+      "lines": 72,
+      "words": 204,
+      "heading_count": 4,
+      "headings": [
+        "CLAUDE.md \u2014 Resonance Bridge (formerly Prometheus)",
+        "SESSION PROTOCOL",
+        "Project Structure (reconciled to reality 2026-07-26, THE HARVEST Tier 2)",
+        "Essential Rules"
+      ],
+      "links_external": 0,
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "code_fences": 1,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
     },
     "emoji_wave_seeder.py": {
       "language": "python",
@@ -162,9 +188,58 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "HERE"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
+    },
+    "FABLE-KERNEL.md": {
+      "language": "markdown",
+      "lines": 59,
+      "words": 452,
+      "heading_count": 6,
+      "headings": [
+        "FABLE-KERNEL \u2014 resonance-bridge",
+        "What this is",
+        "State (2026-07-09)",
+        "Build path (in order)",
+        "Dispatch notes",
+        "Read first"
+      ],
+      "links_external": 0,
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "FEATURE-BOARD.md": {
+      "language": "markdown",
+      "lines": 42,
+      "words": 344,
+      "heading_count": 3,
+      "headings": [
+        "BRIDGE \u2014 THE FEATURE BOARD",
+        "Planned",
+        "Laws standing"
+      ],
+      "links_external": 0,
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
     },
     "grammar_clear_name_tiers.py": {
       "language": "python",
@@ -175,8 +250,13 @@
         "pathlib",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "HERE",
+        "KEY",
+        "ORDER",
+        "URL"
+      ],
+      "env_names_read": [],
       "has_main_guard": false
     },
     "grammar_inventory.py": {
@@ -195,8 +275,11 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "GRAMMAR_TABLES",
+        "HERE"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "grammar_purge_all.py": {
@@ -209,8 +292,13 @@
         "the",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "HERE",
+        "KEY",
+        "ORDER",
+        "URL"
+      ],
+      "env_names_read": [],
       "has_main_guard": false
     },
     "grammar_seeder.py": {
@@ -231,8 +319,13 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BATCH",
+        "HERE",
+        "KNOWLEDGE",
+        "SHELF"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "grammar_wipe_seeded.py": {
@@ -253,9 +346,48 @@
         "urllib.parse",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "ENV",
+        "HERE",
+        "KEY",
+        "URL"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
+    },
+    "HANDS.md": {
+      "language": "markdown",
+      "lines": 118,
+      "words": 1093,
+      "heading_count": 10,
+      "headings": [
+        "The Hands \u2014 who builds this, and how",
+        "The voices",
+        "Scribed notes",
+        "Fable",
+        "Quantum Weaver (KP)",
+        "Aethelred (T-Red)",
+        "Opus (Claude)",
+        "Sonnet",
+        "Added 2026-07-29 (the delivery system lands)",
+        "Added 2026-07-23 night (the knowledge line opens)"
+      ],
+      "links_external": 1,
+      "links_internal": [
+        {
+          "target": "PHILOSOPHY.md",
+          "resolves": true
+        }
+      ],
+      "links_internal_unresolved": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
     },
     "knowledge_sql.py": {
       "language": "python",
@@ -271,8 +403,10 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "HERE"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "lattice_seeder.py": {
@@ -297,8 +431,14 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "BATCH",
+        "CONTRACT",
+        "HERE",
+        "NAME_COL",
+        "REVIEW_ONLY"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "lattice_wave2_gen.py": {
@@ -320,8 +460,15 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "EXPORTS",
+        "HERE",
+        "NAME_COL",
+        "OUT",
+        "RANK_FILES",
+        "WAVE1"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "lattice_wave3_gen.py": {
@@ -340,8 +487,15 @@
         "re",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "GAIA",
+        "HERE",
+        "NAME_COL",
+        "OUT",
+        "RANKS",
+        "WAVE1"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "lattice_wave4_gen.py": {
@@ -361,8 +515,16 @@
         "re",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "EXPORTS",
+        "GAIA",
+        "HERE",
+        "LADDER",
+        "NAME_COL",
+        "OUT",
+        "RANK_ORDER"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "lattice_wave5_gen.py": {
@@ -381,8 +543,14 @@
         "re",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "GAIA",
+        "HERE",
+        "LADDER",
+        "NAME_COL",
+        "OUT"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "lattice_wave6_gen.py": {
@@ -400,9 +568,151 @@
         "pathlib",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "ETYM_FIELDS",
+        "EXP",
+        "HERE",
+        "OUT",
+        "SENSORY_FIELDS"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
+    },
+    "MOVED.md": {
+      "language": "markdown",
+      "lines": 8,
+      "words": 60,
+      "heading_count": 1,
+      "headings": [
+        "MOVED \u2014 departures from the bridge"
+      ],
+      "links_external": 0,
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "code_fences": 0,
+      "table_rows": 3,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "package-lock.json": {
+      "language": "json",
+      "lines": 2173,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "lockfileVersion",
+        "name",
+        "packages",
+        "requires",
+        "version"
+      ],
+      "key_count": 5
+    },
+    "package.json": {
+      "language": "json",
+      "lines": 38,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "author",
+        "bugs",
+        "dependencies",
+        "description",
+        "devDependencies",
+        "directories",
+        "homepage",
+        "keywords",
+        "license",
+        "main",
+        "name",
+        "repository",
+        "scripts",
+        "type",
+        "version"
+      ],
+      "key_count": 15
+    },
+    "PHILOSOPHY.md": {
+      "language": "markdown",
+      "lines": 115,
+      "words": 661,
+      "heading_count": 15,
+      "headings": [
+        "THE RESONANCE LICENSE \u2014 PHILOSOPHY",
+        "RESONANCE LICENSE v1.0",
+        "WHAT YOU MAY DO",
+        "CONDITIONS OF USE",
+        "1. NO EXPLOITATION OF LIFE",
+        "2. NO EXTRACTION",
+        "3. NO CONFUSION",
+        "4. NO CORRUPTION",
+        "5. NO DECEPTION",
+        "6. NO EXCLUSION",
+        "7. SOVEREIGNTY OF DATA",
+        "8. SIMPLICITY AND SHARED KNOWLEDGE",
+        "9. EMPATHY FOR PERSPECTIVES NOT YOUR OWN",
+        "DISCLAIMER",
+        "ACKNOWLEDGMENT"
+      ],
+      "links_external": 0,
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "README.md": {
+      "language": "markdown",
+      "lines": 177,
+      "words": 1607,
+      "heading_count": 16,
+      "headings": [
+        "\ud83d\udd25 Resonance Bridge",
+        "WHAT IT IS",
+        "WHAT IT CONNECTS",
+        "DATABASES",
+        "TOOLS",
+        "Standalone scripts (beside the server, same `.env`, all read-only)",
+        "QUICK START",
+        "Set up environment",
+        ".env is written by KP's own hands from the provider dashboards",
+        "(the old .env.example kept reading as a false negative \u2014 archived",
+        "2026-07-27 to docs/archived-env-example-2026-07-27.txt)",
+        "Phase 1 needs no keys \u2014 knowledge.db path only. Supabase keys come at Phase 2.",
+        "Install and run",
+        "CLAUDE CODE INTEGRATION",
+        "GUARDRAILS",
+        "LICENSE"
+      ],
+      "links_external": 3,
+      "links_internal": [
+        {
+          "target": "LICENSE",
+          "resolves": true
+        },
+        {
+          "target": "PHILOSOPHY.md",
+          "resolves": true
+        }
+      ],
+      "links_internal_unresolved": [],
+      "code_fences": 2,
+      "table_rows": 70,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
     },
     "scheme_anchor_seeder.py": {
       "language": "python",
@@ -420,8 +730,10 @@
         "sys",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "HERE"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     },
     "server_smoke.py": {
@@ -438,9 +750,35 @@
         "subprocess",
         "sys"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "REPO"
+      ],
+      "env_names_read": [],
       "has_main_guard": false
+    },
+    "THE-TRAIL-seed.md": {
+      "language": "markdown",
+      "lines": 49,
+      "words": 382,
+      "heading_count": 5,
+      "headings": [
+        "THE TRAIL \u2014 seed",
+        "The need (real, proven twice today)",
+        "The plugin idea (KP's, revived tonight)",
+        "The honest caution (before any build)",
+        "The trail's four candidate planks (rank by sanction, then effort)"
+      ],
+      "links_external": 0,
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
     },
     "verify_terms.py": {
       "language": "python",
@@ -462,16 +800,18 @@
         "urllib.parse",
         "urllib.request"
       ],
-      "cli_flags": [],
-      "env_names_needed": [],
+      "constants": [
+        "HERE"
+      ],
+      "env_names_read": [],
       "has_main_guard": true
     }
   },
-  "package_folders_excluded": [
+  "maintaining_agent": "FolderAgent",
+  "folders_not_walked": [
     ".git",
     "__pycache__",
     "node_modules"
   ],
-  "maintaining_agent": "FolderAgent",
-  "note": "Env NAMES only; no value from any source appears in this file. `.env` is never listed and never opened."
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }
