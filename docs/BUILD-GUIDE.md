@@ -217,7 +217,7 @@ This Bridge descends from the family's **Prometheus** design lineage. *(Note:
 "Prometheus" is now the name of a separate project — the commons/room — not this
 server; what follows is shared ancestry, not identity.)* That design was first
 drawn in the old Sanctuary
-(`excavator/sources/AudHDities-old/src/scripts/system/prometheus/`)
+(`excavator/landfill/AudHDities-old/src/scripts/system/prometheus/`)
 by a full Council session on 2026-04-12 — a **meta-generator, "a system that
 births systems,"** with nine named organs, one from each seat:
 
