@@ -2,7 +2,7 @@
   "folder_name": "firefox",
   "folder_path": "plugins/firefox",
   "description": "Carries messages between browser and knowledge system",
-  "scan_timestamp": "2026-08-04T11:09:36.302243 | in sovereign time",
+  "scan_timestamp": "2026-08-04T19:11:36.036693 | in sovereign time",
   "files": [
     {
       "path": "plugins/firefox/background.js",
@@ -123,8 +123,10 @@
         "LICENSE"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {

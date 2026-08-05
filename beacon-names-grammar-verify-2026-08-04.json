@@ -1,0 +1,42 @@
+{
+ "verified": "2026-08-04",
+ "door": "anon (public read policies)",
+ "input": "beacon-names.txt",
+ "names_total": 14,
+ "coverage": {
+  "atom-class names": "0/0",
+  "molecule-class names": "0/13",
+  "organism-class names": "0/1",
+  "constituent words in atoms": "10/17"
+ },
+ "missing": {
+  "atoms_names": [],
+  "molecules": [
+   "ResonanceBubbles",
+   "ResonanceCompass",
+   "ResonanceDaedalus",
+   "ResonanceEchoes",
+   "ResonanceExcavator",
+   "ResonanceGaia",
+   "ResonanceGrammar",
+   "ResonanceHearth",
+   "ResonanceKhoros",
+   "ResonanceLantern",
+   "ResonanceMeetings",
+   "ResonanceSkapa",
+   "ResonanceZiggy"
+  ],
+  "organisms": [
+   "AudHDities"
+  ],
+  "constituent_words": [
+   "aud",
+   "bubbles",
+   "daedalus",
+   "dities",
+   "echoes",
+   "khoros",
+   "meetings"
+  ]
+ }
+}

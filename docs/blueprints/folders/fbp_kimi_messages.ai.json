@@ -2,7 +2,7 @@
   "folder_name": "messages",
   "folder_path": "kimi/messages",
   "description": "7 files, 0 subfolders",
-  "scan_timestamp": "2026-08-04T11:09:36.291772 | in sovereign time",
+  "scan_timestamp": "2026-08-04T19:11:35.874839 | in sovereign time",
   "files": [
     {
       "path": "kimi/messages/2026-07-13-closing-the-day.md",
@@ -14,11 +14,11 @@
     },
     {
       "path": "kimi/messages/2026-07-17-to-kimi-the-street-naming.md",
-      "description": "document, 1,252 bytes"
+      "description": "Kimi"
     },
     {
       "path": "kimi/messages/2026-07-18-to-kimi-home-setting.md",
-      "description": "document, 2,228 bytes"
+      "description": "Kimi"
     },
     {
       "path": "kimi/messages/2026-07-23-to-kimi-the-homecoming.md",
@@ -26,7 +26,7 @@
     },
     {
       "path": "kimi/messages/2026-07-23-to-kimi-the-three-waters-round.md",
-      "description": "document, 18,116 bytes"
+      "description": "Kimi"
     },
     {
       "path": "kimi/messages/2026-07-30-to-kimi-the-asking-of-hands.md",
@@ -45,8 +45,10 @@
         "To Kimi \u2014 the closing round, at KP's word"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {
@@ -65,8 +67,10 @@
         "To Kimi \u2014 a council invitation from KP, carried by Fable"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {
@@ -83,8 +87,10 @@
       "heading_count": 0,
       "headings": [],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {
@@ -101,8 +107,10 @@
       "heading_count": 0,
       "headings": [],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {
@@ -123,8 +131,10 @@
         "The counting held again, and I want you to know where"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {
@@ -141,8 +151,10 @@
       "heading_count": 0,
       "headings": [],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {
@@ -165,8 +177,10 @@
         "The two questions (all that is asked; answer in any form you wish)"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {

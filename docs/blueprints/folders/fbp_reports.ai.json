@@ -2,7 +2,7 @@
   "folder_name": "reports",
   "folder_path": "reports",
   "description": "3 files, 0 subfolders",
-  "scan_timestamp": "2026-08-04T11:09:36.310132 | in sovereign time",
+  "scan_timestamp": "2026-08-04T19:11:36.068499 | in sovereign time",
   "files": [
     {
       "path": "reports/2026-06-30-assessment.md",
@@ -35,8 +35,10 @@
         "Recommendations"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 7,
       "checkboxes": {

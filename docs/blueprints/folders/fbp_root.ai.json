@@ -2,7 +2,7 @@
   "folder_name": "resonance-bridge",
   "folder_path": ".",
   "description": "The switchboard",
-  "scan_timestamp": "2026-08-04T11:09:36.277725 | in sovereign time",
+  "scan_timestamp": "2026-08-04T19:11:35.768407 | in sovereign time",
   "files": [
     {
       "path": ".env",
@@ -15,6 +15,14 @@
     {
       "path": "atoms_dump.py",
       "description": "Disposable: pull the live atoms table's atom_word column for KP's eye"
+    },
+    {
+      "path": "beacon-names-grammar-verify-2026-08-04.json",
+      "description": "data, 827 bytes"
+    },
+    {
+      "path": "beacon-names.txt",
+      "description": "text document, 240 bytes"
     },
     {
       "path": "CLAUDE.md",
@@ -125,7 +133,7 @@
       "description": "verify_terms.py"
     }
   ],
-  "file_count": 30,
+  "file_count": 32,
   "subdirectories": [
     "docs",
     "kimi",
@@ -149,6 +157,30 @@
       "env_names_read": [],
       "has_main_guard": false
     },
+    "beacon-names-grammar-verify-2026-08-04.json": {
+      "language": "json",
+      "lines": 42,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "coverage",
+        "door",
+        "input",
+        "missing",
+        "names_total",
+        "verified"
+      ],
+      "key_count": 6
+    },
+    "beacon-names.txt": {
+      "language": "content-file",
+      "format": "txt",
+      "name": "beacon-names.txt",
+      "location": ".",
+      "bytes": 240,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
     "CLAUDE.md": {
       "language": "markdown",
       "lines": 72,
@@ -161,8 +193,10 @@
         "Essential Rules"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 1,
       "table_rows": 0,
       "checkboxes": {
@@ -208,8 +242,10 @@
         "Read first"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {
@@ -230,8 +266,10 @@
         "Laws standing"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {
@@ -373,13 +411,16 @@
         "Added 2026-07-23 night (the knowledge line opens)"
       ],
       "links_external": 1,
+      "links_site_absolute": [],
       "links_internal": [
         {
           "target": "PHILOSOPHY.md",
-          "resolves": true
+          "resolves": true,
+          "outside_checkout": false
         }
       ],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {
@@ -587,8 +628,10 @@
         "MOVED \u2014 departures from the bridge"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 3,
       "checkboxes": {
@@ -659,8 +702,10 @@
         "ACKNOWLEDGMENT"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {
@@ -694,17 +739,21 @@
         "LICENSE"
       ],
       "links_external": 3,
+      "links_site_absolute": [],
       "links_internal": [
         {
           "target": "LICENSE",
-          "resolves": true
+          "resolves": true,
+          "outside_checkout": false
         },
         {
           "target": "PHILOSOPHY.md",
-          "resolves": true
+          "resolves": true,
+          "outside_checkout": false
         }
       ],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 2,
       "table_rows": 70,
       "checkboxes": {
@@ -769,8 +818,10 @@
         "The trail's four candidate planks (rank by sanction, then effort)"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {

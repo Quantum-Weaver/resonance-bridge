@@ -2,7 +2,7 @@
   "domain_name": "plugins",
   "domain_path": "plugins",
   "description": "0 files, 0 subfolders",
-  "integration_timestamp": "2026-08-04T11:09:36.325419 | in sovereign time",
+  "integration_timestamp": "2026-08-04T19:11:36.194561 | in sovereign time",
   "objects": [
     {
       "blueprint": "docs/blueprints/obp_plugins_firefox.ai.json",

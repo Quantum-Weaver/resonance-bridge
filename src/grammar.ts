@@ -163,6 +163,43 @@ export function registerGrammar(
   );
 
   server.tool(
+    "query_beacon",
+    "Look up the things the Sanctuary SHIPS — games and apps with their own repos, installers and store listings. With no arguments: every beacon, its making status, and where it stands in each of the four store channels. With a name or slug: the whole row, including testing, publishing and pricing across audhdities, microsoft, galaxy and play. (A tool is a verb made standalone inside a realm; a beacon is a destination with its own address.)",
+    {
+      name: z.string().optional().describe("beacon name or slug, e.g. 'resonance-bubbles' (case-insensitive; omit to list all)"),
+      type: z.string().optional().describe("optional filter: game | app"),
+    },
+    async ({ name, type }) => {
+      if (!line()) return noLine();
+      // Commas break PostgREST's `or` parsing — the same guard search_knowledge keeps.
+      const q = name?.replaceAll(",", " ").trim();
+      if (!q) {
+        const params: Record<string, string> = {
+          select:
+            "name,slug,beacon_type,status,definition,home,repo_url,is_public,version," +
+            "audhdities_status,microsoft_status,galaxy_status,play_status",
+          order: "name",
+        };
+        if (type) params.beacon_type = `eq.${type}`;
+        const rows = (await grammarGet("resonance_beacons", params)) as unknown[];
+        return asText(
+          rows.length > 0
+            ? rows
+            : "The beacon registry stands empty. On a table with a public-read policy that is a REAL result, not a false-empty — nothing ships yet."
+        );
+      }
+      const rows = (await grammarGet("resonance_beacons", {
+        or: `(name.ilike.${q},slug.ilike.${q})`,
+        select: "*",
+      })) as unknown[];
+      return asText(
+        rows.length > 0 ? (rows.length === 1 ? rows[0] : rows)
+          : `No beacon named '${name}' in the living Grammar.`
+      );
+    }
+  );
+
+  server.tool(
     "search_knowledge",
     "Full-text search across the living Grammar — atoms, molecules, organisms, and the thesaurus — matching words/names and definitions. Returns per-table matches, labeled.",
     {

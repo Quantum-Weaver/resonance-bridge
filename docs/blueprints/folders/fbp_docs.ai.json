@@ -2,11 +2,11 @@
   "folder_name": "docs",
   "folder_path": "docs",
   "description": "3 files, 0 subfolders",
-  "scan_timestamp": "2026-08-04T11:09:36.281435 | in sovereign time",
+  "scan_timestamp": "2026-08-04T19:11:35.791766 | in sovereign time",
   "files": [
     {
       "path": "docs/archived-env-example-2026-07-27.txt",
-      "description": "file, 4,199 bytes"
+      "description": "text document, 4,199 bytes"
     },
     {
       "path": "docs/BASE-ACCESS-GUIDE.md",
@@ -21,11 +21,13 @@
   "subdirectories": [],
   "code_analysis": {
     "archived-env-example-2026-07-27.txt": {
-      "language": "text",
-      "lines": 79,
-      "words": 535,
-      "first_line": "# RESONANCE BRIDGE \u2014 environment template",
-      "blank_line_ratio": 0.15
+      "language": "content-file",
+      "format": "txt",
+      "name": "archived-env-example-2026-07-27.txt",
+      "location": "docs",
+      "bytes": 4199,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
     },
     "BASE-ACCESS-GUIDE.md": {
       "language": "markdown",
@@ -39,8 +41,10 @@
         "The lessons (each one cost a sitting; don't pay twice)"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 1,
       "table_rows": 5,
       "checkboxes": {
@@ -73,8 +77,10 @@
         "7. Ancestry (discovered 2026-07-03, at the Weaver's invitation)"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 5,
       "table_rows": 23,
       "checkboxes": {

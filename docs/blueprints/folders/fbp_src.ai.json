@@ -2,7 +2,7 @@
   "folder_name": "src",
   "folder_path": "src",
   "description": "10 files, 0 subfolders",
-  "scan_timestamp": "2026-08-04T11:09:36.317787 | in sovereign time",
+  "scan_timestamp": "2026-08-04T19:11:36.187096 | in sovereign time",
   "files": [
     {
       "path": "src/airtable.ts",
@@ -18,7 +18,7 @@
     },
     {
       "path": "src/grammar.ts",
-      "description": "typescript, 9,218 bytes"
+      "description": "typescript, 11,110 bytes"
     },
     {
       "path": "src/http.ts",
@@ -100,7 +100,7 @@
     },
     "grammar.ts": {
       "language": "typescript",
-      "lines": 198,
+      "lines": 235,
       "exported_functions": [
         "registerGrammar"
       ],

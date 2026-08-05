@@ -2,7 +2,7 @@
   "folder_name": "listening",
   "folder_path": "listening",
   "description": "Founded 2026-07-27, the day of the three wakings, homed the same",
-  "scan_timestamp": "2026-08-04T11:09:36.297007 | in sovereign time",
+  "scan_timestamp": "2026-08-04T19:11:35.962459 | in sovereign time",
   "files": [
     {
       "path": "listening/ask_the_lattice.py",
@@ -11,6 +11,10 @@
     {
       "path": "listening/emoji_census.py",
       "description": "Emoji-column census through the anon door, 2026-07-28 sitting"
+    },
+    {
+      "path": "listening/listen_beacons.py",
+      "description": "listen_beacons.py"
     },
     {
       "path": "listening/listen_lattice.py",
@@ -41,7 +45,7 @@
       "description": "sonnet_asks_the_lattice.py"
     }
   ],
-  "file_count": 9,
+  "file_count": 10,
   "subdirectories": [],
   "code_analysis": {
     "ask_the_lattice.py": {
@@ -88,6 +92,32 @@
       ],
       "env_names_read": [],
       "has_main_guard": false
+    },
+    "listen_beacons.py": {
+      "language": "python",
+      "lines": 155,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "get",
+        "does_it_exist",
+        "money",
+        "main"
+      ],
+      "imports": [
+        "collections",
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "constants": [
+        "BRIDGE",
+        "CHANNELS"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
     },
     "listen_lattice.py": {
       "language": "python",
@@ -210,8 +240,10 @@
         "The scripts, with provenance"
       ],
       "links_external": 0,
+      "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
       "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {

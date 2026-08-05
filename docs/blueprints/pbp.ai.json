@@ -2,7 +2,7 @@
   "project_name": "resonance-bridge",
   "project_path": "C:\\_superposition\\resonance-bridge",
   "description": "The switchboard",
-  "generated": "2026-08-04T11:09:36.348929 | in sovereign time",
+  "generated": "2026-08-04T19:11:36.230103 | in sovereign time",
   "tier_ladder": "file -> folder (fbp) -> object (obp) -> domain (dbp) -> project (pbp)",
   "law": "Each tier links to where the details live. Nothing above the folder tier duplicates a body.",
   "domains": [
@@ -30,7 +30,7 @@
       "blueprint": "docs/blueprints/folders/fbp_root.ai.json",
       "folder_path": ".",
       "description": "The switchboard",
-      "file_count": 30,
+      "file_count": 32,
       "subdirectory_count": 6
     },
     {
@@ -44,7 +44,7 @@
       "blueprint": "docs/blueprints/folders/fbp_listening.ai.json",
       "folder_path": "listening",
       "description": "Founded 2026-07-27, the day of the three wakings, homed the same",
-      "file_count": 9,
+      "file_count": 10,
       "subdirectory_count": 0
     },
     {
@@ -74,7 +74,7 @@
   ],
   "totals": {
     "folders_blueprinted": 10,
-    "files_described": 97
+    "files_described": 100
   },
   "not_walked": {
     "reason": "package-class trees, this repo's own gitignored trees, reparse points, and this tool's own output",
@@ -96,6 +96,7 @@
       "dist",
       "env",
       "gen",
+      "mimirs-well",
       "node_modules",
       "out",
       "target",
