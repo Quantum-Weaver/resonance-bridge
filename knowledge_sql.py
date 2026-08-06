@@ -40,7 +40,10 @@ def main() -> None:
         f"https://api.supabase.com/v1/projects/{ref}/database/query",
         data=json.dumps({"query": sql}).encode(),
         headers={"Authorization": f"Bearer {token}",
-                 "Content-Type": "application/json"},
+                 "Content-Type": "application/json",
+                 # Cloudflare blocks python's default UA at api.supabase.com
+                 # (BASE-ACCESS-GUIDE lesson 5); a named agent passes.
+                 "User-Agent": "resonance-bridge/knowledge_sql"},
         method="POST")
     with urllib.request.urlopen(req, timeout=60) as r:
         body = r.read().decode()
