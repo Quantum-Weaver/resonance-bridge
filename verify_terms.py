@@ -48,18 +48,25 @@ def load_env() -> dict:
 
 
 def split_words(name: str) -> list:
-    """The Grammar's decomposition: underscores/hyphens divide first; an
-    all-caps segment is ONE word (SCREAMING_CASE convention); mixed-case
-    segments split at capitals. Digits exempt."""
+    """The Grammar's decomposition: underscores/hyphens/dots divide first;
+    an all-caps segment is ONE word (SCREAMING_CASE convention); mixed-case
+    segments split acronym-aware (parseSQLContent -> parse, sql, content —
+    mended 2026-08-07, the library carry's catch: the old capital-split
+    shattered embedded acronym runs into letters). Digits exempt.
+    Single-letter words excluded — KP's ⚛ ruling, 2026-08-07, verbatim:
+    "single letter words should not be included"."""
     words = []
-    for seg in re.split(r"[_-]", name):
+    for seg in re.split(r"[_\-.\s]", name):
         if not seg:
             continue
         if seg.isupper():
             words.append(seg.lower())
         else:
-            words.extend(w.lower() for w in re.split(r"(?=[A-Z])", seg) if w)
-    return [w for w in words if not w.isdigit()]
+            words.extend(
+                w.lower()
+                for w in re.findall(r"[A-Z]+(?![a-z])|[A-Z][a-z]*|[a-z]+|[0-9]+", seg)
+            )
+    return [w for w in words if not w.isdigit() and len(w) > 1]
 
 
 def fetch_in(base: str, key: str, table: str, column: str, values: list) -> set:
