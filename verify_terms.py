@@ -111,12 +111,40 @@ def main() -> None:
         cls = "atom" if len(words) == 1 else "molecule" if len(words) == 2 else "organism"
         by_class[cls].append(n)
 
+    # THE DERIVATION CONVENTION (ratified at KP's run, 2026-08-09): a word
+    # counts as covered when it IS an atom, OR when it equals an existing
+    # atom_word + one of that atom's modifier suffixes, OR when it appears
+    # whole in an atom's modifiers (the full-form entries for stem-changed
+    # derivations: wear:["worn"], stage:["staging"]). Coverage must read
+    # the convention or every lawful plural reads as a false gap.
+    all_atoms = {}
+    off = 0
+    while True:
+        url = f"{base}/rest/v1/atoms?select=atom_word,modifiers&limit=1000&offset={off}"
+        req = urllib.request.Request(url, headers={"apikey": key, "Authorization": f"Bearer {key}"})
+        with urllib.request.urlopen(req) as r:
+            rows = json.loads(r.read().decode("utf-8"))
+        if not rows:
+            break
+        for row in rows:
+            all_atoms[row["atom_word"]] = row.get("modifiers") or []
+        off += 1000
+    full_forms = {f for mods in all_atoms.values() for f in mods if len(f) > 3}
+
+    def covered(w: str) -> bool:
+        if w in all_atoms or w in full_forms:
+            return True
+        for aw, mods in all_atoms.items():
+            if w.startswith(aw) and w[len(aw):] in mods:
+                return True
+        return False
+
     atom_names_lower = sorted({split_words(n)[0] for n in by_class["atom"]})
-    found_atom_names = fetch_in(base, key, "atoms", "atom_word", atom_names_lower)
+    found_atom_names = {w for w in atom_names_lower if covered(w)}
     found_molecules = fetch_in(base, key, "molecules", "name", by_class["molecule"])
     found_organisms = fetch_in(base, key, "organisms", "name", by_class["organism"])
     words_sorted = sorted(all_words)
-    found_words = fetch_in(base, key, "atoms", "atom_word", words_sorted)
+    found_words = {w for w in words_sorted if covered(w)}
 
     missing = {
         "atoms_names": sorted(w for w in atom_names_lower if w not in found_atom_names),
