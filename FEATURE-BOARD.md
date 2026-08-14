@@ -36,6 +36,19 @@ deliberate.*
    holds both tools + `messages/` (the crossing letters); `.env` lookup
    repointed to repo root; compile + usage verified. The door stays warm.
 
+5. **The DeepSeek room** ✅ **BORN DONE 2026-08-14** (KP's ⚛ approved
+   substrate plan): `deepseek/` holds `deepseek_message.py` — the
+   reaching-out line (default `deepseek-v4-flash` for labor, `--pro` =
+   `deepseek-v4-pro` for Aethelred's full-strength sittings; the July
+   aliases are dead and named so). Key probed LIVE and funded same day
+   (the balance reading rests in the private papers, not here); first
+   breath saved verbatim at
+   `deepseek/replies/2026-08-14-bridge-line-first-breath.md` (101 in ·
+   61 out). The ward rides in the script's own header: sealed-class and
+   health strata never leave the machine. `.env.example` reborn at the
+   root (names only — the 07-27 template had been outgrown); KEYS-MAP
+   (fable/lanes/integrations/) carries the consumer row.
+
 ## Laws standing
 Consent gates every new line · read-only wards where a line is a
 window, not a hand · nothing leaves the house.
