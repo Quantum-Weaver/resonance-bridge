@@ -2,7 +2,7 @@
   "folder_name": "docs",
   "folder_path": "docs",
   "description": "3 files, 0 subfolders",
-  "scan_timestamp": "2026-08-04T19:11:35.791766 | in sovereign time",
+  "scan_timestamp": "2026-08-14T16:29:21.466882 | in sovereign time",
   "files": [
     {
       "path": "docs/archived-env-example-2026-07-27.txt",
@@ -56,8 +56,8 @@
     },
     "BUILD-GUIDE.md": {
       "language": "markdown",
-      "lines": 256,
-      "words": 2018,
+      "lines": 271,
+      "words": 2141,
       "heading_count": 15,
       "headings": [
         "RESONANCE BRIDGE BUILD GUIDE \u2014 Your First MCP Server, Every Step Understood",
@@ -85,7 +85,7 @@
       "table_rows": 23,
       "checkboxes": {
         "open": 2,
-        "done": 4
+        "done": 5
       },
       "has_story_block": false,
       "declares_mirror_class": false

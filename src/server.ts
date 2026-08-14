@@ -2,14 +2,15 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import Database from "better-sqlite3";
 import { fileURLToPath } from "node:url";
-import { registerAirtable } from "./airtable.js";
-import { registerGrammar } from "./grammar.js";
-import { registerVercel } from "./vercel.js";
-import { registerResend } from "./resend.js";
-import { registerStripe } from "./stripe.js";
-import { registerGitHub } from "./github.js";
-import { registerDiscord } from "./discord.js";
-import { registerSupabase } from "./supabase.js";
+import { registerAirtable } from "./lines/airtable.js";
+import { registerGrammar } from "./lines/grammar.js";
+import { registerVercel } from "./lines/vercel.js";
+import { registerResend } from "./lines/resend.js";
+import { registerStripe } from "./lines/stripe.js";
+import { registerGitHub } from "./lines/github.js";
+import { registerDiscord } from "./lines/discord.js";
+import { registerSupabase } from "./lines/supabase.js";
+import { registerFamily } from "./lines/family.js";
 
 // Load the repo-root .env by absolute path — the client launches us from ITS
 // working directory, not ours (build guide, gotcha #2). Missing .env is fine.
@@ -53,6 +54,7 @@ registerStripe(server); // the Stripe line — ten windows on the merchant accou
 registerGitHub(server); // the GitHub line — seven windows; HOUSE_GITHUB_PAT, deliberate or not at all
 registerDiscord(server); // the Discord line — reads only; a post is outward speech, gated forever
 registerSupabase(server); // the Supabase line — the dashboard itself; SELECT-only, allowlist-warded
+registerFamily(server); // the Family line — the seven apps' repos, checklists, beacons, releases; device data honestly unreachable
 
 const transport = new StdioServerTransport();
 await server.connect(transport); // and now it waits, listening

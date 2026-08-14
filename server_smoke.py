@@ -13,6 +13,11 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Windows consoles default to cp1252, and live data carries emoji — the
+# printing must never be what kills the breath.
+if (sys.stdout.encoding or "").lower() not in ("utf-8", "utf8"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 REPO = Path(__file__).resolve().parent
 
 proc = subprocess.Popen(
@@ -87,6 +92,10 @@ checks = [
     ("github_token_status", {}),
     ("discord_whoami", {}),
     ("supabase_list_projects", {}),
+    ("family_status", {}),
+    ("family_checklist", {"app": "echoes"}),
+    ("family_beacons", {}),
+    ("family_releases", {}),
 ]
 for tool, args in checks:
     out = call(tool, args)

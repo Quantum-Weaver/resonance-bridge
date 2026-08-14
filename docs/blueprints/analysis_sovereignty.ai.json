@@ -1,6 +1,6 @@
 {
   "analysis": "sovereignty",
-  "scan_timestamp": "2026-08-04T19:11:36.226527 | in sovereign time",
+  "scan_timestamp": "2026-08-14T16:29:21.537257 | in sovereign time",
   "law": "Trees this repo's .gitignore declares uncommittable must not be tracked.",
   "git_available": true,
   "ignored_trees": {},
@@ -10,9 +10,15 @@
       "present": true,
       "tracked": false,
       "opened": false
+    },
+    {
+      "address": ".env.example",
+      "present": true,
+      "tracked": true,
+      "opened": false
     }
   ],
-  "secret_files_found": 1,
+  "secret_files_found": 2,
   "note": "Existence reported, contents never read. NEVER A VALUE.",
-  "verdict": "HELD"
+  "verdict": "BREACHED \u2014 see leaked lists"
 }

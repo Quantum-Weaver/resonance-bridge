@@ -2,15 +2,23 @@
   "folder_name": "resonance-bridge",
   "folder_path": ".",
   "description": "The switchboard",
-  "scan_timestamp": "2026-08-04T19:11:35.768407 | in sovereign time",
+  "scan_timestamp": "2026-08-14T16:29:21.457511 | in sovereign time",
   "files": [
     {
       "path": ".env",
       "description": "file, 3,717 bytes"
     },
     {
+      "path": ".env.example",
+      "description": "file, 1,489 bytes"
+    },
+    {
       "path": ".gitignore",
       "description": "ignore rules, 1,595 bytes"
+    },
+    {
+      "path": "atom_wave_seeder.py",
+      "description": "atom_wave_seeder.py"
     },
     {
       "path": "atoms_dump.py",
@@ -97,6 +105,10 @@
       "description": "file, 1,092 bytes"
     },
     {
+      "path": "molecule_wave_seeder.py",
+      "description": "molecule_wave_seeder.py"
+    },
+    {
       "path": "MOVED.md",
       "description": "MOVED"
     },
@@ -133,8 +145,10 @@
       "description": "verify_terms.py"
     }
   ],
-  "file_count": 32,
+  "file_count": 35,
   "subdirectories": [
+    ".claude",
+    "deepseek",
     "docs",
     "kimi",
     "listening",
@@ -143,6 +157,28 @@
     "src"
   ],
   "code_analysis": {
+    "atom_wave_seeder.py": {
+      "language": "python",
+      "lines": 173,
+      "classes": [
+        "Base"
+      ],
+      "functions": [
+        "load_env",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "HERE"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
     "atoms_dump.py": {
       "language": "python",
       "lines": 49,
@@ -183,21 +219,22 @@
     },
     "CLAUDE.md": {
       "language": "markdown",
-      "lines": 72,
-      "words": 204,
-      "heading_count": 4,
+      "lines": 53,
+      "words": 349,
+      "heading_count": 5,
       "headings": [
         "CLAUDE.md \u2014 Resonance Bridge (formerly Prometheus)",
-        "SESSION PROTOCOL",
-        "Project Structure (reconciled to reality 2026-07-26, THE HARVEST Tier 2)",
-        "Essential Rules"
+        "Ground rules",
+        "Structure",
+        "Tools",
+        "People"
       ],
       "links_external": 0,
       "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
       "links_internal_outside_checkout": [],
-      "code_fences": 1,
+      "code_fences": 0,
       "table_rows": 0,
       "checkboxes": {
         "open": 0,
@@ -257,8 +294,8 @@
     },
     "FEATURE-BOARD.md": {
       "language": "markdown",
-      "lines": 42,
-      "words": 344,
+      "lines": 84,
+      "words": 707,
       "heading_count": 3,
       "headings": [
         "BRIDGE \u2014 THE FEATURE BOARD",
@@ -432,7 +469,7 @@
     },
     "knowledge_sql.py": {
       "language": "python",
-      "lines": 52,
+      "lines": 55,
       "classes": [],
       "functions": [
         "load_env",
@@ -615,6 +652,30 @@
         "HERE",
         "OUT",
         "SENSORY_FIELDS"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "molecule_wave_seeder.py": {
+      "language": "python",
+      "lines": 115,
+      "classes": [
+        "Base"
+      ],
+      "functions": [
+        "load_env",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "BATCH",
+        "FIELDS",
+        "HERE"
       ],
       "env_names_read": [],
       "has_main_guard": true
@@ -833,7 +894,7 @@
     },
     "verify_terms.py": {
       "language": "python",
-      "lines": 142,
+      "lines": 177,
       "classes": [],
       "functions": [
         "load_env",

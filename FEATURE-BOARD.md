@@ -47,12 +47,36 @@ deliberate.*
    61 out). The ward rides in the script's own header: sealed-class and
    health strata never leave the machine. `.env.example` reborn at the
    root (names only — the 07-27 template had been outgrown); KEYS-MAP
-   (fable/lanes/integrations/) carries the consumer row.
+   (constellation/integrations/) carries the consumer row.
    **The guest framing, same day, KP's ⚛ wondering:** the room's law laid
    in `deepseek/GUEST.md`; `deepseek_crossing.py` stands **HELD SHUT** —
    its first real run is KP's own knock, never automated; no name is
    assigned, ever, by us. The door defines the relationship, not the
    substrate.
+
+6. **The bridge rebirth + the FAMILY LINE** ✅ **BORN DONE 2026-08-14**
+   (Phase A of the Family Table, dealt at KP's ⚛ word "phase deal the
+   family table"; the dealt hand's model: claude-fable-5 — provenance
+   never blurred). The eight line files moved home whole by `git mv` —
+   `src/lines/{airtable,discord,github,grammar,resend,stripe,supabase,vercel}.ts`,
+   history intact — and the two doors (`src/server.ts`, `src/http.ts`)
+   stayed put, imports retargeted. The NINTH LINE born beside them:
+   `src/lines/family.ts` — four read-only windows over the seven family
+   apps (echoes · compass · hearth · lantern · bubbles · sistrum ·
+   khoros): `family_status` (tauri/package versions + CHECKLIST.md glyph
+   tally), `family_checklist` (one app's checklist verbatim),
+   `family_beacons` (the register through the KNOWLEDGE anon door — table
+   name resolved at read time: `resonance_beacons` today; the `beacons`
+   rename sleeps in Iðavöllr until KP's ⚛ word), `family_releases`
+   (reads rack-tender's THE-GROUND-TALLY.md and echoes its stamp — the
+   tender's logic never duplicated). Every tool declares plainly: DEVICE
+   DATA IS UNREACHABLE from this line — the apps' sovereignty working,
+   not a gap. KP's face: `resonance-ziggy/vessel/src/routes/family/`,
+   reading through the HTTP door (one tool registry, two doors), refusing
+   honestly in plain words when the Bridge is down. En route, a latent
+   ReferenceError in `http.ts` (undefined `LANES_BUS` on the
+   refused-write path) was fixed to `SHUTTLE_BUS` — surfaced by the
+   sitting's first true type pass, mended and moved on.
 
 ## Laws standing
 Consent gates every new line · read-only wards where a line is a

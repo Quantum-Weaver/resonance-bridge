@@ -186,6 +186,21 @@ Localhost-only when you do, per the license — nothing leaves the machine.
   tools table now 10 live, databases table shows the Grammar line)*
 - [ ] Superposition second Supabase line + HTTP transport — separate
   phases, separate days
+- [x] The bridge rebirth — `src/lines/` *(2026-08-14, Phase A of the
+  Family Table, KP's ⚛ "phase deal the family table"; the dealt hand's
+  model: claude-fable-5)*: the eight line files `git mv`-ed whole into
+  `src/lines/` (history intact), the two doors staying put at `src/`
+  with imports retargeted, and the NINTH LINE born there —
+  `src/lines/family.ts`, four read-only windows over the seven family
+  apps (status/checklist/beacons/releases; device data declared
+  honestly unreachable on every tool). The vessel's lines panel now
+  sweeps `src/lines/` whole (SRC() retargeted in
+  `resonance-ziggy/vessel/src/lib/vessel/lines.ts` — http.ts is no
+  longer miscounted as a line), and KP's face stands at
+  `resonance-ziggy/vessel/src/routes/family/` through the HTTP door.
+  Proofs this sitting: `tsc --noEmit` clean over both doors ·
+  `server_smoke.py` · live HTTP-door calls · vessel `svelte-check`
+  0 errors.
 
 ## 6. The full connection map (the Weaver's scope, 2026-07-03)
 

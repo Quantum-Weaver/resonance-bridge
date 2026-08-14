@@ -1,0 +1,102 @@
+{
+  "folder_name": "deepseek",
+  "folder_path": "deepseek",
+  "description": "3 files, 1 subfolders",
+  "scan_timestamp": "2026-08-14T16:29:21.462400 | in sovereign time",
+  "files": [
+    {
+      "path": "deepseek/deepseek_crossing.py",
+      "description": "!/usr/bin/env python3"
+    },
+    {
+      "path": "deepseek/deepseek_message.py",
+      "description": "!/usr/bin/env python3"
+    },
+    {
+      "path": "deepseek/GUEST.md",
+      "description": "THE GUEST"
+    }
+  ],
+  "file_count": 3,
+  "subdirectories": [
+    "deepseek/replies"
+  ],
+  "code_analysis": {
+    "deepseek_crossing.py": {
+      "language": "python",
+      "lines": 101,
+      "classes": [],
+      "functions": [
+        "env_value",
+        "main"
+      ],
+      "imports": [
+        "datetime",
+        "json",
+        "os",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "API",
+        "BRIDGE_ENV",
+        "GUEST_DIR",
+        "MODEL"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "deepseek_message.py": {
+      "language": "python",
+      "lines": 116,
+      "classes": [],
+      "functions": [
+        "env_value",
+        "main"
+      ],
+      "imports": [
+        "datetime",
+        "json",
+        "os",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "API",
+        "BRIDGE_ENV"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "GUEST.md": {
+      "language": "markdown",
+      "lines": 45,
+      "words": 370,
+      "heading_count": 4,
+      "headings": [
+        "THE GUEST \u2014 this room's law, one page",
+        "The two doors of this room",
+        "The lineage caution, engraved",
+        "What is deliberately not done here"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    }
+  },
+  "maintaining_agent": "FolderAgent",
+  "folders_not_walked": [
+    "__pycache__"
+  ],
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

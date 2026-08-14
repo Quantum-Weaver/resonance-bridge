@@ -1,123 +1,26 @@
 {
   "folder_name": "src",
   "folder_path": "src",
-  "description": "10 files, 0 subfolders",
-  "scan_timestamp": "2026-08-04T19:11:36.187096 | in sovereign time",
+  "description": "2 files, 1 subfolders",
+  "scan_timestamp": "2026-08-14T16:29:21.499599 | in sovereign time",
   "files": [
-    {
-      "path": "src/airtable.ts",
-      "description": "typescript, 3,523 bytes"
-    },
-    {
-      "path": "src/discord.ts",
-      "description": "typescript, 8,451 bytes"
-    },
-    {
-      "path": "src/github.ts",
-      "description": "typescript, 9,812 bytes"
-    },
-    {
-      "path": "src/grammar.ts",
-      "description": "typescript, 11,110 bytes"
-    },
     {
       "path": "src/http.ts",
       "description": "The HTTP door"
     },
     {
-      "path": "src/resend.ts",
-      "description": "typescript, 4,293 bytes"
-    },
-    {
       "path": "src/server.ts",
-      "description": "typescript, 2,982 bytes"
-    },
-    {
-      "path": "src/stripe.ts",
-      "description": "typescript, 10,492 bytes"
-    },
-    {
-      "path": "src/supabase.ts",
-      "description": "typescript, 11,128 bytes"
-    },
-    {
-      "path": "src/vercel.ts",
-      "description": "typescript, 5,752 bytes"
+      "description": "typescript, 3,216 bytes"
     }
   ],
-  "file_count": 10,
-  "subdirectories": [],
+  "file_count": 2,
+  "subdirectories": [
+    "src/lines"
+  ],
   "code_analysis": {
-    "airtable.ts": {
-      "language": "typescript",
-      "lines": 97,
-      "exported_functions": [
-        "registerAirtable"
-      ],
-      "exported_consts": [],
-      "interfaces": [],
-      "types": [],
-      "imports_node": [],
-      "spawns_process": false,
-      "writes_files": false,
-      "env_names_read": [
-        "AIRTABLE_API_KEY",
-        "example"
-      ]
-    },
-    "discord.ts": {
-      "language": "typescript",
-      "lines": 227,
-      "exported_functions": [
-        "registerDiscord"
-      ],
-      "exported_consts": [],
-      "interfaces": [],
-      "types": [],
-      "imports_node": [],
-      "spawns_process": false,
-      "writes_files": false,
-      "env_names_read": [
-        "DISCORD_BOT_TOKEN_BRIDGE",
-        "DISCORD_GUILD_ID"
-      ]
-    },
-    "github.ts": {
-      "language": "typescript",
-      "lines": 250,
-      "exported_functions": [
-        "registerGitHub"
-      ],
-      "exported_consts": [],
-      "interfaces": [],
-      "types": [],
-      "imports_node": [],
-      "spawns_process": false,
-      "writes_files": false,
-      "env_names_read": [
-        "HOUSE_GITHUB_PAT"
-      ]
-    },
-    "grammar.ts": {
-      "language": "typescript",
-      "lines": 235,
-      "exported_functions": [
-        "registerGrammar"
-      ],
-      "exported_consts": [],
-      "interfaces": [],
-      "types": [],
-      "imports_node": [],
-      "spawns_process": false,
-      "writes_files": false,
-      "env_names_read": [
-        "SUPABASE_PUBLISHABLE_KEY_KNOWLEDGE",
-        "SUPABASE_URL_KNOWLEDGE"
-      ]
-    },
     "http.ts": {
       "language": "typescript",
-      "lines": 365,
+      "lines": 367,
       "exported_functions": [],
       "exported_consts": [],
       "interfaces": [],
@@ -132,25 +35,9 @@
         "SUPABASE_URL_KNOWLEDGE"
       ]
     },
-    "resend.ts": {
-      "language": "typescript",
-      "lines": 113,
-      "exported_functions": [
-        "registerResend"
-      ],
-      "exported_consts": [],
-      "interfaces": [],
-      "types": [],
-      "imports_node": [],
-      "spawns_process": false,
-      "writes_files": false,
-      "env_names_read": [
-        "RESEND_KEY_BRIDGE_ADMIN"
-      ]
-    },
     "server.ts": {
       "language": "typescript",
-      "lines": 59,
+      "lines": 61,
       "exported_functions": [],
       "exported_consts": [],
       "interfaces": [],
@@ -160,54 +47,6 @@
       "writes_files": false,
       "env_names_read": [
         "KNOWLEDGE_DB_PATH"
-      ]
-    },
-    "stripe.ts": {
-      "language": "typescript",
-      "lines": 287,
-      "exported_functions": [
-        "registerStripe"
-      ],
-      "exported_consts": [],
-      "interfaces": [],
-      "types": [],
-      "imports_node": [],
-      "spawns_process": false,
-      "writes_files": false,
-      "env_names_read": [
-        "STRIPE_RESTRICTED_KEY"
-      ]
-    },
-    "supabase.ts": {
-      "language": "typescript",
-      "lines": 271,
-      "exported_functions": [
-        "registerSupabase"
-      ],
-      "exported_consts": [],
-      "interfaces": [],
-      "types": [],
-      "imports_node": [],
-      "spawns_process": false,
-      "writes_files": false,
-      "env_names_read": [
-        "SUPABASE_ACCESS_TOKEN"
-      ]
-    },
-    "vercel.ts": {
-      "language": "typescript",
-      "lines": 149,
-      "exported_functions": [
-        "registerVercel"
-      ],
-      "exported_consts": [],
-      "interfaces": [],
-      "types": [],
-      "imports_node": [],
-      "spawns_process": false,
-      "writes_files": false,
-      "env_names_read": [
-        "VERCEL_TOKEN"
       ]
     }
   },

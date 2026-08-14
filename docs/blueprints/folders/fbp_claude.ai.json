@@ -1,0 +1,29 @@
+{
+  "folder_name": ".claude",
+  "folder_path": ".claude",
+  "description": "1 files, 0 subfolders",
+  "scan_timestamp": "2026-08-14T16:29:21.459008 | in sovereign time",
+  "files": [
+    {
+      "path": ".claude/settings.json",
+      "description": "data, 157 bytes"
+    }
+  ],
+  "file_count": 1,
+  "subdirectories": [],
+  "code_analysis": {
+    "settings.json": {
+      "language": "json",
+      "lines": 6,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "attribution"
+      ],
+      "key_count": 1
+    }
+  },
+  "maintaining_agent": "FolderAgent",
+  "folders_not_walked": [],
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

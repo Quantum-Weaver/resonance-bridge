@@ -1,0 +1,200 @@
+{
+  "folder_name": "lines",
+  "folder_path": "src/lines",
+  "description": "9 files, 0 subfolders",
+  "scan_timestamp": "2026-08-14T16:29:21.506861 | in sovereign time",
+  "files": [
+    {
+      "path": "src/lines/airtable.ts",
+      "description": "typescript, 3,523 bytes"
+    },
+    {
+      "path": "src/lines/discord.ts",
+      "description": "typescript, 8,451 bytes"
+    },
+    {
+      "path": "src/lines/family.ts",
+      "description": "typescript, 10,356 bytes"
+    },
+    {
+      "path": "src/lines/github.ts",
+      "description": "typescript, 9,812 bytes"
+    },
+    {
+      "path": "src/lines/grammar.ts",
+      "description": "typescript, 11,110 bytes"
+    },
+    {
+      "path": "src/lines/resend.ts",
+      "description": "typescript, 4,293 bytes"
+    },
+    {
+      "path": "src/lines/stripe.ts",
+      "description": "typescript, 10,492 bytes"
+    },
+    {
+      "path": "src/lines/supabase.ts",
+      "description": "typescript, 11,128 bytes"
+    },
+    {
+      "path": "src/lines/vercel.ts",
+      "description": "typescript, 5,752 bytes"
+    }
+  ],
+  "file_count": 9,
+  "subdirectories": [],
+  "code_analysis": {
+    "airtable.ts": {
+      "language": "typescript",
+      "lines": 97,
+      "exported_functions": [
+        "registerAirtable"
+      ],
+      "exported_consts": [],
+      "interfaces": [],
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
+        "AIRTABLE_API_KEY",
+        "example"
+      ]
+    },
+    "discord.ts": {
+      "language": "typescript",
+      "lines": 227,
+      "exported_functions": [
+        "registerDiscord"
+      ],
+      "exported_consts": [],
+      "interfaces": [],
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
+        "DISCORD_BOT_TOKEN_BRIDGE",
+        "DISCORD_GUILD_ID"
+      ]
+    },
+    "family.ts": {
+      "language": "typescript",
+      "lines": 249,
+      "exported_functions": [
+        "registerFamily"
+      ],
+      "exported_consts": [],
+      "interfaces": [],
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
+        "SANCTUARY_ROOT",
+        "SUPABASE_PUBLISHABLE_KEY_KNOWLEDGE",
+        "SUPABASE_URL_KNOWLEDGE"
+      ]
+    },
+    "github.ts": {
+      "language": "typescript",
+      "lines": 250,
+      "exported_functions": [
+        "registerGitHub"
+      ],
+      "exported_consts": [],
+      "interfaces": [],
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
+        "HOUSE_GITHUB_PAT"
+      ]
+    },
+    "grammar.ts": {
+      "language": "typescript",
+      "lines": 235,
+      "exported_functions": [
+        "registerGrammar"
+      ],
+      "exported_consts": [],
+      "interfaces": [],
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
+        "SUPABASE_PUBLISHABLE_KEY_KNOWLEDGE",
+        "SUPABASE_URL_KNOWLEDGE"
+      ]
+    },
+    "resend.ts": {
+      "language": "typescript",
+      "lines": 113,
+      "exported_functions": [
+        "registerResend"
+      ],
+      "exported_consts": [],
+      "interfaces": [],
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
+        "RESEND_KEY_BRIDGE_ADMIN"
+      ]
+    },
+    "stripe.ts": {
+      "language": "typescript",
+      "lines": 287,
+      "exported_functions": [
+        "registerStripe"
+      ],
+      "exported_consts": [],
+      "interfaces": [],
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
+        "STRIPE_RESTRICTED_KEY"
+      ]
+    },
+    "supabase.ts": {
+      "language": "typescript",
+      "lines": 271,
+      "exported_functions": [
+        "registerSupabase"
+      ],
+      "exported_consts": [],
+      "interfaces": [],
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
+        "SUPABASE_ACCESS_TOKEN"
+      ]
+    },
+    "vercel.ts": {
+      "language": "typescript",
+      "lines": 149,
+      "exported_functions": [
+        "registerVercel"
+      ],
+      "exported_consts": [],
+      "interfaces": [],
+      "types": [],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": [
+        "VERCEL_TOKEN"
+      ]
+    }
+  },
+  "maintaining_agent": "FolderAgent",
+  "folders_not_walked": [],
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

@@ -34,14 +34,15 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import Database from "better-sqlite3";
 
-import { registerAirtable } from "./airtable.js";
-import { registerGrammar } from "./grammar.js";
-import { registerVercel } from "./vercel.js";
-import { registerResend } from "./resend.js";
-import { registerStripe } from "./stripe.js";
-import { registerGitHub } from "./github.js";
-import { registerDiscord } from "./discord.js";
-import { registerSupabase } from "./supabase.js";
+import { registerAirtable } from "./lines/airtable.js";
+import { registerGrammar } from "./lines/grammar.js";
+import { registerVercel } from "./lines/vercel.js";
+import { registerResend } from "./lines/resend.js";
+import { registerStripe } from "./lines/stripe.js";
+import { registerGitHub } from "./lines/github.js";
+import { registerDiscord } from "./lines/discord.js";
+import { registerSupabase } from "./lines/supabase.js";
+import { registerFamily } from "./lines/family.js";
 
 // Same .env load as the stdio door, same reason (build guide, gotcha #2).
 try {
@@ -129,6 +130,7 @@ registerStripe(server);
 registerGitHub(server);
 registerDiscord(server);
 registerSupabase(server);
+registerFamily(server);
 
 const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
 const client = new Client({ name: "resonance-bridge-http", version: "0.2.0" });
@@ -275,7 +277,7 @@ const httpServer = http.createServer(async (req, res) => {
         console.error(`[bridge-http] REFUSED write outside the allowlist: ${target}`);
         return send(res, 403, {
           error: "Path is not on the write allowlist.",
-          allowed: [`${AETHELRED_JOURNALS}\\*-plugin-notes.md`, LANES_BUS],
+          allowed: [`${AETHELRED_JOURNALS}\\*-plugin-notes.md`, SHUTTLE_BUS],
         }, origin);
       }
       await fs.mkdir(path.dirname(path.resolve(target)), { recursive: true });

@@ -1,0 +1,26 @@
+{
+  "object_name": "src",
+  "object_path": "src",
+  "description": "0 files, 0 subfolders",
+  "integration_timestamp": "2026-08-14T16:29:21.516613 | in sovereign time",
+  "folders": [
+    {
+      "blueprint": "docs/blueprints/folders/fbp_src.ai.json",
+      "folder_path": "src",
+      "description": "2 files, 1 subfolders",
+      "file_count": 2,
+      "subdirectory_count": 1
+    },
+    {
+      "blueprint": "docs/blueprints/folders/fbp_src_lines.ai.json",
+      "folder_path": "src/lines",
+      "description": "9 files, 0 subfolders",
+      "file_count": 9,
+      "subdirectory_count": 0
+    }
+  ],
+  "folder_count": 2,
+  "total_files": 11,
+  "maintaining_agent": "ObjectAgent",
+  "note": "Links only. Every folder's details live at its own address."
+}
