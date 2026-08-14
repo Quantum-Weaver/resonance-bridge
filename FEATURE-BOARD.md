@@ -78,6 +78,25 @@ deliberate.*
    refused-write path) was fixed to `SHUTTLE_BUS` — surfaced by the
    sitting's first true type pass, mended and moved on.
 
+7. **The seeding root-tidy** ✅ **DONE 2026-08-14** (stroke #3 of the
+   Family Table, KP's ⚛ "tidy now"; the dealt hand's model:
+   `claude-fable-5`). Seventeen seeding-era one-shots — the atom/emoji/
+   molecule wave seeders, `lattice_seeder.py` + the five wave generators,
+   the grammar seeder/wipe/purge/clear hands, `scheme_anchor_seeder.py`,
+   `atoms_dump.py`, and the beacon-names verify pair — rode `git mv` from
+   the root into `seeding/`, history intact, the shelf's story in
+   `seeding/README.md`. **Stayed at the root by honest judgment:**
+   `grammar_inventory.py` (the new-table ritual's standing verify step —
+   `resonance-grammar/docs/sql/000` invokes it by path) ·
+   `verify_terms.py` (the reusable carry-check, cited by open carries) ·
+   `knowledge_sql.py` (the general Management-API SQL door) ·
+   `THE-TRAIL-seed.md` (an idea seed, not a data seed). Citations mended
+   in the living documents only (ledgered at link-tender `MENDS.md`
+   2026-08-14 18:35); signed records keep their old paths by law. The
+   living doors proved untouched after the move: tsc clean on both doors,
+   the smoke breathing. `__pycache__/` left as found — regenerable,
+   deleting nothing.
+
 ## Laws standing
 Consent gates every new line · read-only wards where a line is a
 window, not a hand · nothing leaves the house.

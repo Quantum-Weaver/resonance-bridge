@@ -1,0 +1,497 @@
+{
+  "folder_name": "seeding",
+  "folder_path": "seeding",
+  "description": "The grammar/knowledge bases' seeding era, kept whole",
+  "scan_timestamp": "2026-08-14T18:36:23.010961 | in sovereign time",
+  "files": [
+    {
+      "path": "seeding/atom_wave_seeder.py",
+      "description": "atom_wave_seeder.py"
+    },
+    {
+      "path": "seeding/atoms_dump.py",
+      "description": "Disposable: pull the live atoms table's atom_word column for KP's eye"
+    },
+    {
+      "path": "seeding/beacon-names-grammar-verify-2026-08-04.json",
+      "description": "data, 827 bytes"
+    },
+    {
+      "path": "seeding/beacon-names.txt",
+      "description": "text document, 240 bytes"
+    },
+    {
+      "path": "seeding/emoji_wave_seeder.py",
+      "description": "emoji_wave_seeder.py"
+    },
+    {
+      "path": "seeding/grammar_clear_name_tiers.py",
+      "description": "grammar_clear_name_tiers.py"
+    },
+    {
+      "path": "seeding/grammar_purge_all.py",
+      "description": "grammar_purge_all.py"
+    },
+    {
+      "path": "seeding/grammar_seeder.py",
+      "description": "grammar_seeder.py"
+    },
+    {
+      "path": "seeding/grammar_wipe_seeded.py",
+      "description": "grammar_wipe_seeded.py"
+    },
+    {
+      "path": "seeding/lattice_seeder.py",
+      "description": "lattice_seeder.py"
+    },
+    {
+      "path": "seeding/lattice_wave2_gen.py",
+      "description": "lattice_wave2_gen.py"
+    },
+    {
+      "path": "seeding/lattice_wave3_gen.py",
+      "description": "lattice_wave3_gen.py"
+    },
+    {
+      "path": "seeding/lattice_wave4_gen.py",
+      "description": "lattice_wave4_gen.py"
+    },
+    {
+      "path": "seeding/lattice_wave5_gen.py",
+      "description": "lattice_wave5_gen.py"
+    },
+    {
+      "path": "seeding/lattice_wave6_gen.py",
+      "description": "lattice_wave6_gen.py"
+    },
+    {
+      "path": "seeding/molecule_wave_seeder.py",
+      "description": "molecule_wave_seeder.py"
+    },
+    {
+      "path": "seeding/README.md",
+      "description": "seeding/"
+    },
+    {
+      "path": "seeding/scheme_anchor_seeder.py",
+      "description": "scheme_anchor_seeder.py"
+    }
+  ],
+  "file_count": 18,
+  "subdirectories": [],
+  "code_analysis": {
+    "atom_wave_seeder.py": {
+      "language": "python",
+      "lines": 173,
+      "classes": [
+        "Base"
+      ],
+      "functions": [
+        "load_env",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "HERE"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "atoms_dump.py": {
+      "language": "python",
+      "lines": 49,
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "urllib.request"
+      ],
+      "constants": [],
+      "env_names_read": [],
+      "has_main_guard": false
+    },
+    "beacon-names-grammar-verify-2026-08-04.json": {
+      "language": "json",
+      "lines": 42,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "coverage",
+        "door",
+        "input",
+        "missing",
+        "names_total",
+        "verified"
+      ],
+      "key_count": 6
+    },
+    "beacon-names.txt": {
+      "language": "content-file",
+      "format": "txt",
+      "name": "beacon-names.txt",
+      "location": "seeding",
+      "bytes": 240,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "emoji_wave_seeder.py": {
+      "language": "python",
+      "lines": 141,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "req",
+        "fetch_all",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "HERE"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "grammar_clear_name_tiers.py": {
+      "language": "python",
+      "lines": 38,
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "pathlib",
+        "urllib.request"
+      ],
+      "constants": [
+        "HERE",
+        "KEY",
+        "ORDER",
+        "URL"
+      ],
+      "env_names_read": [],
+      "has_main_guard": false
+    },
+    "grammar_purge_all.py": {
+      "language": "python",
+      "lines": 41,
+      "classes": [],
+      "functions": [],
+      "imports": [
+        "pathlib",
+        "the",
+        "urllib.request"
+      ],
+      "constants": [
+        "HERE",
+        "KEY",
+        "ORDER",
+        "URL"
+      ],
+      "env_names_read": [],
+      "has_main_guard": false
+    },
+    "grammar_seeder.py": {
+      "language": "python",
+      "lines": 207,
+      "classes": [
+        "Base"
+      ],
+      "functions": [
+        "load_env",
+        "read_stage",
+        "main"
+      ],
+      "imports": [
+        "datetime",
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "BATCH",
+        "HERE",
+        "KNOWLEDGE",
+        "SHELF"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "grammar_wipe_seeded.py": {
+      "language": "python",
+      "lines": 104,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "req",
+        "delete",
+        "fetch_ids",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "the",
+        "urllib.parse",
+        "urllib.request"
+      ],
+      "constants": [
+        "ENV",
+        "HERE",
+        "KEY",
+        "URL"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "lattice_seeder.py": {
+      "language": "python",
+      "lines": 583,
+      "classes": [
+        "Base"
+      ],
+      "functions": [
+        "load_env",
+        "deliver_members",
+        "fetch_id_map",
+        "deliver_memberships",
+        "deliver_relations",
+        "deliver_paths",
+        "deliver_enrichment",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "BATCH",
+        "CONTRACT",
+        "HERE",
+        "NAME_COL",
+        "REVIEW_ONLY"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "lattice_wave2_gen.py": {
+      "language": "python",
+      "lines": 186,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "split_words",
+        "has_acronym",
+        "fetch_names",
+        "main"
+      ],
+      "imports": [
+        "csv",
+        "json",
+        "pathlib",
+        "re",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "EXPORTS",
+        "HERE",
+        "NAME_COL",
+        "OUT",
+        "RANK_FILES",
+        "WAVE1"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "lattice_wave3_gen.py": {
+      "language": "python",
+      "lines": 174,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "parse_unions",
+        "fetch_names",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "re",
+        "urllib.request"
+      ],
+      "constants": [
+        "GAIA",
+        "HERE",
+        "NAME_COL",
+        "OUT",
+        "RANKS",
+        "WAVE1"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "lattice_wave4_gen.py": {
+      "language": "python",
+      "lines": 203,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "fetch_names",
+        "parse_assignments",
+        "main"
+      ],
+      "imports": [
+        "csv",
+        "json",
+        "pathlib",
+        "re",
+        "urllib.request"
+      ],
+      "constants": [
+        "EXPORTS",
+        "GAIA",
+        "HERE",
+        "LADDER",
+        "NAME_COL",
+        "OUT",
+        "RANK_ORDER"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "lattice_wave5_gen.py": {
+      "language": "python",
+      "lines": 137,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "fetch_names",
+        "parse_assignments",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "re",
+        "urllib.request"
+      ],
+      "constants": [
+        "GAIA",
+        "HERE",
+        "LADDER",
+        "NAME_COL",
+        "OUT"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "lattice_wave6_gen.py": {
+      "language": "python",
+      "lines": 199,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "read_csv",
+        "main"
+      ],
+      "imports": [
+        "csv",
+        "json",
+        "pathlib",
+        "urllib.request"
+      ],
+      "constants": [
+        "ETYM_FIELDS",
+        "EXP",
+        "HERE",
+        "OUT",
+        "SENSORY_FIELDS"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "molecule_wave_seeder.py": {
+      "language": "python",
+      "lines": 115,
+      "classes": [
+        "Base"
+      ],
+      "functions": [
+        "load_env",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "BATCH",
+        "FIELDS",
+        "HERE"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "README.md": {
+      "language": "markdown",
+      "lines": 26,
+      "words": 208,
+      "heading_count": 1,
+      "headings": [
+        "seeding/ \u2014 the seeding era's shelf"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "scheme_anchor_seeder.py": {
+      "language": "python",
+      "lines": 122,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "req",
+        "fetch_all",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "HERE"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    }
+  },
+  "maintaining_agent": "FolderAgent",
+  "folders_not_walked": [],
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

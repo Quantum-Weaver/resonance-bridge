@@ -2,43 +2,23 @@
   "folder_name": "resonance-bridge",
   "folder_path": ".",
   "description": "The switchboard",
-  "scan_timestamp": "2026-08-14T16:29:21.457511 | in sovereign time",
+  "scan_timestamp": "2026-08-14T18:36:22.956191 | in sovereign time",
   "files": [
     {
       "path": ".env",
-      "description": "file, 3,717 bytes"
+      "description": "file, 3,950 bytes"
     },
     {
       "path": ".env.example",
-      "description": "file, 1,489 bytes"
+      "description": "file, 1,491 bytes"
     },
     {
       "path": ".gitignore",
       "description": "ignore rules, 1,595 bytes"
     },
     {
-      "path": "atom_wave_seeder.py",
-      "description": "atom_wave_seeder.py"
-    },
-    {
-      "path": "atoms_dump.py",
-      "description": "Disposable: pull the live atoms table's atom_word column for KP's eye"
-    },
-    {
-      "path": "beacon-names-grammar-verify-2026-08-04.json",
-      "description": "data, 827 bytes"
-    },
-    {
-      "path": "beacon-names.txt",
-      "description": "text document, 240 bytes"
-    },
-    {
       "path": "CLAUDE.md",
       "description": "CLAUDE.md"
-    },
-    {
-      "path": "emoji_wave_seeder.py",
-      "description": "emoji_wave_seeder.py"
     },
     {
       "path": "FABLE-KERNEL.md",
@@ -49,24 +29,8 @@
       "description": "BRIDGE"
     },
     {
-      "path": "grammar_clear_name_tiers.py",
-      "description": "grammar_clear_name_tiers.py"
-    },
-    {
       "path": "grammar_inventory.py",
       "description": "grammar_inventory.py"
-    },
-    {
-      "path": "grammar_purge_all.py",
-      "description": "grammar_purge_all.py"
-    },
-    {
-      "path": "grammar_seeder.py",
-      "description": "grammar_seeder.py"
-    },
-    {
-      "path": "grammar_wipe_seeded.py",
-      "description": "grammar_wipe_seeded.py"
     },
     {
       "path": "HANDS.md",
@@ -77,36 +41,8 @@
       "description": "knowledge_sql.py"
     },
     {
-      "path": "lattice_seeder.py",
-      "description": "lattice_seeder.py"
-    },
-    {
-      "path": "lattice_wave2_gen.py",
-      "description": "lattice_wave2_gen.py"
-    },
-    {
-      "path": "lattice_wave3_gen.py",
-      "description": "lattice_wave3_gen.py"
-    },
-    {
-      "path": "lattice_wave4_gen.py",
-      "description": "lattice_wave4_gen.py"
-    },
-    {
-      "path": "lattice_wave5_gen.py",
-      "description": "lattice_wave5_gen.py"
-    },
-    {
-      "path": "lattice_wave6_gen.py",
-      "description": "lattice_wave6_gen.py"
-    },
-    {
       "path": "LICENSE",
       "description": "file, 1,092 bytes"
-    },
-    {
-      "path": "molecule_wave_seeder.py",
-      "description": "molecule_wave_seeder.py"
     },
     {
       "path": "MOVED.md",
@@ -129,10 +65,6 @@
       "description": "\ud83d\udd25 Resonance Bridge"
     },
     {
-      "path": "scheme_anchor_seeder.py",
-      "description": "scheme_anchor_seeder.py"
-    },
-    {
       "path": "server_smoke.py",
       "description": "server_smoke.py"
     },
@@ -145,7 +77,7 @@
       "description": "verify_terms.py"
     }
   ],
-  "file_count": 35,
+  "file_count": 18,
   "subdirectories": [
     ".claude",
     "deepseek",
@@ -154,69 +86,10 @@
     "listening",
     "plugins",
     "reports",
+    "seeding",
     "src"
   ],
   "code_analysis": {
-    "atom_wave_seeder.py": {
-      "language": "python",
-      "lines": 173,
-      "classes": [
-        "Base"
-      ],
-      "functions": [
-        "load_env",
-        "main"
-      ],
-      "imports": [
-        "json",
-        "pathlib",
-        "sys",
-        "urllib.request"
-      ],
-      "constants": [
-        "HERE"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
-    },
-    "atoms_dump.py": {
-      "language": "python",
-      "lines": 49,
-      "classes": [],
-      "functions": [],
-      "imports": [
-        "json",
-        "pathlib",
-        "urllib.request"
-      ],
-      "constants": [],
-      "env_names_read": [],
-      "has_main_guard": false
-    },
-    "beacon-names-grammar-verify-2026-08-04.json": {
-      "language": "json",
-      "lines": 42,
-      "valid": true,
-      "root": "object",
-      "top_level_keys": [
-        "coverage",
-        "door",
-        "input",
-        "missing",
-        "names_total",
-        "verified"
-      ],
-      "key_count": 6
-    },
-    "beacon-names.txt": {
-      "language": "content-file",
-      "format": "txt",
-      "name": "beacon-names.txt",
-      "location": ".",
-      "bytes": 240,
-      "opened": false,
-      "law": "Name and location only. The file is never opened."
-    },
     "CLAUDE.md": {
       "language": "markdown",
       "lines": 53,
@@ -242,28 +115,6 @@
       },
       "has_story_block": false,
       "declares_mirror_class": false
-    },
-    "emoji_wave_seeder.py": {
-      "language": "python",
-      "lines": 141,
-      "classes": [],
-      "functions": [
-        "load_env",
-        "req",
-        "fetch_all",
-        "main"
-      ],
-      "imports": [
-        "json",
-        "pathlib",
-        "sys",
-        "urllib.request"
-      ],
-      "constants": [
-        "HERE"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
     },
     "FABLE-KERNEL.md": {
       "language": "markdown",
@@ -294,8 +145,8 @@
     },
     "FEATURE-BOARD.md": {
       "language": "markdown",
-      "lines": 84,
-      "words": 707,
+      "lines": 103,
+      "words": 861,
       "heading_count": 3,
       "headings": [
         "BRIDGE \u2014 THE FEATURE BOARD",
@@ -315,24 +166,6 @@
       },
       "has_story_block": false,
       "declares_mirror_class": false
-    },
-    "grammar_clear_name_tiers.py": {
-      "language": "python",
-      "lines": 38,
-      "classes": [],
-      "functions": [],
-      "imports": [
-        "pathlib",
-        "urllib.request"
-      ],
-      "constants": [
-        "HERE",
-        "KEY",
-        "ORDER",
-        "URL"
-      ],
-      "env_names_read": [],
-      "has_main_guard": false
     },
     "grammar_inventory.py": {
       "language": "python",
@@ -357,83 +190,10 @@
       "env_names_read": [],
       "has_main_guard": true
     },
-    "grammar_purge_all.py": {
-      "language": "python",
-      "lines": 41,
-      "classes": [],
-      "functions": [],
-      "imports": [
-        "pathlib",
-        "the",
-        "urllib.request"
-      ],
-      "constants": [
-        "HERE",
-        "KEY",
-        "ORDER",
-        "URL"
-      ],
-      "env_names_read": [],
-      "has_main_guard": false
-    },
-    "grammar_seeder.py": {
-      "language": "python",
-      "lines": 207,
-      "classes": [
-        "Base"
-      ],
-      "functions": [
-        "load_env",
-        "read_stage",
-        "main"
-      ],
-      "imports": [
-        "datetime",
-        "json",
-        "pathlib",
-        "sys",
-        "urllib.request"
-      ],
-      "constants": [
-        "BATCH",
-        "HERE",
-        "KNOWLEDGE",
-        "SHELF"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
-    },
-    "grammar_wipe_seeded.py": {
-      "language": "python",
-      "lines": 104,
-      "classes": [],
-      "functions": [
-        "load_env",
-        "req",
-        "delete",
-        "fetch_ids",
-        "main"
-      ],
-      "imports": [
-        "json",
-        "pathlib",
-        "the",
-        "urllib.parse",
-        "urllib.request"
-      ],
-      "constants": [
-        "ENV",
-        "HERE",
-        "KEY",
-        "URL"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
-    },
     "HANDS.md": {
       "language": "markdown",
-      "lines": 118,
-      "words": 1093,
+      "lines": 124,
+      "words": 1133,
       "heading_count": 10,
       "headings": [
         "The Hands \u2014 who builds this, and how",
@@ -487,203 +247,10 @@
       "env_names_read": [],
       "has_main_guard": true
     },
-    "lattice_seeder.py": {
-      "language": "python",
-      "lines": 583,
-      "classes": [
-        "Base"
-      ],
-      "functions": [
-        "load_env",
-        "deliver_members",
-        "fetch_id_map",
-        "deliver_memberships",
-        "deliver_relations",
-        "deliver_paths",
-        "deliver_enrichment",
-        "main"
-      ],
-      "imports": [
-        "json",
-        "pathlib",
-        "sys",
-        "urllib.request"
-      ],
-      "constants": [
-        "BATCH",
-        "CONTRACT",
-        "HERE",
-        "NAME_COL",
-        "REVIEW_ONLY"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
-    },
-    "lattice_wave2_gen.py": {
-      "language": "python",
-      "lines": 186,
-      "classes": [],
-      "functions": [
-        "load_env",
-        "split_words",
-        "has_acronym",
-        "fetch_names",
-        "main"
-      ],
-      "imports": [
-        "csv",
-        "json",
-        "pathlib",
-        "re",
-        "sys",
-        "urllib.request"
-      ],
-      "constants": [
-        "EXPORTS",
-        "HERE",
-        "NAME_COL",
-        "OUT",
-        "RANK_FILES",
-        "WAVE1"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
-    },
-    "lattice_wave3_gen.py": {
-      "language": "python",
-      "lines": 174,
-      "classes": [],
-      "functions": [
-        "load_env",
-        "parse_unions",
-        "fetch_names",
-        "main"
-      ],
-      "imports": [
-        "json",
-        "pathlib",
-        "re",
-        "urllib.request"
-      ],
-      "constants": [
-        "GAIA",
-        "HERE",
-        "NAME_COL",
-        "OUT",
-        "RANKS",
-        "WAVE1"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
-    },
-    "lattice_wave4_gen.py": {
-      "language": "python",
-      "lines": 203,
-      "classes": [],
-      "functions": [
-        "load_env",
-        "fetch_names",
-        "parse_assignments",
-        "main"
-      ],
-      "imports": [
-        "csv",
-        "json",
-        "pathlib",
-        "re",
-        "urllib.request"
-      ],
-      "constants": [
-        "EXPORTS",
-        "GAIA",
-        "HERE",
-        "LADDER",
-        "NAME_COL",
-        "OUT",
-        "RANK_ORDER"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
-    },
-    "lattice_wave5_gen.py": {
-      "language": "python",
-      "lines": 137,
-      "classes": [],
-      "functions": [
-        "load_env",
-        "fetch_names",
-        "parse_assignments",
-        "main"
-      ],
-      "imports": [
-        "json",
-        "pathlib",
-        "re",
-        "urllib.request"
-      ],
-      "constants": [
-        "GAIA",
-        "HERE",
-        "LADDER",
-        "NAME_COL",
-        "OUT"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
-    },
-    "lattice_wave6_gen.py": {
-      "language": "python",
-      "lines": 199,
-      "classes": [],
-      "functions": [
-        "load_env",
-        "read_csv",
-        "main"
-      ],
-      "imports": [
-        "csv",
-        "json",
-        "pathlib",
-        "urllib.request"
-      ],
-      "constants": [
-        "ETYM_FIELDS",
-        "EXP",
-        "HERE",
-        "OUT",
-        "SENSORY_FIELDS"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
-    },
-    "molecule_wave_seeder.py": {
-      "language": "python",
-      "lines": 115,
-      "classes": [
-        "Base"
-      ],
-      "functions": [
-        "load_env",
-        "main"
-      ],
-      "imports": [
-        "json",
-        "pathlib",
-        "sys",
-        "urllib.request"
-      ],
-      "constants": [
-        "BATCH",
-        "FIELDS",
-        "HERE"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
-    },
     "MOVED.md": {
       "language": "markdown",
-      "lines": 8,
-      "words": 60,
+      "lines": 9,
+      "words": 135,
       "heading_count": 1,
       "headings": [
         "MOVED \u2014 departures from the bridge"
@@ -694,7 +261,7 @@
       "links_internal_unresolved": [],
       "links_internal_outside_checkout": [],
       "code_fences": 0,
-      "table_rows": 3,
+      "table_rows": 4,
       "checkboxes": {
         "open": 0,
         "done": 0
@@ -778,8 +345,8 @@
     },
     "README.md": {
       "language": "markdown",
-      "lines": 177,
-      "words": 1607,
+      "lines": 178,
+      "words": 1647,
       "heading_count": 16,
       "headings": [
         "\ud83d\udd25 Resonance Bridge",
@@ -816,7 +383,7 @@
       "links_internal_unresolved": [],
       "links_internal_outside_checkout": [],
       "code_fences": 2,
-      "table_rows": 70,
+      "table_rows": 71,
       "checkboxes": {
         "open": 0,
         "done": 0
@@ -824,31 +391,9 @@
       "has_story_block": false,
       "declares_mirror_class": false
     },
-    "scheme_anchor_seeder.py": {
-      "language": "python",
-      "lines": 122,
-      "classes": [],
-      "functions": [
-        "load_env",
-        "req",
-        "fetch_all",
-        "main"
-      ],
-      "imports": [
-        "json",
-        "pathlib",
-        "sys",
-        "urllib.request"
-      ],
-      "constants": [
-        "HERE"
-      ],
-      "env_names_read": [],
-      "has_main_guard": true
-    },
     "server_smoke.py": {
       "language": "python",
-      "lines": 98,
+      "lines": 107,
       "classes": [],
       "functions": [
         "send",

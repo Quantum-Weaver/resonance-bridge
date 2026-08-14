@@ -2,7 +2,7 @@
   "project_name": "resonance-bridge",
   "project_path": "C:\\_superposition\\resonance-bridge",
   "description": "The switchboard",
-  "generated": "2026-08-14T16:29:21.540981 | in sovereign time",
+  "generated": "2026-08-14T18:36:23.062346 | in sovereign time",
   "tier_ladder": "file -> folder (fbp) -> object (obp) -> domain (dbp) -> project (pbp)",
   "law": "Each tier links to where the details live. Nothing above the folder tier duplicates a body.",
   "domains": [
@@ -44,8 +44,8 @@
       "blueprint": "docs/blueprints/folders/fbp_root.ai.json",
       "folder_path": ".",
       "description": "The switchboard",
-      "file_count": 35,
-      "subdirectory_count": 8
+      "file_count": 18,
+      "subdirectory_count": 9
     },
     {
       "blueprint": "docs/blueprints/folders/fbp_claude.ai.json",
@@ -74,6 +74,13 @@
       "description": "3 files, 0 subfolders",
       "file_count": 3,
       "subdirectory_count": 0
+    },
+    {
+      "blueprint": "docs/blueprints/folders/fbp_seeding.ai.json",
+      "folder_path": "seeding",
+      "description": "The grammar/knowledge bases' seeding era, kept whole",
+      "file_count": 18,
+      "subdirectory_count": 0
     }
   ],
   "analysis": [
@@ -87,8 +94,8 @@
     }
   ],
   "totals": {
-    "folders_blueprinted": 14,
-    "files_described": 109
+    "folders_blueprinted": 15,
+    "files_described": 110
   },
   "not_walked": {
     "reason": "package-class trees, this repo's own gitignored trees, reparse points, and this tool's own output",

@@ -2,7 +2,7 @@
   "folder_name": "firefox",
   "folder_path": "plugins/firefox",
   "description": "Carries messages between browser and knowledge system",
-  "scan_timestamp": "2026-08-14T16:29:21.487641 | in sovereign time",
+  "scan_timestamp": "2026-08-14T18:36:22.991162 | in sovereign time",
   "files": [
     {
       "path": "plugins/firefox/background.js",

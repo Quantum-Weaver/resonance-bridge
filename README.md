@@ -105,8 +105,9 @@ base through the anon door — the same door a stranger would use.*
 | Script | What it does |
 |--------|-------------|
 | `grammar_inventory.py` | Counts + dated full export of the Grammar tables through the anon door — the new-table ritual's verify step |
-| `atoms_dump.py` | Atom-table dump for merge planning |
+| `seeding/atoms_dump.py` | Atom-table dump for merge planning (on the seeding shelf since 2026-08-14) |
 | `verify_terms.py` | Checks a set of coined names against the Grammar (atoms/molecules/organisms by word-count class + constituent words) — born 2026-07-27 for the cosmic carries, reusable for any carry |
+| `seeding/` | The seeding era's shelf — seeders, wave generators, wipe/purge hands, the beacon-verify pair; one-shots kept whole, run by hand in their day (`seeding/README.md`; shelved 2026-08-14 at KP's ⚛ "tidy now") |
 
 ---
 

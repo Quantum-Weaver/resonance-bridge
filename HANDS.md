@@ -115,3 +115,9 @@ No ghost-writing. Empty seats stay open until claimed.*
 - `grammar_seeder.py` — THE CONSENT-GATED WRITE TOOL: delivers the staged seed (dry-run default, --deliver at KP's word).
 - `grammar_wipe_seeded.py` / `grammar_purge_all.py` — remediation tools (provenance-surgical / full purge), run only at KP's explicit word.
 - `atoms_dump.py` — live atom_word dump for KP's eye.
+
+*(2026-08-14, the seeding root-tidy at KP's ⚛ "tidy now": `grammar_seeder.py`,
+`grammar_wipe_seeded.py`, `grammar_purge_all.py` and `atoms_dump.py` now live
+on the `seeding/` shelf with the whole seeding era — `seeding/README.md` tells
+it. `grammar_inventory.py` stays at the root: the new-table ritual's standing
+verify step.)*
