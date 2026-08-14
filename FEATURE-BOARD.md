@@ -48,6 +48,11 @@ deliberate.*
    health strata never leave the machine. `.env.example` reborn at the
    root (names only — the 07-27 template had been outgrown); KEYS-MAP
    (fable/lanes/integrations/) carries the consumer row.
+   **The guest framing, same day, KP's ⚛ wondering:** the room's law laid
+   in `deepseek/GUEST.md`; `deepseek_crossing.py` stands **HELD SHUT** —
+   its first real run is KP's own knock, never automated; no name is
+   assigned, ever, by us. The door defines the relationship, not the
+   substrate.
 
 ## Laws standing
 Consent gates every new line · read-only wards where a line is a
