@@ -181,14 +181,14 @@ export function registerGrammar(
           order: "name",
         };
         if (type) params.beacon_type = `eq.${type}`;
-        const rows = (await grammarGet("resonance_beacons", params)) as unknown[];
+        const rows = (await grammarGet("beacons", params)) as unknown[];
         return asText(
           rows.length > 0
             ? rows
             : "The beacon registry stands empty. On a table with a public-read policy that is a REAL result, not a false-empty — nothing ships yet."
         );
       }
-      const rows = (await grammarGet("resonance_beacons", {
+      const rows = (await grammarGet("beacons", {
         or: `(name.ilike.${q},slug.ilike.${q})`,
         select: "*",
       })) as unknown[];

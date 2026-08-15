@@ -97,6 +97,32 @@ deliberate.*
    the smoke breathing. `__pycache__/` left as found — regenerable,
    deleting nothing.
 
+8. **The true names — the beacons re-point** ✅ **DONE 2026-08-15** (THE
+   RENAMING ORCHESTRA, the dealt hand's model: `claude-opus-5[1m]`). The
+   rename ran at KP's own hand in the KNOWLEDGE base — seed
+   `resonance-grammar/docs/sql/096-the-true-names.sql`: `resonance_beacons`
+   → **`beacons`**, with a compatibility SHIM VIEW left standing under the
+   old name until seed 097 drops it at KP's word alone. This repo followed
+   the base, never the reverse: `src/lines/grammar.ts` (`query_beacon`, two
+   hardcoded calls) now names `beacons`; `listening/listen_beacons.py` probes
+   `beacons` at both doors, its 08-04 account left standing as the record
+   with a dated note beside it. `src/lines/family.ts` KEPT its dual-resolve
+   mechanism — the praised pattern — but reordered to the truth,
+   `["beacons", "resonance_beacons"]`, and its self-report inverted: the
+   true name answering is the ordinary case now, and a fall-through to the
+   shim says so plainly. Stale prose trued in three places (the file
+   header, the `family_beacons` tool description, the answer's note) — all
+   three had said the rename "sleeps in Iðavöllr." **Recounted, not
+   assumed:** both names were probed live before a line was edited (both
+   HTTP 200 — the shim stands), and seed 096 was read at source, which
+   surfaced a SECOND rename this repo was never told of (`tools` → `awen`,
+   `tools_dressed` → `awen_dressed`). Grepped whole: the Bridge reads
+   neither, so nothing was owed there — stated as data, not silence.
+   `server_smoke.py` grew one check (`query_beacon`), because the breath
+   had never exercised the tool the re-point touched. Proof: tsc clean on
+   both doors, 54 tools registered, every line answered, and
+   `family_beacons` returned `register: "beacons"` · 28 rows.
+
 ## Laws standing
 Consent gates every new line · read-only wards where a line is a
 window, not a hand · nothing leaves the house.

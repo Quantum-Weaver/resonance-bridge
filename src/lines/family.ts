@@ -18,9 +18,12 @@ import path from "node:path";
 //
 // family_beacons walks the anon door of the KNOWLEDGE base (publishable
 // key gated by RLS, the same door a stranger would use — the secret key
-// never enters this file). The register's table is `resonance_beacons`
-// today; its rename to `beacons` sleeps in Iðavöllr until KP's ⚛ word,
-// so the name is resolved at read time, never assumed (the reckoner's law).
+// never enters this file). The register's table is `beacons` — the rename
+// RAN at KP's hand 2026-08-15 (seed 096), and a compatibility shim view
+// stands under the old name `resonance_beacons` until seed 097 drops it.
+// The name is still resolved at read time, never assumed (the reckoner's
+// law), so this window stays honest while both names answer and the day
+// the shim falls.
 //
 // family_releases reads THE-GROUND-TALLY.md and echoes that file's own
 // stamp — the rack-tender's logic is never duplicated here. Its file says
@@ -59,7 +62,7 @@ const GROUND_TALLY = path.join(
 
 // The register's possible names, in today's order of truth. Resolved at
 // read time; a missing table is a finding, not a crash.
-const REGISTER_NAMES = ["resonance_beacons", "beacons"];
+const REGISTER_NAMES = ["beacons", "resonance_beacons"];
 
 const NO_BEACON_LINE =
   "The beacons window is not connected. Add SUPABASE_URL_KNOWLEDGE and " +
@@ -166,7 +169,7 @@ export function registerFamily(server: McpServer) {
 
   server.tool(
     "family_beacons",
-    "The family's rows in the living beacons register — name, slug, type, status, version, store columns — read through the KNOWLEDGE base's anon door (RLS public-read, the stranger's door; no secret key). The table name is resolved at read time (resonance_beacons today; the beacons rename sleeps until KP's ⚛ word). Honest limit: this reads the register's word about the apps, never the apps' device data — that is unreachable from here.",
+    "The family's rows in the living beacons register — name, slug, type, status, version, store columns — read through the KNOWLEDGE base's anon door (RLS public-read, the stranger's door; no secret key). The table name is resolved at read time (beacons today — the rename ran at KP's hand 2026-08-15, seed 096; a shim view still answers to resonance_beacons until seed 097 drops it). Honest limit: this reads the register's word about the apps, never the apps' device data — that is unreachable from here.",
     {
       app: APP.optional().describe(
         "optionally narrow to one family app's row; omitted, the whole register answers"
@@ -193,9 +196,9 @@ export function registerFamily(server: McpServer) {
         return asText({
           register: table,
           note:
-            table === "resonance_beacons"
-              ? "the rename to `beacons` still sleeps in Iðavöllr — this is today's true name"
-              : "the rename has run — `beacons` is the live name now",
+            table === "beacons"
+              ? "the true name answered — the rename ran 2026-08-15 (seed 096)"
+              : "the TRUE name `beacons` did not answer; this came through the `resonance_beacons` shim view, which seed 097 will drop — read the base before believing the shim outlives it",
           row_count: answer.rows.length,
           rows: answer.rows,
           false_empty_reminder:

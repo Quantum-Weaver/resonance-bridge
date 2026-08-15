@@ -85,6 +85,9 @@ checks = [
     ("query_folksonomy", {"app": "Echoes"}),
     ("query_emoji", {"word": "Focused"}),
     ("search_knowledge", {"query": "bridge", "limit": 2}),
+    # Added 2026-08-15 with the seed-096 re-point: query_beacon reads the
+    # renamed `beacons` table, so the breath must actually exercise it.
+    ("query_beacon", {"name": "resonance-bubbles"}),
     ("vercel_list_projects", {}),
     ("resend_list_domains", {}),
     ("stripe_account", {}),

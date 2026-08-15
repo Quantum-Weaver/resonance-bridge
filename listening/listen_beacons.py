@@ -20,7 +20,7 @@ dashboard that was simply refusing to redraw.
 
 The trick: ASK FOR A COLUMN THAT CANNOT EXIST. Postgres resolves the
 TABLE before it complains about the column, so the error names the table
-back at you — `column resonance_beacons.x does not exist` — which is
+back at you — `column beacons.x does not exist` — which is
 proof the table is there, even when nothing else at this door will say so.
 
 And the honest limit, which matters as much: this tells state 1 from
@@ -30,6 +30,16 @@ made, while you still know which one you are looking at.
 
 So this script asks two things: is the door there, and what stands
 behind it — every beacon, and where each one is in the four channels.
+
+THE NAME, TRUED 2026-08-15 (seed 096, `096-the-true-names.sql`, run at
+KP's hand): the table's TRUE name is now `beacons`. The two probes below
+were re-pointed the same day. The 08-04 account above is left standing as
+the record of the day it was written — `resonance_beacons` was the true
+name then, and a compatibility SHIM VIEW still answers to it until seed
+097 drops it at KP's word alone. Note what that shim does to the trick:
+while it stands, BOTH names return the column error, so this door cannot
+tell the true table from its shim. When the shim falls, the old name will
+answer PGRST205 — and that is the rename completing, not a break.
 """
 
 import json
@@ -106,14 +116,16 @@ def main():
     ref = url.replace("https://", "").split(".supabase.co")[0]
     print(f"listening at the anon door of {ref}\n")
 
-    exists, evidence = does_it_exist(url, key, "resonance_beacons")
+    exists, evidence = does_it_exist(url, key, "beacons")
     print("IS THE TABLE THERE?")
     print(f"  {'yes' if exists else 'no' if exists is False else 'unclear'} — {evidence}\n")
     if exists is False:
-        print("  Nothing more to listen to. Run docs/sql/043-the-beacons.sql first.")
+        print("  Nothing more to listen to. `beacons` is the true name since")
+        print("  seed 096 (2026-08-15); the table was born in resonance-grammar")
+        print("  docs/sql/043-the-beacons.sql. Read the base before believing this.")
         return
 
-    status, rows = get(url, key, "resonance_beacons?select=*&order=name")
+    status, rows = get(url, key, "beacons?select=*&order=name")
     if not isinstance(rows, list):
         print(f"  the door answered oddly: HTTP {status} · {json.dumps(rows)[:200]}")
         return
