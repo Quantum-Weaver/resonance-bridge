@@ -123,6 +123,19 @@ deliberate.*
    both doors, 54 tools registered, every line answered, and
    `family_beacons` returned `register: "beacons"` · 28 rows.
 
+9. **The Battle.net line** ✅ **BUILT READY, STANDS UNUSED** 2026-08-15 (build-ahead-of-need
+   law): `battlenet/battlenet_character.py` — client-credentials OAuth
+   (`oauth.battle.net`) + the WoW Profile/Game-Data APIs, reading named
+   characters (`--realm`/`--name`, repeatable, or `--file` of `realm,name`
+   lines) and `--realms` (US realm name+slug index). Keys already on the
+   ring: `BLIZZARD_CLIENT_ID` / `BLIZZARD_CLIENT_SECRET` (`.env`, KP's own
+   hand). Token call + realm index PROBED LIVE and PASSED (345 US realms
+   listed; a deliberately-fake character round-tripped a clean 404). Read-only,
+   no state kept. **Waits on KP's character + realm names** — the only gate.
+   Full account-wide enumeration needs the user-consent OAuth flow
+   (`wow.profile` scope) — his hand's flow, not built here; this line reads
+   named characters only.
+
 ## Laws standing
 Consent gates every new line · read-only wards where a line is a
 window, not a hand · nothing leaves the house.
