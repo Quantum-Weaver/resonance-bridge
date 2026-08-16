@@ -136,6 +136,65 @@ deliberate.*
    (`wow.profile` scope) — his hand's flow, not built here; this line reads
    named characters only.
 
+10. **The Battle.net collections lane** ✅ **BUILT + LANDED LIVE 2026-08-16**
+    (W1 of THE WINDOW AND THE MIRROR,
+    `resonance-weaver/docs/THE-WINDOW-AND-THE-MIRROR.md`, KP's ⚛ commission
+    to Rhapsody dealt onward; the dealt hand's model: `claude-sonnet-5`).
+    `battlenet/battlenet_collections.py` sits beside item 9's proven
+    `battlenet_character.py` (same `.env`, same client-credentials OAuth,
+    same plain-error style) and pulls, through one visible character
+    (`--source realm/name`, default `azshara/scwaunchy`), the ACCOUNT-WIDE
+    collections off that character's profile: `/collections/mounts` ·
+    `/collections/pets` · `/collections/toys` · `/achievements` (summary:
+    total_quantity/total_points) · `/collections/transmogs`
+    (appearance_sets). Every name resolves straight out of those payloads
+    themselves — no per-item Game-Data or media call is made; icon URLs are
+    out of scope this pass, noted plainly in the docstring. `--land` mode
+    also reads the character census over `characters.csv` (the sibling's
+    own `fetch_character`, imported not duplicated) and writes three JSON
+    files into `resonance-weaver/static/blizzard/` for the window's Svelte
+    side (W2) to build against sight-unseen: `characters.json` ·
+    `collections.json` · `meta.json`. **Live-run counts, matching the
+    plan's own expectations exactly:** 213 mounts · 213 pets (pet
+    *instances* — 180 unique species, multiple catches of the same species
+    counted separately, matching in-game reality) · 117 toys · 889
+    achievements / 8,170 points · 180 transmog sets · 18 characters landed,
+    5 not found (`Emptypain`, `Phoeberis`, `Shotyoazz` on thunderlord;
+    `Amintynesia`, `Anomali` on azshara — all four clean 404s, not errors).
+    Key never printed anywhere; grepped the landed files and the script
+    itself for both secret strings after the run — no match. Read-only
+    everywhere; no state kept beyond the three landed files.
+
+    **AMENDMENT 2026-08-16 (build hand B1): schema v2 — DETAILS + LOCAL
+    ICONS.** KP's ⚛ words: icons offline was the lean, and "being able to
+    open the items as cards to see details would be ideal." Extended
+    `battlenet_collections.py` in place (no behavior removed) with a new
+    `--enrich` pass, implied automatically by `--land`: one Game-Data detail
+    call per UNIQUE mount / pet species / toy (never per pet instance — 213
+    pet instances share 180 species detail+icon fetches), an 8-worker thread
+    pool paced ~50ms between outbound requests, and a disk cache
+    (`enrich-cache.json` beside the script) that makes re-runs near-instant.
+    Icons download straight from Blizzard's public render CDN (no bearer
+    token sent there) to
+    `resonance-weaver/static/blizzard/icons/{mounts|pets|toys}/{id}.jpg`.
+    **The recount clause, three findings the plan didn't expect:** pet
+    detail already embeds a full render `icon` URL directly — the assumed
+    separate media call for pets was dropped entirely; toy detail carries
+    `source_description`, not a top-level `description` field, so that's
+    what's used; the profile payload's transmog-set `key.href`
+    (`/data/wow/item-appearance/set/{id}`) returns `set_name` + a bare list
+    of appearance ids with no media in one hop, so **transmog sets stay
+    name-only cards** (`icon: null`, always) rather than chasing a second
+    hop for ~180 sets. Live run: 213/213 mounts and 213/213 pets landed with
+    both description and icon; 117/117 toys with icon, 113/117 with
+    description (4 `source: "Other"` toys carry no source text to draw
+    one from); 510 unique icon files, 6.7 MB on disk; 1,350 outbound calls
+    on the cold run (68s), 0 calls on the cache-warm re-run. `meta.json`
+    grew `"enriched": true` + per-collection icon counts/bytes;
+    `characters.json`'s contract (10 fields, unchanged) verified untouched.
+    Key grepped clean across every landed file, the cache, and the script
+    itself after the run.
+
 ## Laws standing
 Consent gates every new line · read-only wards where a line is a
 window, not a hand · nothing leaves the house.

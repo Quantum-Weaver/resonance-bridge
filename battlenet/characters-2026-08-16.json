@@ -1,0 +1,2864 @@
+[
+  {
+    "realm": "thunderlord",
+    "name": "Cursedone",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone?namespace=profile-us"
+        }
+      },
+      "id": 255939286,
+      "name": "Cursedone",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/29?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Void Elf",
+        "id": 29
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/9?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Warlock",
+        "id": 9
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Affliction",
+        "id": 265
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/103?namespace=dynamic-us"
+        },
+        "name": "Thunderlord",
+        "id": 103,
+        "slug": "thunderlord"
+      },
+      "level": 70,
+      "experience": 0,
+      "achievement_points": 8185,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1736707803000,
+      "average_item_level": 424,
+      "equipped_item_level": 424,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/collections?namespace=profile-us"
+      },
+      "active_title": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/title/42?namespace=static-11.0.7_57788-us"
+        },
+        "name": "the Seeker",
+        "id": 42,
+        "display_string": "{name} the Seeker"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/professions?namespace=profile-us"
+      },
+      "name_search": "Cursedone"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/cursedone?namespace=profile-us"
+        },
+        "name": "Cursedone",
+        "id": 255939286,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/103?namespace=dynamic-us"
+          },
+          "name": "Thunderlord",
+          "id": 103,
+          "slug": "thunderlord"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/214/255939286-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/214/255939286-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/214/255939286-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "thunderlord",
+    "name": "Emptypain",
+    "error": "[battlenet] not found: character 'Emptypain' on realm 'thunderlord' (slug 'thunderlord')"
+  },
+  {
+    "realm": "thunderlord",
+    "name": "Dafaqi",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi?namespace=profile-us"
+        }
+      },
+      "id": 255619556,
+      "name": "Dafaqi",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/7?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Gnome",
+        "id": 7
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/8?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Mage",
+        "id": 8
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/64?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Frost",
+        "id": 64
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/103?namespace=dynamic-us"
+        },
+        "name": "Thunderlord",
+        "id": 103,
+        "slug": "thunderlord"
+      },
+      "level": 10,
+      "experience": 6389,
+      "achievement_points": 8185,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737224073000,
+      "average_item_level": 19,
+      "equipped_item_level": 19,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/collections?namespace=profile-us"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/professions?namespace=profile-us"
+      },
+      "name_search": "Dafaqi"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/dafaqi?namespace=profile-us"
+        },
+        "name": "Dafaqi",
+        "id": 255619556,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/103?namespace=dynamic-us"
+          },
+          "name": "Thunderlord",
+          "id": 103,
+          "slug": "thunderlord"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/228/255619556-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/228/255619556-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/228/255619556-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "thunderlord",
+    "name": "Phoeberis",
+    "error": "[battlenet] not found: character 'Phoeberis' on realm 'thunderlord' (slug 'thunderlord')"
+  },
+  {
+    "realm": "thunderlord",
+    "name": "Shotyoazz",
+    "error": "[battlenet] not found: character 'Shotyoazz' on realm 'thunderlord' (slug 'thunderlord')"
+  },
+  {
+    "realm": "thunderlord",
+    "name": "Ginnirdagniy",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy?namespace=profile-us"
+        }
+      },
+      "id": 255454426,
+      "name": "Ginnirdagniy",
+      "gender": {
+        "type": "MALE",
+        "name": "Male"
+      },
+      "faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/3?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Dwarf",
+        "id": 3
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/2?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Paladin",
+        "id": 2
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/70?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Retribution",
+        "id": 70
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/103?namespace=dynamic-us"
+        },
+        "name": "Thunderlord",
+        "id": 103,
+        "slug": "thunderlord"
+      },
+      "level": 10,
+      "experience": 2525,
+      "achievement_points": 8185,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737224285000,
+      "average_item_level": 19,
+      "equipped_item_level": 19,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/collections?namespace=profile-us"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/professions?namespace=profile-us"
+      },
+      "name_search": "Ginnirdagniy"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/ginnirdagniy?namespace=profile-us"
+        },
+        "name": "Ginnirdagniy",
+        "id": 255454426,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/103?namespace=dynamic-us"
+          },
+          "name": "Thunderlord",
+          "id": 103,
+          "slug": "thunderlord"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/218/255454426-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/218/255454426-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/218/255454426-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "thunderlord",
+    "name": "Eldahlin",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin?namespace=profile-us"
+        }
+      },
+      "id": 255515638,
+      "name": "Eldahlin",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/4?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Night Elf",
+        "id": 4
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/11?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Druid",
+        "id": 11
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/102?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Balance",
+        "id": 102
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/103?namespace=dynamic-us"
+        },
+        "name": "Thunderlord",
+        "id": 103,
+        "slug": "thunderlord"
+      },
+      "level": 14,
+      "experience": 6338,
+      "achievement_points": 8185,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737224374000,
+      "average_item_level": 43,
+      "equipped_item_level": 43,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/collections?namespace=profile-us"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/professions?namespace=profile-us"
+      },
+      "name_search": "Eldahlin"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/thunderlord/eldahlin?namespace=profile-us"
+        },
+        "name": "Eldahlin",
+        "id": 255515638,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/103?namespace=dynamic-us"
+          },
+          "name": "Thunderlord",
+          "id": 103,
+          "slug": "thunderlord"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/246/255515638-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/246/255515638-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/thunderlord/246/255515638-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "azshara",
+    "name": "Amintynesia",
+    "error": "[battlenet] not found: character 'Amintynesia' on realm 'azshara' (slug 'azshara')"
+  },
+  {
+    "realm": "azshara",
+    "name": "Scwaunchy",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy?namespace=profile-us"
+        }
+      },
+      "id": 249361758,
+      "name": "Scwaunchy",
+      "gender": {
+        "type": "MALE",
+        "name": "Male"
+      },
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/35?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Vulpera",
+        "id": 35
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/8?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Mage",
+        "id": 8
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/64?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Frost",
+        "id": 64
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+        },
+        "name": "Azshara",
+        "id": 1128,
+        "slug": "azshara"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/azshara/audhd-life?namespace=profile-us"
+        },
+        "name": "AudHd Life",
+        "id": 109583975,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        },
+        "faction": {
+          "type": "HORDE",
+          "name": "Horde"
+        }
+      },
+      "level": 70,
+      "experience": 4999,
+      "achievement_points": 8170,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737229808000,
+      "average_item_level": 363,
+      "equipped_item_level": 363,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/collections?namespace=profile-us"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/professions?namespace=profile-us"
+      },
+      "name_search": "Scwaunchy"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/scwaunchy?namespace=profile-us"
+        },
+        "name": "Scwaunchy",
+        "id": 249361758,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/94/249361758-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/94/249361758-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/94/249361758-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "azshara",
+    "name": "Oddlock",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock?namespace=profile-us"
+        }
+      },
+      "id": 247621997,
+      "name": "Oddlock",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/27?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Nightborne",
+        "id": 27
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/9?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Warlock",
+        "id": 9
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Affliction",
+        "id": 265
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+        },
+        "name": "Azshara",
+        "id": 1128,
+        "slug": "azshara"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/azshara/audhd-life?namespace=profile-us"
+        },
+        "name": "AudHd Life",
+        "id": 109583975,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        },
+        "faction": {
+          "type": "HORDE",
+          "name": "Horde"
+        }
+      },
+      "level": 30,
+      "experience": 0,
+      "achievement_points": 8170,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737224823000,
+      "average_item_level": 135,
+      "equipped_item_level": 135,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/collections?namespace=profile-us"
+      },
+      "active_title": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/title/410?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Renowned Explorer",
+        "id": 410,
+        "display_string": "Renowned Explorer {name}"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/professions?namespace=profile-us"
+      },
+      "name_search": "Oddlock"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/oddlock?namespace=profile-us"
+        },
+        "name": "Oddlock",
+        "id": 247621997,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/109/247621997-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/109/247621997-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/109/247621997-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "azshara",
+    "name": "Crsblt",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt?namespace=profile-us"
+        }
+      },
+      "id": 262207764,
+      "name": "Crsblt",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/4?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Night Elf",
+        "id": 4
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/3?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Hunter",
+        "id": 3
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/253?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Beast Mastery",
+        "id": 253
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+        },
+        "name": "Azshara",
+        "id": 1128,
+        "slug": "azshara"
+      },
+      "level": 14,
+      "experience": 11231,
+      "achievement_points": 8190,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/character-media?namespace=profile-us"
+      },
+      "hunter_pets": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/hunter-pets?namespace=profile-us"
+      },
+      "last_login_timestamp": 1738873382000,
+      "average_item_level": 23,
+      "equipped_item_level": 22,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/collections?namespace=profile-us"
+      },
+      "active_title": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/title/92?namespace=static-11.0.7_57788-us"
+        },
+        "name": "the Hallowed",
+        "id": 92,
+        "display_string": "{name} the Hallowed"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/professions?namespace=profile-us"
+      },
+      "name_search": "Crsblt"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/crsblt?namespace=profile-us"
+        },
+        "name": "Crsblt",
+        "id": 262207764,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/20/262207764-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/20/262207764-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/20/262207764-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "azshara",
+    "name": "Audhd",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd?namespace=profile-us"
+        }
+      },
+      "id": 262017008,
+      "name": "Audhd",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/27?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Nightborne",
+        "id": 27
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/5?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Priest",
+        "id": 5
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/258?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Shadow",
+        "id": 258
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+        },
+        "name": "Azshara",
+        "id": 1128,
+        "slug": "azshara"
+      },
+      "level": 11,
+      "experience": 6724,
+      "achievement_points": 8165,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1735450685000,
+      "average_item_level": 8,
+      "equipped_item_level": 8,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/collections?namespace=profile-us"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/professions?namespace=profile-us"
+      },
+      "name_search": "Audhd"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/audhd?namespace=profile-us"
+        },
+        "name": "Audhd",
+        "id": 262017008,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/240/262017008-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/240/262017008-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/240/262017008-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "azshara",
+    "name": "Fuzzler",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler?namespace=profile-us"
+        }
+      },
+      "id": 250476533,
+      "name": "Fuzzler",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/35?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Vulpera",
+        "id": 35
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/3?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Hunter",
+        "id": 3
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/253?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Beast Mastery",
+        "id": 253
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+        },
+        "name": "Azshara",
+        "id": 1128,
+        "slug": "azshara"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/azshara/audhd-life?namespace=profile-us"
+        },
+        "name": "AudHd Life",
+        "id": 109583975,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        },
+        "faction": {
+          "type": "HORDE",
+          "name": "Horde"
+        }
+      },
+      "level": 63,
+      "experience": 0,
+      "achievement_points": 8170,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/character-media?namespace=profile-us"
+      },
+      "hunter_pets": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/hunter-pets?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737224755000,
+      "average_item_level": 343,
+      "equipped_item_level": 343,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/collections?namespace=profile-us"
+      },
+      "active_title": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/title/335?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Huntmaster",
+        "id": 335,
+        "display_string": "Huntmaster {name}"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/professions?namespace=profile-us"
+      },
+      "name_search": "Fuzzler"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/fuzzler?namespace=profile-us"
+        },
+        "name": "Fuzzler",
+        "id": 250476533,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/245/250476533-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/245/250476533-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/245/250476533-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "azshara",
+    "name": "Farila",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila?namespace=profile-us"
+        }
+      },
+      "id": 250625191,
+      "name": "Farila",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/35?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Vulpera",
+        "id": 35
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Shaman",
+        "id": 7
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/263?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Enhancement",
+        "id": 263
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+        },
+        "name": "Azshara",
+        "id": 1128,
+        "slug": "azshara"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/azshara/audhd-life?namespace=profile-us"
+        },
+        "name": "AudHd Life",
+        "id": 109583975,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        },
+        "faction": {
+          "type": "HORDE",
+          "name": "Horde"
+        }
+      },
+      "level": 67,
+      "experience": 0,
+      "achievement_points": 8170,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737225028000,
+      "average_item_level": 357,
+      "equipped_item_level": 357,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/collections?namespace=profile-us"
+      },
+      "active_title": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/title/103?namespace=static-11.0.7_57788-us"
+        },
+        "name": "the Love Fool",
+        "id": 103,
+        "display_string": "{name} the Love Fool"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/professions?namespace=profile-us"
+      },
+      "name_search": "Farila"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/farila?namespace=profile-us"
+        },
+        "name": "Farila",
+        "id": 250625191,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/167/250625191-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/167/250625191-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/167/250625191-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "azshara",
+    "name": "Anomali",
+    "error": "[battlenet] not found: character 'Anomali' on realm 'azshara' (slug 'azshara')"
+  },
+  {
+    "realm": "azshara",
+    "name": "Yenyu",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu?namespace=profile-us"
+        }
+      },
+      "id": 250912241,
+      "name": "Yenyu",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/26?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Pandaren",
+        "id": 26
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/10?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Monk",
+        "id": 10
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/270?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Mistweaver",
+        "id": 270
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+        },
+        "name": "Azshara",
+        "id": 1128,
+        "slug": "azshara"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/azshara/audhd-life?namespace=profile-us"
+        },
+        "name": "AudHd Life",
+        "id": 109583975,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        },
+        "faction": {
+          "type": "HORDE",
+          "name": "Horde"
+        }
+      },
+      "level": 16,
+      "experience": 0,
+      "achievement_points": 8165,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737223951000,
+      "average_item_level": 54,
+      "equipped_item_level": 54,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/collections?namespace=profile-us"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/professions?namespace=profile-us"
+      },
+      "name_search": "Yenyu"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/yenyu?namespace=profile-us"
+        },
+        "name": "Yenyu",
+        "id": 250912241,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/241/250912241-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/241/250912241-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/241/250912241-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "azshara",
+    "name": "Iskanawa",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa?namespace=profile-us"
+        }
+      },
+      "id": 250815597,
+      "name": "Iskanawa",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/28?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Highmountain Tauren",
+        "id": 28
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/6?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Death Knight",
+        "id": 6
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/252?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Unholy",
+        "id": 252
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+        },
+        "name": "Azshara",
+        "id": 1128,
+        "slug": "azshara"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/azshara/audhd-life?namespace=profile-us"
+        },
+        "name": "AudHd Life",
+        "id": 109583975,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        },
+        "faction": {
+          "type": "HORDE",
+          "name": "Horde"
+        }
+      },
+      "level": 14,
+      "experience": 0,
+      "achievement_points": 8165,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737223909000,
+      "average_item_level": 43,
+      "equipped_item_level": 43,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/collections?namespace=profile-us"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/professions?namespace=profile-us"
+      },
+      "name_search": "Iskanawa"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/iskanawa?namespace=profile-us"
+        },
+        "name": "Iskanawa",
+        "id": 250815597,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/109/250815597-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/109/250815597-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/109/250815597-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "azshara",
+    "name": "Luminati",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati?namespace=profile-us"
+        }
+      },
+      "id": 250476521,
+      "name": "Luminati",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/10?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Blood Elf",
+        "id": 10
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/2?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Paladin",
+        "id": 2
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/70?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Retribution",
+        "id": 70
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+        },
+        "name": "Azshara",
+        "id": 1128,
+        "slug": "azshara"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/azshara/audhd-life?namespace=profile-us"
+        },
+        "name": "AudHd Life",
+        "id": 109583975,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        },
+        "faction": {
+          "type": "HORDE",
+          "name": "Horde"
+        }
+      },
+      "level": 60,
+      "experience": 1020,
+      "achievement_points": 8165,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737223847000,
+      "average_item_level": 327,
+      "equipped_item_level": 293,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/collections?namespace=profile-us"
+      },
+      "active_title": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/title/42?namespace=static-11.0.7_57788-us"
+        },
+        "name": "the Seeker",
+        "id": 42,
+        "display_string": "{name} the Seeker"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/professions?namespace=profile-us"
+      },
+      "covenant_progress": {
+        "chosen_covenant": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/covenant/2?namespace=static-11.0.7_57788-us"
+          },
+          "name": "Venthyr",
+          "id": 2
+        },
+        "renown_level": 11,
+        "soulbinds": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/soulbinds?namespace=profile-us"
+        }
+      },
+      "name_search": "Luminati"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/luminati?namespace=profile-us"
+        },
+        "name": "Luminati",
+        "id": 250476521,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/233/250476521-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/233/250476521-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/233/250476521-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "azshara",
+    "name": "Neurolin",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin?namespace=profile-us"
+        }
+      },
+      "id": 250476484,
+      "name": "Neurolin",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/27?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Nightborne",
+        "id": 27
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/5?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Priest",
+        "id": 5
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/258?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Shadow",
+        "id": 258
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+        },
+        "name": "Azshara",
+        "id": 1128,
+        "slug": "azshara"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/azshara/audhd-life?namespace=profile-us"
+        },
+        "name": "AudHd Life",
+        "id": 109583975,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        },
+        "faction": {
+          "type": "HORDE",
+          "name": "Horde"
+        }
+      },
+      "level": 60,
+      "experience": 1020,
+      "achievement_points": 8165,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737223726000,
+      "average_item_level": 327,
+      "equipped_item_level": 327,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/collections?namespace=profile-us"
+      },
+      "active_title": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/title/98?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Ambassador",
+        "id": 98,
+        "display_string": "Ambassador {name}"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/professions?namespace=profile-us"
+      },
+      "covenant_progress": {
+        "chosen_covenant": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/covenant/3?namespace=static-11.0.7_57788-us"
+          },
+          "name": "Night Fae",
+          "id": 3
+        },
+        "renown_level": 21,
+        "soulbinds": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/soulbinds?namespace=profile-us"
+        }
+      },
+      "name_search": "Neurolin"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/azshara/neurolin?namespace=profile-us"
+        },
+        "name": "Neurolin",
+        "id": 250476484,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/1128?namespace=dynamic-us"
+          },
+          "name": "Azshara",
+          "id": 1128,
+          "slug": "azshara"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/196/250476484-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/196/250476484-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/azshara/196/250476484-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "stormscale",
+    "name": "Sylar",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar?namespace=profile-us"
+        }
+      },
+      "id": 167007651,
+      "name": "Sylar",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/4?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Night Elf",
+        "id": 4
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/12?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Demon Hunter",
+        "id": 12
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/577?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Havoc",
+        "id": 577
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/110?namespace=dynamic-us"
+        },
+        "name": "Stormscale",
+        "id": 110,
+        "slug": "stormscale"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/stormscale/psychotic-illusion?namespace=profile-us"
+        },
+        "name": "Psychotic Illusion",
+        "id": 28441703,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/110?namespace=dynamic-us"
+          },
+          "name": "Stormscale",
+          "id": 110,
+          "slug": "stormscale"
+        },
+        "faction": {
+          "type": "ALLIANCE",
+          "name": "Alliance"
+        }
+      },
+      "level": 50,
+      "experience": 0,
+      "achievement_points": 8185,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737223490000,
+      "average_item_level": 247,
+      "equipped_item_level": 247,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/collections?namespace=profile-us"
+      },
+      "active_title": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/title/42?namespace=static-11.0.7_57788-us"
+        },
+        "name": "the Seeker",
+        "id": 42,
+        "display_string": "{name} the Seeker"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/professions?namespace=profile-us"
+      },
+      "name_search": "Sylar"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/sylar?namespace=profile-us"
+        },
+        "name": "Sylar",
+        "id": 167007651,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/110?namespace=dynamic-us"
+          },
+          "name": "Stormscale",
+          "id": 110,
+          "slug": "stormscale"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/stormscale/163/167007651-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/stormscale/163/167007651-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/stormscale/163/167007651-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "stormscale",
+    "name": "Omnicypher",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher?namespace=profile-us"
+        }
+      },
+      "id": 168731001,
+      "name": "Omnicypher",
+      "gender": {
+        "type": "MALE",
+        "name": "Male"
+      },
+      "faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/22?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Worgen",
+        "id": 22
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/9?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Warlock",
+        "id": 9
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Affliction",
+        "id": 265
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/110?namespace=dynamic-us"
+        },
+        "name": "Stormscale",
+        "id": 110,
+        "slug": "stormscale"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/stormscale/psychotic-illusion?namespace=profile-us"
+        },
+        "name": "Psychotic Illusion",
+        "id": 28441703,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/110?namespace=dynamic-us"
+          },
+          "name": "Stormscale",
+          "id": 110,
+          "slug": "stormscale"
+        },
+        "faction": {
+          "type": "ALLIANCE",
+          "name": "Alliance"
+        }
+      },
+      "level": 52,
+      "experience": 0,
+      "achievement_points": 8185,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737223368000,
+      "average_item_level": 262,
+      "equipped_item_level": 262,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/collections?namespace=profile-us"
+      },
+      "active_title": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/title/110?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Jenkins",
+        "id": 110,
+        "display_string": "{name} Jenkins"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/professions?namespace=profile-us"
+      },
+      "covenant_progress": {
+        "chosen_covenant": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/covenant/3?namespace=static-11.0.7_57788-us"
+          },
+          "name": "Night Fae",
+          "id": 3
+        },
+        "renown_level": 1,
+        "soulbinds": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/soulbinds?namespace=profile-us"
+        }
+      },
+      "name_search": "Omnicypher"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/stormscale/omnicypher?namespace=profile-us"
+        },
+        "name": "Omnicypher",
+        "id": 168731001,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/110?namespace=dynamic-us"
+          },
+          "name": "Stormscale",
+          "id": 110,
+          "slug": "stormscale"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/stormscale/121/168731001-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/stormscale/121/168731001-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/stormscale/121/168731001-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "wildhammer",
+    "name": "Illusion",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion?namespace=profile-us"
+        }
+      },
+      "id": 219207913,
+      "name": "Illusion",
+      "gender": {
+        "type": "MALE",
+        "name": "Male"
+      },
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/8?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Troll",
+        "id": 8
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/11?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Druid",
+        "id": 11
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/102?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Balance",
+        "id": 102
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/159?namespace=dynamic-us"
+        },
+        "name": "Wildhammer",
+        "id": 159,
+        "slug": "wildhammer"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/wildhammer/audhd-life?namespace=profile-us"
+        },
+        "name": "AudHd Life",
+        "id": 104374877,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/159?namespace=dynamic-us"
+          },
+          "name": "Wildhammer",
+          "id": 159,
+          "slug": "wildhammer"
+        },
+        "faction": {
+          "type": "HORDE",
+          "name": "Horde"
+        }
+      },
+      "level": 53,
+      "experience": 26128,
+      "achievement_points": 8165,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737222949000,
+      "average_item_level": 270,
+      "equipped_item_level": 270,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/collections?namespace=profile-us"
+      },
+      "active_title": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/title/118?namespace=static-11.0.7_57788-us"
+        },
+        "name": "of Sen'jin",
+        "id": 118,
+        "display_string": "{name} of Sen'jin"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/professions?namespace=profile-us"
+      },
+      "name_search": "Illusion"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/illusion?namespace=profile-us"
+        },
+        "name": "Illusion",
+        "id": 219207913,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/159?namespace=dynamic-us"
+          },
+          "name": "Wildhammer",
+          "id": 159,
+          "slug": "wildhammer"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/wildhammer/233/219207913-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/wildhammer/233/219207913-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/wildhammer/233/219207913-main-raw.png"
+        }
+      ]
+    }
+  },
+  {
+    "realm": "wildhammer",
+    "name": "Quinzelle",
+    "character": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle?namespace=profile-us"
+        }
+      },
+      "id": 213463381,
+      "name": "Quinzelle",
+      "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+      },
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      },
+      "race": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-race/10?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Blood Elf",
+        "id": 10
+      },
+      "character_class": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-class/12?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Demon Hunter",
+        "id": 12
+      },
+      "active_spec": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/577?namespace=static-11.0.7_57788-us"
+        },
+        "name": "Havoc",
+        "id": 577
+      },
+      "realm": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/realm/159?namespace=dynamic-us"
+        },
+        "name": "Wildhammer",
+        "id": 159,
+        "slug": "wildhammer"
+      },
+      "guild": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/guild/wildhammer/audhd-life?namespace=profile-us"
+        },
+        "name": "AudHd Life",
+        "id": 104374877,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/159?namespace=dynamic-us"
+          },
+          "name": "Wildhammer",
+          "id": 159,
+          "slug": "wildhammer"
+        },
+        "faction": {
+          "type": "HORDE",
+          "name": "Horde"
+        }
+      },
+      "level": 50,
+      "experience": 1478,
+      "achievement_points": 8165,
+      "achievements": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/achievements?namespace=profile-us"
+      },
+      "titles": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/titles?namespace=profile-us"
+      },
+      "pvp_summary": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/pvp-summary?namespace=profile-us"
+      },
+      "encounters": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/encounters?namespace=profile-us"
+      },
+      "media": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/character-media?namespace=profile-us"
+      },
+      "last_login_timestamp": 1737222691000,
+      "average_item_level": 247,
+      "equipped_item_level": 217,
+      "specializations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/specializations?namespace=profile-us"
+      },
+      "statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/statistics?namespace=profile-us"
+      },
+      "mythic_keystone_profile": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/mythic-keystone-profile?namespace=profile-us"
+      },
+      "equipment": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/equipment?namespace=profile-us"
+      },
+      "appearance": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/appearance?namespace=profile-us"
+      },
+      "collections": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/collections?namespace=profile-us"
+      },
+      "reputations": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/reputations?namespace=profile-us"
+      },
+      "quests": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/quests?namespace=profile-us"
+      },
+      "achievements_statistics": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/achievements/statistics?namespace=profile-us"
+      },
+      "professions": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/professions?namespace=profile-us"
+      },
+      "name_search": "Quinzelle"
+    },
+    "character_media": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle/character-media?namespace=profile-us"
+        }
+      },
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/wildhammer/quinzelle?namespace=profile-us"
+        },
+        "name": "Quinzelle",
+        "id": 213463381,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/159?namespace=dynamic-us"
+          },
+          "name": "Wildhammer",
+          "id": 159,
+          "slug": "wildhammer"
+        }
+      },
+      "assets": [
+        {
+          "key": "avatar",
+          "value": "https://render.worldofwarcraft.com/us/character/wildhammer/85/213463381-avatar.jpg"
+        },
+        {
+          "key": "inset",
+          "value": "https://render.worldofwarcraft.com/us/character/wildhammer/85/213463381-inset.jpg"
+        },
+        {
+          "key": "main-raw",
+          "value": "https://render.worldofwarcraft.com/us/character/wildhammer/85/213463381-main-raw.png"
+        }
+      ]
+    }
+  }
+]
