@@ -14,9 +14,13 @@ secrets.yaml
 secrets.yml
 *.db
 *.sqlite
+*.p12
+*.pfx
+keystore.properties
+key.properties
+local.properties
 
 # ─── BUILD OUTPUT ──────────────────────────────────────────
-src-tauri/gen/
 target/
 dist/
 build/
@@ -51,4 +55,11 @@ desktop.ini
 helper.md
 generate_blueprint.py
 plugins/*
-tools/
+
+# Release artifacts (signed builds live on disk + device, never in git)
+release/
+
+# src-tauri/gen/ is DELIBERATELY NOT IGNORED (2026-08-16, KP's word). Tauri's own
+# src-tauri/.gitignore covers /target and /gen/schemas, and tauri android init
+# writes gitignores inside gen/android for build/, .gradle/ and keystore.properties.
+# gen/android is hand-edited ground; ignoring it hid two cross-landings from git.
