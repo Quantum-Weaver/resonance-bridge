@@ -108,19 +108,30 @@ export function registerGitHub(server: McpServer) {
 
   server.tool(
     "github_list_repos",
-    "Every repo the token's login owns — name, VISIBILITY (the public/private census, the Free-plan question made visible), default branch, archived, fork, last push, open issues.",
+    "Every repo the token's login owns — name, VISIBILITY (the public/private census, the Free-plan question made visible), when it was born, default branch, archived, fork, last push, open issues. This is the census the reckoner reads for `is_public` on every sending, and the whole of what `repos_snapshot.json` holds.",
     {},
     async () => {
       if (!process.env.HOUSE_GITHUB_PAT) return noLine();
-      const repos = (await ghGet("/user/repos", {
-        per_page: "100",
-        affiliation: "owner",
-        sort: "pushed",
-      })) as any[];
+      // Paged: the house passed 30 repos in August and a single page silently
+      // truncates at 100 — a census that stops short is worse than none.
+      const repos: any[] = [];
+      for (let page = 1; ; page++) {
+        const batch = (await ghGet("/user/repos", {
+          per_page: "100",
+          affiliation: "owner",
+          sort: "pushed",
+          page: String(page),
+        })) as any[];
+        repos.push(...batch);
+        if (batch.length < 100) break;
+      }
       return asText(
         repos.map((r) => ({
-          name: r.full_name,
+          name: r.name,
+          full_name: r.full_name,
           visibility: r.visibility,
+          private: r.private,
+          created_at: r.created_at,
           default_branch: r.default_branch,
           archived: r.archived,
           fork: r.fork,
