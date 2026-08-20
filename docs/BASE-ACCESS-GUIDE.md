@@ -14,7 +14,7 @@ without exposing anything: `grep -o "^[A-Z_]*" resonance-bridge/.env | sort -u`
 
 | Base | URL var | Read key (anon door) | Write key (server only) |
 |---|---|---|---|
-| **KNOWLEDGE** — the Grammar (`qdzerwmsbksuhvczlwli`): atoms · molecules · organisms · lattice · gaia_config · tools | `SUPABASE_URL_KNOWLEDGE` | `SUPABASE_PUBLISHABLE_KEY_KNOWLEDGE` | `SUPABASE_SECRET_KEY_KNOWLEDGE` |
+| **KNOWLEDGE** — the Grammar (`qdzerwmsbksuhvczlwli`): atoms · molecules · organisms · lattice · gaia_config · awen *(named `tools` until KP's seed 096, 2026-08-15 — the old name now answers PGRST205, and no shim is anon-reachable; trued 2026-08-19 by a live GET returning 83 rows)* | `SUPABASE_URL_KNOWLEDGE` | `SUPABASE_PUBLISHABLE_KEY_KNOWLEDGE` | `SUPABASE_SECRET_KEY_KNOWLEDGE` |
 | **SUPERPOSITION** — the 117-table base (self-knowing layer, household, the realms) | `SUPABASE_URL_SUPERPOSITION` | `SUPABASE_PUBLISHABLE_KEY_SUPERPOSITION` | `SUPABASE_SECRET_KEY_SUPERPOSITION` |
 | Management API (`api.supabase.com/v1`) | — | `SUPABASE_ACCESS_TOKEN` | (same token) |
 
