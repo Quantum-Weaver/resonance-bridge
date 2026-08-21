@@ -32,7 +32,7 @@ duty; `npm run smoke` clean before commit.
 
 ## Structure
 
-The forge's map: `docs/blueprints/pbp.ai.json` — regenerate, never hand-draw a
+The forge's map: `docs/blueprints/bridge/pbp.ai.json` — regenerate, never hand-draw a
 tree here.
 
 ## Tools
