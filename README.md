@@ -5,7 +5,7 @@
 Built on the [Resonance Grammar](https://github.com/Quantum-Weaver/resonance-grammar) — every fragment contains the whole.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-0.2.0-brightgreen.svg)]()
 
 ---
 
@@ -14,6 +14,25 @@ Built on the [Resonance Grammar](https://github.com/Quantum-Weaver/resonance-gra
 Resonance Bridge is the MCP (Model Context Protocol) server that connects everything in the Sanctuary. It gives Claude, the Council, and all Sanctuary apps a single interface to query the Resonance Grammar.
 
 **One server. Multiple databases. Read-only. Sovereign.**
+
+---
+
+## THE STORY
+
+*This section required by the [Story Block Standard](https://github.com/Quantum-Weaver/resonance-standards).*
+
+Born 2026-06-30 as **Prometheus, the fire-bringer** — the Sanctuary's first
+MCP server, `query_atom` proven live over stdio in the Inspector days later.
+Renamed 2026-07-07 to **Resonance Bridge** once "Prometheus" was needed
+elsewhere (it now names the frontend creative-arts domain) — the switchboard
+framing held, the fire carried forward under a new name. What started as one
+tool over one local database grew, sitting by sitting, into nine read-only
+lines under `src/lines/` (Grammar, Airtable, Vercel, Resend, Stripe, GitHub,
+Discord, Supabase management, and the family line reading the Sanctuary's
+own apps) and fifty-four tools registered — every one of them a window,
+never a hand.
+
+📖 [Full Story Block](docs/STORY-BLOCK.md)
 
 ---
 
@@ -48,8 +67,9 @@ Resonance Bridge is the MCP (Model Context Protocol) server that connects everyt
 
 ## TOOLS
 
-*Truth pass 2026-07-29 (the delivery-system sitting): the server
-registers TEN tools, all live, smoke-proven over real MCP stdio
+*Truth pass 2026-07-29 (the delivery-system sitting), recounted
+2026-08-21 against the code (`grep` over `src/lines/*.ts`): the server
+registers FIFTY-FOUR tools, all live, smoke-proven over real MCP stdio
 (`server_smoke.py`). The Grammar line serves the living Supabase
 base through the anon door — the same door a stranger would use.*
 
@@ -62,6 +82,7 @@ base through the anon door — the same door a stranger would use.*
 | `query_molecule` | Molecule definitions with constituent atom words | ✅ live |
 | `query_organism` | Organism definitions with domain, habitat, lifecycle | ✅ live |
 | `search_knowledge` | Full-text search across atoms · molecules · organisms · thesaurus | ✅ live |
+| `query_beacon` | Things the Sanctuary SHIPS — games/apps with their own repos and store listings; no args = every beacon's status across four store channels, a name/slug = the whole row | ✅ live |
 | `airtable_list_bases` | Every base the token can see (discovery first) | ⏸ key retired 2026-07-31 |
 | `airtable_list_tables` | One base's schema — tables, fields, views | ⏸ key retired 2026-07-31 |
 | `airtable_query_records` | Records from one table, paged, read-only | ⏸ key retired 2026-07-31 |
@@ -99,6 +120,10 @@ base through the anon door — the same door a stranger would use.*
 | `supabase_list_tables` | RLS + policy count per table — the false-empty detector | ✅ live |
 | `supabase_get_advisors` | Security/performance lamps, degrading gracefully | ✅ live |
 | `supabase_list_functions` · `supabase_list_buckets` | Edge-function and storage censuses — emptiness verified, not presumed | ✅ live |
+| `family_status` | Every family app's tauri/package versions + CHECKLIST.md glyph tally, read from the repos on this disk — device data stays unreachable, by design | ✅ live |
+| `family_checklist` | One family app's `docs/CHECKLIST.md`, whole and verbatim | ✅ live |
+| `family_beacons` | The family's rows in the living beacons register (KNOWLEDGE anon door) — table name resolved at read time | ✅ live |
+| `family_releases` | The family's release shelves as rack-tender last measured them, read whole from `THE-GROUND-TALLY.md` | ✅ live |
 
 ### Standalone scripts (beside the server, same `.env`, all read-only)
 
