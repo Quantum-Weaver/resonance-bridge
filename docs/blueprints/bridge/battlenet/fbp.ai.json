@@ -1,0 +1,178 @@
+{
+  "tier": "folder",
+  "folder_name": "battlenet",
+  "folder_path": "battlenet",
+  "self": "bridge/battlenet/fbp.ai.json",
+  "parent": "bridge/pbp.ai.json",
+  "description": "5 files, 0 subfolders",
+  "files": [
+    {
+      "path": "battlenet/battlenet_character.py",
+      "description": "!/usr/bin/env python3"
+    },
+    {
+      "path": "battlenet/battlenet_collections.py",
+      "description": "!/usr/bin/env python3"
+    },
+    {
+      "path": "battlenet/characters-2026-08-16.json",
+      "description": "data, 103,778 bytes"
+    },
+    {
+      "path": "battlenet/characters.csv",
+      "description": "file, 428 bytes"
+    },
+    {
+      "path": "battlenet/enrich-cache.json",
+      "description": "data, 129,302 bytes"
+    }
+  ],
+  "file_count": 5,
+  "subdirectories": [],
+  "code_analysis": {
+    "battlenet_character.py": {
+      "language": "python",
+      "lines": 308,
+      "classes": [],
+      "functions": [
+        "env_value",
+        "normalize_realm_slug",
+        "normalize_character_name",
+        "get_token",
+        "api_get",
+        "describe_http_error",
+        "fetch_character",
+        "print_summary",
+        "fetch_realms",
+        "parse_pairs",
+        "main"
+      ],
+      "imports": [
+        "argparse",
+        "base64",
+        "datetime",
+        "json",
+        "os",
+        "re",
+        "sys",
+        "urllib.error",
+        "urllib.parse",
+        "urllib.request"
+      ],
+      "constants": [
+        "BRIDGE_ENV",
+        "OAUTH_URL",
+        "USER_AGENT"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "battlenet_collections.py": {
+      "language": "python",
+      "lines": 752,
+      "classes": [
+        "RateLimiter"
+      ],
+      "functions": [
+        "iso_now",
+        "iso_from_ms",
+        "api_json",
+        "fetch_mounts",
+        "fetch_pets",
+        "fetch_toys",
+        "fetch_transmog_sets",
+        "fetch_achievements_summary",
+        "by_name",
+        "pull_collections",
+        "load_cache",
+        "save_cache",
+        "icon_ext_from_url",
+        "enrich_api_get",
+        "download_icon",
+        "_resolve_icon",
+        "enrich_mount",
+        "enrich_pet",
+        "enrich_toy",
+        "run_enrichment",
+        "read_census_pairs",
+        "land_characters",
+        "write_json",
+        "main"
+      ],
+      "imports": [
+        "argparse",
+        "battlenet_character",
+        "concurrent.futures",
+        "datetime",
+        "json",
+        "os",
+        "sys",
+        "threading",
+        "time",
+        "urllib.error",
+        "urllib.parse",
+        "urllib.request"
+      ],
+      "constants": [
+        "BRIDGE_DIR",
+        "DEFAULT_CACHE_FILE",
+        "DEFAULT_CENSUS_FILE",
+        "DEFAULT_OUT_DIR",
+        "DOWNLOAD_USER_AGENT",
+        "ENRICH_MIN_INTERVAL",
+        "ENRICH_WORKERS",
+        "SCRIPT_DIR",
+        "TOOL_NAME",
+        "WORKSPACE_ROOT"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
+    },
+    "characters-2026-08-16.json": {
+      "language": "json",
+      "lines": 2864,
+      "valid": true,
+      "root": "array",
+      "length": 23,
+      "item_keys": [
+        "character",
+        "character_media",
+        "name",
+        "realm"
+      ]
+    },
+    "characters.csv": {
+      "language": "content-file",
+      "format": "csv",
+      "name": "characters.csv",
+      "location": "battlenet",
+      "bytes": 428,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "enrich-cache.json": {
+      "language": "json",
+      "lines": 3249,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "mount",
+        "pet",
+        "toy"
+      ],
+      "key_count": 3
+    }
+  },
+  "folders_not_walked": [
+    {
+      "name": "__pycache__",
+      "address": "battlenet/__pycache__",
+      "files_on_disk": 2,
+      "walked": false,
+      "reason": "gitignored at depth by this repo's own .gitignore \u2014 named and counted, never described, never opened"
+    }
+  ],
+  "scan_timestamp": "2026-08-21T15:19:20.460612 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

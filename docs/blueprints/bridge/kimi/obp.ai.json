@@ -1,18 +1,20 @@
 {
+  "tier": "object",
   "object_name": "kimi",
   "object_path": "kimi",
-  "description": "0 files, 0 subfolders",
-  "integration_timestamp": "2026-08-14T18:36:23.033296 | in sovereign time",
+  "self": "bridge/kimi/obp.ai.json",
+  "parent": "bridge/pbp.ai.json",
+  "description": "2 files, 1 subfolders",
   "folders": [
     {
-      "blueprint": "docs/blueprints/folders/fbp_kimi.ai.json",
+      "blueprint": "bridge/kimi/fbp.ai.json",
       "folder_path": "kimi",
       "description": "2 files, 1 subfolders",
       "file_count": 2,
       "subdirectory_count": 1
     },
     {
-      "blueprint": "docs/blueprints/folders/fbp_kimi_messages.ai.json",
+      "blueprint": "bridge/kimi/messages/fbp.ai.json",
       "folder_path": "kimi/messages",
       "description": "7 files, 0 subfolders",
       "file_count": 7,
@@ -21,6 +23,7 @@
   ],
   "folder_count": 2,
   "total_files": 9,
+  "integration_timestamp": "2026-08-21T15:19:20.519770 | in sovereign time",
   "maintaining_agent": "ObjectAgent",
   "note": "Links only. Every folder's details live at its own address."
 }

@@ -1,0 +1,58 @@
+{
+  "tier": "folder",
+  "folder_name": ".claude",
+  "folder_path": ".claude",
+  "self": "bridge/.claude/fbp.ai.json",
+  "parent": "bridge/pbp.ai.json",
+  "description": "2 files, 0 subfolders",
+  "files": [
+    {
+      "path": ".claude/CLAUDE.md",
+      "description": "CLAUDE.md -- house commit rule"
+    },
+    {
+      "path": ".claude/settings.json",
+      "description": "data, 157 bytes"
+    }
+  ],
+  "file_count": 2,
+  "subdirectories": [],
+  "code_analysis": {
+    "CLAUDE.md": {
+      "language": "markdown",
+      "lines": 9,
+      "words": 38,
+      "heading_count": 1,
+      "headings": [
+        "CLAUDE.md -- house commit rule"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "settings.json": {
+      "language": "json",
+      "lines": 6,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "attribution"
+      ],
+      "key_count": 1
+    }
+  },
+  "folders_not_walked": [],
+  "scan_timestamp": "2026-08-21T15:19:20.454943 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

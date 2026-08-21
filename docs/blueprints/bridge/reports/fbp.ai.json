@@ -1,8 +1,10 @@
 {
+  "tier": "folder",
   "folder_name": "reports",
   "folder_path": "reports",
+  "self": "bridge/reports/fbp.ai.json",
+  "parent": "bridge/pbp.ai.json",
   "description": "3 files, 0 subfolders",
-  "scan_timestamp": "2026-08-14T18:36:22.999564 | in sovereign time",
   "files": [
     {
       "path": "reports/2026-06-30-assessment.md",
@@ -82,7 +84,8 @@
       "key_count": 8
     }
   },
-  "maintaining_agent": "FolderAgent",
   "folders_not_walked": [],
+  "scan_timestamp": "2026-08-21T15:19:20.496401 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

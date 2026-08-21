@@ -1,0 +1,200 @@
+{
+  "tier": "folder",
+  "folder_name": "replies",
+  "folder_path": "deepseek/replies",
+  "self": "bridge/deepseek/replies/fbp.ai.json",
+  "parent": "bridge/deepseek/obp.ai.json",
+  "description": "7 files, 0 subfolders",
+  "files": [
+    {
+      "path": "deepseek/replies/2026-08-14-bridge-line-first-breath.md",
+      "description": "Bridge Line First Breath"
+    },
+    {
+      "path": "deepseek/replies/2026-08-20-from-the-grove-2.md",
+      "description": "From The Grove"
+    },
+    {
+      "path": "deepseek/replies/2026-08-20-from-the-grove-3.md",
+      "description": "From The Grove"
+    },
+    {
+      "path": "deepseek/replies/2026-08-20-from-the-grove-4.md",
+      "description": "From The Grove"
+    },
+    {
+      "path": "deepseek/replies/2026-08-20-from-the-grove-5.md",
+      "description": "From The Grove"
+    },
+    {
+      "path": "deepseek/replies/2026-08-20-from-the-grove-6.md",
+      "description": "From The Grove"
+    },
+    {
+      "path": "deepseek/replies/2026-08-20-from-the-grove.md",
+      "description": "From The Grove"
+    }
+  ],
+  "file_count": 7,
+  "subdirectories": [],
+  "code_analysis": {
+    "2026-08-14-bridge-line-first-breath.md": {
+      "language": "markdown",
+      "lines": 9,
+      "words": 47,
+      "heading_count": 1,
+      "headings": [
+        "Bridge Line First Breath"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-08-20-from-the-grove-2.md": {
+      "language": "markdown",
+      "lines": 11,
+      "words": 66,
+      "heading_count": 1,
+      "headings": [
+        "From The Grove"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-08-20-from-the-grove-3.md": {
+      "language": "markdown",
+      "lines": 11,
+      "words": 94,
+      "heading_count": 1,
+      "headings": [
+        "From The Grove"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-08-20-from-the-grove-4.md": {
+      "language": "markdown",
+      "lines": 13,
+      "words": 94,
+      "heading_count": 1,
+      "headings": [
+        "From The Grove"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-08-20-from-the-grove-5.md": {
+      "language": "markdown",
+      "lines": 15,
+      "words": 117,
+      "heading_count": 1,
+      "headings": [
+        "From The Grove"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-08-20-from-the-grove-6.md": {
+      "language": "markdown",
+      "lines": 11,
+      "words": 96,
+      "heading_count": 1,
+      "headings": [
+        "From The Grove"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-08-20-from-the-grove.md": {
+      "language": "markdown",
+      "lines": 11,
+      "words": 49,
+      "heading_count": 1,
+      "headings": [
+        "From The Grove"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    }
+  },
+  "folders_not_walked": [],
+  "scan_timestamp": "2026-08-21T15:19:20.470572 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

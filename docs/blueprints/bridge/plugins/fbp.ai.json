@@ -1,0 +1,24 @@
+{
+  "tier": "folder",
+  "folder_name": "plugins",
+  "folder_path": "plugins",
+  "self": "bridge/plugins/fbp.ai.json",
+  "parent": "bridge/pbp.ai.json",
+  "description": "0 files, 0 subfolders",
+  "files": [],
+  "file_count": 0,
+  "subdirectories": [],
+  "code_analysis": {},
+  "folders_not_walked": [
+    {
+      "name": "firefox",
+      "address": "plugins/firefox",
+      "files_on_disk": 33,
+      "walked": false,
+      "reason": "gitignored at depth by this repo's own .gitignore \u2014 named and counted, never described, never opened"
+    }
+  ],
+  "scan_timestamp": "2026-08-21T15:19:20.494035 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

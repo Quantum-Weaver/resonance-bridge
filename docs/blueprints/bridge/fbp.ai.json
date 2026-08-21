@@ -1,8 +1,10 @@
 {
+  "tier": "folder",
   "folder_name": "resonance-bridge",
   "folder_path": ".",
+  "self": "bridge/fbp.ai.json",
+  "parent": "bridge/pbp.ai.json",
   "description": "The switchboard",
-  "scan_timestamp": "2026-08-14T18:36:22.956191 | in sovereign time",
   "files": [
     {
       "path": ".env",
@@ -14,7 +16,7 @@
     },
     {
       "path": ".gitignore",
-      "description": "ignore rules, 1,595 bytes"
+      "description": "ignore rules, 2,061 bytes"
     },
     {
       "path": "CLAUDE.md",
@@ -65,6 +67,10 @@
       "description": "\ud83d\udd25 Resonance Bridge"
     },
     {
+      "path": "repos_snapshot.py",
+      "description": "!/usr/bin/env python3"
+    },
+    {
       "path": "server_smoke.py",
       "description": "server_smoke.py"
     },
@@ -77,9 +83,10 @@
       "description": "verify_terms.py"
     }
   ],
-  "file_count": 18,
+  "file_count": 19,
   "subdirectories": [
     ".claude",
+    "battlenet",
     "deepseek",
     "docs",
     "kimi",
@@ -92,17 +99,19 @@
   "code_analysis": {
     "CLAUDE.md": {
       "language": "markdown",
-      "lines": 53,
-      "words": 349,
-      "heading_count": 5,
+      "lines": 90,
+      "words": 544,
+      "heading_count": 7,
       "headings": [
         "CLAUDE.md \u2014 Resonance Bridge (formerly Prometheus)",
         "Ground rules",
         "Structure",
         "Tools",
-        "People"
+        "People",
+        "Standards",
+        "The forge and the link tender"
       ],
-      "links_external": 0,
+      "links_external": 1,
       "links_site_absolute": [],
       "links_internal": [],
       "links_internal_unresolved": [],
@@ -145,8 +154,8 @@
     },
     "FEATURE-BOARD.md": {
       "language": "markdown",
-      "lines": 103,
-      "words": 861,
+      "lines": 201,
+      "words": 1744,
       "heading_count": 3,
       "headings": [
         "BRIDGE \u2014 THE FEATURE BOARD",
@@ -345,12 +354,13 @@
     },
     "README.md": {
       "language": "markdown",
-      "lines": 178,
-      "words": 1647,
-      "heading_count": 16,
+      "lines": 203,
+      "words": 1899,
+      "heading_count": 17,
       "headings": [
         "\ud83d\udd25 Resonance Bridge",
         "WHAT IT IS",
+        "THE STORY",
         "WHAT IT CONNECTS",
         "DATABASES",
         "TOOLS",
@@ -366,9 +376,14 @@
         "GUARDRAILS",
         "LICENSE"
       ],
-      "links_external": 3,
+      "links_external": 4,
       "links_site_absolute": [],
       "links_internal": [
+        {
+          "target": "docs/STORY-BLOCK.md",
+          "resolves": true,
+          "outside_checkout": false
+        },
         {
           "target": "LICENSE",
           "resolves": true,
@@ -383,17 +398,43 @@
       "links_internal_unresolved": [],
       "links_internal_outside_checkout": [],
       "code_fences": 2,
-      "table_rows": 71,
+      "table_rows": 76,
       "checkboxes": {
         "open": 0,
         "done": 0
       },
-      "has_story_block": false,
+      "has_story_block": true,
       "declares_mirror_class": false
+    },
+    "repos_snapshot.py": {
+      "language": "python",
+      "lines": 134,
+      "classes": [],
+      "functions": [
+        "read_key",
+        "fetch",
+        "diff",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "os",
+        "pathlib",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "API",
+        "BRIDGE",
+        "FIELDS",
+        "OUT"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
     },
     "server_smoke.py": {
       "language": "python",
-      "lines": 107,
+      "lines": 110,
       "classes": [],
       "functions": [
         "send",
@@ -464,11 +505,27 @@
       "has_main_guard": true
     }
   },
-  "maintaining_agent": "FolderAgent",
   "folders_not_walked": [
-    ".git",
-    "__pycache__",
-    "node_modules"
+    {
+      "name": ".git",
+      "address": ".git",
+      "walked": false,
+      "reason": "package-class tree (dependency or build output) \u2014 not counted, because counting it means walking it"
+    },
+    {
+      "name": "__pycache__",
+      "address": "__pycache__",
+      "walked": false,
+      "reason": "package-class tree (dependency or build output) \u2014 not counted, because counting it means walking it"
+    },
+    {
+      "name": "node_modules",
+      "address": "node_modules",
+      "walked": false,
+      "reason": "package-class tree (dependency or build output) \u2014 not counted, because counting it means walking it"
+    }
   ],
+  "scan_timestamp": "2026-08-21T15:19:20.453258 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

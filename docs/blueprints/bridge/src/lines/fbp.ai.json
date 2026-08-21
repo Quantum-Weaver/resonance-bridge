@@ -1,8 +1,10 @@
 {
+  "tier": "folder",
   "folder_name": "lines",
   "folder_path": "src/lines",
+  "self": "bridge/src/lines/fbp.ai.json",
+  "parent": "bridge/src/obp.ai.json",
   "description": "9 files, 0 subfolders",
-  "scan_timestamp": "2026-08-14T18:36:23.022990 | in sovereign time",
   "files": [
     {
       "path": "src/lines/airtable.ts",
@@ -14,15 +16,15 @@
     },
     {
       "path": "src/lines/family.ts",
-      "description": "typescript, 10,356 bytes"
+      "description": "typescript, 10,682 bytes"
     },
     {
       "path": "src/lines/github.ts",
-      "description": "typescript, 9,812 bytes"
+      "description": "typescript, 10,388 bytes"
     },
     {
       "path": "src/lines/grammar.ts",
-      "description": "typescript, 11,110 bytes"
+      "description": "typescript, 11,090 bytes"
     },
     {
       "path": "src/lines/resend.ts",
@@ -80,7 +82,7 @@
     },
     "family.ts": {
       "language": "typescript",
-      "lines": 249,
+      "lines": 252,
       "exported_functions": [
         "registerFamily"
       ],
@@ -98,7 +100,7 @@
     },
     "github.ts": {
       "language": "typescript",
-      "lines": 250,
+      "lines": 261,
       "exported_functions": [
         "registerGitHub"
       ],
@@ -194,7 +196,8 @@
       ]
     }
   },
-  "maintaining_agent": "FolderAgent",
   "folders_not_walked": [],
+  "scan_timestamp": "2026-08-21T15:19:20.517650 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

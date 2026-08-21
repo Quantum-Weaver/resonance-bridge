@@ -1,8 +1,10 @@
 {
+  "tier": "folder",
   "folder_name": "messages",
   "folder_path": "kimi/messages",
+  "self": "bridge/kimi/messages/fbp.ai.json",
+  "parent": "bridge/kimi/obp.ai.json",
   "description": "7 files, 0 subfolders",
-  "scan_timestamp": "2026-08-14T18:36:22.978057 | in sovereign time",
   "files": [
     {
       "path": "kimi/messages/2026-07-13-closing-the-day.md",
@@ -191,7 +193,8 @@
       "declares_mirror_class": false
     }
   },
-  "maintaining_agent": "FolderAgent",
   "folders_not_walked": [],
+  "scan_timestamp": "2026-08-21T15:19:20.486699 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

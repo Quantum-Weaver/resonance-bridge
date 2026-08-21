@@ -1,8 +1,10 @@
 {
+  "tier": "folder",
   "folder_name": "kimi",
   "folder_path": "kimi",
+  "self": "bridge/kimi/fbp.ai.json",
+  "parent": "bridge/kimi/obp.ai.json",
   "description": "2 files, 1 subfolders",
-  "scan_timestamp": "2026-08-14T18:36:22.970011 | in sovereign time",
   "files": [
     {
       "path": "kimi/kimi_crossing.py",
@@ -66,9 +68,16 @@
       "has_main_guard": true
     }
   },
-  "maintaining_agent": "FolderAgent",
   "folders_not_walked": [
-    "__pycache__"
+    {
+      "name": "__pycache__",
+      "address": "kimi/__pycache__",
+      "files_on_disk": 2,
+      "walked": false,
+      "reason": "gitignored at depth by this repo's own .gitignore \u2014 named and counted, never described, never opened"
+    }
   ],
+  "scan_timestamp": "2026-08-21T15:19:20.479930 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

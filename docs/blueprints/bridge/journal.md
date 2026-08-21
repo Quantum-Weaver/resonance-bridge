@@ -9,3 +9,4 @@
 - 2026-08-04 19:11 - 10 fbp | 2 obp | 1 dbp | 1 pbp - folders 10 - files 100 (+3) - findings 0 - sovereignty HELD - drift: files
 - 2026-08-14 16:29 - 14 fbp | 4 obp | 1 dbp | 1 pbp - folders 14 (+4) - files 109 (+9) - findings 0 - sovereignty BREACHED — see leaked lists - drift: folders, files
 - 2026-08-14 18:36 - 15 fbp | 4 obp | 1 dbp | 1 pbp - folders 15 (+1) - files 110 (+1) - findings 0 - sovereignty BREACHED — see leaked lists - drift: folders, files
+- 2026-08-21 15:19 - 14 fbp | 3 obp | 0 dbp | 1 pbp - folders 14 (-1) - files 92 (-18) - findings 0 - sovereignty BREACHED — see leaked lists - drift: folders, files - layout migrated (23 flat files removed)

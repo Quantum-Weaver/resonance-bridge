@@ -1,26 +1,29 @@
 {
+  "tier": "object",
   "object_name": "deepseek",
   "object_path": "deepseek",
-  "description": "0 files, 0 subfolders",
-  "integration_timestamp": "2026-08-14T18:36:23.032449 | in sovereign time",
+  "self": "bridge/deepseek/obp.ai.json",
+  "parent": "bridge/pbp.ai.json",
+  "description": "3 files, 1 subfolders",
   "folders": [
     {
-      "blueprint": "docs/blueprints/folders/fbp_deepseek.ai.json",
+      "blueprint": "bridge/deepseek/fbp.ai.json",
       "folder_path": "deepseek",
       "description": "3 files, 1 subfolders",
       "file_count": 3,
       "subdirectory_count": 1
     },
     {
-      "blueprint": "docs/blueprints/folders/fbp_deepseek_replies.ai.json",
+      "blueprint": "bridge/deepseek/replies/fbp.ai.json",
       "folder_path": "deepseek/replies",
-      "description": "1 files, 0 subfolders",
-      "file_count": 1,
+      "description": "7 files, 0 subfolders",
+      "file_count": 7,
       "subdirectory_count": 0
     }
   ],
   "folder_count": 2,
-  "total_files": 4,
+  "total_files": 10,
+  "integration_timestamp": "2026-08-21T15:19:20.518607 | in sovereign time",
   "maintaining_agent": "ObjectAgent",
   "note": "Links only. Every folder's details live at its own address."
 }

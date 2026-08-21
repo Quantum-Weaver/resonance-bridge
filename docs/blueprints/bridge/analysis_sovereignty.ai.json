@@ -1,6 +1,8 @@
 {
+  "tier": "analysis",
   "analysis": "sovereignty",
-  "scan_timestamp": "2026-08-14T18:36:23.058629 | in sovereign time",
+  "self": "bridge/analysis_sovereignty.ai.json",
+  "parent": "bridge/pbp.ai.json",
   "law": "Trees this repo's .gitignore declares uncommittable must not be tracked.",
   "git_available": true,
   "ignored_trees": {},
@@ -20,5 +22,6 @@
   ],
   "secret_files_found": 2,
   "note": "Existence reported, contents never read. NEVER A VALUE.",
-  "verdict": "BREACHED \u2014 see leaked lists"
+  "verdict": "BREACHED \u2014 see leaked lists",
+  "scan_timestamp": "2026-08-21T15:19:20.542407 | in sovereign time"
 }

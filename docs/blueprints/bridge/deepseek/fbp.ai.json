@@ -1,8 +1,10 @@
 {
+  "tier": "folder",
   "folder_name": "deepseek",
   "folder_path": "deepseek",
+  "self": "bridge/deepseek/fbp.ai.json",
+  "parent": "bridge/deepseek/obp.ai.json",
   "description": "3 files, 1 subfolders",
-  "scan_timestamp": "2026-08-14T18:36:22.961960 | in sovereign time",
   "files": [
     {
       "path": "deepseek/deepseek_crossing.py",
@@ -94,9 +96,16 @@
       "declares_mirror_class": false
     }
   },
-  "maintaining_agent": "FolderAgent",
   "folders_not_walked": [
-    "__pycache__"
+    {
+      "name": "__pycache__",
+      "address": "deepseek/__pycache__",
+      "files_on_disk": 1,
+      "walked": false,
+      "reason": "gitignored at depth by this repo's own .gitignore \u2014 named and counted, never described, never opened"
+    }
   ],
+  "scan_timestamp": "2026-08-21T15:19:20.466711 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

@@ -1,8 +1,10 @@
 {
+  "tier": "folder",
   "folder_name": "src",
   "folder_path": "src",
+  "self": "bridge/src/fbp.ai.json",
+  "parent": "bridge/src/obp.ai.json",
   "description": "2 files, 1 subfolders",
-  "scan_timestamp": "2026-08-14T18:36:23.014259 | in sovereign time",
   "files": [
     {
       "path": "src/http.ts",
@@ -50,7 +52,8 @@
       ]
     }
   },
-  "maintaining_agent": "FolderAgent",
   "folders_not_walked": [],
+  "scan_timestamp": "2026-08-21T15:19:20.510764 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }
