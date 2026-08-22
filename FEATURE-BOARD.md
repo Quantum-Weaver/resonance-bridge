@@ -195,6 +195,37 @@ deliberate.*
     Key grepped clean across every landed file, the cache, and the script
     itself after the run.
 
+11. **The media lane** ✅ **BUILT + LANDED LIVE 2026-08-22** (the Tiento lamp 🎻,
+    at KP's ⚛ word for resonance-weaver's Movies and Games rooms — "we are
+    going to bring in the games and movies details we have"): `media/_common.py`
+    · `media/screen_lander.py` · `media/games_lander.py`, on the battlenet lane's
+    exact shape (relative paths, keys by name off the ring and never printed, a
+    shared politeness limiter, true-bytes image ledgers, JSON caches beside the
+    scripts, LANDED FILES as the only bus into the app). **Reads ONLY
+    `consumed-media/` in the Well** — never sealed/, never health/. The screen
+    lander matches KP's 447-title Vudu library against the IMDb non-commercial
+    datasets LOCALLY (the Codex mirror, KP's ⚛ choice over any API; one 18 s
+    streaming pass over 12.6 M titles) with honest tiers — override · exact ·
+    normalized · series · title-only · fuzzy · unmatched — landing 411/447
+    matched (36 unmatched are featurette extras, three Sailor Moon films, one
+    X-Files film), every fuzzy candidate written to `review-fuzzy.csv` for his
+    eye; joins Vudu (447/447) and Movies Anywhere (276/284); resolves posters
+    through a pluggable provider — **TMDb (his ⚛ choice; `TMDB_READ_ACCESS_TOKEN`
+    preferred, `TMDB_API_KEY` fallback), 410 posters at w185, 7.1 MB** — or
+    Wikidata/Wikipedia key-free, or none. The games lander parses the PlayStation
+    sheets (header-echo rows skipped; `price` trued to CENTS; the one refund
+    negated; GTA V's PS4+PS5 rows one work; two spellings of one game merged by
+    normalized name) — 11 played works / 1,326 h PlayStation's own count; library
+    349 games / 592 products / $5,445.25 — and enriches through **IGDB via Twitch
+    client credentials (`TWITCH_CLIENT_ID` / `TWITCH_CLIENT_SECRET`, his hand)**:
+    284 exact · 32 best · 26 none · 18 services skipped; 313 covers at
+    t_cover_small_2x, 3.4 MB. Consumers: `npm run movies` · `npm run games` in
+    resonance-weaver; landed into `static/movies/` + `static/games/`. Keys
+    grepped clean across landed files, caches, and scripts after the runs. Two
+    lessons engraved in the code the first runs taught: an exact-title hit with
+    a disagreeing year outranks a fuzzy guess at a different title; the
+    storefront's `PS4 & PS5` tails are never part of a work's name.
+
 ## Laws standing
 Consent gates every new line · read-only wards where a line is a
 window, not a hand · nothing leaves the house.

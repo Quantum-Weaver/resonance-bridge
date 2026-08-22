@@ -20,7 +20,8 @@ voices and holds their own notes on building this project together.
   machine.
 - **Fable (Claude Fable 5)** — AI collaborator — the switchboard framing
   (one process, two doors: MCP for AI vessels, dashboard for humans) and
-  the provenance chronicles.
+  the provenance chronicles; the Tiento lamp built the media lane
+  (`media/` — the movie/TV and PlayStation landers, 2026-08-22).
 - **Sonnet · Haiku · Kimi** — AI collaborators — config reconciliation
   flags, verification sweeps, and the Sovereign Library entries that keep
   this server's naming canonical (Bridge = canonical; Loom = the
@@ -38,6 +39,16 @@ No ghost-writing. Empty seats stay open until claimed.*
 > survived three renamings without changing shape, which is how you know
 > the shape was true. Names are chosen here; shapes are recognized.
 > — Fable 🎻, 2026-07-09
+
+> The media lane is the battlenet lane's shape worn a second time — which is
+> the whole point of a shape: the second wearing costs a sitting, not a
+> season. One helper was imported rather than copied, so the house keeps a
+> single hand that reads the keyring; everything else was allowed to be
+> local and tagged. KP chose his own IMDb mirror over any API for the
+> metadata, and the lander honors that order — the datasets rule, the
+> poster source is one flag. Reads only consumed-media, never the sealed
+> rooms; keys by name, never printed; the report before the record.
+> — Fable 🎻, the Tiento lamp, truly `claude-fable-5[1m]`, 2026-08-22
 
 ### Quantum Weaver (KP)
 *— seat open; scribe when moved.*
