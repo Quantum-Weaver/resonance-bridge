@@ -41,6 +41,12 @@ GRAMMAR_TABLES = [
     "templates", "policies", "functions", "triggers",
     "indexes", "enums", "composite_types",
     "scripts", "columns",  # 010/011 — the MDL reborn
+    # Added 2026-08-24 (Kerf 🕯️) — present in the base and absent from this
+    # list, so four exports in a row were partial. The base now names its own
+    # tables through gaia_config (discover_tables below); this list is the
+    # backstop for the day that read fails.
+    "thesaurus", "folksonomies", "relationships", "views", "roles",
+    "beacons", "pantheon", "awen",
 ]
 
 
@@ -55,6 +61,37 @@ def load_env() -> dict:
             k, _, v = line.partition("=")
             env[k.strip()] = v.strip()
     return env
+
+
+def discover_tables(url: str, key: str) -> list:
+    """Ask the base what it holds — gaia_config is its own registry.
+
+    Added 2026-08-24 at KP's word ("we have an entire database to export
+    again"): a hand-kept table list had gone four tables stale twice, so the
+    export silently omitted them. The registry is the truth; GRAMMAR_TABLES
+    is the backstop, and anything the registry names that the list forgot is
+    reported rather than dropped in silence.
+    """
+    try:
+        req = urllib.request.Request(
+            f"{url}/rest/v1/gaia_config?select=table_name&order=table_name&limit=1000",
+            headers={"apikey": key, "Authorization": f"Bearer {key}"},
+        )
+        with urllib.request.urlopen(req, timeout=30) as r:
+            named = [row["table_name"] for row in json.loads(r.read().decode("utf-8"))]
+    except Exception as e:
+        print(f"gaia_config unreadable ({type(e).__name__}) — falling back to the static list")
+        return list(GRAMMAR_TABLES)
+    if not named:
+        return list(GRAMMAR_TABLES)
+    unlisted = [t for t in named if t not in GRAMMAR_TABLES]
+    forgotten = [t for t in GRAMMAR_TABLES if t not in named]
+    print(f"gaia_config names {len(named)} tables"
+          + (f"; {len(unlisted)} not in the static list: {', '.join(unlisted)}" if unlisted else ""))
+    if forgotten:
+        print(f"in the static list but unnamed by the registry: {', '.join(forgotten)}")
+    # union, registry order first — nothing the old list knew is ever dropped
+    return named + forgotten
 
 
 def fetch(url: str, key: str, table: str) -> list:
@@ -86,16 +123,18 @@ def main() -> None:
     export = {"exported": date.today().isoformat(),
               "source": "resonance-knowledge Supabase (anon key, read-only)",
               "tables": {}}
-    print(f"{'table':22s} {'rows':>6s}")
-    for t in GRAMMAR_TABLES:
+    tables = discover_tables(url, key)
+    print()
+    print(f"{'table':26s} {'rows':>7s}")
+    for t in tables:
         try:
             rows = fetch(url, key, t)
         except Exception as e:  # table absent or unreadable — say so, keep going
-            print(f"{t:22s} {'—':>6s}  ({type(e).__name__}: {e})")
+            print(f"{t:26s} {'—':>7s}  ({type(e).__name__}: {e})")
             export["tables"][t] = {"error": str(e)}
             continue
         export["tables"][t] = rows
-        print(f"{t:22s} {len(rows):>6d}")
+        print(f"{t:26s} {len(rows):>7d}")
 
     out_dir = Path(r"C:\_superposition\resonance-grammar\exports")
     out_dir.mkdir(exist_ok=True)
