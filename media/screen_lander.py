@@ -82,9 +82,7 @@ ROMAN = {1: "i", 2: "ii", 3: "iii", 4: "iv", 5: "v", 6: "vi", 7: "vii",
          8: "viii", 9: "ix", 10: "x"}
 ROMAN_INV = {v: str(k) for k, v in ROMAN.items()}
 
-# ---------------------------------------------------------------------------
 # Title cleaning — the retail suffixes Vudu appends, the prefixes IMDb drops.
-# ---------------------------------------------------------------------------
 EXTRA_RE = re.compile(r"featurette|deleted scene|gag reel|music video|bonus|"
                       r"behind the scenes|making of|select featurettes", re.I)
 YEAR_PARENS = re.compile(r"\s*\((\d{4})\)\s*$")
@@ -191,9 +189,7 @@ def block_pair(key: str):
     return toks[0] if toks else None
 
 
-# ---------------------------------------------------------------------------
 # The IMDb index — one streaming pass, only the rows the catalog could want.
-# ---------------------------------------------------------------------------
 class ImdbIndex:
     def __init__(self):
         self.by_key = {}      # norm key -> [row]
@@ -309,9 +305,7 @@ def build_index(imdb_dir, wanted_keys, block_pairs, wanted_tconsts):
     return idx
 
 
-# ---------------------------------------------------------------------------
 # Matching — tiers, first hit wins; never silently guess.
-# ---------------------------------------------------------------------------
 def year_rule(row, year, season_stripped):
     if year is None or row["year"] is None:
         return True
@@ -378,9 +372,7 @@ def match_title(item, idx, overrides, review_rows):
                 if r:
                     return result_from(r, "normalized")
         # An exact-title hit whose year disagrees outranks any fuzzy guess at a
-        # DIFFERENT title (the Paranormal Activity lesson: the 2007 film's
-        # 2009 wide-release year pushed it past ±1 and a fuzzy tier would have
-        # handed it to the sequel). Labelled honestly: title-only.
+        # DIFFERENT title. Labelled honestly: title-only.
         for key in item["keys"]:
             rows = idx.by_key.get(key)
             if rows:
@@ -432,9 +424,7 @@ def match_title(item, idx, overrides, review_rows):
     return dict(UNMATCHED)
 
 
-# ---------------------------------------------------------------------------
 # Sources + joins
-# ---------------------------------------------------------------------------
 def load_overrides():
     ov = {}
     if os.path.exists(OVERRIDES_FILE):
@@ -511,9 +501,7 @@ def vudu_block(v):
     }
 
 
-# ---------------------------------------------------------------------------
 # Posters — one signature, three providers.
-# ---------------------------------------------------------------------------
 def tmdb_creds():
     tok = C.env_value("TMDB_READ_ACCESS_TOKEN", required=False)
     key = C.env_value("TMDB_API_KEY", required=False)
@@ -616,7 +604,6 @@ def poster_url(entry, size):
     return entry.get("url")
 
 
-# ---------------------------------------------------------------------------
 def fmt_mb(n):
     return f"{n / (1024 * 1024):.2f} MB"
 

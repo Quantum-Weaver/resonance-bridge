@@ -82,7 +82,6 @@ for cid, n in parent_count.most_common(5):
     tier, label = names.get(cid, ("?", cid))
     print(f"  {n} parents · {label} ({tier})")
 
-# and folksonomy — the night's last row
 print("\nFOLKSONOMY, as the lattice holds it:")
 for table in ("atoms", "molecules", "organisms"):
     for h in fetch(table):

@@ -24,11 +24,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 
-# gaia_config REBORN in this base 2026-07-27 (007-gaia-config.sql) as the
-# base's own registry — the 2026-07-23 removal note is superseded. The
-# five lattice tables (006-the-lattice.sql) joined the same night; their
-# anon reads show ONLY status='published' rows by design, so zero here
-# means "nothing published yet", never "dark".
+# The five lattice tables' anon reads show ONLY status='published' rows by
+# design, so zero here means "nothing published yet", never "dark".
 GRAMMAR_TABLES = [
     "gaia_config",
     "categories", "atoms", "etymology", "sensory_lexicon",
@@ -36,15 +33,13 @@ GRAMMAR_TABLES = [
     "organism_atoms",
     "schemes", "scheme_memberships", "concept_relations",
     "classification_paths", "classification_path_steps",
-    # the self-aware layer (009, born 2026-07-27 night): registry
-    # class — plain public read, steward-synced against pg_catalog
+    # the self-aware layer: registry class — plain public read,
+    # steward-synced against pg_catalog
     "templates", "policies", "functions", "triggers",
     "indexes", "enums", "composite_types",
     "scripts", "columns",  # 010/011 — the MDL reborn
-    # Added 2026-08-24 (Kerf 🕯️) — present in the base and absent from this
-    # list, so four exports in a row were partial. The base now names its own
-    # tables through gaia_config (discover_tables below); this list is the
-    # backstop for the day that read fails.
+    # The base names its own tables through gaia_config (discover_tables below);
+    # this list is the backstop for the day that read fails.
     "thesaurus", "folksonomies", "relationships", "views", "roles",
     "beacons", "pantheon", "awen",
 ]

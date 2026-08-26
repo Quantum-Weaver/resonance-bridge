@@ -210,9 +210,7 @@ def build_library(rows):
     return out
 
 
-# ---------------------------------------------------------------------------
 # IGDB via Twitch
-# ---------------------------------------------------------------------------
 def twitch_token(client_id, client_secret):
     data = urllib.parse.urlencode({"client_id": client_id, "client_secret": client_secret,
                                    "grant_type": "client_credentials"}).encode()

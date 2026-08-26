@@ -25,7 +25,7 @@ HERE = Path(__file__).resolve().parent
 SHELF = Path(r"C:\_superposition\resonance-excavator\lighthouse")
 KNOWLEDGE = SHELF / "knowledge"
 # --stage <dir> points at an alternate staging folder carrying the same five
-# file names (added 2026-07-26 for the defined-atoms seed; default unchanged)
+# file names; the default is unchanged.
 if "--stage" in sys.argv:
     KNOWLEDGE = Path(sys.argv[sys.argv.index("--stage") + 1])
 BATCH = 500
@@ -172,9 +172,8 @@ def main() -> None:
         print(f"organism_molecules: {n} bonds")
         manifest["stages"]["organism_molecules"] = n
 
-        # ── 5. organism_atoms — the direct atom bonds (KP's ruling
-        # 2026-07-26: "all 3 present as atoms"); stage runs only when
-        # the staging file exists and the table stands (KP's DDL) ──
+        # ── 5. organism_atoms — the direct atom bonds; this stage runs only
+        # when the staging file exists and the table stands ──
         oa_stage = KNOWLEDGE / "6-organism_atoms.seed.jsonl"
         if oa_stage.is_file():
             have_oa = {(r["organism_id"], r["atom_id"], r["position"]) for r in

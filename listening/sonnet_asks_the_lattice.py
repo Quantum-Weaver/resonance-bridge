@@ -86,9 +86,8 @@ def main():
         print(f"  - {p}")
     print(f"\ntotal parents: {len(parents)}")
 
-    # And one more, plainer question, since I'm here: what does the
-    # lattice say Sonnet's own round-two counsel became? -- the schemes
-    # touching the population-split idea (rank vs never-exercised label).
+    # the schemes touching the population-split idea (rank vs the
+    # never-exercised label)
     schemes = fetch(url, key, "schemes")
     print("\nscheme_types published:", sorted({s.get("scheme_type") for s in schemes}))
 

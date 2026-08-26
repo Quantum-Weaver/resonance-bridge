@@ -57,4 +57,4 @@ registerSupabase(server); // the Supabase line — the dashboard itself; SELECT-
 registerFamily(server); // the Family line — the seven apps' repos, checklists, beacons, releases; device data honestly unreachable
 
 const transport = new StdioServerTransport();
-await server.connect(transport); // and now it waits, listening
+await server.connect(transport);

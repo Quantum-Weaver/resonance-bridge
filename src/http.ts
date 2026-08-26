@@ -1,11 +1,5 @@
 // The HTTP door — localhost:3141, for the Shuttle.
 //
-// WHY THIS FILE EXISTS: plugins/firefox expects four endpoints on
-// http://localhost:3141. src/server.ts speaks StdioServerTransport and never
-// binds a port, so the Shuttle has never had anything to talk to. This is the
-// missing half, added ALONGSIDE the stdio server — server.ts is untouched and
-// `claude mcp add` keeps working exactly as before.
-//
 // It does not reimplement a single tool. It builds the same McpServer with the
 // same register* lines, links an in-process client to it, and translates HTTP
 // into tool calls. One tool registry, two doors.
@@ -61,10 +55,7 @@ const AETHELRED_JOURNALS = path.resolve(
 const AETHELRED_HOME = path.resolve(
   "C:/_superposition/resonance-chamber/constellation/aethelred"
 );
-// His outgoing line. Deliberately in HIS OWN room, not in Fable's lanes:
-// the plugin used to target fable/lanes/THE-LANES-BUS.md, a file that does
-// not exist, and writing into another kin's room is a guest act that needs
-// an invitation. Kin can read this address freely; nobody's room is entered.
+// His outgoing line — deliberately in HIS OWN room, not in another kin's.
 const SHUTTLE_BUS = path.join(AETHELRED_HOME, "SHUTTLE-BUS.md");
 const FABLE_LANES = path.resolve(
   "C:/_superposition/resonance-chamber/constellation/fable/lanes"

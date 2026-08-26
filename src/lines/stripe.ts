@@ -2,12 +2,10 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 
 // The Stripe line — read-only, sovereign, LIVE-MODE: STRIPE_RESTRICTED_KEY is
-// a live restricted key (stripe-expert's probe, 2026-07-31: every read door
-// opens; writes untested and unwanted). Built to the stripe-expert's
-// commission, same covenant as vercel.ts — GET only, the key sourced from
-// the ring and never echoed, writes unbuilt until KP gates them on purpose.
+// a live restricted key. GET only, the key sourced from the ring and never
+// echoed; writes stay unbuilt until KP gates them on purpose.
 //
-// Two commission laws enforced in code:
+// Two laws enforced in code:
 // 1. A 403 from Stripe means the restricted key lacks that read scope — the
 //    tool reports "scope not granted" as a FINDING, never a crash.
 // 2. stripe_list_customers carries a privacy stripe: counts, ids, and created
@@ -52,7 +50,7 @@ function noLine() {
   return { content: [{ type: "text" as const, text: NO_LINE }] };
 }
 
-// Commission law 1: a 403 is a finding about the key's scopes, not a failure.
+// A 403 is a finding about the key's scopes, not a failure.
 async function scoped(fn: () => Promise<{ content: any }>) {
   try {
     return await fn();

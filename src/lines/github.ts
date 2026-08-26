@@ -1,16 +1,14 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 
-// The GitHub line — read-only, sovereign. Built to the github-expert's
-// commission (2026-07-31): seven windows, GET only — issues, releases-as-
-// writes, and dispatches stay unbuilt until KP gates them on purpose.
+// The GitHub line — read-only, sovereign. Seven windows, GET only — issues,
+// releases-as-writes, and dispatches stay unbuilt until KP gates them.
 //
-// The key is HOUSE_GITHUB_PAT (F8 executed at the commission's word: GitHub
-// RESERVES the name GITHUB_TOKEN inside Actions, and many SDKs auto-read it
-// from any environment — the house name means the key is consumed
-// deliberately or not at all).
+// The key is HOUSE_GITHUB_PAT: GitHub RESERVES the name GITHUB_TOKEN inside
+// Actions, and many SDKs auto-read it from any environment — the house name
+// means the key is consumed deliberately or not at all.
 //
-// Commission laws in code: webhook config URLs are redacted to scheme+host
+// Laws in code: webhook config URLs are redacted to scheme+host
 // (a webhook URL can itself be a bearer secret — Discord's form); Actions
 // secrets come back as NAMES only (GitHub's API never returns values — the
 // law holds by construction); scope-blind sub-reads degrade to a plain
@@ -52,7 +50,7 @@ async function ghGet(path: string, params: Record<string, string | undefined> = 
 }
 
 // A sub-read that the token's scopes may not cover: degrade to a sentence,
-// never an error that hides the rest (commission, window 3).
+// never an error that hides the rest.
 async function sub(fn: () => Promise<unknown>): Promise<unknown> {
   try {
     return await fn();

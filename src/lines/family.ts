@@ -6,9 +6,7 @@ import path from "node:path";
 // The Family line — read-only, sovereign. Four windows over the seven family
 // apps (echoes · compass · hearth · lantern · bubbles · sistrum · khoros):
 // their repos on this disk, their checklists, their rows in the living
-// beacons register, and the release tally the rack-tender keeps. Born
-// 2026-08-14 in the bridge rebirth — the first line to live its whole life
-// in src/lines/.
+// beacons register, and the release tally the rack-tender keeps.
 //
 // SAID PLAINLY, HERE AND ON EVERY TOOL: the apps' DEVICE DATA — what a
 // phone's own SQLite holds, the echoes and moments and takes on KP's
@@ -18,12 +16,9 @@ import path from "node:path";
 //
 // family_beacons walks the anon door of the KNOWLEDGE base (publishable
 // key gated by RLS, the same door a stranger would use — the secret key
-// never enters this file). The register's table is `beacons` — the rename
-// RAN at KP's hand 2026-08-15 (seed 096), and a compatibility shim view
-// stands under the old name `resonance_beacons` until seed 097 drops it.
-// The name is still resolved at read time, never assumed (the reckoner's
-// law), so this window stays honest while both names answer and the day
-// the shim falls.
+// never enters this file). The register's table is `beacons`; a shim view
+// still answers to the old name `resonance_beacons`, so the name is resolved
+// at read time, never assumed.
 //
 // family_releases reads THE-GROUND-TALLY.md and echoes that file's own
 // stamp — the rack-tender's logic is never duplicated here. Its file says

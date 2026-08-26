@@ -111,12 +111,11 @@ def main() -> None:
         cls = "atom" if len(words) == 1 else "molecule" if len(words) == 2 else "organism"
         by_class[cls].append(n)
 
-    # THE DERIVATION CONVENTION (ratified at KP's run, 2026-08-09): a word
-    # counts as covered when it IS an atom, OR when it equals an existing
-    # atom_word + one of that atom's modifier suffixes, OR when it appears
-    # whole in an atom's modifiers (the full-form entries for stem-changed
-    # derivations: wear:["worn"], stage:["staging"]). Coverage must read
-    # the convention or every lawful plural reads as a false gap.
+    # THE DERIVATION CONVENTION: a word counts as covered when it IS an atom,
+    # OR when it equals an existing atom_word plus one of that atom's modifier
+    # suffixes, OR when it appears whole in an atom's modifiers (the full-form
+    # entries for stem-changed derivations: wear:["worn"], stage:["staging"]).
+    # Coverage must read the convention or every lawful plural reads as a gap.
     all_atoms = {}
     off = 0
     while True:

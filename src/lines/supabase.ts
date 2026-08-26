@@ -3,8 +3,7 @@ import { z } from "zod";
 
 // The Supabase line — read-only, sovereign, and the most warded line on the
 // board: SUPABASE_ACCESS_TOKEN is account-wide, the most powerful Supabase
-// key in the house, so every guard here is CODE, not convention. Built to
-// the supabase-expert's commission (2026-07-31, carried by KP ⚛).
+// key in the house, so every guard here is CODE, not convention.
 //
 // This line is different ground from grammar.ts: that line reads the
 // KNOWLEDGE base's CONTENT through the anon door; this one reads the

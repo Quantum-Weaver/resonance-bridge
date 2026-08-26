@@ -56,8 +56,7 @@ class Base:
                 raw = resp.read().decode()
                 return json.loads(raw) if raw else None
         except urllib.error.HTTPError as e:
-            # speak the body — a swallowed reason cost two diagnoses on
-            # delivery night; never again
+            # speak the body — a swallowed reason hides the real failure
             raise RuntimeError(f"{method} {path} -> {e.code}: "
                                f"{e.read().decode()[:300]}") from None
 
@@ -79,7 +78,6 @@ def main():
     # ---- gather existing atoms (idempotence + modifier merge ground).
     # Read with the WRITE key when delivering: submitted rows are dark to
     # the anon door by Ruling 8, and an invisible row is a 409 waiting
-    # (Wave A-1's lesson — update/create double-seeded harmlessly).
     reader = write if deliver else read
     existing = {}
     off = 0
@@ -140,9 +138,8 @@ def main():
             "pascal_case": w[:1].upper() + w[1:].lower(),
         }, prefer="return=representation")[0]
         # THE 1:1:1 IS THE TRIGGER'S: on_atom_insert births the etymology
-        # and sensory shells AND links them into the atom — learned at
-        # delivery 2026-08-07/08 when explicit shell POSTs 409'd against
-        # the trigger's finished work. The atom POST is the whole seed.
+        # and sensory shells AND links them into the atom; an explicit shell
+        # POST 409s against the trigger's work. The atom POST is the whole seed.
             print(f"  seeded: {w} (shells born by trigger: "
                   f"ety {bool(atom.get('etymology_id')) or 'pending'} · "
                   f"sen {bool(atom.get('sensory_id')) or 'pending'})")

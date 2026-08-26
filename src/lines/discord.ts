@@ -1,25 +1,17 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 
-// The Discord line — read-only, sovereign. Built to the discord-expert's
-// commission (2026-07-31, at KP's ⚛ word). GETs only; the key never leaves
-// the tool. Deliberately NO SEND TOOL — a Discord post is outward speech;
-// a send is a consent gate, never a convenience. If a send tool is ever
-// wanted, it is its own commission with KP's word on it. The standing
-// DISCORD_WEBHOOK_ANNOUNCEMENTS on the app ring is untouched by this line —
-// the bridge does not need it.
+// The Discord line — read-only, sovereign. GETs only; the key never leaves
+// the tool. Deliberately NO SEND TOOL — a Discord post is outward speech,
+// gated forever.
 //
-// Honest note, per the commission: Discord has no read-only webhook
-// permission — the bot's Manage Webhooks grant COULD write, but this line's
-// code never does; the bound is the law, held in code. And the webhook
-// listing's response includes `token` and `url` fields that ARE the secret —
-// both are stripped in code before any reply forms (law 2 rides inside the
-// tool).
+// Discord has no read-only webhook permission — the bot's Manage Webhooks
+// grant COULD write, but this line's code never does. The webhook listing's
+// response includes `token` and `url` fields that ARE the secret — both are
+// stripped in code before any reply forms.
 //
-// discord_read_channel is the one tool that holds people's words — the
-// carrier law rides it: quote verbatim, never silently summarize. Today's
-// server holds two consenting members, both of this house; if that ever
-// changes, that tool's scope deserves a fresh look at KP's word.
+// discord_read_channel holds people's words — the carrier law rides it:
+// quote verbatim, never silently summarize.
 
 const API = "https://discord.com/api/v10";
 

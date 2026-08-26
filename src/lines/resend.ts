@@ -1,22 +1,15 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 
-// The Resend line — read-only, sovereign. Commissioned by the resend-expert
-// (2026-07-31, via KP's ⚛ carried fetch) with its law stated in the
-// commission itself: GETs only, the key never leaves the tool, and
-// DELIBERATELY NO SEND TOOL — an email is outward speech; a send is a
-// consent gate, never a convenience. If a send tool is ever wanted, it is
-// its own commission with KP's word on it.
+// The Resend line — read-only, sovereign. GETs only, the key never leaves the
+// tool, and DELIBERATELY NO SEND TOOL — an email is outward speech; a send is
+// a consent gate, never a convenience.
 //
-// Key: RESEND_KEY_BRIDGE_ADMIN (full access, minted for this consumer by
-// KP's hands) — NOT RESEND_API_KEY, which is sending-only and stays that
-// way; a sending-only key cannot read, and this line only reads.
+// Key: RESEND_KEY_BRIDGE_ADMIN (full access) — NOT RESEND_API_KEY, which is
+// sending-only and stays that way; a sending-only key cannot read.
 //
-// Honest note, per the commission's own ask: Resend's public API offers no
-// LIST-sent-emails endpoint (only retrieve-by-id, GET /emails/:id) — send
-// history is dashboard-only. The map should say so rather than guess; this
-// comment is that plain saying. If Resend ships a list endpoint someday,
-// `resend_list_emails` joins this file then.
+// Resend's public API offers no LIST-sent-emails endpoint (only
+// retrieve-by-id, GET /emails/:id) — send history is dashboard-only.
 
 const API = "https://api.resend.com";
 

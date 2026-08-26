@@ -41,8 +41,7 @@ BRIDGE = Path(__file__).resolve().parent
 OUT = BRIDGE.parent / "repos_snapshot.json"
 API = "https://api.github.com/user/repos"
 
-# The snapshot's shape, fixed by the 2026-08-11 hand-written original so a
-# rerun produces a real diff rather than a reformat.
+# The snapshot's shape is fixed so a rerun produces a real diff, not a reformat.
 FIELDS = ("name", "created_at", "private", "pushed_at")
 
 

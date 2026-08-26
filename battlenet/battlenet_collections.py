@@ -245,10 +245,8 @@ def pull_collections(region, namespace, locale, token, source_realm, source_name
     return source_character, counts, mounts, pets, toys, transmog_sets
 
 
-# ---------------------------------------------------------------------------
 # The enrich pass: per-unique-id Game-Data detail + media, icon downloads,
 # a shared politeness/rate limiter, and a disk cache so re-runs are cheap.
-# ---------------------------------------------------------------------------
 
 class RateLimiter:
     """Enforces a floor between the START of any two outbound requests this
@@ -407,7 +405,7 @@ def enrich_pet(rate, region, locale, token, species_id, icons_dir, sub_cache):
             result["description"] = detail.get("description")
             result["type"] = (detail.get("battle_pet_type") or {}).get("name")
             result["source"] = (detail.get("source") or {}).get("name")
-            # Recount: pet detail already embeds a full render URL under
+            # pet detail already embeds a full render URL under
             # `icon` — no separate /data/wow/media/pet/{id} call is spent.
             _resolve_icon(rate, detail.get("icon"), icons_dir, species_id, result)
     except Exception as e:
@@ -430,7 +428,7 @@ def enrich_toy(rate, region, locale, token, toy_id, icons_dir, sub_cache):
             rate, f"{host}/data/wow/toy/{toy_id}?namespace={namespace}&locale={locale}",
             token, f"toy detail {toy_id}")
         if detail:
-            # Recount: this API version has no top-level `description` on
+            # this API version has no top-level `description` on
             # toy detail — `source_description` is the real field; a literal
             # `description` is preferred if Blizzard ever adds one.
             result["description"] = detail.get("description") or detail.get("source_description")

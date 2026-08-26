@@ -113,17 +113,13 @@ def deliver_members(base, seed, provenance, deliver: bool) -> None:
             continue
         # triad created_by is uuid (auth id), unlike the lattice tables'
         # text — provenance lives in the seed file, not the row.
-        # atoms.atom_type is NOT NULL; ground truth read live 2026-07-27:
-        # every living dimension-value atom is 'root' (census: root 1613 ·
-        # modifier 263 · joiner 50 · prefix 8 · suffix 1 — no 'acronym'
-        # label yet; the eyes-on wave will need one, noted for 008).
+        # atoms.atom_type is NOT NULL; every living dimension-value atom is 'root'.
         payload = [{col: e["name"],
                     "definition": e.get("definition") or None} for e in new]
         if table == "atoms":
             for p in payload:
                 p["atom_type"] = "root"
-        # molecules.molecule_type is NOT NULL; ground truth read live
-        # 2026-07-27: the framework's own collision rows
+        # molecules.molecule_type is NOT NULL; the framework's own collision rows
         # (ArchitectureDomain, ConsciousnessDomain) are composite_type /
         # PascalCase — the new framework names are the same kind.
         if table == "molecules":
@@ -398,20 +394,17 @@ def deliver_enrichment(base, seed, provenance, deliver: bool) -> None:
     fills = seed.get("atom_fills", [])
     inserts = seed.get("inserts", [])
 
-    # ground truth read live 2026-07-27: this base's enrichment tables
-    # are LEANER than May's — no color_name on sensory; etymology keeps
-    # only root_word/root_language/historical_meaning/sanctuary_meaning.
-    # May-only fields are dropped and counted, never guessed into place.
+    # this base's enrichment tables are LEANER than May's — no color_name on
+    # sensory; etymology keeps only root_word/root_language/historical_meaning/
+    # sanctuary_meaning. May-only fields are dropped and counted, never guessed.
     LIVE_COLS = {
         "sensory_lexicon": {"emoji", "color_hex", "sound_description",
                             "sound_file_url", "sound_tone", "sound_pitch",
                             "sound_frequency", "sound_timbre", "temperature",
                             "texture", "shape", "movement", "taste", "smell"},
-        # root_language EXCLUDED for now: it is a Postgres enum
-        # ('language') whose labels cannot be learned from data (all
-        # 1,949 live shells are null) — and May's compound values
-        # ("Latin + Old English") likely outrun it. Parked pending
-        # KP's pg_enum listing; a follow-up patch delivers what fits.
+        # root_language EXCLUDED: it is a Postgres enum ('language') whose
+        # labels cannot be learned from data (all 1,949 live shells are null),
+        # and May's compound values ("Latin + Old English") likely outrun it.
         "etymology": {"root_word", "historical_meaning",
                       "sanctuary_meaning"},
     }

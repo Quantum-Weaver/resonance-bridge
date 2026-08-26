@@ -52,7 +52,6 @@ import urllib.request
 from datetime import datetime, timezone
 
 # .env lives at the bridge repo root; this room is one level down
-# (deepseek_message.py's pattern, copied exactly).
 BRIDGE_ENV = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
 
 OAUTH_URL = "https://oauth.battle.net/token"
