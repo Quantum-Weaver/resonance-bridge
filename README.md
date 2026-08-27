@@ -26,11 +26,11 @@ MCP server, `query_atom` proven live over stdio in the Inspector days later.
 Renamed 2026-07-07 to **Resonance Bridge** once "Prometheus" was needed
 elsewhere (it now names the frontend creative-arts domain) — the switchboard
 framing held, the fire carried forward under a new name. What started as one
-tool over one local database grew, sitting by sitting, into nine read-only
+tool over one local database grew, sitting by sitting, into ten read-only
 lines under `src/lines/` (Grammar, Airtable, Vercel, Resend, Stripe, GitHub,
-Discord, Supabase management, and the family line reading the Sanctuary's
-own apps) and fifty-four tools registered — every one of them a window,
-never a hand.
+Discord, Supabase management, the family line reading the Sanctuary's
+own apps, and Cloudflare) and sixty tools registered — every one of them
+a window, never a hand.
 
 📖 [Full Story Block](docs/STORY-BLOCK.md)
 
@@ -61,6 +61,7 @@ never a hand.
 | **GitHub** | Cloud API (fine-grained PAT, `HOUSE_GITHUB_PAT` — F8 rename executed) | The repos — token health with expiry (the F7 watch), repo census, Actions/secrets names, webhooks (URLs redacted), releases with download counts, traffic | ✅ **server (the GitHub line, seven windows)** — landed 2026-07-31 at the github-expert's commission |
 | **Discord** | Cloud API (bot token, "Resonance Bridge") | The server — identity, overview with counts, channels, roles, webhooks by true name (token/url stripped in code), emoji census, verbatim channel reads. NO send tool: a post is outward speech | ✅ **server (the Discord line, seven windows)** — landed 2026-07-31 at the discord-expert's commission; bot minted, invited, and guild-addressed by KP's hands the same hour — all seven windows answering live |
 | **Supabase management** | Management API (`SUPABASE_ACCESS_TOKEN` — account-wide; the most warded line on the board) | The dashboard itself — project shelf with pause-watch, auth config through an allowlist (smtp_pass → set:true/false), SELECT-only live SQL, the false-empty detector, advisors, function and bucket censuses | ✅ **server (the Supabase line, seven windows)** — landed 2026-07-31 at the supabase-expert's commission; zero new keys |
+| **Cloudflare** | Cloud API (account-owned token, `CLOUDFLARE_API_TOKEN`) | The DNS ground for audhdities.com — zones, DNS records, TLS/HTTPS settings, email routing, rulesets/page rules | ✅ **server (the Cloudflare line, read-only window)** — landed 2026-08-27 |
 | **Superposition** | Supabase (PostgreSQL) | Original Sanctuary — 117 tables, self-knowing layer | 🐍 Python workbench (.env keys), not yet a server line |
 
 ---
@@ -69,7 +70,7 @@ never a hand.
 
 *Truth pass 2026-07-29 (the delivery-system sitting), recounted
 2026-08-21 against the code (`grep` over `src/lines/*.ts`): the server
-registers FIFTY-FOUR tools, all live, smoke-proven over real MCP stdio
+registers SIXTY tools, all live, smoke-proven over real MCP stdio
 (`server_smoke.py`). The Grammar line serves the living Supabase
 base through the anon door — the same door a stranger would use.*
 
@@ -124,6 +125,12 @@ base through the anon door — the same door a stranger would use.*
 | `family_checklist` | One family app's `docs/CHECKLIST.md`, whole and verbatim | ✅ live |
 | `family_beacons` | The family's rows in the living beacons register (KNOWLEDGE anon door) — table name resolved at read time | ✅ live |
 | `family_releases` | The family's release shelves as rack-tender last measured them, read whole from `THE-GROUND-TALLY.md` | ✅ live |
+| `cloudflare_verify_token` | Token status and expiry — account endpoint first (this token is account-owned), user endpoint as fallback; the token itself never returned | ✅ live |
+| `cloudflare_list_zones` | Every zone the token can see — status, plan, nameservers, original registrar | ✅ live |
+| `cloudflare_list_dns` | One zone's DNS records — type, name, content, proxied, ttl, priority, comment | ✅ live |
+| `cloudflare_zone_settings` | One zone's TLS/HTTPS posture — ssl, always_use_https, min_tls_version, tls_1_3, development_mode | ✅ live |
+| `cloudflare_email_routing` | One zone's email routing — enabled, status | ✅ live |
+| `cloudflare_list_rulesets` | One zone's rulesets + page rules if the token can read them — degrades honestly if not | ✅ live |
 
 ### Standalone scripts (beside the server, same `.env`, all read-only)
 
