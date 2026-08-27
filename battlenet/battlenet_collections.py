@@ -11,7 +11,7 @@ would be ideal").
 
 WHAT THIS IS:
   - Pulls, through ONE visible character (`--source realm/name`, default
-    `azshara/scwaunchy`), the account-wide collections exposed on that
+    `azshara/aethelred`), the account-wide collections exposed on that
     character's profile: `/collections/mounts`, `/collections/pets`,
     `/collections/toys`, `/achievements` (summary only: total_quantity,
     total_points), `/collections/transmogs` (appearance_sets).
@@ -79,7 +79,7 @@ CDN host (only to *.api.blizzard.com).
 Usage:
     python battlenet_collections.py                       # pull + print, no files
     python battlenet_collections.py --enrich               # + detail/media pass, no files
-    python battlenet_collections.py --source azshara/scwaunchy --land
+    python battlenet_collections.py --source azshara/aethelred --land
     python battlenet_collections.py --land --out-dir X --census-file Y.csv
 
 Errors are read plainly (404 says what wasn't found; 401/403 says the key
@@ -623,9 +623,9 @@ def main():
                      "icons; --land also lands the character census + all "
                      "three static JSON files for resonance-weaver's "
                      "/blizzard window.")
-    p.add_argument("--source", default="azshara/scwaunchy",
+    p.add_argument("--source", default="azshara/aethelred",
                     help="realm/name of the visible character to pull collections "
-                         "through (default: azshara/scwaunchy)")
+                         "through (default: azshara/aethelred)")
     p.add_argument("--enrich", action="store_true",
                     help="run the detail+media enrichment pass and download icons "
                          "locally (implied automatically by --land)")

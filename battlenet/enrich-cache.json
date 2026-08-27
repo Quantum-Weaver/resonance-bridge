@@ -1277,6 +1277,30 @@
       "source": "Trading Post",
       "icon": "/blizzard/icons/mounts/1841.jpg",
       "icon_bytes": 17441
+    },
+    "2568": {
+      "description": "Radiating warmth and grace, it soars on wings of light.",
+      "source": "Promotion",
+      "icon": "/blizzard/icons/mounts/2568.jpg",
+      "icon_bytes": 28856
+    },
+    "2598": {
+      "description": "Shifting between radiant light and consuming void, it surges through the skies in a dance of balance.",
+      "source": "Promotion",
+      "icon": "/blizzard/icons/mounts/2598.jpg",
+      "icon_bytes": 28856
+    },
+    "2567": {
+      "description": "Cutting through the skies, it flies with silent wings and eyes that glow with the echo of forgotten stars.",
+      "source": "Promotion",
+      "icon": "/blizzard/icons/mounts/2567.jpg",
+      "icon_bytes": 35859
+    },
+    "1947": {
+      "description": "This sweet deathcycle lets you go on your very own burning rubber crusade!",
+      "source": "Promotion",
+      "icon": "/blizzard/icons/mounts/1947.jpg",
+      "icon_bytes": 24591
     }
   },
   "pet": {
@@ -3243,6 +3267,12 @@
       "source": "Other",
       "icon": "/blizzard/icons/toys/1533.jpg",
       "icon_bytes": 2921
+    },
+    "1575": {
+      "description": "Quest: Uniting the Isles\nZone: Dalaran\n\nQuest: Uniting Kul Tiras\nZone: Tiragarde Sound\n\nQuest: Uniting Zandalar\nZone: Zuldazar",
+      "source": "Quest",
+      "icon": "/blizzard/icons/toys/1575.jpg",
+      "icon_bytes": 2042
     }
   }
 }
