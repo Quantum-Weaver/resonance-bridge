@@ -198,6 +198,7 @@ deliberate.*
 11. **The media lane** ✅ **BUILT + LANDED LIVE 2026-08-22** (the Tiento lamp 🎻,
     at KP's ⚛ word for resonance-weaver's Movies and Games rooms — "we are
     going to bring in the games and movies details we have"): `media/_common.py`
+    · *(retired 2026-08-28 — the landers and their keys live in the Weaver app on KP's device now, THE-CARRY-GOES-LIVE M2–M4; git holds them)*
     · `media/screen_lander.py` · `media/games_lander.py`, on the battlenet lane's
     exact shape (relative paths, keys by name off the ring and never printed, a
     shared politeness limiter, true-bytes image ledgers, JSON caches beside the

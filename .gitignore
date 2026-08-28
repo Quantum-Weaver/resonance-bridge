@@ -63,3 +63,13 @@ release/
 # src-tauri/.gitignore covers /target and /gen/schemas, and tauri android init
 # writes gitignores inside gen/android for build/, .gradle/ and keystore.properties.
 # gen/android is hand-edited ground; ignoring it hid two cross-landings from git.
+
+# ─── a downloaded credential file never rides (2026-08-28) ───────────────
+# Google's client_secret JSON, service-account keys, token stores: their
+# secret fields go on the keyring (.env) by hand; the file is deleted.
+*client_secret*.json
+*_secret*.json
+*service-account*.json
+*service_account*.json
+token.json
+*.credentials.json

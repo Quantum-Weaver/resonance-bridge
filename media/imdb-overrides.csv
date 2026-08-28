@@ -1,2 +1,0 @@
-library_title,tconst,note
-# hand-kept escape hatch for screen_lander.py: one row per title whose IMDb id KP's eye rules; the lander's `override` tier wins over every other tier. Lines starting with # are ignored.
