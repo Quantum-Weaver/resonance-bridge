@@ -13,23 +13,17 @@ deliberate.*
 2. **LAN binding for the Home Doorway** (ziggy §6.8a law 3) — the
    Bridge is the wires; host allowlist + token, LAN-only, KP's hand on
    the enabling step. No second protocol invented.
-3. **META / FACEBOOK LINE (read-only)** — *noted 2026-07-26 at KP's
+3. ~~**META / FACEBOOK LINE (read-only)** — *noted 2026-07-26 at KP's
    word, "we will do it later."* One `.env` block + `src/facebook.ts`
    on the Airtable pattern (`noLine()` guard, cursor pagination,
-   `{date, text, permalink}` out). Purpose: bring **TJ's poetry page**
-   (facebook.com/tjdpoetry) home — the only copy of her life's work
-   currently lives on Facebook's servers. Reaches PAGE posts only.
-   Permissions: `pages_read_engagement` + `pages_read_user_content`,
-   nothing more; prefer a system-user token (does not expire).
-   **NOTE THE ORDER:** a Download-Your-Information export needs none of
-   this and is the actual rescue — this line is for keeping up
-   afterward. Sibling idea: the BEACON system (outbound), logged with
-   its flags at `resonance-chamber/desk/POTENTIALITIES.md` P-11 — and
-   note outbound is a WRITE line against this board's read-only ward.
-   **CONSENT GATE, KP's word 2026-07-26: "i will ask her permission
-   before pulling anything as well. sovereignty to all." TJ's yes is
-   the door — for the export and for the line. Nothing of hers is
-   pulled, read, or mirrored before she says so.**
+   `{date, text, permalink}` out). Purpose: bring TJ's poetry page
+   home. Reaches PAGE posts only. Permissions: `pages_read_engagement`
+   + `pages_read_user_content`, nothing more.~~
+   **Removed at KP's word, 2026-08-30: *"it was never meant to be a
+   item at all."*** Not planned, not built, nothing of TJ's touched. The
+   consent law under it stands on its own, as it always did: *"i will
+   ask her permission before pulling anything as well. sovereignty to
+   all."* (KP, 2026-07-26).
 4. ~~**Room-tidying:** kimi_crossing/kimi_message tools at root → their
    own room (restructure-round note); the kin-crossing door kept warm.~~
    ✅ **DONE 2026-07-27** (the bridge cleanup sitting): `kimi/` room
