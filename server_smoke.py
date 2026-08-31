@@ -95,10 +95,6 @@ checks = [
     ("github_token_status", {}),
     ("discord_whoami", {}),
     ("supabase_list_projects", {}),
-    ("family_status", {}),
-    ("family_checklist", {"app": "echoes"}),
-    ("family_beacons", {}),
-    ("family_releases", {}),
 ]
 for tool, args in checks:
     out = call(tool, args)

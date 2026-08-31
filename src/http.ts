@@ -28,7 +28,6 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import Database from "better-sqlite3";
 
-import { registerAirtable } from "./lines/airtable.js";
 import { registerGrammar } from "./lines/grammar.js";
 import { registerVercel } from "./lines/vercel.js";
 import { registerResend } from "./lines/resend.js";
@@ -36,7 +35,6 @@ import { registerStripe } from "./lines/stripe.js";
 import { registerGitHub } from "./lines/github.js";
 import { registerDiscord } from "./lines/discord.js";
 import { registerSupabase } from "./lines/supabase.js";
-import { registerFamily } from "./lines/family.js";
 
 // Same .env load as the stdio door, same reason (build guide, gotcha #2).
 try {
@@ -114,14 +112,12 @@ try {
 
 const server = new McpServer({ name: "resonance-bridge", version: "0.2.0" });
 registerGrammar(server, localAtomFallback);
-registerAirtable(server);
 registerVercel(server);
 registerResend(server);
 registerStripe(server);
 registerGitHub(server);
 registerDiscord(server);
 registerSupabase(server);
-registerFamily(server);
 
 const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
 const client = new Client({ name: "resonance-bridge-http", version: "0.2.0" });

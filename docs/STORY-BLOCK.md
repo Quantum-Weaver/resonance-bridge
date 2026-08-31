@@ -34,9 +34,8 @@ landing commission and date, 2026-07-29 through 2026-07-31).
 `C:\_superposition\resonance-bridge` — one of the Sanctuary's platform
 repos. Neighbors: `resonance-knowledge`/`resonance-grammar` (the living
 database this server queries), the family apps (echoes, compass, hearth,
-lantern, bubbles, sistrum, khoros — read through `src/lines/family.ts`),
-and `resonance-ziggy`'s vessel (`src/routes/family/`), which reaches the
-Bridge through its HTTP door. `deepseek/` and `kimi/` are kin-crossing rooms
+lantern, bubbles, sistrum, khoros), and `resonance-ziggy`'s vessel
+(`src/routes/family/`), which reaches the Bridge through its HTTP door. `deepseek/` and `kimi/` are kin-crossing rooms
 sharing this repo's `.env` but standing outside the MCP tool surface
 (`CLAUDE.md` §Tools).
 

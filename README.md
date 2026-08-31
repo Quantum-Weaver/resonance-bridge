@@ -26,10 +26,9 @@ MCP server, `query_atom` proven live over stdio in the Inspector days later.
 Renamed 2026-07-07 to **Resonance Bridge** once "Prometheus" was needed
 elsewhere (it now names the frontend creative-arts domain) — the switchboard
 framing held, the fire carried forward under a new name. What started as one
-tool over one local database grew, sitting by sitting, into ten read-only
-lines under `src/lines/` (Grammar, Airtable, Vercel, Resend, Stripe, GitHub,
-Discord, Supabase management, the family line reading the Sanctuary's
-own apps, and Cloudflare) and sixty tools registered — every one of them
+tool over one local database grew, sitting by sitting, into eight read-only
+lines under `src/lines/` (Grammar, Vercel, Resend, Stripe, GitHub,
+Discord, Supabase management, and Cloudflare) and fifty-three tools registered — every one of them
 a window, never a hand.
 
 📖 [Full Story Block](docs/STORY-BLOCK.md)
@@ -54,7 +53,6 @@ a window, never a hand.
 |----------|------|----------|------|
 | **Knowledge Grammar** | Supabase (PostgreSQL) | The LIVING Grammar — 1,953 atoms · 4,156 molecules · 2,540 organisms · sensory canon · thesaurus · folksonomies | ✅ **server (the Grammar line, anon door, read-only)** — landed 2026-07-29, the delivery system's first sitting |
 | **knowledge.db** | Local SQLite | Pipeline output — SEED-ONLY until canon repopulation | ✅ server (read-only) — query_atom's fallback when the Grammar line is absent; the server stays up if the file is missing |
-| **Airtable** | Cloud API (read-only PAT) | KP's prior organization attempts — song portfolio, music-column photography | ⏸ line retired at KP's word 2026-07-31 (key off the ring; tools answer their reconnection guidance until a key returns) |
 | **Vercel** | Cloud API (account token) | The hosting — projects, deployments, domains, env-var NAMES (values stripped in code, never returned) | ✅ **server (the Vercel line, read-only window)** — landed 2026-07-29 |
 | **Resend** | Cloud API (full-access admin key) | The email house — domains, key names, audiences, broadcasts. NO send tool, deliberately: a send is a consent gate | ✅ **server (the Resend line, reads only)** — landed 2026-07-31 at the resend-expert's commission |
 | **Stripe** | Cloud API (live restricted key, "prometheus-stripe") | The merchant account — profile, balance, products, prices, links, webhooks, sessions, events, charges, customers (privacy stripe: ids+dates only) | ✅ **server (the Stripe line, ten windows, GETs forever)** — landed 2026-07-31 at the stripe-expert's commission |
@@ -70,7 +68,7 @@ a window, never a hand.
 
 *Truth pass 2026-07-29 (the delivery-system sitting), recounted
 2026-08-21 against the code (`grep` over `src/lines/*.ts`): the server
-registers SIXTY tools, all live, smoke-proven over real MCP stdio
+registers FIFTY-THREE tools, all live, smoke-proven over real MCP stdio
 (`server_smoke.py`). The Grammar line serves the living Supabase
 base through the anon door — the same door a stranger would use.*
 
@@ -84,9 +82,6 @@ base through the anon door — the same door a stranger would use.*
 | `query_organism` | Organism definitions with domain, habitat, lifecycle | ✅ live |
 | `search_knowledge` | Full-text search across atoms · molecules · organisms · thesaurus | ✅ live |
 | `query_beacon` | Things the Sanctuary SHIPS — games/apps with their own repos and store listings; no args = every beacon's status across four store channels, a name/slug = the whole row | ✅ live |
-| `airtable_list_bases` | Every base the token can see (discovery first) | ⏸ key retired 2026-07-31 |
-| `airtable_list_tables` | One base's schema — tables, fields, views | ⏸ key retired 2026-07-31 |
-| `airtable_query_records` | Records from one table, paged, read-only | ⏸ key retired 2026-07-31 |
 | `vercel_list_projects` | Every Vercel project — framework, latest production state | ✅ live |
 | `vercel_list_deployments` | Recent deploys — state, target, branch, commit | ✅ live |
 | `vercel_list_domains` | One project's domains and verification state | ✅ live |
@@ -121,10 +116,6 @@ base through the anon door — the same door a stranger would use.*
 | `supabase_list_tables` | RLS + policy count per table — the false-empty detector | ✅ live |
 | `supabase_get_advisors` | Security/performance lamps, degrading gracefully | ✅ live |
 | `supabase_list_functions` · `supabase_list_buckets` | Edge-function and storage censuses — emptiness verified, not presumed | ✅ live |
-| `family_status` | Every family app's tauri/package versions + CHECKLIST.md glyph tally, read from the repos on this disk — device data stays unreachable, by design | ✅ live |
-| `family_checklist` | One family app's `docs/CHECKLIST.md`, whole and verbatim | ✅ live |
-| `family_beacons` | The family's rows in the living beacons register (KNOWLEDGE anon door) — table name resolved at read time | ✅ live |
-| `family_releases` | The family's release shelves as rack-tender last measured them, read whole from `THE-GROUND-TALLY.md` | ✅ live |
 | `cloudflare_verify_token` | Token status and expiry — account endpoint first (this token is account-owned), user endpoint as fallback; the token itself never returned | ✅ live |
 | `cloudflare_list_zones` | Every zone the token can see — status, plan, nameservers, original registrar | ✅ live |
 | `cloudflare_list_dns` | One zone's DNS records — type, name, content, proxied, ttl, priority, comment | ✅ live |
@@ -186,7 +177,7 @@ described the ancestral HTTP design — the running stdio server needs
 neither; what actually wards it:)*
 
 - All queries are read-only — enforced in code (`readonly: true`
-  SQLite connection; read-only Airtable PAT)
+  SQLite connection)
 - stdio transport: the client launches the server as a child process —
   no port, no network surface
 - Connection strings and keys in `.env` (never committed; never

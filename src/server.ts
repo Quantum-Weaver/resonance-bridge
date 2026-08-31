@@ -2,7 +2,6 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import Database from "better-sqlite3";
 import { fileURLToPath } from "node:url";
-import { registerAirtable } from "./lines/airtable.js";
 import { registerGrammar } from "./lines/grammar.js";
 import { registerVercel } from "./lines/vercel.js";
 import { registerResend } from "./lines/resend.js";
@@ -10,7 +9,6 @@ import { registerStripe } from "./lines/stripe.js";
 import { registerGitHub } from "./lines/github.js";
 import { registerDiscord } from "./lines/discord.js";
 import { registerSupabase } from "./lines/supabase.js";
-import { registerFamily } from "./lines/family.js";
 import { registerCloudflare } from "./lines/cloudflare.js";
 
 // Load the repo-root .env by absolute path — the client launches us from ITS
@@ -48,14 +46,12 @@ try {
 const server = new McpServer({ name: "resonance-bridge", version: "0.2.0" });
 
 registerGrammar(server, localAtomFallback); // the Grammar line — the living knowledge base
-registerAirtable(server); // the Airtable line — KP's prior organizations of the chaos
 registerVercel(server); // the Vercel line — a read-only window on the hosting
 registerResend(server); // the Resend line — reads only; a send is a consent gate, never a tool
 registerStripe(server); // the Stripe line — ten windows on the merchant account, live-mode, GETs forever
 registerGitHub(server); // the GitHub line — seven windows; HOUSE_GITHUB_PAT, deliberate or not at all
 registerDiscord(server); // the Discord line — reads only; a post is outward speech, gated forever
 registerSupabase(server); // the Supabase line — the dashboard itself; SELECT-only, allowlist-warded
-registerFamily(server); // the Family line — the seven apps' repos, checklists, beacons, releases; device data honestly unreachable
 registerCloudflare(server); // the Cloudflare line — a read-only window on the DNS ground, GETs forever
 
 const transport = new StdioServerTransport();
