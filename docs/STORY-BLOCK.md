@@ -12,8 +12,17 @@ Sanctuary — one server, multiple databases and cloud APIs, all read-only
 (`README.md` §WHAT IT IS). It gives Claude, the Council, and Sanctuary apps
 a single interface over stdio to query the Resonance Grammar and read the
 house's own platform accounts (Vercel, Resend, Stripe, GitHub, Discord,
-Supabase management). Registers 54 tools across nine lines under
-`src/lines/` (verified by `grep` count over the source, 2026-08-21).
+Supabase management, Cloudflare). Registers 53 tools across eight lines
+under `src/lines/` — grammar, vercel, resend, stripe, github, discord,
+supabase, cloudflare (`src/server.ts:5-12`; `npm run smoke` 2026-09-01:
+"tools registered (53)").
+
+*Trued 2026-09-01. The 2026-08-21 reading said 54 tools across nine lines;
+since then the Cloudflare line landed 2026-08-27 (`git log 87136e4`, six
+windows — sixty across ten) and the Airtable and family lines were cut
+2026-08-31 at KP's ⚛ word (`git log 2e95dd3`;
+`.journals/realm/2026-08-31-airtable-family-cut-sonnet.md`) — fifty-three
+across eight.*
 
 ## HOW
 *(Process, collaborators, tools)*
@@ -35,9 +44,10 @@ landing commission and date, 2026-07-29 through 2026-07-31).
 repos. Neighbors: `resonance-knowledge`/`resonance-grammar` (the living
 database this server queries), the family apps (echoes, compass, hearth,
 lantern, bubbles, sistrum, khoros), and `resonance-ziggy`'s vessel
-(`src/routes/family/`), which reaches the Bridge through its HTTP door. `deepseek/` and `kimi/` are kin-crossing rooms
-sharing this repo's `.env` but standing outside the MCP tool surface
-(`CLAUDE.md` §Tools).
+(`src/routes/family/`), which reaches the Bridge through its HTTP door.
+`deepseek/` and `kimi/` were kin-crossing rooms sharing this repo's `.env`
+outside the MCP tool surface until 2026-08-27, when they retired — "the
+lines walk in through the terminal" (`git log 2d2891a`; trued 2026-09-01).
 
 ## WHEN
 *(Dates: origin, recognition, creation)*
@@ -61,9 +71,22 @@ sharing this repo's `.env` but standing outside the MCP tool surface
   (`FEATURE-BOARD.md` items 5–6, git commits `793ed69`/`7aedb30`).
 - **2026-08-15** — the beacons re-point (`resonance_beacons` → `beacons`,
   seed 096); 54 tools registered, proven live (`FEATURE-BOARD.md` item 8,
-  git commit `5715345` "renaming ceremony completed").
+  git commit `5715345` "renaming ceremony completed") — the count as it
+  stood that day; see 2026-08-27 and 2026-08-31 below.
 - **2026-08-15/16** — the Battle.net lines built and landed
   (`FEATURE-BOARD.md` items 9–10).
+- **2026-08-27** — the Cloudflare line: six read-only windows on the zone
+  (`git log 87136e4`) — ten lines, sixty tools (`README.md` as it stood
+  before `2e95dd3`). The deepseek and kimi rooms retire the same day
+  (`git log 2d2891a`); the Blizzard lander retires (`git log bf9b245`).
+- **2026-08-28** — the media landers retire; "a credential file never
+  rides" (`git log aed9ad8`).
+- **2026-08-31** — the Airtable and family lines cut at KP's ⚛ word
+  (`git log 2e95dd3`; the realm journal of that day): 53 tools across
+  eight lines, smoke-proven.
+- **2026-09-01** — `tsconfig.json` and `npm run check` (`tsc --noEmit`)
+  planted beside the smoke at KP's word (THE BUILD CENSUS plan, item
+  1.10): 0 errors. This block trued to 53 / eight.
 
 ## WHY
 *(Need, purpose, problem solved)*

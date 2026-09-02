@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "tsx src/server.ts",
+    "check": "tsc --noEmit",
     "smoke": "python server_smoke.py",
     "register": "claude mcp add resonance-bridge -- cmd /c npx tsx C:/_superposition/resonance-bridge/src/server.ts"
   },
