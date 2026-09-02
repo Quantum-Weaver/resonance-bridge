@@ -35,6 +35,7 @@ import { registerStripe } from "./lines/stripe.js";
 import { registerGitHub } from "./lines/github.js";
 import { registerDiscord } from "./lines/discord.js";
 import { registerSupabase } from "./lines/supabase.js";
+import { registerCloudflare } from "./lines/cloudflare.js";
 
 // Same .env load as the stdio door, same reason (build guide, gotcha #2).
 try {
@@ -87,6 +88,11 @@ function readAllowed(target: string): boolean {
 }
 
 // ── The same server, the same lines ────────────────────────────────────────
+// Literally the same: every register* call below stands in src/server.ts:48-55
+// in the same order. A line added to one door and not the other makes the
+// sentence above a lie and the Shuttle blind to a whole provider — which is
+// exactly what happened to the Cloudflare line between 2026-08-27 and today.
+// Add a line HERE the same sitting you add it there.
 let localAtomFallback: ((term: string) => { row: unknown; count: number }) | undefined;
 try {
   const db = new Database(
@@ -118,6 +124,7 @@ registerStripe(server);
 registerGitHub(server);
 registerDiscord(server);
 registerSupabase(server);
+registerCloudflare(server); // the Cloudflare line — a read-only window on the DNS ground, GETs forever
 
 const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
 const client = new Client({ name: "resonance-bridge-http", version: "0.2.0" });

@@ -28,7 +28,7 @@ elsewhere (it now names the frontend creative-arts domain) — the switchboard
 framing held, the fire carried forward under a new name. What started as one
 tool over one local database grew, sitting by sitting, into eight read-only
 lines under `src/lines/` (Grammar, Vercel, Resend, Stripe, GitHub,
-Discord, Supabase management, and Cloudflare) and fifty-three tools registered — every one of them
+Discord, Supabase management, and Cloudflare) and fifty-four tools registered — every one of them
 a window, never a hand.
 
 📖 [Full Story Block](docs/STORY-BLOCK.md)
@@ -67,10 +67,11 @@ a window, never a hand.
 ## TOOLS
 
 *Truth pass 2026-07-29 (the delivery-system sitting), recounted
-2026-08-21 against the code (`grep` over `src/lines/*.ts`): the server
-registers FIFTY-THREE tools, all live, smoke-proven over real MCP stdio
-(`server_smoke.py`). The Grammar line serves the living Supabase
-base through the anon door — the same door a stranger would use.*
+2026-09-02 against the code and against a live `tools/list`: the server
+registers FIFTY-FOUR tools, all live, smoke-proven over real MCP stdio
+(`server_smoke.py`) and over the HTTP door's `/health`. The Grammar line
+serves the living Supabase base through the anon door — the same door a
+stranger would use.*
 
 | Tool | What It Queries | Standing |
 |------|----------------|----------|
