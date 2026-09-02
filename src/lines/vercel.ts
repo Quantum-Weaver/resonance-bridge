@@ -103,6 +103,35 @@ export function registerVercel(server: McpServer) {
   );
 
   server.tool(
+    "vercel_deployment_events",
+    "The build log of one deployment — its readyState, Vercel's own errorMessage/errorCode, and the last N log lines (build output). GET only; a window, never a hand.",
+    {
+      id: z.string().describe("deployment uid from vercel_list_deployments (dpl_…)"),
+      tail: z.number().min(1).max(400).optional().describe("how many trailing log lines, default 80"),
+    },
+    async ({ id, tail }) => {
+      if (!process.env.VERCEL_TOKEN) return noLine();
+      const dep = (await vercelGet(`/v13/deployments/${id}`)) as Record<string, any>;
+      const events = (await vercelGet(`/v3/deployments/${id}/events`, {
+        limit: "2000",
+        builds: "1",
+      })) as Array<Record<string, any>>;
+      const lines = (Array.isArray(events) ? events : [])
+        .map((e) => e?.payload?.text ?? e?.text)
+        .filter((t): t is string => typeof t === "string" && t.length > 0);
+      return asText({
+        readyState: dep.readyState,
+        errorCode: dep.errorCode,
+        errorMessage: dep.errorMessage,
+        branch: dep.meta?.githubCommitRef,
+        commit: dep.meta?.githubCommitMessage?.slice(0, 80),
+        logLines: lines.length,
+        tail: lines.slice(-(tail ?? 80)),
+      });
+    }
+  );
+
+  server.tool(
     "vercel_list_domains",
     "List the domains Vercel knows for one project — name, verification state, redirect target if any. The DNS ground truth from the hosting's side.",
     { project: z.string().describe("project id or name from vercel_list_projects") },
