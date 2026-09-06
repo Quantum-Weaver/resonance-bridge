@@ -3,7 +3,7 @@
   "project_name": "resonance-bridge",
   "project_short_name": "bridge",
   "project_repo": "resonance-bridge",
-  "project_path": "C:\\_superposition\\resonance-bridge",
+  "project_path": "../resonance-bridge",
   "self": "bridge/pbp.ai.json",
   "parent": null,
   "description": "The switchboard",
@@ -165,7 +165,7 @@
     "gitignored_note": "Read from the repo's own .gitignore files \u2014 the top-level ones one by one, the deeper ones in a single batched `git check-ignore`. Named and counted, never described, never opened.",
     "reparse_points_not_followed": [],
     "reparse_note": "Junctions and symlinks are named, never entered. Following one would pull an external ground into this repo's count, or loop on a self-junction.",
-    "own_output": "C:\\_superposition\\resonance-bridge\\docs\\blueprints"
+    "own_output": "docs/blueprints"
   },
   "generated": "2026-08-21T15:19:20.545929 | in sovereign time",
   "maintaining_agent": "ProjectAgent"

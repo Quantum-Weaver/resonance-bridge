@@ -14,7 +14,8 @@ import urllib.request
 from collections import Counter
 from pathlib import Path
 
-BRIDGE = Path(r"C:\_superposition\resonance-bridge")
+HOUSE = Path(__file__).resolve().parents[2]
+BRIDGE = HOUSE / "resonance-bridge"
 
 
 def load_env():

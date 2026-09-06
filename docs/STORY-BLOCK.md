@@ -40,7 +40,7 @@ landing commission and date, 2026-07-29 through 2026-07-31).
 ## WHERE
 *(Taxonomy location, neighbors, relationships)*
 
-`C:\_superposition\resonance-bridge` — one of the Sanctuary's platform
+`../resonance-bridge` — one of the Sanctuary's platform
 repos. Neighbors: `resonance-knowledge`/`resonance-grammar` (the living
 database this server queries), the family apps (echoes, compass, hearth,
 lantern, bubbles, sistrum, khoros), and `resonance-ziggy`'s vessel

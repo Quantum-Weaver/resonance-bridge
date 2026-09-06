@@ -22,7 +22,8 @@ from datetime import date
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SHELF = Path(r"C:\_superposition\resonance-excavator\lighthouse")
+HOUSE = Path(__file__).resolve().parents[2]
+SHELF = HOUSE / "resonance-excavator" / "lighthouse"
 KNOWLEDGE = SHELF / "knowledge"
 # --stage <dir> points at an alternate staging folder carrying the same five
 # file names; the default is unchanged.

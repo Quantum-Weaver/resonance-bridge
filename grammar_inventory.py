@@ -23,6 +23,7 @@ from datetime import date
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+HOUSE = Path(__file__).resolve().parents[1]
 
 # The five lattice tables' anon reads show ONLY status='published' rows by
 # design, so zero here means "nothing published yet", never "dark".
@@ -131,7 +132,7 @@ def main() -> None:
         export["tables"][t] = rows
         print(f"{t:26s} {len(rows):>7d}")
 
-    out_dir = Path(r"C:\_superposition\resonance-grammar\exports")
+    out_dir = HOUSE / "resonance-grammar" / "exports"
     out_dir.mkdir(exist_ok=True)
     out = out_dir / f"grammar-export-{date.today().isoformat()}.json"
     out.write_text(json.dumps(export, ensure_ascii=False, indent=1),

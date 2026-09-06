@@ -19,8 +19,9 @@ import urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-GAIA = Path(r"C:\_superposition\resonance-ziggy\modules\cosmic\gaia")
-OUT = Path(r"C:\_superposition\resonance-grammar\seeds\lattice\wave-5-paths.json")
+HOUSE = Path(__file__).resolve().parents[2]
+GAIA = HOUSE / "resonance-ziggy" / "modules" / "cosmic" / "gaia"
+OUT = HOUSE / "resonance-grammar" / "seeds" / "lattice" / "wave-5-paths.json"
 
 LADDER = ["domain", "kingdom", "phylum", "class", "order",
           "family", "genus", "species"]

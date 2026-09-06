@@ -43,9 +43,10 @@ from datetime import date
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+HOUSE = Path(__file__).resolve().parents[2]
 BRIDGE = HERE.parent
-EXPORTS = Path(r"C:\_superposition\resonance-grammar\exports")
-DEFAULT_OUT = Path(r"C:\_superposition\AudHDities\docs\sql")
+EXPORTS = HOUSE / "resonance-grammar" / "exports"
+DEFAULT_OUT = HOUSE / "AudHDities" / "docs" / "sql"
 
 MIN_LEN, MAX_LEN = 4, 9
 MASK = "\u2014\u2014\u2014"

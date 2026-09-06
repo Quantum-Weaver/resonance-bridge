@@ -26,9 +26,10 @@ import urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-EXPORTS = Path(r"C:\_superposition\resonance-excavator\sources\supabase-exports\superposition")
-WAVE1 = Path(r"C:\_superposition\resonance-grammar\seeds\lattice\wave-1-schemes.json")
-OUT = Path(r"C:\_superposition\resonance-grammar\seeds\lattice\wave-2-members.json")
+HOUSE = Path(__file__).resolve().parents[2]
+EXPORTS = HOUSE / "resonance-excavator" / "sources" / "supabase-exports" / "superposition"
+WAVE1 = HOUSE / "resonance-grammar" / "seeds" / "lattice" / "wave-1-schemes.json"
+OUT = HOUSE / "resonance-grammar" / "seeds" / "lattice" / "wave-2-members.json"
 
 RANK_FILES = ["domain", "kingdom", "phylum", "class", "order",
               "family", "genus", "species"]

@@ -3,8 +3,10 @@ import json
 import urllib.request
 from pathlib import Path
 
+HOUSE = Path(__file__).resolve().parents[2]
+
 env = {}
-for line in (Path(r"C:\_superposition\resonance-bridge") / ".env").read_text(
+for line in (HOUSE / "resonance-bridge" / ".env").read_text(
         encoding="utf-8").splitlines():
     line = line.strip()
     if line and not line.startswith("#") and "=" in line:
@@ -43,6 +45,6 @@ for w in seeded:
 if line:
     print("  " + " · ".join(line))
 
-out = Path(r"C:\_superposition\resonance-excavator\lighthouse\ATOMS-LIVE-atom_word.txt")
+out = HOUSE / "resonance-excavator" / "lighthouse" / "ATOMS-LIVE-atom_word.txt"
 out.write_text("\n".join(seeded), encoding="utf-8")
 print(f"\nfull list also written for scrolling: {out}")

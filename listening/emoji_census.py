@@ -11,7 +11,8 @@ import sys
 import urllib.request
 from pathlib import Path
 
-BRIDGE = Path(r"C:\_superposition\resonance-bridge")
+HOUSE = Path(__file__).resolve().parents[2]
+BRIDGE = HOUSE / "resonance-bridge"
 
 env = {}
 for line in (BRIDGE / ".env").read_text(encoding="utf-8").splitlines():

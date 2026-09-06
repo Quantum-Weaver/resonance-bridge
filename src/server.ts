@@ -2,6 +2,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import Database from "better-sqlite3";
 import { fileURLToPath } from "node:url";
+import path from "node:path";
 import { registerGrammar } from "./lines/grammar.js";
 import { registerVercel } from "./lines/vercel.js";
 import { registerResend } from "./lines/resend.js";
@@ -17,6 +18,8 @@ try {
   process.loadEnvFile(fileURLToPath(new URL("../.env", import.meta.url)));
 } catch {}
 
+const HOUSE = fileURLToPath(new URL("../../", import.meta.url));
+
 // The local P1 line: knowledge.db, read-only. SEED-ONLY until the canon
 // repopulation lands — it serves query_atom only as the fallback when the
 // living Grammar's Supabase line is absent, and reports its emptiness
@@ -27,7 +30,7 @@ let localAtomFallback: ((term: string) => { row: unknown; count: number }) | und
 try {
   const db = new Database(
     process.env.KNOWLEDGE_DB_PATH ??
-      "C:/_superposition/resonance-grammar/knowledge.db",
+      path.join(HOUSE, "resonance-grammar", "knowledge.db"),
     { readonly: true }
   );
   localAtomFallback = (term: string) => {

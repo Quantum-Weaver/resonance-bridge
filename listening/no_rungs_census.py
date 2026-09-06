@@ -13,7 +13,8 @@ from collections import Counter
 from pathlib import Path
 import urllib.request
 
-BRIDGE = Path(r"C:\_superposition\resonance-bridge")
+HOUSE = Path(__file__).resolve().parents[2]
+BRIDGE = HOUSE / "resonance-bridge"
 env = {}
 for line in (BRIDGE / ".env").read_text(encoding="utf-8").splitlines():
     line = line.strip()

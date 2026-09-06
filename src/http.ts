@@ -42,23 +42,20 @@ try {
   process.loadEnvFile(fileURLToPath(new URL("../.env", import.meta.url)));
 } catch {}
 
+const HOUSE = fileURLToPath(new URL("../../", import.meta.url));
+const CONSTELLATION = path.join(HOUSE, "resonance-chamber", "constellation");
+
 const PORT = Number(process.env.BRIDGE_HTTP_PORT ?? 3141);
 const HOST = "127.0.0.1";
 
 // ── The write allowlist ────────────────────────────────────────────────────
 // Only these two destinations, only append. Both are the plugin's own declared
 // targets (plugins/firefox/background.js). Anything else is refused loudly.
-const AETHELRED_JOURNALS = path.resolve(
-  "C:/_superposition/resonance-chamber/constellation/aethelred/journals"
-);
-const AETHELRED_HOME = path.resolve(
-  "C:/_superposition/resonance-chamber/constellation/aethelred"
-);
+const AETHELRED_JOURNALS = path.join(CONSTELLATION, "aethelred", "journals");
+const AETHELRED_HOME = path.join(CONSTELLATION, "aethelred");
 // His outgoing line — deliberately in HIS OWN room, not in another kin's.
 const SHUTTLE_BUS = path.join(AETHELRED_HOME, "SHUTTLE-BUS.md");
-const FABLE_LANES = path.resolve(
-  "C:/_superposition/resonance-chamber/constellation/fable/lanes"
-);
+const FABLE_LANES = path.join(CONSTELLATION, "fable", "lanes");
 
 function writeAllowed(target: string): boolean {
   const p = path.resolve(target);
@@ -97,7 +94,7 @@ let localAtomFallback: ((term: string) => { row: unknown; count: number }) | und
 try {
   const db = new Database(
     process.env.KNOWLEDGE_DB_PATH ??
-      "C:/_superposition/resonance-grammar/knowledge.db",
+      path.join(HOUSE, "resonance-grammar", "knowledge.db"),
     { readonly: true }
   );
   localAtomFallback = (term: string) => {
@@ -172,11 +169,14 @@ async function readJson(req: http.IncomingMessage): Promise<any> {
 // The switchboard fetch: one message, verbatim, the rest of the transcript
 // unread — the lane law's own boundary (no direct links between sessions).
 async function switchboardFetch(label: string) {
-  const projectDir = path.join(os.homedir(), ".claude", "projects", "c---superposition");
+  // Claude Code names a project's log folder after its path: the drive letter lowered, every ":", "\", "/" and "_" a dash.
+  const slugOf = (p: string) => p.replace(/^[A-Za-z]:/, (d) => d.toLowerCase()).replace(/[:\\/_]/g, "-");
+  const projectDirs = [slugOf(path.join(HOUSE, "resonance-chamber")), slugOf(path.resolve(HOUSE)), "c---superposition"]
+    .map((slug) => path.join(os.homedir(), ".claude", "projects", slug));
   const registryCandidates = [
-    "C:/_superposition/resonance-chamber/constellation/opus/lanes/registry-writings.json",
-    "C:/_superposition/resonance-chamber/constellation/opus/lanes/registry.json",
-    "C:/_superposition/resonance-chamber/constellation/fable/lanes/registry.json",
+    path.join(CONSTELLATION, "opus", "lanes", "registry-writings.json"),
+    path.join(CONSTELLATION, "opus", "lanes", "registry.json"),
+    path.join(CONSTELLATION, "fable", "lanes", "registry.json"),
   ];
   let sessionId: string | undefined;
   for (const r of registryCandidates) {
@@ -190,13 +190,17 @@ async function switchboardFetch(label: string) {
   }
   if (!sessionId) return { error: `No lane named '${label}' in the registries.` };
 
-  const file = path.join(projectDir, `${sessionId}.jsonl`);
-  let text: string;
-  try {
-    text = await fs.readFile(file, "utf-8");
-  } catch (e) {
-    return { error: `Session log unreadable: ${(e as Error).message}` };
+  let text: string | undefined;
+  let lastError = "";
+  for (const dir of projectDirs) {
+    try {
+      text = await fs.readFile(path.join(dir, `${sessionId}.jsonl`), "utf-8");
+      break;
+    } catch (e) {
+      lastError = (e as Error).message;
+    }
   }
+  if (text === undefined) return { error: `Session log unreadable: ${lastError}` };
   // Walk backwards for the last assistant text. One message only.
   const lines = text.split("\n").filter(Boolean);
   for (let i = lines.length - 1; i >= 0; i--) {

@@ -21,8 +21,9 @@ import urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-EXP = Path(r"C:\_superposition\resonance-excavator\sources\supabase-exports\superposition")
-OUT = Path(r"C:\_superposition\resonance-grammar\seeds\lattice\wave-6-enrichment.json")
+HOUSE = Path(__file__).resolve().parents[2]
+EXP = HOUSE / "resonance-excavator" / "sources" / "supabase-exports" / "superposition"
+OUT = HOUSE / "resonance-grammar" / "seeds" / "lattice" / "wave-6-enrichment.json"
 
 SENSORY_FIELDS = ["emoji", "color_hex", "color_name", "sound_description",
                   "sound_file_url", "sound_tone", "sound_pitch",

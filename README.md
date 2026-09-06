@@ -163,7 +163,7 @@ Add to your project's `CLAUDE.md`:
   "mcpServers": {
     "resonance-bridge": {
       "command": "npx",
-      "args": ["tsx", "C:/_superposition/resonance-bridge/src/server.ts"]
+      "args": ["tsx", "../resonance-bridge/src/server.ts"]
     }
   }
 }

@@ -26,9 +26,10 @@ import urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-GAIA = Path(r"C:\_superposition\resonance-ziggy\modules\cosmic\gaia")
-EXPORTS = Path(r"C:\_superposition\resonance-excavator\sources\supabase-exports\superposition")
-OUT = Path(r"C:\_superposition\resonance-grammar\seeds\lattice\wave-4-relations.json")
+HOUSE = Path(__file__).resolve().parents[2]
+GAIA = HOUSE / "resonance-ziggy" / "modules" / "cosmic" / "gaia"
+EXPORTS = HOUSE / "resonance-excavator" / "sources" / "supabase-exports" / "superposition"
+OUT = HOUSE / "resonance-grammar" / "seeds" / "lattice" / "wave-4-relations.json"
 
 RANK_ORDER = {"domain": 1, "kingdom": 2, "phylum": 3, "class": 4,
               "order": 5, "family": 6, "genus": 7, "species": 8}

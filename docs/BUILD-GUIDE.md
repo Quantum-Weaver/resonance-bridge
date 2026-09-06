@@ -50,7 +50,7 @@ One definition per object: the schema stays in knowledge; the Bridge reads.)
 
 ### Step 1 — Scaffold (understand: a normal Node project, nothing exotic)
 ```bash
-cd C:\_superposition\resonance-bridge
+cd ../resonance-bridge
 npm init -y
 npm install @modelcontextprotocol/sdk zod better-sqlite3
 npm install -D typescript tsx @types/node @types/better-sqlite3
@@ -67,7 +67,7 @@ import { z } from "zod";
 import Database from "better-sqlite3";
 
 // Read-only, sovereign: the connection cannot write. Enforced here, in code.
-const db = new Database("C:/_superposition/resonance-knowledge/knowledge.db",
+const db = new Database("../resonance-knowledge/knowledge.db",
                         { readonly: true });
 
 const server = new McpServer({ name: "resonance-bridge", version: "0.1.0" });
@@ -111,13 +111,13 @@ This is your REPL for the server. Fix everything here first — it's the
 
 ### Step 4 — Register with Claude Code (understand: you're adding a launch recipe)
 ```bash
-claude mcp add resonance-bridge -- npx tsx C:/_superposition/resonance-bridge/src/server.ts
+claude mcp add resonance-bridge -- npx tsx src/server.ts
 ```
 Or project-scoped, in `.mcp.json` at a repo root (shareable, committed):
 ```json
 { "mcpServers": { "resonance-bridge": {
     "command": "npx",
-    "args": ["tsx", "C:/_superposition/resonance-bridge/src/server.ts"] } } }
+    "args": ["tsx", "src/server.ts"] } } }
 ```
 Claude Code launches the process when a session starts, reads the menu, and
 from then on I (or any Claude here) can call `query_atom` mid-conversation.
