@@ -14,25 +14,18 @@
   "domain_count": 0,
   "objects_reporting_directly": [
     {
-      "blueprint": "bridge/deepseek/obp.ai.json",
-      "object_path": "deepseek",
-      "description": "3 files, 1 subfolders",
-      "folder_count": 2,
-      "total_files": 10
-    },
-    {
-      "blueprint": "bridge/kimi/obp.ai.json",
-      "object_path": "kimi",
-      "description": "2 files, 1 subfolders",
-      "folder_count": 2,
-      "total_files": 9
+      "blueprint": "bridge/.journals/obp.ai.json",
+      "object_path": ".journals",
+      "description": "0 files, 3 subfolders",
+      "folder_count": 4,
+      "total_files": 11
     },
     {
       "blueprint": "bridge/src/obp.ai.json",
       "object_path": "src",
       "description": "2 files, 1 subfolders",
       "folder_count": 2,
-      "total_files": 11
+      "total_files": 10
     }
   ],
   "folders_reporting_directly": [
@@ -40,28 +33,21 @@
       "blueprint": "bridge/fbp.ai.json",
       "folder_path": ".",
       "description": "The switchboard",
-      "file_count": 19,
-      "subdirectory_count": 10
+      "file_count": 18,
+      "subdirectory_count": 8
     },
     {
       "blueprint": "bridge/.claude/fbp.ai.json",
       "folder_path": ".claude",
-      "description": "2 files, 0 subfolders",
-      "file_count": 2,
-      "subdirectory_count": 0
-    },
-    {
-      "blueprint": "bridge/battlenet/fbp.ai.json",
-      "folder_path": "battlenet",
-      "description": "5 files, 0 subfolders",
-      "file_count": 5,
+      "description": "1 files, 0 subfolders",
+      "file_count": 1,
       "subdirectory_count": 0
     },
     {
       "blueprint": "bridge/docs/fbp.ai.json",
       "folder_path": "docs",
-      "description": "5 files, 0 subfolders",
-      "file_count": 5,
+      "description": "4 files, 0 subfolders",
+      "file_count": 4,
       "subdirectory_count": 0
     },
     {
@@ -89,7 +75,7 @@
       "blueprint": "bridge/seeding/fbp.ai.json",
       "folder_path": "seeding",
       "description": "The grammar/knowledge bases' seeding era, kept whole",
-      "file_count": 18,
+      "file_count": 19,
       "subdirectory_count": 0
     }
   ],
@@ -104,8 +90,8 @@
     }
   ],
   "totals": {
-    "folders_blueprinted": 14,
-    "files_described": 92
+    "folders_blueprinted": 13,
+    "files_described": 76
   },
   "not_walked": {
     "reason": "package-class trees, this repo's own gitignored trees at every depth, reparse points, and this tool's own output",
@@ -137,27 +123,21 @@
     ],
     "gitignored_trees": {},
     "gitignored_trees_at_depth": {
+      "seeding/__pycache__": {
+        "address": "seeding/__pycache__",
+        "files_on_disk": 8,
+        "walked": false,
+        "reason": "gitignored at depth by this repo's own .gitignore \u2014 named and counted, never described, never opened"
+      },
       "plugins/firefox": {
         "address": "plugins/firefox",
         "files_on_disk": 33,
         "walked": false,
         "reason": "gitignored at depth by this repo's own .gitignore \u2014 named and counted, never described, never opened"
       },
-      "kimi/__pycache__": {
-        "address": "kimi/__pycache__",
-        "files_on_disk": 2,
-        "walked": false,
-        "reason": "gitignored at depth by this repo's own .gitignore \u2014 named and counted, never described, never opened"
-      },
-      "deepseek/__pycache__": {
-        "address": "deepseek/__pycache__",
-        "files_on_disk": 1,
-        "walked": false,
-        "reason": "gitignored at depth by this repo's own .gitignore \u2014 named and counted, never described, never opened"
-      },
-      "battlenet/__pycache__": {
-        "address": "battlenet/__pycache__",
-        "files_on_disk": 2,
+      "listening/__pycache__": {
+        "address": "listening/__pycache__",
+        "files_on_disk": 9,
         "walked": false,
         "reason": "gitignored at depth by this repo's own .gitignore \u2014 named and counted, never described, never opened"
       }
@@ -167,6 +147,6 @@
     "reparse_note": "Junctions and symlinks are named, never entered. Following one would pull an external ground into this repo's count, or loop on a self-junction.",
     "own_output": "docs/blueprints"
   },
-  "generated": "2026-08-21T15:19:20.545929 | in sovereign time",
+  "generated": "2026-09-07T13:59:25.895875 | in sovereign time",
   "maintaining_agent": "ProjectAgent"
 }

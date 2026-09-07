@@ -16,14 +16,14 @@
     {
       "blueprint": "bridge/src/lines/fbp.ai.json",
       "folder_path": "src/lines",
-      "description": "9 files, 0 subfolders",
-      "file_count": 9,
+      "description": "8 files, 0 subfolders",
+      "file_count": 8,
       "subdirectory_count": 0
     }
   ],
   "folder_count": 2,
-  "total_files": 11,
-  "integration_timestamp": "2026-08-21T15:19:20.520763 | in sovereign time",
+  "total_files": 10,
+  "integration_timestamp": "2026-09-07T13:59:25.855517 | in sovereign time",
   "maintaining_agent": "ObjectAgent",
   "note": "Links only. Every folder's details live at its own address."
 }

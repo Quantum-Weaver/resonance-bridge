@@ -1,0 +1,16 @@
+{
+  "tier": "folder",
+  "folder_name": "proofs",
+  "folder_path": ".journals/proofs",
+  "self": "bridge/.journals/proofs/fbp.ai.json",
+  "parent": "bridge/.journals/obp.ai.json",
+  "description": "0 files, 0 subfolders",
+  "files": [],
+  "file_count": 0,
+  "subdirectories": [],
+  "code_analysis": {},
+  "folders_not_walked": [],
+  "scan_timestamp": "2026-09-07T13:59:25.810357 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

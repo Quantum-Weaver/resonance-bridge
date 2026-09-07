@@ -4,7 +4,7 @@
   "folder_path": "docs",
   "self": "bridge/docs/fbp.ai.json",
   "parent": "bridge/pbp.ai.json",
-  "description": "5 files, 0 subfolders",
+  "description": "4 files, 0 subfolders",
   "files": [
     {
       "path": "docs/archived-env-example-2026-07-27.txt",
@@ -19,15 +19,11 @@
       "description": "RESONANCE BRIDGE BUILD GUIDE"
     },
     {
-      "path": "docs/CHECKLIST.md",
-      "description": "RESONANCE BRIDGE"
-    },
-    {
       "path": "docs/STORY-BLOCK.md",
       "description": "Story Block"
     }
   ],
-  "file_count": 5,
+  "file_count": 4,
   "subdirectories": [],
   "code_analysis": {
     "archived-env-example-2026-07-27.txt": {
@@ -100,44 +96,10 @@
       "has_story_block": false,
       "declares_mirror_class": false
     },
-    "CHECKLIST.md": {
-      "language": "markdown",
-      "lines": 84,
-      "words": 1071,
-      "heading_count": 13,
-      "headings": [
-        "RESONANCE BRIDGE \u2014 MASTER CHECKLIST",
-        "LEGEND",
-        "PHASE STATUS",
-        "Phase 0: Prometheus, the fire-bringer \u2705 (2026-06-30 \u2192 2026-07-04)",
-        "Phase 1: The rename \u2014 Prometheus \u2192 Resonance Bridge \u2705 (2026-07-07/08)",
-        "Phase 2: The delivery system \u2014 the Grammar line \u2705 (2026-07-29)",
-        "Phase 3: The platform lines \u2705 (2026-07-31)",
-        "Phase 4: The Family Table \u2705 (2026-08-14)",
-        "Phase 5: The true names \u2014 beacons re-point \u2705 (2026-08-15)",
-        "Phase 6: Battle.net lines \u2705 (2026-08-15/16)",
-        "Phase 7: Planned, not yet built \u2b1c",
-        "KNOWN BUGS",
-        "SESSION LOG"
-      ],
-      "links_external": 0,
-      "links_site_absolute": [],
-      "links_internal": [],
-      "links_internal_unresolved": [],
-      "links_internal_outside_checkout": [],
-      "code_fences": 0,
-      "table_rows": 14,
-      "checkboxes": {
-        "open": 5,
-        "done": 23
-      },
-      "has_story_block": false,
-      "declares_mirror_class": false
-    },
     "STORY-BLOCK.md": {
       "language": "markdown",
-      "lines": 137,
-      "words": 888,
+      "lines": 159,
+      "words": 1089,
       "heading_count": 12,
       "headings": [
         "Story Block \u2014 Resonance Bridge",
@@ -176,7 +138,7 @@
       "reason": "a blueprint output tree \u2014 the forge does not blueprint blueprints"
     }
   ],
-  "scan_timestamp": "2026-08-21T15:19:20.476267 | in sovereign time",
+  "scan_timestamp": "2026-09-07T13:59:25.822041 | in sovereign time",
   "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

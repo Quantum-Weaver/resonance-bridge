@@ -23,5 +23,5 @@
   "secret_files_found": 2,
   "note": "Existence reported, contents never read. NEVER A VALUE.",
   "verdict": "BREACHED \u2014 see leaked lists",
-  "scan_timestamp": "2026-08-21T15:19:20.542407 | in sovereign time"
+  "scan_timestamp": "2026-09-07T13:59:25.892600 | in sovereign time"
 }

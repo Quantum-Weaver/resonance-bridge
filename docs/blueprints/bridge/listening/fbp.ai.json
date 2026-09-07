@@ -66,6 +66,7 @@
       ],
       "constants": [
         "BRIDGE",
+        "HOUSE",
         "KEY",
         "REL_KEYS",
         "URL"
@@ -75,7 +76,7 @@
     },
     "emoji_census.py": {
       "language": "python",
-      "lines": 64,
+      "lines": 65,
       "classes": [],
       "functions": [
         "get",
@@ -89,6 +90,7 @@
       ],
       "constants": [
         "BRIDGE",
+        "HOUSE",
         "KEY",
         "URL"
       ],
@@ -97,7 +99,7 @@
     },
     "listen_beacons.py": {
       "language": "python",
-      "lines": 167,
+      "lines": 168,
       "classes": [],
       "functions": [
         "load_env",
@@ -116,14 +118,15 @@
       ],
       "constants": [
         "BRIDGE",
-        "CHANNELS"
+        "CHANNELS",
+        "HOUSE"
       ],
       "env_names_read": [],
       "has_main_guard": true
     },
     "listen_lattice.py": {
       "language": "python",
-      "lines": 75,
+      "lines": 76,
       "classes": [],
       "functions": [
         "load_env",
@@ -138,14 +141,15 @@
         "urllib.request"
       ],
       "constants": [
-        "BRIDGE"
+        "BRIDGE",
+        "HOUSE"
       ],
       "env_names_read": [],
       "has_main_guard": true
     },
     "listen_lattice2.py": {
       "language": "python",
-      "lines": 98,
+      "lines": 99,
       "classes": [],
       "functions": [
         "load_env",
@@ -160,14 +164,15 @@
         "urllib.request"
       ],
       "constants": [
-        "BRIDGE"
+        "BRIDGE",
+        "HOUSE"
       ],
       "env_names_read": [],
       "has_main_guard": true
     },
     "listen_lattice3.py": {
       "language": "python",
-      "lines": 116,
+      "lines": 117,
       "classes": [],
       "functions": [
         "load_env",
@@ -183,14 +188,15 @@
         "urllib.request"
       ],
       "constants": [
-        "BRIDGE"
+        "BRIDGE",
+        "HOUSE"
       ],
       "env_names_read": [],
       "has_main_guard": true
     },
     "listen_lattice4.py": {
       "language": "python",
-      "lines": 118,
+      "lines": 119,
       "classes": [],
       "functions": [
         "load_env",
@@ -205,14 +211,15 @@
         "urllib.request"
       ],
       "constants": [
-        "BRIDGE"
+        "BRIDGE",
+        "HOUSE"
       ],
       "env_names_read": [],
       "has_main_guard": true
     },
     "no_rungs_census.py": {
       "language": "python",
-      "lines": 97,
+      "lines": 98,
       "classes": [],
       "functions": [
         "fetch",
@@ -226,6 +233,7 @@
       ],
       "constants": [
         "BRIDGE",
+        "HOUSE",
         "KEY",
         "URL"
       ],
@@ -271,14 +279,23 @@
         "urllib.request"
       ],
       "constants": [
-        "BRIDGE"
+        "BRIDGE",
+        "HOUSE"
       ],
       "env_names_read": [],
       "has_main_guard": true
     }
   },
-  "folders_not_walked": [],
-  "scan_timestamp": "2026-08-21T15:19:20.492870 | in sovereign time",
+  "folders_not_walked": [
+    {
+      "name": "__pycache__",
+      "address": "listening/__pycache__",
+      "files_on_disk": 9,
+      "walked": false,
+      "reason": "gitignored at depth by this repo's own .gitignore \u2014 named and counted, never described, never opened"
+    }
+  ],
+  "scan_timestamp": "2026-09-07T13:59:25.828239 | in sovereign time",
   "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

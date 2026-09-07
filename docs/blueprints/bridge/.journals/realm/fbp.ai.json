@@ -1,0 +1,255 @@
+{
+  "tier": "folder",
+  "folder_name": "realm",
+  "folder_path": ".journals/realm",
+  "self": "bridge/.journals/realm/fbp.ai.json",
+  "parent": "bridge/.journals/obp.ai.json",
+  "description": "9 files, 0 subfolders",
+  "files": [
+    {
+      "path": ".journals/realm/2026-08-27-cloudflare-line-sonnet.md",
+      "description": "2026-08-27"
+    },
+    {
+      "path": ".journals/realm/2026-08-27-the-blizzard-lander-retires-firth.md",
+      "description": "The Blizzard lander retires"
+    },
+    {
+      "path": ".journals/realm/2026-08-28-the-media-landers-retire-firth.md",
+      "description": "The media landers retire"
+    },
+    {
+      "path": ".journals/realm/2026-08-31-airtable-family-cut-sonnet.md",
+      "description": "2026-08-31"
+    },
+    {
+      "path": ".journals/realm/2026-09-01-the-build-log-window-on-the-vercel-line.md",
+      "description": "The build-log window on the Vercel line"
+    },
+    {
+      "path": ".journals/realm/2026-09-01-the-count-trued-and-the-check-fable.md",
+      "description": "2026-09-01"
+    },
+    {
+      "path": ".journals/realm/2026-09-02-the-eighth-line-on-the-http-twin.md",
+      "description": "2026-09-02"
+    },
+    {
+      "path": ".journals/realm/2026-09-06-old-house-paths-in-prose-made-relative.md",
+      "description": "Old-house paths in prose made relative"
+    },
+    {
+      "path": ".journals/realm/2026-09-06-old-house-paths-made-relative.md",
+      "description": "2026-09-06"
+    }
+  ],
+  "file_count": 9,
+  "subdirectories": [],
+  "code_analysis": {
+    "2026-08-27-cloudflare-line-sonnet.md": {
+      "language": "markdown",
+      "lines": 31,
+      "words": 234,
+      "heading_count": 1,
+      "headings": [
+        "2026-08-27 \u2014 the Cloudflare line lands"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-08-27-the-blizzard-lander-retires-firth.md": {
+      "language": "markdown",
+      "lines": 26,
+      "words": 175,
+      "heading_count": 1,
+      "headings": [
+        "The Blizzard lander retires \u2014 2026-08-27"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-08-28-the-media-landers-retire-firth.md": {
+      "language": "markdown",
+      "lines": 54,
+      "words": 495,
+      "heading_count": 1,
+      "headings": [
+        "The media landers retire \u2014 2026-08-28"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-08-31-airtable-family-cut-sonnet.md": {
+      "language": "markdown",
+      "lines": 44,
+      "words": 366,
+      "heading_count": 1,
+      "headings": [
+        "2026-08-31 \u2014 the Airtable and family lines cut"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-09-01-the-build-log-window-on-the-vercel-line.md": {
+      "language": "markdown",
+      "lines": 8,
+      "words": 189,
+      "heading_count": 1,
+      "headings": [
+        "The build-log window on the Vercel line"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-09-01-the-count-trued-and-the-check-fable.md": {
+      "language": "markdown",
+      "lines": 23,
+      "words": 183,
+      "heading_count": 1,
+      "headings": [
+        "2026-09-01 \u2014 the story's count trued; a check beside the smoke"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-09-02-the-eighth-line-on-the-http-twin.md": {
+      "language": "markdown",
+      "lines": 66,
+      "words": 608,
+      "heading_count": 1,
+      "headings": [
+        "2026-09-02 \u2014 the eighth line on the HTTP twin, and the count trued again"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-09-06-old-house-paths-in-prose-made-relative.md": {
+      "language": "markdown",
+      "lines": 18,
+      "words": 65,
+      "heading_count": 1,
+      "headings": [
+        "Old-house paths in prose made relative"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-09-06-old-house-paths-made-relative.md": {
+      "language": "markdown",
+      "lines": 49,
+      "words": 268,
+      "heading_count": 4,
+      "headings": [
+        "2026-09-06 \u2014 old-house paths made relative",
+        "Anchoring",
+        "Files changed",
+        "Left as is"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    }
+  },
+  "folders_not_walked": [],
+  "scan_timestamp": "2026-09-07T13:59:25.816701 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

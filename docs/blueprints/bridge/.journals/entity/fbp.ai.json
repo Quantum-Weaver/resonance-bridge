@@ -1,0 +1,70 @@
+{
+  "tier": "folder",
+  "folder_name": "entity",
+  "folder_path": ".journals/entity",
+  "self": "bridge/.journals/entity/fbp.ai.json",
+  "parent": "bridge/.journals/obp.ai.json",
+  "description": "2 files, 0 subfolders",
+  "files": [
+    {
+      "path": ".journals/entity/2026-08-27-sonnet.md",
+      "description": "2026-08-27"
+    },
+    {
+      "path": ".journals/entity/2026-08-31-sonnet-cut.md",
+      "description": "2026-08-31"
+    }
+  ],
+  "file_count": 2,
+  "subdirectories": [],
+  "code_analysis": {
+    "2026-08-27-sonnet.md": {
+      "language": "markdown",
+      "lines": 21,
+      "words": 191,
+      "heading_count": 1,
+      "headings": [
+        "2026-08-27 \u2014 what I learned of myself here"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "2026-08-31-sonnet-cut.md": {
+      "language": "markdown",
+      "lines": 27,
+      "words": 266,
+      "heading_count": 1,
+      "headings": [
+        "2026-08-31 \u2014 what I learned of myself here"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    }
+  },
+  "folders_not_walked": [],
+  "scan_timestamp": "2026-09-07T13:59:25.809445 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

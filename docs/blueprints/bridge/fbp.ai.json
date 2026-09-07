@@ -8,23 +8,15 @@
   "files": [
     {
       "path": ".env",
-      "description": "file, 3,950 bytes"
+      "description": "file, 4,551 bytes"
     },
     {
       "path": ".env.example",
-      "description": "file, 1,491 bytes"
+      "description": "file, 2,861 bytes"
     },
     {
       "path": ".gitignore",
-      "description": "ignore rules, 2,061 bytes"
-    },
-    {
-      "path": "CLAUDE.md",
-      "description": "CLAUDE.md"
-    },
-    {
-      "path": "FABLE-KERNEL.md",
-      "description": "FABLE-KERNEL"
+      "description": "ignore rules, 2,430 bytes"
     },
     {
       "path": "FEATURE-BOARD.md",
@@ -52,11 +44,11 @@
     },
     {
       "path": "package-lock.json",
-      "description": "data, 76,135 bytes"
+      "description": "data, 71,016 bytes"
     },
     {
       "path": "package.json",
-      "description": "data, 1,081 bytes"
+      "description": "data, 1,057 bytes"
     },
     {
       "path": "PHILOSOPHY.md",
@@ -79,17 +71,19 @@
       "description": "THE TRAIL"
     },
     {
+      "path": "tsconfig.json",
+      "description": "data, 235 bytes"
+    },
+    {
       "path": "verify_terms.py",
       "description": "verify_terms.py"
     }
   ],
-  "file_count": 19,
+  "file_count": 18,
   "subdirectories": [
     ".claude",
-    "battlenet",
-    "deepseek",
+    ".journals",
     "docs",
-    "kimi",
     "listening",
     "plugins",
     "reports",
@@ -97,65 +91,10 @@
     "src"
   ],
   "code_analysis": {
-    "CLAUDE.md": {
-      "language": "markdown",
-      "lines": 90,
-      "words": 544,
-      "heading_count": 7,
-      "headings": [
-        "CLAUDE.md \u2014 Resonance Bridge (formerly Prometheus)",
-        "Ground rules",
-        "Structure",
-        "Tools",
-        "People",
-        "Standards",
-        "The forge and the link tender"
-      ],
-      "links_external": 1,
-      "links_site_absolute": [],
-      "links_internal": [],
-      "links_internal_unresolved": [],
-      "links_internal_outside_checkout": [],
-      "code_fences": 0,
-      "table_rows": 0,
-      "checkboxes": {
-        "open": 0,
-        "done": 0
-      },
-      "has_story_block": false,
-      "declares_mirror_class": false
-    },
-    "FABLE-KERNEL.md": {
-      "language": "markdown",
-      "lines": 59,
-      "words": 452,
-      "heading_count": 6,
-      "headings": [
-        "FABLE-KERNEL \u2014 resonance-bridge",
-        "What this is",
-        "State (2026-07-09)",
-        "Build path (in order)",
-        "Dispatch notes",
-        "Read first"
-      ],
-      "links_external": 0,
-      "links_site_absolute": [],
-      "links_internal": [],
-      "links_internal_unresolved": [],
-      "links_internal_outside_checkout": [],
-      "code_fences": 0,
-      "table_rows": 0,
-      "checkboxes": {
-        "open": 0,
-        "done": 0
-      },
-      "has_story_block": false,
-      "declares_mirror_class": false
-    },
     "FEATURE-BOARD.md": {
       "language": "markdown",
-      "lines": 201,
-      "words": 1744,
+      "lines": 227,
+      "words": 2053,
       "heading_count": 3,
       "headings": [
         "BRIDGE \u2014 THE FEATURE BOARD",
@@ -178,10 +117,11 @@
     },
     "grammar_inventory.py": {
       "language": "python",
-      "lines": 110,
+      "lines": 145,
       "classes": [],
       "functions": [
         "load_env",
+        "discover_tables",
         "fetch",
         "main"
       ],
@@ -194,15 +134,16 @@
       ],
       "constants": [
         "GRAMMAR_TABLES",
-        "HERE"
+        "HERE",
+        "HOUSE"
       ],
       "env_names_read": [],
       "has_main_guard": true
     },
     "HANDS.md": {
       "language": "markdown",
-      "lines": 124,
-      "words": 1133,
+      "lines": 135,
+      "words": 1268,
       "heading_count": 10,
       "headings": [
         "The Hands \u2014 who builds this, and how",
@@ -280,7 +221,7 @@
     },
     "package-lock.json": {
       "language": "json",
-      "lines": 2173,
+      "lines": 2124,
       "valid": true,
       "root": "object",
       "top_level_keys": [
@@ -294,7 +235,7 @@
     },
     "package.json": {
       "language": "json",
-      "lines": 38,
+      "lines": 39,
       "valid": true,
       "root": "object",
       "top_level_keys": [
@@ -354,8 +295,8 @@
     },
     "README.md": {
       "language": "markdown",
-      "lines": 203,
-      "words": 1899,
+      "lines": 202,
+      "words": 1877,
       "heading_count": 17,
       "headings": [
         "\ud83d\udd25 Resonance Bridge",
@@ -398,7 +339,7 @@
       "links_internal_unresolved": [],
       "links_internal_outside_checkout": [],
       "code_fences": 2,
-      "table_rows": 76,
+      "table_rows": 75,
       "checkboxes": {
         "open": 0,
         "done": 0
@@ -408,7 +349,7 @@
     },
     "repos_snapshot.py": {
       "language": "python",
-      "lines": 134,
+      "lines": 133,
       "classes": [],
       "functions": [
         "read_key",
@@ -434,7 +375,7 @@
     },
     "server_smoke.py": {
       "language": "python",
-      "lines": 110,
+      "lines": 106,
       "classes": [],
       "functions": [
         "send",
@@ -478,9 +419,20 @@
       "has_story_block": false,
       "declares_mirror_class": false
     },
+    "tsconfig.json": {
+      "language": "json",
+      "lines": 13,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "compilerOptions",
+        "include"
+      ],
+      "key_count": 2
+    },
     "verify_terms.py": {
       "language": "python",
-      "lines": 177,
+      "lines": 176,
       "classes": [],
       "functions": [
         "load_env",
@@ -525,7 +477,7 @@
       "reason": "package-class tree (dependency or build output) \u2014 not counted, because counting it means walking it"
     }
   ],
-  "scan_timestamp": "2026-08-21T15:19:20.453258 | in sovereign time",
+  "scan_timestamp": "2026-09-07T13:59:25.804720 | in sovereign time",
   "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

@@ -1,0 +1,43 @@
+{
+  "tier": "object",
+  "object_name": ".journals",
+  "object_path": ".journals",
+  "self": "bridge/.journals/obp.ai.json",
+  "parent": "bridge/pbp.ai.json",
+  "description": "0 files, 3 subfolders",
+  "folders": [
+    {
+      "blueprint": "bridge/.journals/fbp.ai.json",
+      "folder_path": ".journals",
+      "description": "0 files, 3 subfolders",
+      "file_count": 0,
+      "subdirectory_count": 3
+    },
+    {
+      "blueprint": "bridge/.journals/entity/fbp.ai.json",
+      "folder_path": ".journals/entity",
+      "description": "2 files, 0 subfolders",
+      "file_count": 2,
+      "subdirectory_count": 0
+    },
+    {
+      "blueprint": "bridge/.journals/proofs/fbp.ai.json",
+      "folder_path": ".journals/proofs",
+      "description": "0 files, 0 subfolders",
+      "file_count": 0,
+      "subdirectory_count": 0
+    },
+    {
+      "blueprint": "bridge/.journals/realm/fbp.ai.json",
+      "folder_path": ".journals/realm",
+      "description": "9 files, 0 subfolders",
+      "file_count": 9,
+      "subdirectory_count": 0
+    }
+  ],
+  "folder_count": 4,
+  "total_files": 11,
+  "integration_timestamp": "2026-09-07T13:59:25.854571 | in sovereign time",
+  "maintaining_agent": "ObjectAgent",
+  "note": "Links only. Every folder's details live at its own address."
+}

@@ -4,23 +4,19 @@
   "folder_path": "src/lines",
   "self": "bridge/src/lines/fbp.ai.json",
   "parent": "bridge/src/obp.ai.json",
-  "description": "9 files, 0 subfolders",
+  "description": "8 files, 0 subfolders",
   "files": [
     {
-      "path": "src/lines/airtable.ts",
-      "description": "typescript, 3,523 bytes"
+      "path": "src/lines/cloudflare.ts",
+      "description": "typescript, 8,736 bytes"
     },
     {
       "path": "src/lines/discord.ts",
-      "description": "typescript, 8,451 bytes"
-    },
-    {
-      "path": "src/lines/family.ts",
-      "description": "typescript, 10,682 bytes"
+      "description": "typescript, 7,861 bytes"
     },
     {
       "path": "src/lines/github.ts",
-      "description": "typescript, 10,388 bytes"
+      "description": "typescript, 10,243 bytes"
     },
     {
       "path": "src/lines/grammar.ts",
@@ -28,29 +24,29 @@
     },
     {
       "path": "src/lines/resend.ts",
-      "description": "typescript, 4,293 bytes"
+      "description": "typescript, 3,804 bytes"
     },
     {
       "path": "src/lines/stripe.ts",
-      "description": "typescript, 10,492 bytes"
+      "description": "typescript, 10,301 bytes"
     },
     {
       "path": "src/lines/supabase.ts",
-      "description": "typescript, 11,128 bytes"
+      "description": "typescript, 11,050 bytes"
     },
     {
       "path": "src/lines/vercel.ts",
-      "description": "typescript, 5,752 bytes"
+      "description": "typescript, 7,193 bytes"
     }
   ],
-  "file_count": 9,
+  "file_count": 8,
   "subdirectories": [],
   "code_analysis": {
-    "airtable.ts": {
+    "cloudflare.ts": {
       "language": "typescript",
-      "lines": 97,
+      "lines": 230,
       "exported_functions": [
-        "registerAirtable"
+        "registerCloudflare"
       ],
       "exported_consts": [],
       "interfaces": [],
@@ -59,13 +55,13 @@
       "spawns_process": false,
       "writes_files": false,
       "env_names_read": [
-        "AIRTABLE_API_KEY",
-        "example"
+        "CLOUDFLARE_ACCOUNT_ID",
+        "CLOUDFLARE_API_TOKEN"
       ]
     },
     "discord.ts": {
       "language": "typescript",
-      "lines": 227,
+      "lines": 219,
       "exported_functions": [
         "registerDiscord"
       ],
@@ -80,27 +76,9 @@
         "DISCORD_GUILD_ID"
       ]
     },
-    "family.ts": {
-      "language": "typescript",
-      "lines": 252,
-      "exported_functions": [
-        "registerFamily"
-      ],
-      "exported_consts": [],
-      "interfaces": [],
-      "types": [],
-      "imports_node": [],
-      "spawns_process": false,
-      "writes_files": false,
-      "env_names_read": [
-        "SANCTUARY_ROOT",
-        "SUPABASE_PUBLISHABLE_KEY_KNOWLEDGE",
-        "SUPABASE_URL_KNOWLEDGE"
-      ]
-    },
     "github.ts": {
       "language": "typescript",
-      "lines": 261,
+      "lines": 259,
       "exported_functions": [
         "registerGitHub"
       ],
@@ -133,7 +111,7 @@
     },
     "resend.ts": {
       "language": "typescript",
-      "lines": 113,
+      "lines": 106,
       "exported_functions": [
         "registerResend"
       ],
@@ -149,7 +127,7 @@
     },
     "stripe.ts": {
       "language": "typescript",
-      "lines": 287,
+      "lines": 285,
       "exported_functions": [
         "registerStripe"
       ],
@@ -165,7 +143,7 @@
     },
     "supabase.ts": {
       "language": "typescript",
-      "lines": 271,
+      "lines": 270,
       "exported_functions": [
         "registerSupabase"
       ],
@@ -181,7 +159,7 @@
     },
     "vercel.ts": {
       "language": "typescript",
-      "lines": 149,
+      "lines": 178,
       "exported_functions": [
         "registerVercel"
       ],
@@ -197,7 +175,7 @@
     }
   },
   "folders_not_walked": [],
-  "scan_timestamp": "2026-08-21T15:19:20.517650 | in sovereign time",
+  "scan_timestamp": "2026-09-07T13:59:25.853706 | in sovereign time",
   "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

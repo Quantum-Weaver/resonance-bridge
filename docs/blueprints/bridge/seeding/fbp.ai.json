@@ -23,6 +23,10 @@
       "description": "text document, 240 bytes"
     },
     {
+      "path": "seeding/dailies_scramble_gen.py",
+      "description": "dailies_scramble_gen.py - build athena's daily WORD SCRAMBLE puzzles from the live Resonance Grammar"
+    },
+    {
       "path": "seeding/emoji_wave_seeder.py",
       "description": "emoji_wave_seeder.py"
     },
@@ -79,12 +83,12 @@
       "description": "scheme_anchor_seeder.py"
     }
   ],
-  "file_count": 18,
+  "file_count": 19,
   "subdirectories": [],
   "code_analysis": {
     "atom_wave_seeder.py": {
       "language": "python",
-      "lines": 173,
+      "lines": 170,
       "classes": [
         "Base"
       ],
@@ -106,7 +110,7 @@
     },
     "atoms_dump.py": {
       "language": "python",
-      "lines": 49,
+      "lines": 51,
       "classes": [],
       "functions": [],
       "imports": [
@@ -114,7 +118,9 @@
         "pathlib",
         "urllib.request"
       ],
-      "constants": [],
+      "constants": [
+        "HOUSE"
+      ],
       "env_names_read": [],
       "has_main_guard": false
     },
@@ -141,6 +147,48 @@
       "bytes": 240,
       "opened": false,
       "law": "Name and location only. The file is never opened."
+    },
+    "dailies_scramble_gen.py": {
+      "language": "python",
+      "lines": 410,
+      "classes": [],
+      "functions": [
+        "load_env",
+        "fetch_live",
+        "load_corpus",
+        "first_sentence",
+        "stem",
+        "mask_clue",
+        "scramble",
+        "build",
+        "sql_escape",
+        "emit_sql",
+        "main"
+      ],
+      "imports": [
+        "argparse",
+        "collections",
+        "datetime",
+        "json",
+        "pathlib",
+        "random",
+        "re",
+        "sys",
+        "urllib.request"
+      ],
+      "constants": [
+        "BRIDGE",
+        "DEFAULT_OUT",
+        "EXPORTS",
+        "FOOTER",
+        "HEADER",
+        "HERE",
+        "HOUSE",
+        "MASK",
+        "MAX_CLUE"
+      ],
+      "env_names_read": [],
+      "has_main_guard": true
     },
     "emoji_wave_seeder.py": {
       "language": "python",
@@ -222,6 +270,7 @@
       "constants": [
         "BATCH",
         "HERE",
+        "HOUSE",
         "KNOWLEDGE",
         "SHELF"
       ],
@@ -257,7 +306,7 @@
     },
     "lattice_seeder.py": {
       "language": "python",
-      "lines": 583,
+      "lines": 576,
       "classes": [
         "Base"
       ],
@@ -289,7 +338,7 @@
     },
     "lattice_wave2_gen.py": {
       "language": "python",
-      "lines": 186,
+      "lines": 187,
       "classes": [],
       "functions": [
         "load_env",
@@ -309,6 +358,7 @@
       "constants": [
         "EXPORTS",
         "HERE",
+        "HOUSE",
         "NAME_COL",
         "OUT",
         "RANK_FILES",
@@ -319,7 +369,7 @@
     },
     "lattice_wave3_gen.py": {
       "language": "python",
-      "lines": 174,
+      "lines": 175,
       "classes": [],
       "functions": [
         "load_env",
@@ -336,6 +386,7 @@
       "constants": [
         "GAIA",
         "HERE",
+        "HOUSE",
         "NAME_COL",
         "OUT",
         "RANKS",
@@ -346,7 +397,7 @@
     },
     "lattice_wave4_gen.py": {
       "language": "python",
-      "lines": 203,
+      "lines": 204,
       "classes": [],
       "functions": [
         "load_env",
@@ -365,6 +416,7 @@
         "EXPORTS",
         "GAIA",
         "HERE",
+        "HOUSE",
         "LADDER",
         "NAME_COL",
         "OUT",
@@ -375,7 +427,7 @@
     },
     "lattice_wave5_gen.py": {
       "language": "python",
-      "lines": 137,
+      "lines": 138,
       "classes": [],
       "functions": [
         "load_env",
@@ -392,6 +444,7 @@
       "constants": [
         "GAIA",
         "HERE",
+        "HOUSE",
         "LADDER",
         "NAME_COL",
         "OUT"
@@ -401,7 +454,7 @@
     },
     "lattice_wave6_gen.py": {
       "language": "python",
-      "lines": 199,
+      "lines": 200,
       "classes": [],
       "functions": [
         "load_env",
@@ -418,6 +471,7 @@
         "ETYM_FIELDS",
         "EXP",
         "HERE",
+        "HOUSE",
         "OUT",
         "SENSORY_FIELDS"
       ],
@@ -493,8 +547,16 @@
       "has_main_guard": true
     }
   },
-  "folders_not_walked": [],
-  "scan_timestamp": "2026-08-21T15:19:20.507637 | in sovereign time",
+  "folders_not_walked": [
+    {
+      "name": "__pycache__",
+      "address": "seeding/__pycache__",
+      "files_on_disk": 8,
+      "walked": false,
+      "reason": "gitignored at depth by this repo's own .gitignore \u2014 named and counted, never described, never opened"
+    }
+  ],
+  "scan_timestamp": "2026-09-07T13:59:25.844316 | in sovereign time",
   "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }
