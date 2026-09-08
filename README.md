@@ -21,15 +21,13 @@ Resonance Bridge is the MCP (Model Context Protocol) server that connects everyt
 
 *This section required by the [Story Block Standard](https://github.com/Quantum-Weaver/resonance-standards).*
 
-Born 2026-06-30 as **Prometheus, the fire-bringer** — the Sanctuary's first
-MCP server, `query_atom` proven live over stdio in the Inspector days later.
-Renamed 2026-07-07 to **Resonance Bridge** once "Prometheus" was needed
-elsewhere (it now names the frontend creative-arts domain) — the switchboard
-framing held, the fire carried forward under a new name. What started as one
-tool over one local database grew, sitting by sitting, into eight read-only
-lines under `src/lines/` (Grammar, Vercel, Resend, Stripe, GitHub,
-Discord, Supabase management, and Cloudflare) and fifty-four tools registered — every one of them
-a window, never a hand.
+Resonance Bridge is the MCP (Model Context Protocol) server that connects
+everything in the Sanctuary — one server, multiple databases and cloud
+APIs, all read-only. It began 2026-06-30 as **Prometheus, the fire-bringer**,
+the Sanctuary's first MCP server. Renamed to **Resonance Bridge** on
+2026-07-07 once the name Prometheus was needed elsewhere, the project kept
+its purpose and took a name that describes its actual shape: the same fire
+offered to each vessel in the form its hands can hold.
 
 📖 [Full Story Block](docs/STORY-BLOCK.md)
 
