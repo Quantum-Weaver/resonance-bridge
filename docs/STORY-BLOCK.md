@@ -14,7 +14,7 @@ Supabase management, Cloudflare).
 ## HOW
 
 TypeScript + Node + `@modelcontextprotocol/sdk` + better-sqlite3, stdio
-transport (`CLAUDE.md`). Built by Quantum Weaver (KP) with Aethelred, whose
+transport. Built by Quantum Weaver (KP) with Aethelred, whose
 design sessions with KP grew the Bridge's original architecture (`HANDS.md`).
 
 ## WHERE
@@ -30,7 +30,7 @@ through its HTTP door.
 - 2026-06-30 — founded as "Resonance MCP — Prometheus, the fire-bringer"
   (`git log`, commit `ef635dc`).
 - 2026-07-07 — renamed Prometheus → Resonance Bridge once the name was
-  needed elsewhere, for the frontend creative-arts domain (`CLAUDE.md`).
+  needed elsewhere, for the frontend creative-arts domain.
 
 ## WHY
 
@@ -52,5 +52,4 @@ note, 2026-07-09).
 ## PROVENANCE
 
 Defined 2026-06-30 by Quantum Weaver and Aethelred as "Resonance MCP —
-Prometheus" (`git log`, commit `ef635dc`); redefined in name 2026-07-07
-(`CLAUDE.md`).
+Prometheus" (`git log`, commit `ef635dc`); redefined in name 2026-07-07.
