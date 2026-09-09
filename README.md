@@ -1,4 +1,4 @@
-# 🔥 Resonance Bridge
+# 🌉 Resonance Bridge
 
 *The switchboard. The knowledge delivery system of the AudHDities Sanctuary.*
 
