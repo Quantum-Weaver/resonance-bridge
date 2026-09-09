@@ -104,10 +104,10 @@ stranger would use.*
 | `github_list_releases` | Releases with per-asset download counts | ✅ live |
 | `github_repo_traffic` | Two-week views/clones — degrades if scope ungranted | ✅ live |
 | `discord_whoami` | The bot's identity and servers — the line test | ✅ live |
-| `discord_server_overview` | Name, owner, counts, boosts — the ownership answer | ✅ live (awaits guild id) |
-| `discord_list_channels` · `discord_list_roles` | The server's street map and its roles | ✅ live (awaits guild id) |
-| `discord_list_webhooks` | Webhooks by true name — token/url STRIPPED in code | ✅ live (awaits guild id) |
-| `discord_emoji_sticker_census` | Emoji/sticker names vs the free caps | ✅ live (awaits guild id) |
+| `discord_server_overview` | Name, owner, counts, boosts — the ownership answer | ✅ live |
+| `discord_list_channels` · `discord_list_roles` | The server's street map and its roles | ✅ live |
+| `discord_list_webhooks` | Webhooks by true name — token/url STRIPPED in code | ✅ live |
+| `discord_emoji_sticker_census` | Emoji/sticker names vs the free caps | ✅ live |
 | `discord_read_channel` | Verbatim channel reads — the carrier law rides it | ✅ live |
 | `supabase_list_projects` | The project shelf with status — the pause-watch | ✅ live |
 | `supabase_get_auth_config` | Auth config through the allowlist — the SMTP answer | ✅ live |
@@ -127,9 +127,7 @@ stranger would use.*
 | Script | What it does |
 |--------|-------------|
 | `grammar_inventory.py` | Counts + dated full export of the Grammar tables through the anon door — the new-table ritual's verify step |
-| `seeding/atoms_dump.py` | Atom-table dump for merge planning (on the seeding shelf since 2026-08-14) |
 | `verify_terms.py` | Checks a set of coined names against the Grammar (atoms/molecules/organisms by word-count class + constituent words) — born 2026-07-27 for the cosmic carries, reusable for any carry |
-| `seeding/` | The seeding era's shelf — seeders, wave generators, wipe/purge hands, the beacon-verify pair; one-shots kept whole, run by hand in their day (`seeding/README.md`; shelved 2026-08-14 at KP's ⚛ "tidy now") |
 
 ---
 
