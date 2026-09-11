@@ -1,0 +1,79 @@
+{
+ "reviews": [
+  {
+   "reviewId": "gp:AOqpTOFq-review-fixture-1",
+   "authorName": "A Google user",
+   "comments": [
+    {
+     "userComment": {
+      "text": "the sound picker crashes when I rotate the phone",
+      "lastModified": {
+       "seconds": "1788996000",
+       "nanos": 0
+      },
+      "starRating": 3,
+      "reviewerLanguage": "en",
+      "device": "sunfish",
+      "androidOsVersion": 34,
+      "appVersionCode": 12,
+      "appVersionName": "1.4.1",
+      "thumbsUpCount": 0,
+      "thumbsDownCount": 0
+     }
+    },
+    {
+     "developerComment": {
+      "text": "thank you, looking at it now",
+      "lastModified": {
+       "seconds": "1788997200",
+       "nanos": 0
+      }
+     }
+    }
+   ]
+  },
+  {
+   "reviewId": "gp:AOqpTOFq-review-fixture-2",
+   "authorName": "Sam",
+   "comments": [
+    {
+     "userComment": {
+      "text": "",
+      "lastModified": {
+       "seconds": "1789002000",
+       "nanos": 0
+      },
+      "starRating": 5,
+      "appVersionName": "1.4.1"
+     }
+    }
+   ]
+  },
+  {
+   "reviewId": "gp:AOqpTOFq-review-fixture-3",
+   "authorName": "",
+   "comments": [
+    {
+     "userComment": {
+      "text": "the widget will not refresh after a reboot",
+      "lastModified": {
+       "seconds": "1789005600",
+       "nanos": 0
+      },
+      "starRating": 2,
+      "reviewerLanguage": "en",
+      "device": "oriole",
+      "androidOsVersion": 35,
+      "appVersionCode": 12,
+      "appVersionName": "1.4.1",
+      "thumbsUpCount": 0,
+      "thumbsDownCount": 0
+     }
+    }
+   ]
+  }
+ ],
+ "tokenPagination": {
+  "nextPageToken": ""
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "contentId": "000005037954",
+ "betaTestYN": "Y",
+ "betaTestStatus": "TESTING",
+ "versionName": "1.5.0-beta",
+ "testerCount": 12,
+ "betaTestingUrl": {
+  "android": "https://galaxystore.samsung.com/betatest/000005037954",
+  "web": "https://galaxystore.samsung.com/betatest/web/000005037954"
+ }
+}

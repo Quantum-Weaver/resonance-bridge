@@ -1,0 +1,20 @@
+{
+ "releases": [
+  {
+   "track": "beta",
+   "releaseName": "1.5.0-beta",
+   "releaseLifecycleState": "RELEASE_LIFECYCLE_STATE_IN_REVIEW",
+   "activeArtifacts": [
+    { "versionCode": 13 }
+   ]
+  },
+  {
+   "track": "beta",
+   "releaseName": "1.4.1",
+   "releaseLifecycleState": "RELEASE_LIFECYCLE_STATE_PUBLISHED",
+   "activeArtifacts": [
+    { "versionCode": 12 }
+   ]
+  }
+ ]
+}

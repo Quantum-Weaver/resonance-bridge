@@ -95,6 +95,9 @@ checks = [
     ("github_token_status", {}),
     ("discord_whoami", {}),
     ("supabase_list_projects", {}),
+    ("play_whoami", {}),
+    ("galaxy_whoami", {}),
+    ("ms_whoami", {}),
 ]
 for tool, args in checks:
     out = call(tool, args)

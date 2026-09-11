@@ -1,0 +1,90 @@
+[
+  {
+    "id": "900000000000000001",
+    "type": 4,
+    "guild_id": "900000000000000000",
+    "name": "testing",
+    "position": 3,
+    "parent_id": null,
+    "permission_overwrites": []
+  },
+  {
+    "id": "900000000000000002",
+    "type": 4,
+    "guild_id": "900000000000000000",
+    "name": "the workshop",
+    "position": 4,
+    "parent_id": null,
+    "permission_overwrites": []
+  },
+  {
+    "id": "900000000000000011",
+    "type": 0,
+    "guild_id": "900000000000000000",
+    "name": "echoes-testing",
+    "topic": "Resonance Echoes",
+    "parent_id": "900000000000000001",
+    "position": 0,
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": "900000000000000105"
+  },
+  {
+    "id": "900000000000000012",
+    "type": 0,
+    "guild_id": "900000000000000000",
+    "name": "sirens-testing",
+    "topic": null,
+    "parent_id": "900000000000000001",
+    "position": 1,
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": "900000000000000202"
+  },
+  {
+    "id": "900000000000000013",
+    "type": 0,
+    "guild_id": "900000000000000000",
+    "name": "welcome",
+    "topic": null,
+    "parent_id": "900000000000000001",
+    "position": 2,
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": null
+  },
+  {
+    "id": "900000000000000014",
+    "type": 0,
+    "guild_id": "900000000000000000",
+    "name": "-testing",
+    "topic": null,
+    "parent_id": "900000000000000001",
+    "position": 3,
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": null
+  },
+  {
+    "id": "900000000000000015",
+    "type": 2,
+    "guild_id": "900000000000000000",
+    "name": "voice-testing",
+    "parent_id": "900000000000000001",
+    "position": 4,
+    "bitrate": 64000,
+    "user_limit": 0
+  },
+  {
+    "id": "900000000000000021",
+    "type": 0,
+    "guild_id": "900000000000000000",
+    "name": "bubbles-testing",
+    "topic": null,
+    "parent_id": "900000000000000002",
+    "position": 0,
+    "nsfw": false,
+    "rate_limit_per_user": 0,
+    "last_message_id": null
+  }
+]

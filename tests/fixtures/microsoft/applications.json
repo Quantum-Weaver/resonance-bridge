@@ -1,0 +1,35 @@
+{
+ "@nextLink": null,
+ "value": [
+  {
+   "id": "9WZDNCRFJ3Q8",
+   "primaryName": "Resonance Echoes",
+   "packageFamilyName": "AudHDities.ResonanceEchoes_8wekyb3d8bbwe",
+   "packageIdentityName": "AudHDities.ResonanceEchoes",
+   "publisherName": "CN=AudHDities",
+   "firstPublishedDate": "2026-08-20T00:00:00Z",
+   "lastPublishedApplicationSubmission": {
+    "id": "1152921504621243610",
+    "resourceLocation": "applications/9WZDNCRFJ3Q8/submissions/1152921504621243610"
+   },
+   "pendingApplicationSubmission": {
+    "id": "1152921504621243620",
+    "resourceLocation": "applications/9WZDNCRFJ3Q8/submissions/1152921504621243620"
+   }
+  },
+  {
+   "id": "9NBLGGH4R2S1",
+   "primaryName": "Resonance Sirens",
+   "packageFamilyName": "AudHDities.ResonanceSirens_8wekyb3d8bbwe",
+   "packageIdentityName": "AudHDities.ResonanceSirens",
+   "publisherName": "CN=AudHDities",
+   "firstPublishedDate": "",
+   "lastPublishedApplicationSubmission": null,
+   "pendingApplicationSubmission": {
+    "id": "1152921504621243700",
+    "resourceLocation": "applications/9NBLGGH4R2S1/submissions/1152921504621243700"
+   }
+  }
+ ],
+ "totalCount": 2
+}

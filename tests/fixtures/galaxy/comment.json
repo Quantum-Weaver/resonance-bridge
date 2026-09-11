@@ -1,0 +1,27 @@
+{
+ "commentList": [
+  {
+   "commentId": "gs-comment-fixture-1",
+   "userName": "hana",
+   "commentText": "the beta build will not open on a Fold",
+   "rating": 2,
+   "createDate": "2026-09-07 21:04:00",
+   "replyText": null
+  },
+  {
+   "commentId": "gs-comment-fixture-2",
+   "userName": "min",
+   "commentText": "",
+   "rating": 5,
+   "createDate": "2026-09-08 09:00:00"
+  },
+  {
+   "commentId": "gs-comment-fixture-3",
+   "userName": "",
+   "commentText": "the beta link opens the store page, not the test",
+   "rating": 3,
+   "createDate": "2026-09-08 11:30:00",
+   "replyText": null
+  }
+ ]
+}

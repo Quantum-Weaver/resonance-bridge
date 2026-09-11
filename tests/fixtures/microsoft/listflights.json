@@ -1,0 +1,17 @@
+{
+ "@nextLink": null,
+ "value": [
+  {
+   "flightId": "43e7bd43-fixture-4f1a-9c22-0b7f1f0c9a10",
+   "friendlyName": "the family flight",
+   "lastPublishedFlightSubmission": {
+    "id": "1152921504621244000",
+    "resourceLocation": "applications/9WZDNCRFJ3Q8/flights/43e7bd43-fixture-4f1a-9c22-0b7f1f0c9a10/submissions/1152921504621244000"
+   },
+   "pendingFlightSubmission": null,
+   "groupIds": ["1152921504606980092"],
+   "rankHigherThan": "Non-flighted submission"
+  }
+ ],
+ "totalCount": 1
+}

@@ -1,0 +1,6 @@
+{
+  "token_type": "Bearer",
+  "expires_in": "3599",
+  "resource": "https://manage.devcenter.microsoft.com",
+  "access_token": "FIXTURE-not-a-key"
+}

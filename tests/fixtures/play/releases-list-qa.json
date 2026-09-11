@@ -1,0 +1,12 @@
+{
+ "releases": [
+  {
+   "track": "qa",
+   "releaseName": "1.4.1",
+   "releaseLifecycleState": "RELEASE_LIFECYCLE_STATE_PUBLISHED",
+   "activeArtifacts": [
+    { "versionCode": 12 }
+   ]
+  }
+ ]
+}

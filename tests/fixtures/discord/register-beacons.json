@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "audhdities",
+    "beacon_type": "app",
+    "status": "flowing"
+  },
+  {
+    "slug": "echoes",
+    "beacon_type": "app",
+    "status": "imagined"
+  },
+  {
+    "slug": "resonance-bubbles",
+    "beacon_type": "game",
+    "status": "imagined"
+  },
+  {
+    "slug": "resonance-echoes",
+    "beacon_type": "app",
+    "status": "flowing"
+  },
+  {
+    "slug": "resonance-sirens",
+    "beacon_type": "app",
+    "status": "flowing"
+  },
+  {
+    "slug": "resonance-skapa",
+    "beacon_type": "app",
+    "status": "flowing"
+  }
+]

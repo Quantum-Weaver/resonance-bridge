@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "store-tracks seed",
+  "description": "What the three store portals report, one row per beacon and channel, written by the tracks census and delivered into public.beacons.",
+  "type": "object",
+  "required": ["source", "read_at", "doors", "rows"],
+  "additionalProperties": false,
+  "properties": {
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "description": "the portals the census read: play · galaxy · microsoft"
+    },
+    "read_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "when the census read the portals, ISO 8601"
+    },
+    "doors": {
+      "type": "object",
+      "required": ["play", "galaxy", "microsoft"],
+      "additionalProperties": false,
+      "properties": {
+        "play": { "$ref": "#/$defs/door" },
+        "galaxy": { "$ref": "#/$defs/door" },
+        "microsoft": { "$ref": "#/$defs/door" }
+      }
+    },
+    "rows": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/row" }
+    }
+  },
+  "$defs": {
+    "door": {
+      "type": "string",
+      "pattern": "^(read|unread: .+)$",
+      "description": "read, or unread followed by the sentence naming the key and the click"
+    },
+    "status": {
+      "enum": [
+        "none",
+        "planned",
+        "building",
+        "internal_testing",
+        "closed_testing",
+        "open_testing",
+        "in_review",
+        "published",
+        "rejected",
+        "withdrawn",
+        null
+      ],
+      "description": "the status words of 043-the-beacons.sql, or null where the portal named none and the register keeps the value it holds"
+    },
+    "row": {
+      "type": "object",
+      "required": [
+        "slug",
+        "channel",
+        "app_id",
+        "listing_url",
+        "testing_url",
+        "status",
+        "testing_version",
+        "published_version",
+        "published_at",
+        "testers",
+        "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$",
+          "description": "the beacon's slug in public.beacons"
+        },
+        "channel": {
+          "enum": ["play", "galaxy", "microsoft"],
+          "description": "the register channel this row fills"
+        },
+        "app_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "the package name or store id the portal answered to"
+        },
+        "listing_url": { "type": ["string", "null"], "format": "uri" },
+        "testing_url": { "type": ["string", "null"], "format": "uri" },
+        "status": { "$ref": "#/$defs/status" },
+        "testing_version": { "type": ["string", "null"] },
+        "published_version": { "type": ["string", "null"] },
+        "published_at": { "type": ["string", "null"], "format": "date-time" },
+        "testers": { "type": ["integer", "null"], "minimum": 0 },
+        "note": {
+          "type": "string",
+          "description": "what the store said, verbatim"
+        }
+      }
+    }
+  }
+}

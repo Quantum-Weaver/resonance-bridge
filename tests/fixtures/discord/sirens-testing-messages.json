@@ -1,0 +1,38 @@
+[
+  {
+    "id": "900000000000000202",
+    "type": 0,
+    "channel_id": "900000000000000012",
+    "author": {
+      "id": "900000000000000702",
+      "username": "riverwalker",
+      "global_name": "River",
+      "bot": false
+    },
+    "content": "the alarm sound is lovely",
+    "timestamp": "2026-09-07T11:00:00.000000+00:00",
+    "edited_timestamp": null,
+    "pinned": false,
+    "mention_everyone": false,
+    "attachments": [],
+    "embeds": []
+  },
+  {
+    "id": "900000000000000201",
+    "type": 0,
+    "channel_id": "900000000000000012",
+    "author": {
+      "id": "900000000000000700",
+      "username": "sanctuary-bridge",
+      "global_name": null,
+      "bot": true
+    },
+    "content": "🚨 Resonance Sirens\n🐛 opens a bug, 📝 a note; both reach the house's board.",
+    "timestamp": "2026-09-07T10:00:00.000000+00:00",
+    "edited_timestamp": null,
+    "pinned": true,
+    "mention_everyone": false,
+    "attachments": [],
+    "embeds": []
+  }
+]

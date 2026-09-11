@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "testing-reports seed",
+  "description": "One shape for the bugs and notes said in a Discord testing channel and the reviews left in a store, written by the censuses and landed as open items.",
+  "type": "object",
+  "required": ["source", "read_at", "rows"],
+  "additionalProperties": false,
+  "properties": {
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "description": "the sources the censuses read: discord · play · galaxy · microsoft"
+    },
+    "read_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "when the censuses read the sources, ISO 8601"
+    },
+    "rows": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/row" }
+    }
+  },
+  "$defs": {
+    "row": {
+      "type": "object",
+      "required": ["id", "slug", "kind", "said_by", "said_at", "where", "text", "link"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(discord|play|galaxy|microsoft):.+$",
+          "description": "the source and the message or review id, the row's identity across reruns"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$",
+          "description": "the beacon's slug in public.beacons"
+        },
+        "kind": {
+          "enum": ["bug", "note", "review"],
+          "description": "bug opens with the bug glyph, note with the memo or bulb glyph, review comes from a store"
+        },
+        "said_by": { "type": "string", "minLength": 1 },
+        "said_at": { "type": "string", "format": "date-time" },
+        "where": {
+          "type": "string",
+          "minLength": 1,
+          "description": "the channel name or the store the words were said in"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "the writer's words, whole"
+        },
+        "link": { "type": ["string", "null"], "format": "uri" }
+      }
+    }
+  }
+}

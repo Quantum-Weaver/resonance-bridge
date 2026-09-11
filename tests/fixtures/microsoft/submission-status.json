@@ -1,0 +1,10 @@
+{
+ "status": "Certification",
+ "statusDetails": {
+  "errors": [],
+  "warnings": [
+   { "code": "ListingOptOutWarning", "details": "the listing has no trailer" }
+  ],
+  "certificationReports": []
+ }
+}

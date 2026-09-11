@@ -58,6 +58,9 @@ offered to each vessel in the form its hands can hold.
 | **Discord** | Cloud API (bot token, "Resonance Bridge") | The server — identity, overview with counts, channels, roles, webhooks by true name (token/url stripped in code), emoji census, verbatim channel reads. NO send tool: a post is outward speech | ✅ **server (the Discord line, seven windows)** — landed 2026-07-31 at the discord-expert's commission; bot minted, invited, and guild-addressed by KP's hands the same hour — all seven windows answering live |
 | **Supabase management** | Management API (`SUPABASE_ACCESS_TOKEN` — account-wide; the most warded line on the board) | The dashboard itself — project shelf with pause-watch, auth config through an allowlist (smtp_pass → set:true/false), SELECT-only live SQL, the false-empty detector, advisors, function and bucket censuses | ✅ **server (the Supabase line, seven windows)** — landed 2026-07-31 at the supabase-expert's commission; zero new keys |
 | **Cloudflare** | Cloud API (account-owned token, `CLOUDFLARE_API_TOKEN`) | The DNS ground for audhdities.com — zones, DNS records, TLS/HTTPS settings, email routing, rulesets/page rules | ✅ **server (the Cloudflare line, read-only window)** — landed 2026-08-27 |
+| **Google Play** | Cloud API (a service account JSON key, scope `androidpublisher`) | Play's own named tracks and the lifecycle of each release, reviews verbatim — package ids come from the register's `play_app_id`, never listed independently; tester lists live inside an edit and are not read | ✅ **server (the Play line, three tools, GETs only)** — shut until `GOOGLE_PLAY_SERVICE_ACCOUNT_JSON` is on the ring |
+| **Galaxy Store** | Cloud API (a Service Account ID + RS256 private key, GSD) | Content list and detail, beta test state with the tester link, comments verbatim | ✅ **server (the Galaxy line, five tools, GETs forever)** — shut until `SAMSUNG_GSD_SERVICE_ACCOUNT_ID` and `SAMSUNG_GSD_PRIVATE_KEY_PATH` are on the ring |
+| **Microsoft Store** | Cloud API (an Entra application, client credentials) | Apps, flights (testing groups), submission status and submission detail, reviews verbatim | ✅ **server (the Microsoft line, six tools, GETs forever)** — shut until `MS_STORE_TENANT_ID`, `MS_STORE_CLIENT_ID` and `MS_STORE_CLIENT_SECRET` are on the ring |
 | **Superposition** | Supabase (PostgreSQL) | Original Sanctuary — 117 tables, self-knowing layer | 🐍 Python workbench (.env keys), not yet a server line |
 
 ---
@@ -66,7 +69,7 @@ offered to each vessel in the form its hands can hold.
 
 *Truth pass 2026-07-29 (the delivery-system sitting), recounted
 2026-09-02 against the code and against a live `tools/list`: the server
-registers FIFTY-FOUR tools, all live, smoke-proven over real MCP stdio
+registers SIXTY-EIGHT tools, all live, smoke-proven over real MCP stdio
 (`server_smoke.py`) and over the HTTP door's `/health`. The Grammar line
 serves the living Supabase base through the anon door — the same door a
 stranger would use.*
@@ -121,6 +124,20 @@ stranger would use.*
 | `cloudflare_zone_settings` | One zone's TLS/HTTPS posture — ssl, always_use_https, min_tls_version, tls_1_3, development_mode | ✅ live |
 | `cloudflare_email_routing` | One zone's email routing — enabled, status | ✅ live |
 | `cloudflare_list_rulesets` | One zone's rulesets + page rules if the token can read them — degrades honestly if not | ✅ live |
+| `play_whoami` | The Google Play service account this line stands as, its Cloud project, and whether a token can be minted for it — the line test | ✅ live |
+| `play_tracks` | Play's own named tracks for one package — qa, internal, alpha, beta, production, or only the tracks named — each with its releases, version codes and lifecycle state: draft, not sent for review, in review, approved not published, not approved, published; read with GETs alone | ✅ live |
+| `play_reviews` | The reviews Play still holds for one package — the last week of them — each reviewer's words VERBATIM with star rating, app version and device | ✅ live |
+| `galaxy_whoami` | Whether the Galaxy Store line can mint an access token for the service account on the ring, and which of its key names the ring holds — the line test | ✅ live |
+| `galaxy_apps` | Every app the seller account holds in the Galaxy Store — content id, name, package name, content status, when it last moved | ✅ live |
+| `galaxy_app` | One app's detail — content status, package name, the version of its latest binary, when the store first published it | ✅ live |
+| `galaxy_beta` | One app's beta test — state, tester count, version under test, and the beta testing URL — Galaxy is the one store that hands the tester link over | ✅ live |
+| `galaxy_comments` | The comments left on one app in the Galaxy Store, each writer's words VERBATIM with the rating and the date | ✅ live |
+| `ms_whoami` | Whether the Microsoft Store line can mint a token for the Entra application on the ring, and which of its three key names the ring holds — the line test | ✅ live |
+| `ms_apps` | Every app the Partner Center account holds, page after page — Store ID, primary name, package family name, first published date, pending and published submission ids | ✅ live |
+| `ms_flights` | One app's flights — the Microsoft Store's testing groups — id, friendly name, the group ids that may install it, pending and published submission ids | ✅ live |
+| `ms_submission_status` | One submission's status and the certification errors and warnings beside it | ✅ live |
+| `ms_submission` | One submission itself — status, friendly name, package versions, publish mode and date; the one Microsoft read that names a version | ✅ live |
+| `ms_reviews` | The reviews left on one app in the Microsoft Store over a window of dates, each writer's title and words VERBATIM with rating, market and package version | ✅ live |
 
 ### Standalone scripts (beside the server, same `.env`, all read-only)
 

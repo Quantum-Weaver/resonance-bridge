@@ -36,6 +36,9 @@ import { registerGitHub } from "./lines/github.js";
 import { registerDiscord } from "./lines/discord.js";
 import { registerSupabase } from "./lines/supabase.js";
 import { registerCloudflare } from "./lines/cloudflare.js";
+import { registerPlay } from "./lines/play.js";
+import { registerGalaxy } from "./lines/galaxy.js";
+import { registerMicrosoft } from "./lines/microsoft.js";
 
 // Same .env load as the stdio door, same reason (build guide, gotcha #2).
 try {
@@ -122,6 +125,9 @@ registerGitHub(server);
 registerDiscord(server);
 registerSupabase(server);
 registerCloudflare(server); // the Cloudflare line — a read-only window on the DNS ground, GETs forever
+registerPlay(server); // the Google Play line — tracks, testers, releases and reviews; reads only
+registerGalaxy(server); // the Galaxy Store line — apps, beta tests and comments; GETs forever
+registerMicrosoft(server); // the Microsoft Store line — apps, flights, submissions and reviews; GETs forever
 
 const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
 const client = new Client({ name: "resonance-bridge-http", version: "0.2.0" });

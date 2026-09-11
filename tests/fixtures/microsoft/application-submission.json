@@ -1,0 +1,74 @@
+{
+ "id": "1152921504621243610",
+ "applicationCategory": "HealthAndFitness",
+ "pricing": {
+  "trialPeriod": "NoFreeTrial",
+  "marketSpecificPricings": {},
+  "isAdvancedPricingModel": true,
+  "priceId": "Free"
+ },
+ "visibility": "Public",
+ "targetPublishMode": "Immediate",
+ "targetPublishDate": "2026-08-20T00:00:00.0000000Z",
+ "listings": {
+  "en-us": {
+   "baseListing": {
+    "copyrightAndTrademarkInfo": "",
+    "keywords": [],
+    "licenseTerms": "",
+    "privacyPolicy": "",
+    "supportContact": "",
+    "websiteUrl": "",
+    "description": "the listing text",
+    "features": [],
+    "releaseNotes": "",
+    "images": [],
+    "recommendedHardware": [],
+    "title": "Resonance Echoes"
+   },
+   "platformOverrides": {}
+  }
+ },
+ "hardwarePreferences": [
+  "Touch"
+ ],
+ "automaticBackupEnabled": false,
+ "canInstallOnRemovableMedia": true,
+ "isMandatoryUpdate": false,
+ "status": "Published",
+ "statusDetails": {
+  "errors": [],
+  "warnings": [],
+  "certificationReports": []
+ },
+ "fileUploadUrl": "",
+ "applicationPackages": [
+  {
+   "fileName": "resonance-echoes_1.3.0.0_x64.msix",
+   "fileStatus": "Uploaded",
+   "id": "1152921504621243611",
+   "version": "1.3.0.0",
+   "architecture": "X64",
+   "targetPlatform": "Windows10",
+   "languages": [
+    "en-US"
+   ],
+   "capabilities": [],
+   "minimumDirectXVersion": "None",
+   "minimumSystemRam": "None",
+   "targetDeviceFamilies": [
+    "Windows.Desktop min version 10.0.19041.0"
+   ]
+  }
+ ],
+ "packageDeliveryOptions": {
+  "packageRollout": {
+   "isPackageRollout": false,
+   "packageRolloutPercentage": 0
+  },
+  "isMandatoryUpdate": false
+ },
+ "enterpriseLicensing": "Online",
+ "friendlyName": "the august listing",
+ "trailers": []
+}

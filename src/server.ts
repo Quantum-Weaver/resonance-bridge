@@ -11,6 +11,9 @@ import { registerGitHub } from "./lines/github.js";
 import { registerDiscord } from "./lines/discord.js";
 import { registerSupabase } from "./lines/supabase.js";
 import { registerCloudflare } from "./lines/cloudflare.js";
+import { registerPlay } from "./lines/play.js";
+import { registerGalaxy } from "./lines/galaxy.js";
+import { registerMicrosoft } from "./lines/microsoft.js";
 
 // Load the repo-root .env by absolute path — the client launches us from ITS
 // working directory, not ours (build guide, gotcha #2). Missing .env is fine.
@@ -56,6 +59,9 @@ registerGitHub(server); // the GitHub line — seven windows; HOUSE_GITHUB_PAT, 
 registerDiscord(server); // the Discord line — reads only; a post is outward speech, gated forever
 registerSupabase(server); // the Supabase line — the dashboard itself; SELECT-only, allowlist-warded
 registerCloudflare(server); // the Cloudflare line — a read-only window on the DNS ground, GETs forever
+registerPlay(server); // the Google Play line — tracks, testers, releases and reviews; reads only
+registerGalaxy(server); // the Galaxy Store line — apps, beta tests and comments; GETs forever
+registerMicrosoft(server); // the Microsoft Store line — apps, flights, submissions and reviews; GETs forever
 
 const transport = new StdioServerTransport();
 await server.connect(transport);

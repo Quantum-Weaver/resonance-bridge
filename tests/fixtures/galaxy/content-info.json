@@ -1,0 +1,14 @@
+[
+ {
+  "contentId": "000005037954",
+  "appTitle": "Resonance Echoes",
+  "contentStatus": "FOR_SALE",
+  "packageName": "com.audhd.resonance-echoes",
+  "publicationType": "01",
+  "startPublicationDate": "2026-08-20",
+  "binaryList": [
+   { "versionCode": "9", "versionName": "1.3.0", "filekey": "fixture-key-9", "gms": "Y" },
+   { "versionCode": "12", "versionName": "1.4.1", "filekey": "fixture-key-12", "gms": "Y" }
+  ]
+ }
+]

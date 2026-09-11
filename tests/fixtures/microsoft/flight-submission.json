@@ -1,0 +1,45 @@
+{
+ "flightId": "43e7bd43-fixture-4f1a-9c22-0b7f1f0c9a10",
+ "id": "1152921504621244000",
+ "status": "Certification",
+ "statusDetails": {
+  "errors": [],
+  "warnings": [
+   {
+    "code": "ListingOptOutWarning",
+    "details": "the listing has no trailer"
+   }
+  ],
+  "certificationReports": []
+ },
+ "flightPackages": [
+  {
+   "fileName": "resonance-echoes_1.4.1.0_x64.msix",
+   "fileStatus": "Uploaded",
+   "id": "1152921504621244001",
+   "version": "1.4.1.0",
+   "architecture": "X64",
+   "targetPlatform": "Windows10",
+   "languages": [
+    "en-US"
+   ],
+   "capabilities": [],
+   "minimumDirectXVersion": "None",
+   "minimumSystemRam": "None",
+   "targetDeviceFamilies": [
+    "Windows.Desktop min version 10.0.19041.0"
+   ]
+  }
+ ],
+ "packageDeliveryOptions": {
+  "packageRollout": {
+   "isPackageRollout": false,
+   "packageRolloutPercentage": 0
+  },
+  "isMandatoryUpdate": false
+ },
+ "targetPublishMode": "Manual",
+ "targetPublishDate": "",
+ "notesForCertification": "the family flight",
+ "fileUploadUrl": ""
+}

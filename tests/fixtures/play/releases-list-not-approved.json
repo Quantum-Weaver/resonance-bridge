@@ -1,0 +1,12 @@
+{
+ "releases": [
+  {
+   "track": "alpha",
+   "releaseName": "1.5.0-alpha",
+   "releaseLifecycleState": "RELEASE_LIFECYCLE_STATE_NOT_APPROVED",
+   "activeArtifacts": [
+    { "versionCode": 14 }
+   ]
+  }
+ ]
+}
