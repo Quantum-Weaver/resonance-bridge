@@ -45,7 +45,7 @@ import {
   parseMsSubmission,
   parseMsSubmissionStatus,
 } from "../src/lines/microsoft.js";
-import { mergeReports } from "../src/census/tracks_census.js";
+import { androidPackage, mergeReports } from "../src/census/tracks_census.js";
 
 const FIXTURES = path.join(fileURLToPath(new URL(".", import.meta.url)), "fixtures");
 
@@ -190,6 +190,17 @@ ok(
   PLAY_TRACK_IDS.includes("qa") && PLAY_TRACK_IDS.includes("production")
 );
 
+is(
+  "the Tauri identifier's hyphens become the Android package's underscores",
+  androidPackage("com.audhd.resonance-echoes"),
+  "com.audhd.resonance_echoes"
+);
+is(
+  "an identifier with no hyphen is its own package",
+  androidPackage("com.audhd.resonanceechoes"),
+  "com.audhd.resonanceechoes"
+);
+
 // ── The track road, against a stubbed portal ───────────────────────────────
 
 // Every request is answered from the fixtures; a track with no fixture answers
@@ -248,6 +259,38 @@ const unstubWhole = stubPlay({
 const whole = await playReadTracksByRelease("no-token", "com.audhd.resonance-echoes");
 unstubWhole();
 is("the road reads every track that answered", whole.answered, ["qa", "beta", "production"]);
+
+// A 204, or an ok response with an empty or whitespace body, is an empty
+// reading: the track is answered, and it carries no releases.
+function stubPlayRaw(served: Record<string, { status: number; body: string | null }>): () => void {
+  const held = globalThis.fetch;
+  globalThis.fetch = (async (input: unknown) => {
+    const url = String(input);
+    const track = /\/tracks\/([^/]+)\/releases/.exec(url)?.[1] ?? "";
+    const answer = served[track];
+    if (!answer) return new Response("", { status: 404 });
+    return new Response(answer.body, {
+      status: answer.status,
+      headers: { "content-type": "application/json" },
+    });
+  }) as typeof fetch;
+  return () => {
+    globalThis.fetch = held;
+  };
+}
+
+const unstubEmpty = stubPlayRaw({
+  production: { status: 204, body: null },
+  beta: { status: 200, body: "   " },
+});
+const empty = await playReadTracksByRelease("no-token", "com.audhd.resonance-echoes", [
+  "production",
+  "beta",
+]);
+unstubEmpty();
+is("a 204 track answers with no releases", empty.answered, ["production", "beta"]);
+is("an empty reading builds no track row", empty.tracks, []);
+is("an empty body parses as no releases", parsePlayReleases({}), []);
 
 const playRow = playTrackRow(
   "resonance-echoes",

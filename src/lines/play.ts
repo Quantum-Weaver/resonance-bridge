@@ -61,6 +61,11 @@ export async function serviceAccount(
   return { client_email: account.client_email ?? null, project_id: account.project_id ?? null };
 }
 
+// True when the body holds nothing but whitespace.
+function emptyBody(text: string): boolean {
+  return text.trim() === "";
+}
+
 async function playGet(
   bearer: string,
   path: string,
@@ -71,8 +76,9 @@ async function playGet(
     if (v !== undefined && v !== "") url.searchParams.set(k, v);
   }
   const res = await fetch(url, { headers: { Authorization: `Bearer ${bearer}` } });
-  if (!res.ok) throw new Error(`Google Play ${res.status}: ${(await res.text()).slice(0, 300)}`);
-  return res.json();
+  const text = await res.text();
+  if (!res.ok) throw new Error(`Google Play ${res.status}: ${text.slice(0, 300)}`);
+  return emptyBody(text) ? {} : JSON.parse(text);
 }
 
 // A track Play does not hold answers 404; every other refusal is raised.
@@ -87,8 +93,9 @@ async function playGetOrNull(
   }
   const res = await fetch(url, { headers: { Authorization: `Bearer ${bearer}` } });
   if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`Google Play ${res.status}: ${(await res.text()).slice(0, 300)}`);
-  return res.json();
+  const text = await res.text();
+  if (!res.ok) throw new Error(`Google Play ${res.status}: ${text.slice(0, 300)}`);
+  return emptyBody(text) ? {} : JSON.parse(text);
 }
 
 // ── The readings ───────────────────────────────────────────────────────────

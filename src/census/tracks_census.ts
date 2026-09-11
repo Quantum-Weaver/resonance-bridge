@@ -124,13 +124,19 @@ async function tauriIdentifier(home: string | null): Promise<string | null> {
   }
 }
 
+// The Android build writes the Tauri identifier's hyphens as underscores.
+export function androidPackage(identifier: string): string {
+  return identifier.replace(/-/g, "_");
+}
+
 async function fillPlayIds(beacons: Beacon[]): Promise<void> {
   for (const b of beacons) {
     if (b.play_app_id) continue;
     const id = await tauriIdentifier(b.home);
     if (id) {
-      b.play_app_id = id;
-      say(`${b.slug}: play_app_id from ${b.home}/src-tauri/tauri.conf.json — ${id}`);
+      const pkg = androidPackage(id);
+      b.play_app_id = pkg;
+      say(`${b.slug}: play_app_id from ${b.home}/src-tauri/tauri.conf.json — ${pkg}`);
     }
   }
 }
