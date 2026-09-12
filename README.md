@@ -146,6 +146,39 @@ stranger would use.*
 | `grammar_inventory.py` | Counts + dated full export of the Grammar tables through the anon door — the new-table ritual's verify step |
 | `verify_terms.py` | Checks a set of coined names against the Grammar (atoms/molecules/organisms by word-count class + constituent words) — born 2026-07-27 for the cosmic carries, reusable for any carry |
 
+### The censuses (`src/census/`, read through the same `.env`)
+
+| Census | Run it | What it does |
+|--------|--------|-------------|
+| Ring | `npm run census:ring` | Reads the whole keyring and every line in one breath |
+| Tracks | `npm run census:tracks` | Photographs Play, Galaxy and Microsoft into the two nectere seeds (`--dry` prints instead of writing) |
+| Testing channels | `npx tsx src/census/testing_channels_census.ts` | Carries the guild's testing-channel bugs and notes into the reports seed (`--dry` prints instead of writing) |
+
+**The ring census** answers "where do the integrations stand" without a walk
+through eleven tools. It prints three parts:
+
+1. **THE RING** — every key NAME in `.env.example` against the keyring, present
+   or missing; then any name on the ring the manifest does not list; counts at
+   the foot. Names only — no value is read out.
+2. **THE LINES** — one row per line the server carries (grammar, vercel,
+   resend, stripe, github, discord, supabase, cloudflare, play, galaxy,
+   microsoft): the key names it needs, which stand, its tool count, and a LIVE
+   reading taken by calling that line's own whoami/status tool in this process
+   over an in-memory transport — `live` with the one fact the tool returns,
+   `shut` with the line's own shut-door sentence, or `degraded` with the error
+   sentence.
+3. **THE FOOT** — how many lines stand live, shut and degraded, and the exact
+   click for each shut line as that line's own code phrases it.
+
+```powershell
+npm run census:ring            # print the census
+npx tsx src/census/ring_census.ts --json   # the same reading as one JSON object
+```
+
+Read-only by construction: it carries no writing verb, so it needs no `--dry`.
+Its network calls are the same read-only GETs and token mints the whoami tools
+already make.
+
 ---
 
 ## QUICK START

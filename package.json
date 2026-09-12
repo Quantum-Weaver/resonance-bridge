@@ -11,6 +11,7 @@
     "check": "tsc --noEmit",
     "smoke": "python server_smoke.py",
     "census:tracks": "tsx src/census/tracks_census.ts",
+    "census:ring": "tsx src/census/ring_census.ts",
     "register": "claude mcp add resonance-bridge -- cmd /c npx tsx ../resonance-bridge/src/server.ts"
   },
   "repository": {
