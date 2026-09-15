@@ -38,7 +38,7 @@ import urllib.request
 from pathlib import Path
 
 BRIDGE = Path(__file__).resolve().parent
-OUT = BRIDGE.parent / "repos_snapshot.json"
+OUT = BRIDGE.parent / "resonance-chamber" / "repos_snapshot.json"
 API = "https://api.github.com/user/repos"
 
 # The snapshot's shape is fixed so a rerun produces a real diff, not a reformat.
